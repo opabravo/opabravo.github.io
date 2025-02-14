@@ -2,17 +2,13 @@
 #
 # Check for changed posts
 
-[:documents, :pages].each do |hook|
-  Jekyll::Hooks.register hook, :post_render do |item|
-    if item.output_ext == ".html"
-      content = item.output
-      site_url = item.site.config['url']
-      whitelist = ['mailto:', 'tel:']  # whitelist domains
-      # Add rel="nofollow noopener noreferrer" to external anchor tags and ref parameter
-      content.gsub!(%r{<a\s+href="((?!#{whitelist.map { |d| Regexp.escape(d) }.join('|')})[^"]+)"(?![^>]*rel=)}, 
-                    "<a href=\"\\1?ref=#{site_url.gsub('https://', '')}\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"")
-      # Update the item content
-      item.output = content
-    end
+Jekyll::Hooks.register :posts, :post_init do |post|
+
+  commit_num = `git rev-list --count HEAD "#{ post.path }"`
+
+  if commit_num.to_i > 1
+    lastmod_date = `git log -1 --pretty="%ad" --date=iso "#{ post.path }"`
+    post.data['last_modified_at'] = lastmod_date
   end
+
 end
