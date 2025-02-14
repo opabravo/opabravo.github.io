@@ -3,8 +3,12 @@
 - type: github
   icon: "fab fa-github"
 
-- type: twitter
-  icon: "fa-brands fa-x-twitter"
+# - type: twitter
+#   icon: "fa-brands fa-x-twitter"
+
+- type: medium
+  icon: "fa-brands fa-medium"
+  url : 'https://medium.com/@opabravo'
 
 - type: email
   icon: "fas fa-envelope"
