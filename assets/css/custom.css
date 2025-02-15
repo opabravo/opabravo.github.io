@@ -1,0 +1,4 @@
+code, pre {
+    white-space: pre-wrap; /* Wrap code lines */
+    word-wrap: break-word; /* Break long words */
+  }
