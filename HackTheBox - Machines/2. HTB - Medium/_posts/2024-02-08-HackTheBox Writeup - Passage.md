@@ -7,6 +7,8 @@ tags: [hackthebox, nmap, linux, cutenews, cariddi, cve-2019-11447, php, file-upl
 
 
 
+Passage is a medium difficulty Linux machine that hosts a CuteNews web application. This is found to suffer from a remote command execution vulnerability, which is leveraged to gain a foothold. A CuteNews password hash for the application user `paul` is discovered and cracked. Owing to password reuse, we can use this to move laterally to the `paul` system user. A private SSH key is found to be shared between the system users, which allows us to move laterally to `nadav`. This user is found to be a member of the sudo group. Enumeration of the vim command line history reveals that the `com.ubuntu.USBCreator.conf` policy has been edited, in order to allow users of the `sudo` group to invoke methods of the `usb-creator` service.  The D-Bus service USBCreator is found to suffer from a vulnerability, allowing the password security policy imposed by `sudo` binary to be bypassed. This is leveraged in order to read privileged files as root.
+
 
 # Recon
 ---

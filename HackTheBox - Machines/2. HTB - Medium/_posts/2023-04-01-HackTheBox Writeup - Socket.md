@@ -7,6 +7,8 @@ tags: [hackthebox, nmap, linux, gobuster, forensics, detect-it-easy, decompilati
 
 
 
+Socket is a Medium Difficulty Linux machine that features reversing a Linux/Windows desktop application to get its source code, from where an `SQL` injection in its web socket service is discovered. Dumping the database reveals a hash that once cracked yields `SSH` access to the box. Finally, a `PyInstaller` script that can be ran with elevated privileges is used to read the `root` user&amp;amp;amp;#039;s private `SSH` key, leading to `root` access to the machine.
+
 
 # Recon
 ---

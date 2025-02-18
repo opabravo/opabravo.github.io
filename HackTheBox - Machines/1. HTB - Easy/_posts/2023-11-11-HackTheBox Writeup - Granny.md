@@ -7,6 +7,8 @@ tags: [hackthebox, nmap, windows, windows-2003, obsolete-system, iis, webdav, da
 
 
 
+Granny, while similar to Grandpa, can be exploited using several different methods. The intended method of solving this machine is the widely-known Webdav upload vulnerability.
+
 
 # Recon
 ---

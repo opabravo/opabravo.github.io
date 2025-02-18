@@ -7,7 +7,7 @@ tags: [hackthebox, nmap, linux, gobuster, feroxbuster, subdomain, vulnerability-
 
 
 
-UpDown presents a website designed to check the status of other webpages. The obvious attack path is an server-side request forgery, but nothing interesting comes from it. There is a dev subdomain, and I’ll find the git repo associated with it. Using that, I’ll figure out how to bypass the Apache filtering, and find a code execution vulnerability out of an LFI using the PHP Archive (or PHAR) format. With a shell, I’ll exploit a legacy Python script using input, and then get root by abusing easy_install.
+UpDown is a medium difficulty Linux machine with SSH and Apache servers exposed. On the Apache server a web application is featured that allows users to check if a webpage is up. A directory named `.git` is identified on the server and can be downloaded to reveal the source code of the `dev` subdomain running on the target, which can only be accessed with a special `HTTP` header. Furthermore, the subdomain allows files to be uploaded, leading to remote code execution using the `phar://` PHP wrapper. The Pivot consists of injecting code into a `SUID` `Python` script and obtaining a shell as the `developer` user, who may run `easy_install` with `Sudo`, without a password. This can be leveraged by creating a malicious python script and running `easy_install` on it, as the elevated privileges are not dropped, allowing us to maintain access as `root`.
 
 
 # Recon

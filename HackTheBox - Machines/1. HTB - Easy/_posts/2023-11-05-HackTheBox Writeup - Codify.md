@@ -7,6 +7,8 @@ tags: [hackthebox, nmap, linux, feroxbuster, nodejs, vm2, sandbox-escape, cve-20
 
 
 
+Codify is an easy Linux machine that features a web application that allows users to test `Node.js` code. The application uses a vulnerable `vm2` library, which is leveraged to gain remote code execution. Enumerating the target reveals a `SQLite` database containing a hash which, once cracked, yields `SSH` access to the box. Finally, a vulnerable `Bash` script can be run with elevated privileges to reveal the `root` user&amp;#039;s password, leading to privileged access to the machine.
+
 
 # Recon
 ---

@@ -7,6 +7,9 @@ tags: [hackthebox, nmap, linux, feroxbuster, php, auth-bypass, sqli, mysql, file
 
 
 
+Magic is an easy difficulty Linux machine that features a custom web application. A SQL injection vulnerability in the login form is exploited, in order to bypass the login and gain access to an upload page. Weak whitelist validation allows for uploading a PHP webshell, which is used to gain command execution. The MySQL database is found to contain plaintext credentials, which are re-used for lateral movement. A path hijacking vector combined with assigned SUID permissions leads to full system compromise.
+
+
 # Recon
 ---
 

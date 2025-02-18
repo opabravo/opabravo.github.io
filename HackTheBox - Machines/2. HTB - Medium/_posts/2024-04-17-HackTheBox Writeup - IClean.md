@@ -7,6 +7,8 @@ tags: [hackthebox, nmap, linux, feroxbuster, python-flask, xss, xss-stored, simp
 
 
 
+IClean is a medium-difficulty Linux machine featuring a website for a cleaning services company. The website contains a form where users can request a quote, which is found to be vulnerable to Cross-Site Scripting (XSS). This vulnerability is exploited to steal an admin cookie, which is then used to access the administrator dashboard. The page is vulnerable to Server-Side Template Injection (SSTI), allowing us to obtain a reverse shell on the box. Enumeration reveals database credentials, which are leveraged to gain access to the database, leading to the discovery of a user hash. Cracking this hash provides `SSH` access to the machine. The user’s mail mentions working with PDFs. By examining the `sudo` configuration, it is found that the user can run `qpdf` as `root`. This is leveraged to attach the `root` private key to a PDF, which is then used to gain privileged access to the machine.
+
 
 # Recon
 ---

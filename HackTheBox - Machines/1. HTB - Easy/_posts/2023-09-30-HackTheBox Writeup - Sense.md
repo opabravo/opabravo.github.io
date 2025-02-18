@@ -7,6 +7,8 @@ tags: [hackthebox, nmap, linux, nmap, autorecon, feroxbuster, pfsense, enum, dis
 
 
 
+Sense, while not requiring many steps to complete, can be challenging for some as the proof of concept exploit that is publicly available is very unreliable. An alternate method using the same vulnerability is required to successfully gain access.
+
 
 # Recon
 ---

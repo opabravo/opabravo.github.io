@@ -7,6 +7,8 @@ tags: [hackthebox, nmap, linux, feroxbuster, ffuf, ruby, ssti, regex-bypass, dis
 
 
 
+Perfection is an easy Linux machine that features a web application with functionality to calculate student scores. This application is vulnerable to Server-Side Template Injection (SSTI) via regex filter bypass. A foothold can be gained by exploiting the SSTI vulnerability. Enumerating the user reveals they are part of the `sudo` group. Further enumeration uncovers a database with password hashes, and the user's mail reveals a possible password format. Using a mask attack on the hash, the user&amp;amp;#039;s password is obtained, which is leveraged to gain `root` access.
+
 
 # Recon
 ---

@@ -7,6 +7,7 @@ tags: [hackthebox, nmap, windows, feroxbuster, git, git-server, misconfiguration
 
 
 
+Visual is a Medium Windows machine featuring a web service that accepts user-submitted `.NET 6.0` project repositories, building and returning the executables. By setting up a local Git repository containing a project with the `PreBuild` option set, a payload can be executed, leading to a reverse shell on the machine as the user `enox`. The user is able to write files on the web root directory and thus an attacker can get a reverse shell as the `nt authority\local service` account. Looking at the privileges of the service account, one is able to deduce that the basic privileges have been stripped off of the account. Nonetheless, there is a way to recover the privileges of the `local service` account, including the `SeImpersonate` privilege. Once this privilege is restored, the attacker is able to use a Potato exploit and get a shell as `nt authority\system`.
 
 # Recon
 ---

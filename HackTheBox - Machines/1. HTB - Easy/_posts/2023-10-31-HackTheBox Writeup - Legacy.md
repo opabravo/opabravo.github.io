@@ -7,6 +7,7 @@ tags: [hackthebox, nmap, windows, crackmapexec, eternal-blue, ms17-010, win-xp, 
 
 
 
+Legacy is a fairly straightforward beginner-level machine which demonstrates the potential security risks of SMB on Windows. Only one publicly available exploit is required to obtain administrator access.
 
 # Recon
 ---

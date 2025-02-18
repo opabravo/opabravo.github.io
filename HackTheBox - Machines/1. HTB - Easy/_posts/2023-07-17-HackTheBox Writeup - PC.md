@@ -7,6 +7,8 @@ tags: [hackthebox, nmap, linux, api, grpc, grpcurl, grpcui, burpsuite, sqlmap, s
 
 
 
+PC is an Easy Difficulty Linux machine that features a `gRPC` endpoint that is vulnerable to SQL Injection. After enumerating and dumping the database&amp;amp;#039;s contents, plaintext credentials lead to `SSH` access to the machine. Listing locally running ports reveals an outdated version of the `pyLoad` service, which is susceptible to pre-authentication Remote Code Execution (RCE) via `CVE-2023-0297`. As the service is run by `root`, exploiting this vulnerability leads to fully elevated privileges.
+
 
 # Recon
 ---

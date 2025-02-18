@@ -2,11 +2,12 @@
 render_with_liquid: false
 title: HackTheBox Writeup  Mailing
 date: 2024-05-05 05:39:39 +1400
-tags: [hackthebox, nmap, windows, feroxbuster, netexec, exiftool, iis, php, cariddi, local-file-inclusion, hmailserver, discover-secrets, crackstation, email, smtp, evolution, sendemail, microsoft-outlook, cve-2024-21413, client-side-attack, coerce-authentication, responder, hashcat, evil-winrm, enum, libre-office, cve-2023-2255, odt, defense-evasion, av-bypass, powercat, log-poisoning, telnet, webshell, reverse-ssh, potato-attacks, badpotato, amsi-bypass]
+tags: [hackthebox, nmap, windows, feroxbuster, netexec, exiftool, iis, php, cariddi, local-file-inclusion, hmailserver, discover-secrets, crackstation, email, smtp, evolution, sendemail, microsoft-outlook, cve-2024-21413, client-side-attack, coerce-authentication, responder, hashcat, evil-winrm, enum, libre-office, cve-2023-2255, odt, defense-evasion, av-bypass, powercat, log-poisoning, telnet, webshell, reverse-ssh, potato-attacks, badpotato, amsi-bypass, oscp-like-2023]
 ---
 
 
 
+Mailing is an easy Windows machine that runs `hMailServer` and hosts a website vulnerable to `Path Traversal`. This vulnerability can be exploited to access the `hMailServer` configuration file, revealing the Administrator password hash. Cracking this hash provides the Administrator password for the email account. We leverage [CVE-2024-21413](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-21413) in the Windows Mail application on the remote host to capture the NTLM hash for user `maya`. We can then crack this hash to obtain the password and log in as user `maya` via WinRM. For privilege escalation, we exploit [CVE-2023-2255](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-2255) in `LibreOffice`.
 
 # Recon
 ---

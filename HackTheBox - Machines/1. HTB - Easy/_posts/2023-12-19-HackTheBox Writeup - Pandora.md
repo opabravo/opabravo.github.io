@@ -7,6 +7,8 @@ tags: [hackthebox, nmap, linux, snmp, feroxbuster, onesixtyone, snmp-check, snmp
 
 
 
+Pandora is an easy rated Linux machine. The port scan reveals a SSH, web-server and SNMP service running on the box. Initial foothold is obtained by enumerating the SNMP service, which reveals cleartext credentials for user `daniel`. Host enumeration reveals Pandora FMS running on an internal port, which can be accessed through port forwarding. Lateral movement to another user called `matt` is achieved by chaining SQL injection &amp;amp;amp;amp; RCE vulnerabilities in the PandoraFMS service. Privilege escalation to user `root` is performed by exploiting a SUID binary for PATH variable injection.
+
 
 # Recon
 ---

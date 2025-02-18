@@ -7,6 +7,8 @@ tags: [hackthebox, nmap, linux, feroxbuster, rpcinfo, unrealircd, irc, discover-
 
 
 
+Irked is a pretty simple and straight-forward box which requires basic enumeration skills. It shows the need to scan all ports on machines and to investigate any out of the place binaries found while enumerating a system.
+
 
 # Recon
 ---

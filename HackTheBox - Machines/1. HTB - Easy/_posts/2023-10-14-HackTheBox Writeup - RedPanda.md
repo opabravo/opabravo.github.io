@@ -7,6 +7,8 @@ tags: [hackthebox, nmap, linux, feroxbuster, java, spring-boot, ssti, ffuf, char
 
 
 
+RedPanda is an easy Linux machine that features a website with a search engine made using the Java Spring Boot framework. This search engine is vulnerable to Server-Side Template Injection and can be exploited to gain a shell on the box as user `woodenk`. Enumerating the processes running on the system reveals a `Java` program that is being run as a cron job as user `root`. Upon reviewing the source code of this program, we can determine that it is vulnerable to XXE. Elevation of privileges is achieved by exploiting the XXE vulnerability in the cron job to obtain the SSH private key for the `root` user. We can then log in as user `root` over SSH and obtain the root flag.
+
 
 # Recon
 ---

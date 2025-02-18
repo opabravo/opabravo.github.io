@@ -7,6 +7,8 @@ tags: [hackthebox, nmap, windows, hfs, searchsploit, cve-2014-6287, secondary-lo
 
 
 
+Optimum is a beginner-level machine which mainly focuses on enumeration of services with known exploits. Both exploits are easy to obtain and have associated Metasploit modules, making this machine fairly simple to complete.
+
 
 # Recon
 ---

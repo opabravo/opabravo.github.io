@@ -7,6 +7,8 @@ tags: [hackthebox, nmap, windows, netexec, feroxbuster, enum, jenkins, jenkins2r
 
 
 
+Jeeves is not overly complicated, however it focuses on some interesting techniques and provides a great learning experience. As the use of alternate data streams is not very common, some users may have a hard time locating the correct escalation path.
+
 
 # Recon
 ---

@@ -7,6 +7,8 @@ tags: [hackthebox, nmap, linux, php, feroxbuster, cacti, searchsploit, cve-2022-
 
 
 
+MonitorsTwo is an Easy Difficulty Linux machine showcasing a variety of vulnerabilities and misconfigurations. Initial enumeration exposes a web application prone to pre-authentication Remote Code Execution (RCE) through a malicious X-Forwarded-For header. Exploiting this vulnerability grants a shell within a Docker container. A misconfigured capsh binary with the SUID bit set allows for root access inside the container. Uncovering MySQL credentials enables the dumping of a hash, which, once cracked, provides SSH access to the machine. Further enumeration reveals a vulnerable Docker version ( CVE- 2021-41091 ) that permits a low-privileged user to access mounted container filesystems. Leveraging root access within the container, a bash binary with the SUID bit set is copied, resulting in privilege escalation on the host.
+
 
 # Recon
 ---

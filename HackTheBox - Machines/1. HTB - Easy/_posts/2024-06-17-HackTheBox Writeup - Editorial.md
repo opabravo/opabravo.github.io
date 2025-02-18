@@ -2,10 +2,12 @@
 render_with_liquid: false
 title: HackTheBox Writeup  Editorial
 date: 2024-06-17 12:14:57 +1400
-tags: [hackthebox, nmap, linux, feroxbuster, python-flask, ssrf, ffuf, discover-secrets, git, sudo, python-script, gitpython]
+tags: [hackthebox, nmap, linux, feroxbuster, python-flask, ssrf, ffuf, discover-secrets, git, sudo, python-script, gitpython, cve-2022-24439, oscp-like-2023]
 ---
 
 
+
+`Editorial` is an easy difficulty Linux machine that features a publishing web application vulnerable to `Server-Side Request Forgery (SSRF)`. This vulnerability is leveraged to gain access to an internal running API, which is then leveraged to obtain credentials that lead to `SSH` access to the machine. Enumerating the system further reveals a Git repository that is leveraged to reveal credentials for a new user. The `root` user can be obtained by exploiting [CVE-2022-24439](https://nvd.nist.gov/vuln/detail/CVE-2022-24439) and the sudo configuration.
 
 
 # Recon

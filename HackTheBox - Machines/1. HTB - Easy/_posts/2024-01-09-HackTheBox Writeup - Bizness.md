@@ -7,6 +7,8 @@ tags: [hackthebox, nmap, linux, ffuf, feroxbuster, apache, apache-ofbiz, java, a
 
 
 
+Bizness is an easy Linux machine showcasing an Apache OFBiz pre-authentication, remote code execution (RCE) foothold, classified as `[CVE-2023-49070](https://nvd.nist.gov/vuln/detail/CVE-2023-49070)`. The exploit is leveraged to obtain a shell on the box, where enumeration of the OFBiz configuration reveals a hashed password in the service&#039;s Derby database. Through research and little code review, the hash is transformed into a more common format that can be cracked by industry-standard tools. The obtained password is used to log into the box as the root user.
+
 
 # Recon
 ---

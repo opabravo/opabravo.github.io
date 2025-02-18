@@ -7,6 +7,8 @@ tags: [hackthebox, nmap, linux, enum, credentials-exposure, keepass2, cve-2023-3
 
 
 
+Keeper is an easy-difficulty Linux machine that features a support ticketing system that uses default credentials. Enumerating the service, we are able to see clear text credentials that lead to SSH access.  With `SSH` access, we can gain access to a KeePass database dump file, which we can leverage to retrieve the master password. With access to the `Keepass` database, we can access the root `SSH` keys, which are used to gain a privileged shell on the host.
+
 
 # Recon
 ---

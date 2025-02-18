@@ -7,6 +7,9 @@ tags: [hackthebox, nmap, linux, snmp, feroxbuster, onesixtyone, snmp-check, nagi
 
 
 
+Monitored is a medium-difficulty Linux machine that features a Nagios instance. Credentials for the service are obtained via the SNMP protocol, which reveals a username and password combination provided as command-line parameters. Using the Nagios API, an authentication token for a disabled account is obtained, which leads to access to the application&amp;#039;s dashboard. From there, a SQL injection (`[CVE-2023-40931](https://nvd.nist.gov/vuln/detail/CVE-2023-40931)`) is abused to obtain an administrator API key, with which a new admin account is created and used to run arbitrary commands on the instance, leading to a reverse shell. Finally, `sudo` access to a bash script is abused to read the `root` user&amp;#039;s SSH key and authenticate as `root`.
+
+
 # Recon
 ---
 

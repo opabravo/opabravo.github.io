@@ -2,9 +2,12 @@
 render_with_liquid: false
 title: HackTheBox Writeup  Cicada
 date: 2024-10-01 22:38:33 +1400
-tags: [hackthebox, nmap, windows, ad, netexec, discover-notes, credentials-exposure, password-spraying, smartbrute, ldeep, powershell-script, evil-winrm, ad-backup-operators, golden-ticket, backupoperatortoolkit]
+tags: [hackthebox, nmap, windows, ad, netexec, discover-notes, credentials-exposure, password-spraying, smartbrute, ldeep, powershell-script, evil-winrm, ad-backup-operators, golden-ticket, backupoperatortoolkit, remoteregsave, oscp-like-2023]
 ---
 
+
+
+Cicada is an easy-difficult Windows machine that focuses on beginner Active Directory enumeration and exploitation. In this machine, players will enumerate the domain, identify users, navigate shares, uncover plaintext passwords stored in files, execute a password spray, and use the `SeBackupPrivilege` to achieve full system compromise.
 
 
 # Recon

@@ -7,6 +7,8 @@ tags: [hackthebox, nmap, windows, tomcat, tomcat-manager, msfvenom, revshell-war
 
 
 
+Although Jerry is one of the easier machines on Hack The Box, it is realistic as Apache Tomcat is often found exposed and configured with common or weak credentials.
+
 
 # Recon
 ---

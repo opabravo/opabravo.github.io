@@ -7,6 +7,8 @@ tags: [hackthebox, nmap, linux, feroxbuster, discover-webshell, sudo, scheduled-
 
 
 
+Bashed is a fairly easy machine which focuses mainly on fuzzing and locating important files. As basic access to the crontab is restricted,
+
 
 # Recon
 ---

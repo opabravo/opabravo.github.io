@@ -7,6 +7,8 @@ tags: [hackthebox, linux, nmap, burpsuite, information-disclosure, clear-text-cr
 
 
 
+Photobomb is an easy Linux machine where plaintext credentials are used to access an internal web application with a `Download` functionality that is vulnerable to a blind command injection. Once a foothold as the machine's main user is established, a poorly configured shell script that references binaries without their full paths is leveraged to obtain escalated privileges, as it can be ran with `sudo`.
+
 
 # Recon
 

@@ -7,6 +7,9 @@ tags: [hackthebox, nmap, windows, ad, autorecon, mssql, feroxbuster, crackmapexe
 
 
 
+Manager is a medium difficulty Windows machine which hosts an Active Directory environment with AD CS (Active Directory Certificate Services), a web server, and an SQL server. The foothold involves enumerating users using RID cycling and performing a password spray attack to gain access to the MSSQL service. The `xp_dirtree` procedure is then used to explore the filesystem, uncovering a website backup in the web-root. Extracting the backup reveals credentials that are reused to WinRM to the server. Finally, the attacker escalates privileges through AD CS via ESC7 exploitation.
+
+
 # Recon
 ---
 

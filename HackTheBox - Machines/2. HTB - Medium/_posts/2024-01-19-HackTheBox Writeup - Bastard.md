@@ -7,6 +7,8 @@ tags: [hackthebox, nmap, windows, feroxbuster, drupal, drupalgeddon2, powercat, 
 
 
 
+Bastard is not overly challenging, however it requires some knowledge of PHP in order to modify and use the proof of concept required for initial entry. This machine demonstrates the potential severity of vulnerabilities in content management systems.
+
 
 # Recon
 ---

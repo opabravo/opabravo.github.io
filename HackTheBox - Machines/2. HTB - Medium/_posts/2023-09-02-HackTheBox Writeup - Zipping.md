@@ -7,6 +7,8 @@ tags: [hackthebox, nmap, linux, feroxbuster, ffuf, php, file-upload, file-read, 
 
 
 
+Zipping is a medium-difficulty Linux machine that features a variety of attack vectors. This machine starts off by identifying a file upload capability within the web application that is vulnerable to a zip-file symlink attack, leading to arbitrary file-reads on the target. Leveraging this attack we can identify key pieces of information about the underlying web application to exploit an SQL injection to write a PHP webshell to the filesystem and leverage an LFI vulnerability to load the webshell to gain code execution. Once initial access is gained a binary is available with `sudo` privileges that requires basic reverse engineering to recover the binary password. Further analysis of the binary shows that it is vulnerable to a library injection, where we can create a malicious library to be loaded with the binary and gain root access when it is executed with `sudo` privileges.
+
 
 # Recon
 ---

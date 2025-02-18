@@ -2,10 +2,12 @@
 render_with_liquid: false
 title: HackTheBox Writeup  Usage
 date: 2024-04-15 16:21:50 +1400
-tags: [hackthebox, nmap, linux, feroxbuster, gobuster, php, sqli, sqli-boolean-blind, sqlmap, hashcat, file-upload, file-upload-bypass, webshell, discover-secrets, password-reuse, sudo, reversing, ghidra, wildcards, 7zip, file-read]
+tags: [hackthebox, nmap, linux, feroxbuster, gobuster, php, sqli, sqli-boolean-blind, sqlmap, hashcat, file-upload, file-upload-bypass, webshell, discover-secrets, password-reuse, sudo, reversing, ghidra, wildcards, 7zip, file-read, oscp-like-2023]
 ---
 
 
+
+Usage is an easy Linux machine that features a blog site vulnerable to SQL injection, which allows the administrator&amp;amp;#039;s hashed password to be dumped and cracked. This leads to access to the admin panel, where an outdated `Laravel` module is abused to upload a PHP web shell and obtain remote code execution. On the machine, plaintext credentials stored in a file allow SSH access as another user, who can run a custom binary as `root`. The tool makes an insecure call to `7zip`, which is leveraged to read the `root`'s private SSH key and fully compromise the system.
 
 
 # Recon

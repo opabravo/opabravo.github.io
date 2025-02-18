@@ -7,6 +7,8 @@ tags: [hackthebox, nmap, windows, ad, feroxbuster, joomla, cms, information-disc
 
 
 
+Office is a hard-difficulty Windows machine featuring various vulnerabilities including Joomla web application abuse, PCAP analysis to identify Kerberos credentials, abusing LibreOffice macros after disabling the `MacroSecurityLevel` registry value, abusing MSKRP to dump DPAPI credentials and abusing Group Policies due to excessive Active Directory privileges.
+
 
 # Recon
 ---

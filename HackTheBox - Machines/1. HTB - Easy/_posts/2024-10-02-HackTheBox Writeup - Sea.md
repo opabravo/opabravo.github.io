@@ -7,6 +7,8 @@ tags: [hackthebox, nmap, linux, feroxbuster, osint, reconnaissance, wondercms, c
 
 
 
+`Sea` is an Easy Difficulty Linux machine that features [CVE-2023-41425](https://nvd.nist.gov/vuln/detail/CVE-2023-41425) in WonderCMS, a cross-site scripting (XSS) vulnerability that can be used to upload a malicious module, allowing access to the system. The privilege escalation features extracting and cracking a password from WonderCMS's database file, then exploiting a command injection in custom-built system monitoring software, giving us root access.
+
 
 # Recon
 ---

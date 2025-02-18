@@ -7,6 +7,8 @@ tags: [hackthebox, nmap, windows, netexec, smb, discover-secrets, password-spray
 
 
 
+SolarLab is a medium Windows machine that starts with a webpage featuring a business site. Moreover, an SMB share is accessible using a guest session that holds files with sensitive information for users on the remote machine. An attacker can extract valid credentials from this file and log in to a page allowing employees to fill out forms for company purposes. These forms are turned into PDFs using the `ReportLab` library, which is vulnerable to [CVE-2023-33733](https://nvd.nist.gov/vuln/detail/CVE-2023-33733). After some exploit development/modification, the attacker can get code execution as the user `blake` on the remote machine. Further enumeration of the remote machine, reveals that `Openfire` is installed and running locally. By using a SOCKS tunnel, the attacker can access the Administrator Console for Openfire. It turns out, that the version installed, is vulnerable to [CVE-2023-32315](https://nvd.nist.gov/vuln/detail/CVE-2023-32315) which allows the attacker to bypass the authentication screen, upload a malicious plugin, and get code execution as the `openfire` user. The `openfire` user can read the logs from when the server was installed and extract all the necessary information to crack the Administrator&amp;#039;s password and it turns out that this password is re-used for the local `Administrator` account.
+
 
 # Recon
 ---

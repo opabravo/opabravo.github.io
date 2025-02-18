@@ -7,6 +7,9 @@ tags: [hackthebox, nmap, linux, feroxbuster, hakrlawler, subdomain, sqlpad, ssti
 
 
 
+`Sightless` is an easy-difficulty Linux machine featuring a website for a company offering various services. Enumeration of the website reveals an `SQLPad` instance vulnerable to template injection `[CVE-2022-0944](https://nvd.nist.gov/vuln/detail/CVE-2022-0944)`, which is leveraged to gain a foothold inside a Docker container. Further enumeration reveals the `/etc/shadow` file with a password hash, which is cracked to reveal the password, granting `SSH` access to the host. Post-exploitation enumeration reveals a `Froxlor` instance vulnerable to Blind `XSS` `[CVE-2024-34070](https://nvd.nist.gov/vuln/detail/CVE-2024-34070)`. This is leveraged to gain access to the `FTP` service, which contains a `KeePass` database. Accessing the database reveals the root `SSH` keys, leading to a privileged shell on the host.
+
+
 # Recon
 ---
 

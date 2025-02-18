@@ -7,7 +7,7 @@ tags: [hackthebox, linux, nmap, gobuster, burpsuite, ffuf, directory-traversal, 
 
 
 
-Inject has a website with a file read vulnerability that allows me to read the source code for the site. The source leaks that it’s using SpringBoot, and have a vulnerable library in use that allows me to get remote code execution. I’ll show how to identify this vulnerability both manually and using Snyk. The root step is about abusing a cron that’s running the Ansible automation framework.
+Inject is an Easy Difficulty Linux machine featuring a website with file upload functionality vulnerable to Local File Inclusion (LFI). By exploiting the LFI vulnerability, files on the system can be enumerated, revealing that the web application uses a specific version of the `Spring-Cloud-Function-Web` module susceptible to `CVE-2022-22963`. Exploiting this vulnerability grants an initial foothold as the `frank` user. Lateral movement is achieved by further file enumeration, which discloses a plaintext password for `phil`. A cronjob running on the machine can then be exploited to execute a malicious `Ansible` playbook, ultimately obtaining a reverse shell as the `root` user.
 
 
 # Recon
