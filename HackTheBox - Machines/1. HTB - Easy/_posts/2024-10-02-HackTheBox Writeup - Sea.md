@@ -2,7 +2,7 @@
 render_with_liquid: false
 title: HackTheBox Writeup  Sea
 date: 2024-10-02 14:51:06 +1400
-tags: [hackthebox, nmap, linux, feroxbuster, osint, reconnaissance, wondercms, cms, php, open-redirect, xss, xss-reflected, cve-2023-41425, discover-secrets, haiti, hashcat, password-spraying, port-forwarding, credentias-stuffing, directory-traversal, command-injection]
+tags: [hackthebox, nmap, linux, feroxbuster, osint, reconnaissance, wondercms, cms, php, open-redirect, xss, xss-reflected, cve-2023-41425, discover-secrets, haiti, hashcat, password-spraying, port-forwarding, credentials-stuffing, directory-traversal, command-injection]
 ---
 
 

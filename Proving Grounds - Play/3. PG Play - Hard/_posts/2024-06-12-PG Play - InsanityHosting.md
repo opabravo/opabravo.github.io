@@ -2,7 +2,7 @@
 render_with_liquid: false
 title: PG Play  InsanityHosting
 date: 2024-06-12 11:48:46 +1400
-tags: [pg-play, nmap, linux, httpx, feroxbuster, php, squirrelmail, email, user-enumeration, ffuf, brute-force-attack, weak-credentials, credentias-stuffing, mysql, sqli, sqli-union, sqli-second-order, sqli2rce, hashcat, discover-browser, hack-browser-data, password-spraying, password-reuse]
+tags: [pg-play, nmap, linux, httpx, feroxbuster, php, squirrelmail, email, user-enumeration, ffuf, brute-force-attack, weak-credentials, credentials-stuffing, mysql, sqli, sqli-union, sqli-second-order, sqli2rce, hashcat, discover-browser, hack-browser-data, password-spraying, password-reuse]
 ---
 
 

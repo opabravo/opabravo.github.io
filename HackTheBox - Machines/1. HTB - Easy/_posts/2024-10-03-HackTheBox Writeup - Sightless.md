@@ -2,7 +2,7 @@
 render_with_liquid: false
 title: HackTheBox Writeup  Sightless
 date: 2024-10-03 18:26:44 +1400
-tags: [hackthebox, nmap, linux, feroxbuster, hakrlawler, subdomain, sqlpad, ssti, cve-2022-0944, docker, docker-escape, discover-secrets, hashcat, credentias-stuffing, netexec, froxlor, ligolo-ng, chrome, chrome-remote-debugging, froxlor2rce, php]
+tags: [hackthebox, nmap, linux, feroxbuster, hakrlawler, subdomain, sqlpad, ssti, cve-2022-0944, docker, docker-escape, discover-secrets, hashcat, credentials-stuffing, netexec, froxlor, ligolo-ng, chrome, chrome-remote-debugging, froxlor2rce, php]
 ---
 
 
