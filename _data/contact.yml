@@ -1,5 +1,9 @@
 #  The contact options.
 
+- type: HackTheBox
+  icon: "htb-icon"
+  url: 'https://app.hackthebox.com/profile/4167'
+
 - type: github
   icon: "fab fa-github"
 
@@ -9,11 +13,6 @@
 - type: medium
   icon: "fa-brands fa-medium"
   url : 'https://medium.com/@opabravo'
-
-# Hackthebox Profile
-- type: HackTheBox
-  icon: "htb-icon"
-  url: 'https://app.hackthebox.com/profile/4167'
 
 - type: email
   icon: "fas fa-envelope"

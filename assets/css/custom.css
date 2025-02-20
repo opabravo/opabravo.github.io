@@ -9,8 +9,10 @@ code, pre {
 
 .htb-icon {
   display: inline-block;
-  width: 32px; /* Adjust size as needed */
-  height: 32px;
-  background-image: '/assets/img/htb_lab.svg';
+  width: 16px;
+  height: 16px;
+  background-image: url('/assets/img/ico/htb_lab.svg');
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
