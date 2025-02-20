@@ -1,4 +1,16 @@
+/* Wrap code lines */
+/* Break long words */
+/*
 code, pre {
-    white-space: pre-wrap; /* Wrap code lines */
-    word-wrap: break-word; /* Break long words */
-  }
+    white-space: pre-wrap; 
+    word-wrap: break-word; 
+}
+*/
+
+.htb-icon {
+  display: inline-block;
+  width: 32px; /* Adjust size as needed */
+  height: 32px;
+  background-image: '/assets/img/htb_lab.svg';
+  background-size: cover;
+}

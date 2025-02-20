@@ -10,6 +10,11 @@
   icon: "fa-brands fa-medium"
   url : 'https://medium.com/@opabravo'
 
+# Hackthebox Profile
+- type: HackTheBox
+  icon: "htb-icon"
+  url: 'https://app.hackthebox.com/profile/4167'
+
 - type: email
   icon: "fas fa-envelope"
   noblank: true # open link in current tab
