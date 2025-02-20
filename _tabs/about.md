@@ -14,8 +14,8 @@ order: 4
 
 ## Certifications
 
-- 2023 - CEHv12
-- 2025 - [OSCP+](https://medium.com/@opabravo/%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%80%83%E8%A9%A6%E4%BB%A5100%E5%88%86%E6%8B%BF%E4%B8%8Boscp-19d689d4335d)
+- 2023 - CEHv12 (123/125 points)
+- 2025 - [OSCP+](https://medium.com/@opabravo/%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%80%83%E8%A9%A6%E4%BB%A5100%E5%88%86%E6%8B%BF%E4%B8%8Boscp-19d689d4335d) (100/100 points)
 
 ## Skills
 
