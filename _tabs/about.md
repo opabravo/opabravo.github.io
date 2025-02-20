@@ -17,6 +17,14 @@ order: 4
 - 2023 - CEHv12 (123/125 points)
 - 2025 - [OSCP+](https://medium.com/@opabravo/%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%80%83%E8%A9%A6%E4%BB%A5100%E5%88%86%E6%8B%BF%E4%B8%8Boscp-19d689d4335d) (100/100 points)
 
+## Profiles
+
+[![Hack The Box](https://www.hackthebox.com/badge/image/4167)](https://app.hackthebox.com/profile/4167){: .normal }
+[![Try Hack Me](https://i.imgur.com/m6jeDt1.png)](https://tryhackme.com/p/bravosec){: .normal }
+[![GitHub](https://img.shields.io/static/v1?style=for-the-badge&message=GitHub&color=181717&logo=GitHub&logoColor=FFFFFF&label=)](https://github.com/opabravo){: .normal }
+[![Medium](https://img.shields.io/static/v1?style=for-the-badge&message=Medium&color=000000&logo=Medium&logoColor=FFFFFF&label=)](https://medium.com/@opabravo){: .normal }
+[![WebSite](https://img.shields.io/static/v1?style=for-the-badge&message=WebSite&color=00A98F&logo=About.me&logoColor=FFFFFF&label=)](https://greybot.me/){: .normal }
+
 ## Skills
 
 ### Web
