@@ -99,11 +99,11 @@ theme_mode: # [light|dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://avatars.githubusercontent.com/u/21262207
+avatar: https://account.hackthebox.com/storage/users/a0315845-0a01-4033-9dbc-4829969607b4-avatar.png
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
-social_preview_image: https://avatars.githubusercontent.com/u/21262207 # string, local or CORS resources
+social_preview_image: https://account.hackthebox.com/storage/users/a0315845-0a01-4033-9dbc-4829969607b4-avatar.png # string, local or CORS resources
 
 # boolean type, the global switch for TOC in posts.
 toc: true
