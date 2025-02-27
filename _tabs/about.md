@@ -7,7 +7,7 @@ order: 4
 ## Introduction
 
 - A collaborative learner, likes to share knowledge and experiences, and learn from others
-- Interested in **Red teaming**, **Digital Forensics**, **OSINT**, **SE**, **Cyber Threat Intelligence**, **Data Analysis**, **Web Scraping** related topics
+- Interested in **Red teaming**, **Digital Forensics**, **OSINT**, **SE**, **Cyber Threat Intelligence**
 - Majors in **Web**, **Forensics**, **OSINT** and **Misc** CTF challenges
 - Looking forward to join a CTF team, enjoy learning and collaborating with others while solving challenges
 - Loves cats, coffee, and music. Biggest dream is to have a cat and live in a quiet place
