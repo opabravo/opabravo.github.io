@@ -7,6 +7,8 @@ tags: [hackthebox, nmap, linux, feroxbuster, apk, java, apktool, jadx, reversing
 
 
 
+Instant is a medium difficulty machine that includes reverse engineering a mobile application, exploiting API endpoints, and cracking encrypted hashes and files. Players will analyze an APK to extract sensitive information and a hardcoded authorization token, then they will exploit an API endpoint vulnerable to Arbitrary File Read. Finally, they will achieve full system compromise by decrypting and analyzing encrypted session data from Solar-PuTTY.
+
 # Recon
 ---
 
