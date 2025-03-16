@@ -14,8 +14,8 @@ order: 4
 
 ## Certifications
 
-- 2023/12 - CEHv12 (122/125 points)
-- 2025/02 - [OSCP+](https://medium.com/@opabravo/%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%80%83%E8%A9%A6%E4%BB%A5100%E5%88%86%E6%8B%BF%E4%B8%8Boscp-19d689d4335d) (100/100 points)
+- 2023/12 - CEHv12 : EC-Council Certified Ethical Hacker (122/125 points)
+- 2025/02 - [OSCP+](https://medium.com/@opabravo/%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%80%83%E8%A9%A6%E4%BB%A5100%E5%88%86%E6%8B%BF%E4%B8%8Boscp-19d689d4335d) : OffSec Certified Professional+ (100/100 points)
 
 ## Profiles
 
