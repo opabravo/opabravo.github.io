@@ -23,7 +23,7 @@ order: 4
 [![Try Hack Me](https://i.imgur.com/m6jeDt1.png)](https://tryhackme.com/p/bravosec){: .normal }
 [![GitHub](https://img.shields.io/static/v1?style=for-the-badge&message=GitHub&color=181717&logo=GitHub&logoColor=FFFFFF&label=)](https://github.com/opabravo){: .normal }
 [![Medium](https://img.shields.io/static/v1?style=for-the-badge&message=Medium&color=000000&logo=Medium&logoColor=FFFFFF&label=)](https://medium.com/@opabravo){: .normal }
-[![WebSite](https://img.shields.io/static/v1?style=for-the-badge&message=WebSite&color=00A98F&logo=About.me&logoColor=FFFFFF&label=)](https://greybot.me/){: .normal }
+[![Blog](https://img.shields.io/static/v1?style=for-the-badge&message=WebSite&color=00A98F&logo=About.me&logoColor=FFFFFF&label=)](https://blog.bravosec.net/){: .normal }
 
 ## Skills
 
