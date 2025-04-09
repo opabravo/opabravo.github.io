@@ -6,7 +6,7 @@ order: 4
 
 ## Introduction
 
-- Interested in **Purple teaming**, **Digital Forensics**, **OSINT**, **SE**, **Cyber Threat Intelligence**
+- Interested in **Purple teaming**, **Digital Forensics**, **OSINT**, **Cyber Threat Intelligence**, **Social Engineering** and **Offender Profiling**
 - Majors in **Web**, **Forensics**, **OSINT** and **Misc** CTF challenges
 - A collaborative learner, likes to share knowledge and experiences, and learn from others
 - Looking forward to join a CTF team, enjoy learning with others while solving challenges
