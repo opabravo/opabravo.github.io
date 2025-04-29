@@ -8,7 +8,7 @@ tags: [tor]
 
 ## Introduction
 
-I recently undertook the task of testing **Azure AD** and **Microsoft SaaS Apps** to demonstrate the effectiveness of a cybersecurity product; during that, I had to perform password spray without triggering the account lockout threshold, thus IP rotation is needed.
+I recently undertook the task of attacking **Azure AD** and **Microsoft SaaS Apps** to demonstrate the effectiveness of a cybersecurity product; during that, I had to perform password spray without triggering the account lockout threshold, thus IP rotation is needed.
 
 
 ## Tor identity rotation one-liner
