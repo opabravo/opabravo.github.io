@@ -16,7 +16,7 @@ I recently undertook the task of attacking **Azure AD** and **Microsoft SaaS App
 While there are a lot of Proxies/Tor/VPN rotation tools available on GitHub, I made a simple one-liner to achieve the goal of rotating Tor identities.
 
 ```bash
-INTERVAL=3; sudo systemctl start tor; while true; do sleep $INTERVAL; sudo systemctl reload tor; curl --socks5-hostname 127.0.0.1:9050 ip-api.com/json -s | jq -c '{query, country, as}'; done
+INTERVAL=1; sudo systemctl restart tor; while true; do sleep $INTERVAL; sudo systemctl reload tor; curl --socks5-hostname 127.0.0.1:9050 ip-api.com/json -s | jq -c '{query, country, as}'; done
 ```
 
 ![](/assets/obsidian/057f9c7121b6505c6b73d73df1ff18b1.png)
@@ -47,8 +47,9 @@ We can also add the one-liner to our `.zsh_rc/.bash_rc` files as a function.
 
 ```bash
 function tor-rotate() {
-    local INTERVAL="${1:-3}"
-    
+    local INTERVAL="${1:-1}"
+
+    sudo systemctl restart tor    
     while true; do
         sleep $INTERVAL
         sudo systemctl reload tor
@@ -61,11 +62,11 @@ Usage:
 
 ```bash
 
-# Rotate with default interval : 3
+# Rotate with default interval : 1 sec
 tor-rotate
 
 
-# Rotate with interval : 60
+# Rotate with interval : 60 secs
 tor-rotate 60
 ```
 
