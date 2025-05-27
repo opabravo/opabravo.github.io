@@ -327,7 +327,7 @@ DOMAIN COMPUTERS@VINTAGE.HTB        ReadGMSAPassword        GMSA01$@VINTAGE.HTB 
 
 ##### Delegations
 
-By running the **Shortest path to Domain Admins** query, we found that `C.NERI_ADM` can impersonate any domain users to the domain controller via **S4U2self/S4U2proxy** since members of `DELEGATEDADMINS` group have `msds-AllowedToActOnBehalfOfOtherIdentity` attribute on the computer `DC01.VINTAGE.HTB`
+By running the **Shortest path to Domain Admins** query, we found that `C.NERI_ADM` can impersonate any domain users to the domain controller via **S4U2self/S4U2proxy** since members of `DELEGATEDADMINS` group has `msds-AllowedToActOnBehalfOfOtherIdentity` attribute on the computer `DC01.VINTAGE.HTB`
 
 ![](/assets/obsidian/1a9b0e06fb7babe91b1f1045f891a5ac.png)
 
@@ -774,7 +774,7 @@ Create password list
 fs01
 ```
 
-While spraying with the wordlists, we validated that `FS01$` have default password set
+While spraying with the wordlists, we validated that `FS01$` has default password set
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Vintage]
@@ -822,7 +822,7 @@ After setting `GMSA01$@VINTAGE.HTB` as owned, by running the **Shortest Path Fro
 ![](/assets/obsidian/e7e3af18bfd1462fbf900a73c7ce80d0.png)
 
 
-### DACL Abuse - Add Member to SERVICEMANAGERS
+### DACL Abuse - Add a Member to SERVICEMANAGERS
 
 Add `gMSA01$` itself to the `SERVICEMANAGERS` group
 
@@ -934,7 +934,7 @@ Hash.Target......: targetedroastables.txt
 [...]
 ```
 
-We can see that the user `svc_sql` is missing, that's because the account is disabled (`ACCOUNTDISABLE` flag is set in `userAccountControl` attribute)
+We can see that the user `svc_sql` is missing, that's because the account was disabled (`ACCOUNTDISABLE` flag was set in `userAccountControl` attribute)
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Vintage]
@@ -1064,7 +1064,7 @@ C.Neri:Zer0the0ne
 
 ### 5985 - Winrm
 
-- `C.Neri` is in the `REMOTE MANAGEMENT USERS` group, which allows it to **winrm** in to the domain computers
+- `C.Neri` is in the `REMOTE MANAGEMENT USERS` group, which allows it to **winrm** into the domain computers
 
 Request a TGT
 
@@ -1103,7 +1103,7 @@ ba5767768777e66866c46d799e19bd43
 
 ### Setup reverse SSH
 
-> Run **[reverse_ssh**](https://github.com/NHAS/reverse_ssh) client with [logon type 9](https://learn.microsoft.com/windows-server/identity/securing-privileged-access/reference-tools-logon-types) via [**RunasCs**](https://github.com/antonioCoco/RunasCs) to gain full access to **WMI**
+> Run [reverse_ssh](https://github.com/NHAS/reverse_ssh) client with [logon type 9](https://learn.microsoft.com/windows-server/identity/securing-privileged-access/reference-tools-logon-types) via [RunasCs](https://github.com/antonioCoco/RunasCs) to gain full access to **WMI**
 {: .prompt-info }
 
 `Invoke-RunasCs.ps1` was blocked by **AMSI**
@@ -1129,7 +1129,7 @@ Bypass-4MSI
 
 ![](/assets/obsidian/f57679fde34c11de38d60a474df3fdb4.png)
 
-> Manual bypass method is written in [[#Additional#Bypass AMSI & disable ETW manually]] section at the end of writeup
+> Manual bypass method was written in [[#Additional#Bypass AMSI & disable ETW manually]] section at the end of writeup
 {: .prompt-tip }
 
 Download and run **reverse_ssh** client
@@ -1161,7 +1161,7 @@ PS C:\Windows\system32>
 
 ### Enumeration
 
-- `C.Neri` have low privileges
+- `C.Neri` has low privileges
 
 ```powershell
 PS C:\Users\C.Neri\Documents> whoami /priv
@@ -1208,7 +1208,7 @@ Mode   Owner          LastWriteTime         Length FullName
 -a-hs- VINTAGE\C.Neri 3/22/2025 8:49:56 PM      24 C:\Users\C.Neri\AppData\Roaming\Microsoft\Protect\S-1-5-21-4024337825-2033394866-2055507597-1115\Preferred
 ```
 
-We will dump the whole folder since files such as [CREDHIST](https://tools.thehacker.recipes/mimikatz/modules/dpapi/credhist) is valuable
+We will dump the whole folder since files such as [CREDHIST](https://tools.thehacker.recipes/mimikatz/modules/dpapi/credhist) are valuable
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Vintage]
@@ -1280,7 +1280,7 @@ Username    : vintage\c.neri_adm
 Unknown     : Uncr4ck4bl3P4ssW0rd0312
 ```
 
-Validated that the authentication is successful
+Validated that the authentication was successful
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Vintage]
@@ -1305,7 +1305,7 @@ We can abuse [**Resource-Based Constrained Delegations** (RBCD)](https://www.the
 
 ![](/assets/obsidian/9715ffc4b95ff716c02ef3a4a3b8ba5e.png)
 
-Only accounts that Kerberos can consider as a service (with **SPN** set or machine accounts) can abuse `S4U2SELF/S4U2proxy`, we can add `fs01$` (which we know its password) to `DELEGATEDADMINS` group since `C.NERI_ADM` have `GenericWrite` rights to `DELEGATEDADMINS` group
+Only accounts that Kerberos can consider as a service (with **SPN** set or machine accounts) can abuse `S4U2SELF/S4U2proxy`, we can add `fs01$` (which we know its password) to `DELEGATEDADMINS` group since `C.NERI_ADM` has `GenericWrite` rights to `DELEGATEDADMINS` group
 
 ![](/assets/obsidian/6c44034b456b33969905fd12128e0bfd.png)
 
