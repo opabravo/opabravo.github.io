@@ -2,7 +2,7 @@
 render_with_liquid: false
 title: HackTheBox Writeup  Blackfield
 date: 2024-02-07 16:33 +1400
-tags: [hackthebox, nmap, windows, ad, dnsrecon, gobuster, ldapsearch, netexec, asreproast, hashcat, ldapdomaindump, bloodhound, bloodhound-python, ad-miner, lsass, pypykatz, evil-winrm, ad-backup-operators, backupoperatortoda, commando, mimikatz, impacket, vss-shadow, unix2dos, ntds, print-nightmare, revshell-dll-nim, defense-evasion, av-bypass, nopac, faketime, coercer, oscp-like-2023]
+tags: [hackthebox, nmap, windows, ad, dnsrecon, gobuster, ldapsearch, netexec, asreproast, hashcat, ldapdomaindump, bloodhound, bloodhound-python, ad-miner, lsass, pypykatz, evil-winrm, ad-backup-operators, backupoperatortoda, commando, mimikatz, impacket, vss-shadow, unix2dos, ntds, print-nightmare, win-dll, revshell-dll-nim, defense-evasion, av-bypass, nopac, faketime, coercer, oscp-like-2023]
 ---
 
 

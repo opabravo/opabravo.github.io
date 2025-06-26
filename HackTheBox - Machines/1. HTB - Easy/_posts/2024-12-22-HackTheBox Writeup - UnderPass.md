@@ -7,7 +7,7 @@ tags: [hackthebox, nmap, linux, snmp, feroxbuster, snmpbulkwalk, snmpwalk, snmp-
 
 
 
-Underpass is an Easy Linux machine starting with a default Apache Ubuntu page. This leads the attacker to enumerate the machine&#039;s UDP ports for alternative attack vectors. The attacker can enumerate SNMP and discover that `Daloradius` is running on the remote machine, and the operators panel can be accessed using the default credentials. Inside the panel, the password hash for the user `svcMosh` is stored, and it&#039;s crackable. Then, the attacker can log in to the remote machine using SSH with the credentials they have obtained. The user `svcMosh` is configured to run `mosdh-server` as `root`, which allows the attacker to connect to the server from their local machine and interact with the remote machine as the `root` user.
+Underpass is an Easy Linux machine starting with a default Apache Ubuntu page. This leads the attacker to enumerate the machine&#039;s UDP ports for alternative attack vectors. The attacker can enumerate SNMP and discover that `Daloradius` is running on the remote machine, and the operators panel can be accessed using the default credentials. Inside the panel, the password hash for the user `svcMosh` is stored, and it's crackable. Then, the attacker can log in to the remote machine using SSH with the credentials they have obtained. The user `svcMosh` is configured to run `mosdh-server` as `root`, which allows the attacker to connect to the server from their local machine and interact with the remote machine as the `root` user.
 
 # Recon
 ---

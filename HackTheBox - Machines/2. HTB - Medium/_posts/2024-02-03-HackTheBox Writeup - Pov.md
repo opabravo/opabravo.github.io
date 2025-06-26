@@ -525,14 +525,14 @@ SeIncreaseWorkingSetPrivilege Increase a process working set Disabled
 
 > https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation/privilege-escalation-abusing-tokens#rce
 
-> The two methods from **hacktricks** doesn't work for this case, but migrating to process running by `NT AUTHORITY SYSTEM` with meterpreter works too
+> The two methods from **hacktricks** didn't work in this case, but migrating to process running by `NT AUTHORITY SYSTEM` with meterpreter works too
 {: .prompt-tip }
 
 Without meterpreter, I can use [Invoke-PSInject.ps1](https://github.com/EmpireProject/PSInject/blob/master/Invoke-PSInject.ps1) from **powershell empire**
 
 ![](/assets/obsidian/9af2e10d0ba980ed3ea208c48841917a.png)
 
-Convert the command to start reverse ssh client to powershell base64 format
+Base64 encode the command to start reverse ssh client
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Pov]

@@ -900,13 +900,13 @@ Send-MailMessage -From 'Ted Graves <Ted.Graves@intelligence.htb>' -To 'Ted Grave
 }
 ```
 
-It makes request with `-UseDefaultCredentials` to every object in `DomainDnsZones` that starts with `web`
+It makes request with `-UseDefaultCredentials` to every objects in `DomainDnsZones` that starts with `web`
 
-We can steal NTLM hash by creating a DNS record that pointsto our rogue web server
+We can steal NTLM hash by creating a DNS record that points to our rogue web server
 
 > More detailed info - https://www.thehacker.recipes/ad/movement/mitm-and-coerced-authentications/adidns-spoofing
 
-I can query existing records
+First, query existing records
 
 > Must supply **IP** instead of domain name for target, otherwise it will fail to resolve hosts
 {: .prompt-warning }
