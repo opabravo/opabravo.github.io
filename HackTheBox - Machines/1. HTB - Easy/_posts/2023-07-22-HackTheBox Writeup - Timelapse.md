@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Timelapse
+title: HackTheBox Writeup - Timelapse
 date: 2023-07-22 12:43:35 +1400
 tags: [hackthebox, nmap, ad, windows, crackmapexec, smbclient, winrm-keys, zip2john, john, zip2pfx, extract-pfx, invoke-winpeas, powershell-history, ad-laps, hashcat, oscp-like-2023]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/bae443f73a706fc8eebc6fb740128295.png
+    width: 640
+    height: 480
 ---
 
 

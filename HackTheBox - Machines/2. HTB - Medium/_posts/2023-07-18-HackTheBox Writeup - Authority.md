@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Authority
+title: HackTheBox Writeup - Authority
 date: 2023-07-18 19:32:49 +1400
 tags: [hackthebox, nmap, windows, ad, crackmapexec, autorecon, smbget, ansible, ansible-vault, ansible2john, hashcat, ldap, pwm, password-self-service, responder, clear-text-credentials, evil-winrm, adcs, certipy, adcs-esc1, ad-maq, impacket, pass-the-cert, pass-the-cert, dacl-abuse, dacledit, dcsync, golden-ticket]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/e6257bbacb2ddd56f5703bb61eadd8cb.png
+    width: 640
+    height: 480
 ---
 
 

@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Nibbles
+title: HackTheBox Writeup - Nibbles
 date: 2023-09-29 20:21:40 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, enum, nibbleblog, searchsploit, cve-2015-6967, 4xx-bypass, password-guessing, ffuf, custom-wordlist, cewl, hashcat-rules, faker, duplicut, php, file-upload, sudo, bash-script, oscp-like, hwatch, ssh-user-enum]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/344a8f99e8f7dddfed764f791e2731df.png
+    width: 640
+    height: 480
 ---
 
 

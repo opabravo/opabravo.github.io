@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Traverxec
+title: HackTheBox Writeup - Traverxec
 date: 2023-08-02 14:27:32 +1400
 tags: [hackthebox, nmap, linux, nostromo, cve-2019-16278, outdated-software, remote-code-execution, htpasswd, hashcat, ssh2john, bash-script, sudo, shell-tty, journalctrl, gtfobin, oscp-like]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/6ce5fcdd63f07a5ce91d0b8e4579b163.png
+    width: 640
+    height: 480
 ---
 
 

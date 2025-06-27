@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Investigation
+title: HackTheBox Writeup - Investigation
 date: 2023-04-22 05:04:28 +1400
 tags: [hackthebox, nmap, linux, forensics, cve-2022-23935, exiftool, pwncat, php, command-injection, event-logs, linpeas, python-uploadserver, extract-msg, decompile-explorer, chainsaw, ghidra, sudo]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/cd481f826b11d14255f1202570740ad0.png
+    width: 640
+    height: 480
 ---
 
 

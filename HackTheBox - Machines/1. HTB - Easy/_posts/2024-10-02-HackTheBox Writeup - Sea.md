@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Sea
+title: HackTheBox Writeup - Sea
 date: 2024-10-02 14:51:06 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, osint, reconnaissance, wondercms, cms, php, open-redirect, xss, xss-reflected, cve-2023-41425, discover-secrets, haiti, hashcat, password-spraying, port-forwarding, credentials-stuffing, directory-traversal, command-injection]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/0011f6725aed869f8683589cb08c90d0.png
+    width: 640
+    height: 480
 ---
 
 

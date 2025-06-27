@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Alert
+title: HackTheBox Writeup - Alert
 date: 2024-12-02 03:56:03 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, php, gobuster, subdomain, simplehttpserver, xss, xss-stored, client-side-attack, xss-proxy, directory-traversal, htpasswd, hashcat, credentials-stuffing, pspy, scheduled-job-abuse]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/6f4647030d6aadc676b8d8a459de344f.png
+    width: 640
+    height: 480
 ---
 
 

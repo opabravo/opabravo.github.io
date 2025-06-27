@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Devvortex
+title: HackTheBox Writeup - Devvortex
 date: 2023-11-26 20:17:55 +1400
 tags: [hackthebox, nmap, linux, gobuster, subdomain, feroxbuster, joomla, information-disclosure, cve-2023-23752, joomla2rce, discover-secrets, mysql, hashcat, password-reuse, sudo, apport-cli]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/2565d292772abc4a2d774117cf4d36ff.png
+    width: 640
+    height: 480
 ---
 
 

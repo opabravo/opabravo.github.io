@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Stocker
+title: HackTheBox Writeup - Stocker
 date: 2023-06-24 11:24:15 +1400
 tags: [hackthebox, linux, autorecon, nmap, ffuf, subdomain, feroxbuster, whatweb, express, nodejs, nosql, sqli, nosql-login-bypass, auth-bypass, exiftool, pdf, file-read, directory-traversal, gtfobin, burpsuite, burp-repeater, mongodump, mongodb]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/da052d0b0efd6dad222ba4a73d987c16.png
+    width: 640
+    height: 480
 ---
 
 

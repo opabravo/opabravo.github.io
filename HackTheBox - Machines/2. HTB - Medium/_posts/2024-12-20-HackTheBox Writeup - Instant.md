@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Instant
+title: HackTheBox Writeup - Instant
 date: 2024-12-20 06:48:42 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, apk, java, apktool, jadx, reversing, gitleaks, discover-secrets, jwt, api, httpx, swagger-ui, python, python-flask, directory-traversal, solar-putty, solar-putty-session, sqlite, hashcat]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/8e9f11a3cceeb4f69e659ed31347cc77.png
+    width: 640
+    height: 480
 ---
 
 

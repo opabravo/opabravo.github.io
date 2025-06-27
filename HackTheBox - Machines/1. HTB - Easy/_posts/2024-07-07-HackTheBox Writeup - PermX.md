@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  PermX
+title: HackTheBox Writeup - PermX
 date: 2024-07-07 08:47:13 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, php, gobuster, subdomain, enum, chamilo-lms, cve-2023-4220, file-upload, discover-secrets, password-spraying, password-reuse, sudo, bash-script, gtfobin, symlinks, file-write]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/3ec233f1bf70b096a66f8a452e7cd52f.png
+    width: 640
+    height: 480
 ---
 
 

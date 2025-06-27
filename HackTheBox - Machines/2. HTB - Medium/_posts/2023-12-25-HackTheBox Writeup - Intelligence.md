@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Intelligence
+title: HackTheBox Writeup - Intelligence
 date: 2023-12-25 22:19:50 +1400
 tags: [hackthebox, nmap, windows, ad, netexec, feroxbuster, pdf, exiftool, dfuf, user-enumeration, kerbrute, discover-secrets, password-spraying, smartbrute, default-credentials, ldapdomaindump, bloodhound, ad-miner, smb, powershell-script, adidns-poisoning, dnstool, responder, coerce-authentication, hashcat, ad-gmsa, gmsadumper, ad-delegation, ad-s4u2self, impacket, silver-ticket, dcsync, evil-winrm, oscp-like-2023, nopac]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/78c5d8511bae13864c72ba8df1329e8d.png
+    width: 640
+    height: 480
 ---
 
 

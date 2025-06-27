@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Cicada
+title: HackTheBox Writeup - Cicada
 date: 2024-10-01 22:38:33 +1400
 tags: [hackthebox, nmap, windows, ad, netexec, discover-notes, credentials-exposure, password-spraying, smartbrute, ldeep, powershell-script, evil-winrm, ad-backup-operators, golden-ticket, backupoperatortoolkit, remoteregsave, oscp-like-2023]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/79616a32a057e5e672dadb51bb96dd04.png
+    width: 640
+    height: 480
 ---
 
 

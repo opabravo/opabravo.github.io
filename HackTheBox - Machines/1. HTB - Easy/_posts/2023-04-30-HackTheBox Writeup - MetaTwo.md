@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  MetaTwo
+title: HackTheBox Writeup - MetaTwo
 date: 2023-04-30 00:53:30 +1400
 tags: [hackthebox, linux, nmap, wordpress, cms, wpscan, cve-2022-0739, sqli, php, mysql, hashcat, cve-2021-29447, xxe, file-read, clear-text-credentials, ftp, passpie, password-manager, john, sqlmap, web, vulnerability-assessment, databases, injection, common-applications, protocols, outdated-software, weak-credentials]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/b08c77f48a671ddc1947d8570b75f6e6.png
+    width: 640
+    height: 480
 ---
 
 

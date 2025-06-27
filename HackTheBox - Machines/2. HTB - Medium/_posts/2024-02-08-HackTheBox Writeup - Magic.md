@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Magic
+title: HackTheBox Writeup - Magic
 date: 2024-02-08 17:47:25 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, php, auth-bypass, sqli, mysql, file-upload, file-upload-bypass, webshell, htaccess, misconfiguration, discover-secrets, mysqldump, password-reuse, suid, path-injection, oscp-like]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/73eebbbdfbbfd46258ea2ae7e52d9479.png
+    width: 640
+    height: 480
 ---
 
 

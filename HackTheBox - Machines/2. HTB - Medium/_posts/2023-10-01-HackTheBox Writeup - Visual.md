@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Visual
+title: HackTheBox Writeup - Visual
 date: 2023-10-01 20:37:49 +1400
 tags: [hackthebox, nmap, windows, feroxbuster, git, git-server, misconfiguration, visual-studio, dotnet-framework, csharp, villian, reverse-ssh, php, apache, webshell, privilege-token, fullpowers, potato-attacks, godpotato]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/a75ac8ed04e6e728547538bfa41cfc68.png
+    width: 640
+    height: 480
 ---
 
 

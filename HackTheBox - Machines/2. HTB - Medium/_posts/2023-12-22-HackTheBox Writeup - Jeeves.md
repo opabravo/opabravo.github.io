@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Jeeves
+title: HackTheBox Writeup - Jeeves
 date: 2023-12-22 12:21:19 +1400
 tags: [hackthebox, nmap, windows, netexec, feroxbuster, enum, jenkins, jenkins2rce, privilege-token, juicy-potato, powercat, alternative-data-stream, oscp-like-2023, discover-secrets, keepass2, keepass2john, kpcli, impacket, uac-bypass]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/709059a710d3d6ff1ba32bf0729ecbb8.png
+    width: 640
+    height: 480
 ---
 
 

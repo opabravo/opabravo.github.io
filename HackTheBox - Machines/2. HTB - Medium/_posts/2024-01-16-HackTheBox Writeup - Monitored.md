@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Monitored
+title: HackTheBox Writeup - Monitored
 date: 2024-01-16 13:56 +1400
 tags: [hackthebox, nmap, linux, snmp, feroxbuster, onesixtyone, snmp-check, nagios, nagios-xi, nagios-core, sqli, mysql, cve-2023-40931, php, api, sqlmap, nagios-xi-2rce, service-binary-permission, sudo, bash-script, file-read, oscp-like-2023]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/d4988810825d26acb2e84ca0ac9feaf4.png
+    width: 640
+    height: 480
 ---
 
 

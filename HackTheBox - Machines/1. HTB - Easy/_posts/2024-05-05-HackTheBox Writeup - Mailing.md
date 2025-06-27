@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Mailing
+title: HackTheBox Writeup - Mailing
 date: 2024-05-05 05:39:39 +1400
 tags: [hackthebox, nmap, windows, feroxbuster, netexec, exiftool, iis, php, cariddi, local-file-inclusion, hmailserver, discover-secrets, crackstation, email, smtp, evolution, sendemail, microsoft-outlook, cve-2024-21413, client-side-attack, coerce-authentication, responder, hashcat, evil-winrm, enum, libre-office, cve-2023-2255, odt, defense-evasion, av-bypass, powercat, log-poisoning, telnet, webshell, reverse-ssh, potato-attacks, badpotato, amsi-bypass, oscp-like-2023]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/cedb2f991409f9f39b55b04513f6b102.png
+    width: 640
+    height: 480
 ---
 
 

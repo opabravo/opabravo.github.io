@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Vintage
+title: HackTheBox Writeup - Vintage
 date: 2025-03-19 06:32:14 +1400
 tags: [hackthebox, nmap, windows, ad, assumed-breach, kerberos, netexec, bloodhound-ce-python, bloodhound-ce, bloodhound-cli, impacket, ldeep, ad-maq, pre-windows-2000-compatible-access, password-spraying, ad-gmsa, ad-dacl, bloodyad, targeted-kerberoast, hashcat, evil-winrm, reverse-ssh, runascs, defense-evasion, amsi-bypass, dpapi, dpapi-py, ad-delegation, ad-rbcd, etw-disable]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/4eae732c7af0ce1b443d009637167610.png
+    width: 640
+    height: 480
 ---
 
 

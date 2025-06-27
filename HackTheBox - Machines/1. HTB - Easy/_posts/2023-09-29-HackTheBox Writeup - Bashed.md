@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Bashed
+title: HackTheBox Writeup - Bashed
 date: 2023-09-29 18:08:01 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, discover-webshell, sudo, scheduled-job-abuse, python-script, pwncat, oscp-like]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/0f058b73659ca043de9f5240abd651ca.png
+    width: 640
+    height: 480
 ---
 
 

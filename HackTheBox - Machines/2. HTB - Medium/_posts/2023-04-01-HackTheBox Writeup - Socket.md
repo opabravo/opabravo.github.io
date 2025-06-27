@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Socket
+title: HackTheBox Writeup - Socket
 date: 2023-04-01 10:31:55 +1400
 tags: [hackthebox, nmap, linux, gobuster, forensics, detect-it-easy, decompilation, pyinstxtractor, pyinstaller-extractor, web-socket, sqlite, sqli, sqlmap, crackstation, username-anarchy, hydra, python, sudo, bash-script, pyinstaller-spec]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/9a73cabc03399aaac0640a0148e3a371.png
+    width: 640
+    height: 480
 ---
 
 

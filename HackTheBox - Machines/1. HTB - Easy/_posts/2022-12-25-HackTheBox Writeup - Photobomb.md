@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Photobomb
+title: HackTheBox Writeup - Photobomb
 date: 2022-12-25 09:15 +1400
 tags: [hackthebox, linux, nmap, burpsuite, information-disclosure, clear-text-credentials, command-injection, sudo, bash-script, path-injection]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/52e97c6ca888644478ddcadfcd9f8be5.png
+    width: 640
+    height: 480
 ---
 
 

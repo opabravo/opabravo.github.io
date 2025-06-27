@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Hospital
+title: HackTheBox Writeup - Hospital
 date: 2023-11-20 02:38:58 +1400
 tags: [hackthebox, nmap, windows, linux, hyper-v, crackmapexec, kerbrute, php, burpsuite, file-upload, file-upload-bypass, ffuf, php-disable-functions-bypass, phpsploit, webshell, kernel-exploit, cve-2023-2640, cve-2023-32629, hashcat, password-reuse, roundcube-webmail, ghostscript, cve-2023-36664, reverse-ssh, discover-secrets, clear-text-credentials, cve-2023-35001, smartbrute, evil-winrm]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/e980d18b909fa0ba8f519cf9777fd413.png
+    width: 640
+    height: 480
 ---
 
 

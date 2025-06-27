@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Perfection
+title: HackTheBox Writeup - Perfection
 date: 2024-03-03 16:19:28 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, ffuf, ruby, ssti, regex-bypass, discover-notes, discover-backup, sqlite, name-the-hash, hashcat, hashcat-mask, sudo, misconfiguration]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/57fc0f58916cb3ed8e793db071769d70.png
+    width: 640
+    height: 480
 ---
 
 

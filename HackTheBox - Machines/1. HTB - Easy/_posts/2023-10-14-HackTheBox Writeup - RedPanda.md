@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  RedPanda
+title: HackTheBox Writeup - RedPanda
 date: 2023-10-14 19:45:44 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, java, spring-boot, ssti, ffuf, char-blacklist-bypass, xonsh, jq, pspy, forensics, source-code-analysis, log-poisoning, exiftool, directory-traversal, xxe, discover-secrets]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/0ba23d9bbfea967268e284e85e0837ff.png
+    width: 640
+    height: 480
 ---
 
 

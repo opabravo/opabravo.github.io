@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Topology
+title: HackTheBox Writeup - Topology
 date: 2023-09-20 19:35:52 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, latex-injection, subdomain, gobuster, file-read, htpasswd, ocr-tesseract, pspy, scheduled-job-abuse, latex-filter-bypass, file-write, php, webshell]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/cbfa26b4a4044677e93779a44bbd458f.png
+    width: 640
+    height: 480
 ---
 
 

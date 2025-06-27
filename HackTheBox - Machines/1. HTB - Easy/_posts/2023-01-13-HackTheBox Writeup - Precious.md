@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Precious
+title: HackTheBox Writeup - Precious
 date: 2023-01-13 23:15:20 +1400
 tags: [hackthebox, linux, nmap, gobuster, pdf, exiftool, pdfkit, cve-2022-25765, command-injection, clear-text-credentials, sudo, ruby-script, deserialization, yaml, yaml_load]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/3adcfd6093f8ddb4dffe8422da6377c8.png
+    width: 640
+    height: 480
 ---
 
 

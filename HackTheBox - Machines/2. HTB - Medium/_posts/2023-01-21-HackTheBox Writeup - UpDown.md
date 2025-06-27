@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  UpDown
+title: HackTheBox Writeup - UpDown
 date: 2023-01-21 03:02:04 +1400
 tags: [hackthebox, nmap, linux, gobuster, feroxbuster, subdomain, vulnerability-assessment, source-code-analysis, local-file-inclusion, misconfiguration, python, php, git, githacker, code-injection, injection, suid, sudo, gtfobin, easy-install, python2-input, php-disable-functions-bypass, file-upload, file-upload-bypass, oscp-like-2023, lfi2rce, phpsploit, mitmproxy]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/d7a56d5f25100d0a918b90de80122f82.png
+    width: 640
+    height: 480
 ---
 
 

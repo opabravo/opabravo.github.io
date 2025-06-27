@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Netmon
+title: HackTheBox Writeup - Netmon
 date: 2023-09-26 21:43:01 +1400
 tags: [hackthebox, nmap, windows, crackmapexec, ftp, lftp, enum, discover-secrets, discover-backup, password-reuse, prtg, cve-2018-9276, oscp-like-plus, hashcat, hashcat-rules, ffuf]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/3fa8184483e279369b81becafbac9dee.png
+    width: 640
+    height: 480
 ---
 
 

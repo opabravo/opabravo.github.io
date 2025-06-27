@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Granny
+title: HackTheBox Writeup - Granny
 date: 2023-11-11 18:45:37 +1400
 tags: [hackthebox, nmap, windows, windows-2003, obsolete-system, iis, webdav, davtest, cadaver, aspx, webshell, smbserver, msfvenom, privilege-token, churrasco, oscp-like]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/e8a122e2d713a4fb4a180bb9ccd20248.png
+    width: 640
+    height: 480
 ---
 
 

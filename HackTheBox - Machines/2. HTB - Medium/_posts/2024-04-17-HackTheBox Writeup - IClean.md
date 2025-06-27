@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  IClean
+title: HackTheBox Writeup - IClean
 date: 2024-04-17 22:19:16 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, python-flask, xss, xss-stored, simplehttpserver, ssti, ssti-filter-bypass, discover-secrets, mysql, hashcat, password-reuse, sudo, qpdf, file-read]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/750ba886c8a87103c69cac0f13f2de70.png
+    width: 640
+    height: 480
 ---
 
 

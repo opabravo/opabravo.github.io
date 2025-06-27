@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Squashed
+title: HackTheBox Writeup - Squashed
 date: 2023-01-16 08:39:57 +1400
 tags: [hackthebox, linux, nmap, network, vulnerability-assessment, common-services, authentication, apache, x11, nfs, penetration-tester-level-1, reconnaissance, user-enumeration, impersonation, arbitrary-file-upload, gobuster]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/2b64823934eb46f2c531a0b650a03d60.png
+    width: 640
+    height: 480
 ---
 
 

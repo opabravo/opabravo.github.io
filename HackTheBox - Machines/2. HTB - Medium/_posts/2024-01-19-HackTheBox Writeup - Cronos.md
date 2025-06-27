@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Cronos
+title: HackTheBox Writeup - Cronos
 date: 2024-01-19 14:25:17 +1400
 tags: [hackthebox, nmap, linux, dns, gobuster, feroxbuster, php, auth-bypass, sqli, command-injection, scheduled-job-abuse, php-script, oscp-like, pwnkit]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/f77c75f363afe0d0a6eeccf6a8d8c252.png
+    width: 640
+    height: 480
 ---
 
 

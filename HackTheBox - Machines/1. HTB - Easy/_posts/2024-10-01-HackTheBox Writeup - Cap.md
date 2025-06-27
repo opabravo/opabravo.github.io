@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Cap
+title: HackTheBox Writeup - Cap
 date: 2024-10-01 21:23:07 +1400
 tags: [hackthebox, nmap, linux, python-flask, pcap, pycredz, discover-secrets, password-reuse, capabilities, gtfobin]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/70ea3357a2d090af11a0953ec8717e90.png
+    width: 640
+    height: 480
 ---
 
 

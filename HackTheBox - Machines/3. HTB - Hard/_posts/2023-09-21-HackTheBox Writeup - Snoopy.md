@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Snoopy
+title: HackTheBox Writeup - Snoopy
 date: 2023-09-21 16:58:37 +1400
 tags: [hackthebox, nmap, linux, autorecon, feroxbuster, user-enumeration, dns, directory-traversal, discover-secrets, email, mattermost, dns-bind, misconfiguration, subdomain-takeover, password-reset-abuse, rogue-smtp, mattermost-integrations, rogue-ssh, honeypots, sudo, git, cve-2023-23946, file-write, clamav, cve-2023-20032, file-read]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/dad63a6e9acecb328beab54e35644220.png
+    width: 640
+    height: 480
 ---
 
 

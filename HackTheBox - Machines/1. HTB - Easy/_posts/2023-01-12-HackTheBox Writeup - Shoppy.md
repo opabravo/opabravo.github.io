@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Shoppy
+title: HackTheBox Writeup - Shoppy
 date: 2023-01-12 05:25:32 +1400
 tags: [hackthebox, nmap, linux, web, vulnerability-assessment, injection, common-applications, custom-applications, reversing, nginx, docker, c, penetration-tester-level-1, reconnaissance, web-site-structure-discovery, fuzzing, password-reuse, password-cracking, brute-force-attack, docker-abuse, decompilation, sqli, weak-credentials, clear-text-credentials, information-disclosure, nosql, radare, gobuster, hashcat, sudo]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/a30c60e20eb764fd28e72c60be5fa693.png
+    width: 640
+    height: 480
 ---
 
 

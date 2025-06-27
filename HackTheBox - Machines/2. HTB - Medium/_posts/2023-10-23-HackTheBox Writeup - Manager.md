@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Manager
+title: HackTheBox Writeup - Manager
 date: 2023-10-23 00:07:37 +1400
 tags: [hackthebox, nmap, windows, ad, autorecon, mssql, feroxbuster, crackmapexec, enum4linux, user-enumeration, brute-force-attack, hashcat-rules, smartbrute, weak-credentials, ldapdomaindump, password-reuse, mssqlclient, discover-backup, discover-secrets, evil-winrm, certipy, adcs, adcs-esc7, pass-the-cert, pass-the-ticket, dcsync, dns, gobuster, cewl, brutespray, kerbrute, hashcat, bloodhound, ldeep, ad-miner, coerce-authentication, msdat, adcskiller, oscp-like-2023]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/5ca8f0c721a9eca6f1aeb9ff4b4bac60.png
+    width: 640
+    height: 480
 ---
 
 

@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Irked
+title: HackTheBox Writeup - Irked
 date: 2024-02-07 11:57 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, rpcinfo, unrealircd, irc, discover-secrets, weak-permissions, steganography, stegseek, suid, hack-browser-data, oscp-like]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/5fb846e75cf0db0c4b27e2dc64a9bf82.png
+    width: 640
+    height: 480
 ---
 
 

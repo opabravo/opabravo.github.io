@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Sau
+title: HackTheBox Writeup - Sau
 date: 2023-07-12 17:40:24 +1400
 tags: [hackthebox, linux, nmap, ssrf, cve-2023-27163, command-injection, white-space-bypass, sudo, systemctl, oscp-like-2023]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/1ea2980b9dc2d11cf6a3f82f10ba8702.png
+    width: 640
+    height: 480
 ---
 
 

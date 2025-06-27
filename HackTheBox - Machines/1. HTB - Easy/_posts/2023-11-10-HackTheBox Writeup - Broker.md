@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Broker
+title: HackTheBox Writeup - Broker
 date: 2023-11-10 14:04:05 +1400
 tags: [hackthebox, nmap, linux, activemq, cve-2023-46604, java, deserialization, cyberchef, sudo, nginx-privesc, nginx, oscp-like-2023, hydra]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/a725533911ba94a880899fbf900d988c.png
+    width: 640
+    height: 480
 ---
 
 

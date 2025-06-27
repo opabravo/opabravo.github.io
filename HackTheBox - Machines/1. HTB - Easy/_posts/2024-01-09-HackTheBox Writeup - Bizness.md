@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Bizness
+title: HackTheBox Writeup - Bizness
 date: 2024-01-09 00:57:55 +1400
 tags: [hackthebox, nmap, linux, ffuf, feroxbuster, apache, apache-ofbiz, java, auth-bypass, cve-2023-51467, deserialization, cve-2023-49070, ysoserial, discover-secrets, derby, embedded-db, cyberchef, crypto, hashcat, password-reuse]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/1919b64800f6676d0c0d285a9d664cee.png
+    width: 640
+    height: 480
 ---
 
 

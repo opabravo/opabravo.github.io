@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Office
+title: HackTheBox Writeup - Office
 date: 2024-02-23 09:44:22 +1400
 tags: [hackthebox, nmap, windows, ad, feroxbuster, joomla, cms, information-disclosure, cve-2023-23752, user-enumeration, kerbrute, netexec, password-spraying, smartbrute, smb, ldeep, brute-force-attack, python, csrf-token-bypass, 4xx-bypass, asreqroast, pcap, wireshark, network-miner, hashcat, joomla-brute, joomla2rce, php, webshell, reverse-ssh, runascs, port-forwarding, libre-office, client-side-attack, odt, cve-2023-2255, windows-credential-vault, mimikatz, dpapi, ad-gpo, pygpoabuse, sharpgpoabuse]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/2cdef06b99725f3dcce38431a95b7b77.png
+    width: 640
+    height: 480
 ---
 
 

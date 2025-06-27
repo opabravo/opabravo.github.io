@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  OpenAdmin
+title: HackTheBox Writeup - OpenAdmin
 date: 2024-01-11 13:43:07 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, open-net-admin, php, command-injection, linpeas, discover-secrets, password-reuse, port-forwarding, webshell, sudo, gtfobin]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/5b00db157dbbd7099ff6c0ef10f910ea.png
+    width: 640
+    height: 480
 ---
 
 

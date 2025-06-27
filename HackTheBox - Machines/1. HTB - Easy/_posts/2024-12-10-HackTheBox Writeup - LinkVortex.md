@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  LinkVortex
+title: HackTheBox Writeup - LinkVortex
 date: 2024-12-10 21:38:32 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, gobuster, subdomain, ghost-cms, git, git-dumper, discover-secrets, gitleaks, user-enumeration, cve-2023-40028, file-read, docker, credentials-stuffing, sudo, bash-script, symlinks, oscp-like-2023]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/97f12db8fafed028448e29e30be7efac.png
+    width: 640
+    height: 480
 ---
 
 

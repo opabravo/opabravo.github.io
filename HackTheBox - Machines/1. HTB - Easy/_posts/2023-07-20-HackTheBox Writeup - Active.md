@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Active
+title: HackTheBox Writeup - Active
 date: 2023-07-20 22:38:55 +1400
 tags: [hackthebox, nmap, windows, ad, crackmapexec, enum4linux, smbclient, gpp-credential, gpp-decrypt, kerberoast, hashcat, impacket, oscp-like, oscp-like-2023, zero-logon, cve-2020-1472, dcsync, golden-ticket, pass-the-ticket]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/5837ac5e28291146a9f2a8a015540c28.png
+    width: 640
+    height: 480
 ---
 
 

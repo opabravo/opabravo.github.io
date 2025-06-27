@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  BroScience
+title: HackTheBox Writeup - BroScience
 date: 2023-04-09 08:20:05 +1400
 tags: [hackthebox, nmap, linux, php, feroxbuster, ffuf, local-file-inclusion, directory-traversal, directory-traversal-bypass, deserialization, command-injection, openssl, source-code-analysis, snyk]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/105a4cb882fc64175eb598a63c4930a8.png
+    width: 640
+    height: 480
 ---
 
 

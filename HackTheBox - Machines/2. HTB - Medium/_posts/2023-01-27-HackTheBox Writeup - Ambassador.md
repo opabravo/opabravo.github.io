@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Ambassador
+title: HackTheBox Writeup - Ambassador
 date: 2023-01-27 03:15:04 +1400
 tags: [hackthebox, nmap, linux, grafana, mysql, cve-2021-43798, file-read, directory-traversal, sqlite, consul, tunnel]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/c45df8beebb6291da1c4cd8de04dd7a5.png
+    width: 640
+    height: 480
 ---
 
 

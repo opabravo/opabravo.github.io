@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Blue
+title: HackTheBox Writeup - Blue
 date: 2023-09-28 23:53:26 +1400
 tags: [hackthebox, nmap, windows, crackmapexec, eternal-blue, ms17-010, cve-2017-0143, oscp-like]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/52e077ae40899ab8b024afd51cb29b1c.png
+    width: 640
+    height: 480
 ---
 
 

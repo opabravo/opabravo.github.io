@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Pov
+title: HackTheBox Writeup - Pov
 date: 2024-02-03 09:38:36 +1400
 tags: [hackthebox, nmap, windows, feroxbuster, gobuster, subdomain, aspx, directory-traversal, directory-traversal-bypass, unc, aspx-viewstate, ysoserial-dotnet, deserialization, reverse-ssh, discover-secrets, powershell-securestring, runascs, privilege-token]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/a36f80aa6bc43863512ec9537c4366c9.png
+    width: 640
+    height: 480
 ---
 
 

@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Heal
+title: HackTheBox Writeup - Heal
 date: 2024-12-19 18:53:34 +1400
 tags: [hackthebox, nmap, linux, cariddi, gobuster, subdomain, nodejs, api, broken-access-control, directory-traversal, ruby-on-rails, discover-secrets, sqlite, hashcat, credentials-stuffing, limesurvey, limesurvey2rce, password-spraying, consul]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/dcd5ef09ab764228c64385374ac744c1.png
+    width: 640
+    height: 480
 ---
 
 

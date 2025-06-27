@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  BoardLight
+title: HackTheBox Writeup - BoardLight
 date: 2024-05-28 00:34:58 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, subdomain, gobuster, enum, dolibarr, default-credentials, cve-2023-30253, code-injection, php, webshell, discover-secrets, password-reuse, password-spraying, suid, enlightenment, cve-2022-37706, oscp-like-2023]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/7768afed979c9abe917b0c20df49ceb8.png
+    width: 640
+    height: 480
 ---
 
 

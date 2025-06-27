@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Titanic
+title: HackTheBox Writeup - Titanic
 date: 2025-02-17 13:32:11 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, httpx, gobuster, subdomain, python-flask, python, gitea, information-disclosure, directory-traversal, gitea-postexp, discover-secrets, sqlite, hashcat, password-reuse, scheduled-job-abuse, bash-script, image-magick, shared-object-hijack]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/eb5942ec56dd9b6feb06dcf8af8aefc6.png
+    width: 640
+    height: 480
 ---
 
 

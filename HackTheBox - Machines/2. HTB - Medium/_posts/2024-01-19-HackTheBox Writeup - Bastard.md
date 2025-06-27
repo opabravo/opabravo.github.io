@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Bastard
+title: HackTheBox Writeup - Bastard
 date: 2024-01-19 20:28:34 +1400
 tags: [hackthebox, nmap, windows, feroxbuster, drupal, drupalgeddon2, powercat, privilege-token, juicy-potato, wesng, ms15-051, kernel-exploit]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/a8d2ae87fbe6d1ccfe93522d74defb3a.png
+    width: 640
+    height: 480
 ---
 
 

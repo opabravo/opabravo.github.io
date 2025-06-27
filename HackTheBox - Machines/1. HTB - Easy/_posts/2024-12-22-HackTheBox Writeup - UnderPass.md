@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  UnderPass
+title: HackTheBox Writeup - UnderPass
 date: 2024-12-22 07:55 +1400
 tags: [hackthebox, nmap, linux, snmp, feroxbuster, snmpbulkwalk, snmpwalk, snmp-check, onesixtyone, enum, hashcat, hashcat-rules, fuzzing, daloradius, default-credentials, discover-secrets, crackstation, credentials-stuffing, sudo]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/456a4d2e52f182847fb0a2dba0420a44.png
+    width: 640
+    height: 480
 ---
 
 

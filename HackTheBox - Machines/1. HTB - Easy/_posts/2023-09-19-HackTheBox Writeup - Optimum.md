@@ -1,8 +1,12 @@
 ---
 render_with_liquid: false
-title: HackTheBox Writeup  Optimum
+title: HackTheBox Writeup - Optimum
 date: 2023-09-19 21:41:35 +1400
 tags: [hackthebox, nmap, windows, hfs, searchsploit, cve-2014-6287, secondary-logon, ms16-032, cve-2016-0099, metasploit, wesng, reverse-ssh]
+image:
+    path: https://labs.hackthebox.com/storage/avatars/bb09ffeaffe2f5220a1d591bb7b4f95e.png
+    width: 640
+    height: 480
 ---
 
 
