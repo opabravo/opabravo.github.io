@@ -2,7 +2,7 @@
 render_with_liquid: false
 title: HackTheBox Writeup - EscapeTwo
 date: 2025-01-17 04:04:51 +1400
-tags: [hackthebox, nmap, windows, ad, assumed-breach, smb, netexec, mssql, impacket, mssqlclient, ldeep, bloodhound, bloodhound-python, bloodhound-quickwin, discover-secrets, xlsx, credentials-exposure, password-spraying, xp-cmdshell, reverse-ssh, evil-winrm, ad-dacl, owneredit, dacledit, adcs, certipy, adcs-esc4, pass-the-cert, oscp-like-2023]
+tags: [hackthebox, nmap, windows, ad, assumed-breach, smb, netexec, mssql, impacket, mssqlclient, ldeep, bloodhound, bloodhound-python, bloodhound-quickwin, discover-secrets, xlsx, credentials-exposure, password-spraying, xp-cmdshell, reverse-ssh, evil-winrm, dacl-abuse, owneredit, dacledit, adcs, certipy, adcs-esc4, pass-the-cert, oscp-like-2023]
 image:
     path: https://labs.hackthebox.com/storage/avatars/d5fcf2425893a73cf137284e2de580e1.png
     width: 640

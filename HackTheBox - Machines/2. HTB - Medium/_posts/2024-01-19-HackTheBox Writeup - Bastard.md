@@ -282,7 +282,7 @@ c3d87ebc350ac93c85bffe50e7e12698
 
 ### Abuse privilege tokens
 
-`iusr` have `SeImpersonatePrivilege` privilege token, which can be used for potato attacks
+- `iusr` has `SeImpersonatePrivilege` privilege token, which can be used for potato attacks
 
 ```bash
 PS C:\inetpub\drupal-7.54> whoami /all

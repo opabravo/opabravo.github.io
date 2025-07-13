@@ -2,7 +2,7 @@
 render_with_liquid: false
 title: HackTheBox Writeup - Escape
 date: 2023-06-25 03:01:40 +1400
-tags: [hackthebox, windows, autorecon, nmap, ad, crackmapexec, smbclient, impacket, mssqlclient, xp-dirtree, responder, hashcat, evil-winrm, event-logs, clear-text-credentials, adcs, ntpdate, faketime, certipy, certify, powersharppack, adcs-esc1, rubeus, pass-the-cert, oscp-like-2023, rdp, pass-the-hash, pass-the-ticket, xp-cmdshell, silver-ticket, golden-ticket]
+tags: [hackthebox, windows, autorecon, nmap, ad, crackmapexec, smb, smbclient, impacket, mssqlclient, xp-dirtree, coerce-authentication, responder, hashcat, evil-winrm, event-logs, clear-text-credentials, adcs, ntpdate, faketime, certipy, certify, powersharppack, adcs-esc1, rubeus, pass-the-cert, oscp-like-2023, rdp, pass-the-hash, pass-the-ticket, xp-cmdshell, silver-ticket, golden-ticket]
 image:
     path: https://labs.hackthebox.com/storage/avatars/80936664b3da83a92b28602e79e47d79.png
     width: 640
@@ -517,7 +517,7 @@ Run winpeas
 > Did not find useful result
 
 
-## Abuse Certificates (Template allows SAN)
+## ADCS abuse - ESC1 (Template allows SAN)
 
 > Refer - [TheHackerRecipe](https://www.thehacker.recipes/ad/movement/ad-cs/certificate-templates#template-allows-san-esc1)
 

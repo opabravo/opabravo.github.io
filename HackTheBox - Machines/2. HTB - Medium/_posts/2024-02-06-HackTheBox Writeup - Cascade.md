@@ -2,7 +2,7 @@
 render_with_liquid: false
 title: HackTheBox Writeup - Cascade
 date: 2024-02-06 12:01:22 +1400
-tags: [hackthebox, nmap, windows, ad, ldap, ldap-anonymous-bind, netexec, ldapsearch, discover-secrets, ldapdomaindump, discover-notes, tight-vnc, vncpasswd, evil-winrm, enum, sqlite, reversing, dnspy, dotnet-framework, ad-recyclebin, oscp-like-2023]
+tags: [hackthebox, nmap, windows, ad, ldap, ldap-anonymous-bind, netexec, ldapsearch, discover-secrets, discover-secrets-ldap, ldapdomaindump, discover-notes, tight-vnc, vncpasswd, evil-winrm, enum, sqlite, reversing, dnspy, dotnet-framework, ad-recyclebin, oscp-like-2023]
 image:
     path: https://labs.hackthebox.com/storage/avatars/64fef851357b8de1c4834093bf3426f2.png
     width: 640
@@ -330,7 +330,7 @@ SMB         10.129.45.164   445    CASC-DC1         1138: CASCADE\Data Share (Si
 # User Flag
 ---
 
-## Asreproasting attempt
+## (Failed) Asreproasting attempt
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Cascade]

