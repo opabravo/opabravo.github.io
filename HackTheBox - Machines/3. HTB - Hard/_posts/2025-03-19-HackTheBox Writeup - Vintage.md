@@ -209,7 +209,7 @@ SMB         DC01.vintage.htb 445    DC01             [*]  x64 (name:DC01) (domai
 SMB         DC01.vintage.htb 445    DC01             [+] vintage.htb\P.Rosa:Rosaisbest123
 ```
 
-## Auth as gMSA01$
+## Auth as FS01$
 
 
 ### Domain Enumeration
@@ -679,7 +679,7 @@ SYSVOL/vintage.htb/Policies/{6AC1786C-016F-11D2-945F-00C04fB984F9}/MACHINE/Micro
 
 ### (Failed) Password spraying
 
-> The right path should be reading the **GMSA** password from `GMSA01.VINTAGE.HTB`, hence we need to own a computer account, or get access to other accounts that have available **MAQ**
+> The right path should be reading the **GMSA** password from `GMSA01.VINTAGE.HTB`, hence we need to own a computer account, or get access to other accounts that have available **MAQ** to add computer accounts
 {: .prompt-info }
 
 Spraying known credentials via [**kerberos Pre-auth bruteforce**](https://www.thehacker.recipes/ad/movement/kerberos/pre-auth-bruteforce)
@@ -778,7 +778,7 @@ Create password list
 fs01
 ```
 
-While spraying with the wordlists, we validated that `FS01$` has default password set
+While spraying with the wordlists, we discovered that `FS01$` has default password set
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Vintage]
@@ -786,6 +786,10 @@ While spraying with the wordlists, we validated that `FS01$` has default passwor
 LDAP        DC01.vintage.htb 389    DC01             [*] None (name:DC01) (domain:vintage.htb)
 LDAP        DC01.vintage.htb 389    DC01             [+] vintage.htb\FS01$:fs01
 ```
+
+
+## Auth as gMSA01$
+
 
 ### DACL Abuse - Read GMSA password
 
