@@ -31,7 +31,6 @@ Dog is an easy-rated Linux machine that involves reading sensitive information t
 ## Nmap
 
 ```bash
-
 # Nmap 7.95 scan initiated Sun Mar  9 19:32:59 2025 as: /usr/lib/nmap/nmap -sVC --version-all -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 22,80, 10.129.220.250
 Nmap scan report for 10.129.220.250
 Host is up, received user-set (0.20s latency).
@@ -68,7 +67,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Sun Mar  9 19:33:18 2025 -- 1 IP address (1 host up) scanned in 18.62 seconds
 ```
 
@@ -489,7 +487,6 @@ The php script is a CLI tool made by **Backdrop CMS** team
 
 ```bash
 johncusack@dog:~$ head /backdrop_tool/bee/bee.php
-
 #!/usr/bin/env php
 <?php
 /**

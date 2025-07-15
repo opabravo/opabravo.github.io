@@ -32,7 +32,6 @@ Lame is an easy Linux machine, requiring only one exploit to obtain root access.
 ## Nmap
 
 ```bash
-
 # Nmap 7.94 scan initiated Mon Sep 25 21:09:10 2023 as: nmap -sVC -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 21,22,139,445,3632 lame.htb
 Nmap scan report for lame.htb (10.129.70.120)
 Host is up, received user-set (0.14s latency).
@@ -90,7 +89,6 @@ Host script results:
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Mon Sep 25 21:10:03 2023 -- 1 IP address (1 host up) scanned in 53.19 seconds
 ```
 

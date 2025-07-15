@@ -39,7 +39,6 @@ echo '10.10.10.100 active.htb dc.active.htb' | sudo tee -a /etc/hosts
 ## Nmap
 
 ```bash
-
 # Nmap 7.94 scan initiated Thu Jul 20 22:38:55 2023 as: nmap -sVC -p- -T4 -Pn -vv -oA Active 10.10.10.100
 Nmap scan report for 10.10.10.100
 Host is up, received user-set (0.059s latency).
@@ -93,7 +92,6 @@ Host script results:
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Thu Jul 20 22:41:16 2023 -- 1 IP address (1 host up) scanned in 141.16 seconds
 ```
 
@@ -206,6 +204,7 @@ grep -Rin "pass"
 ![](/assets/obsidian/77168ee6351f842b27cb33373c467615.png)
 
 > **What is cpassword?**
+> 
 > GPP(Group Policy Preferences) Credentials
 > Ref - https://infosecwriteups.com/attacking-gpp-group-policy-preferences-credentials-active-directory-pentesting-16d9a65fa01a
 {: .prompt-tip }

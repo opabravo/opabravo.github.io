@@ -33,7 +33,6 @@ Office is a hard-difficulty Windows machine featuring various vulnerabilities in
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Fri Feb 23 09:44:21 2024 as: nmap -sVC --version-all -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 53,80,88,139,389,443,445,464,593,636,3268,3269,5985,9389,49664,49669,49675,49678,55655,61301, office.htb
 Nmap scan report for office.htb (10.10.11.3)
 Host is up, received user-set (0.055s latency).
@@ -293,7 +292,6 @@ Host script results:
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Fri Feb 23 09:46:06 2024 -- 1 IP address (1 host up) scanned in 104.96 seconds
 ```
 
@@ -442,21 +440,13 @@ MSG      0.000 feroxbuster::heuristics detected directory listing: http://office
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Office]
 └─$ ldapsearch -H "ldap://$(pt get rhost)" -x -s base namingcontexts
-
 # extended LDIF
-
 #
-
 # LDAPv3
-
 # base <> (default) with scope baseObject
-
 # filter: (objectclass=*)
-
 # requesting: namingcontexts
-
 #
-
 
 #
 dn:
@@ -466,14 +456,11 @@ namingcontexts: CN=Schema,CN=Configuration,DC=office,DC=htb
 namingcontexts: DC=DomainDnsZones,DC=office,DC=htb
 namingcontexts: DC=ForestDnsZones,DC=office,DC=htb
 
-
 # search result
 search: 2
 result: 0 Success
 
-
 # numResponses: 2
-
 # numEntries: 1
 ```
 
@@ -482,28 +469,19 @@ No anonymous binding enabled
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Office]
 └─$ ldapsearch -H "ldap://$(pt get rhost)" -x -b "DC=office,DC=htb" | tee enum/ldap_all.txt
-
 # extended LDIF
-
 #
-
 # LDAPv3
-
 # base <DC=office,DC=htb> with scope subtree
-
 # filter: (objectclass=*)
-
 # requesting: ALL
-
 #
-
 
 # search result
 search: 2
 result: 1 Operations error
 text: 000004DC: LdapErr: DSID-0C090CF8, comment: In order to perform this opera
  tion a successful bind must be completed on the connection., data 0, v4f7c
-
 
 # numResponses: 1
 ```

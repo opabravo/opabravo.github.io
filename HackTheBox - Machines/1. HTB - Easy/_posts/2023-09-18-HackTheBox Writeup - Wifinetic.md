@@ -29,7 +29,6 @@ Wifinetic is an easy difficulty Linux machine which presents an intriguing netwo
 ## Nmap
 
 ```bash
-
 # Nmap 7.94 scan initiated Mon Sep 18 14:11:46 2023 as: nmap -sVC -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 21,22,53 wifinetic.htb
 Nmap scan report for wifinetic.htb (10.129.229.90)
 Host is up, received user-set (0.058s latency).
@@ -69,7 +68,6 @@ Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Mon Sep 18 14:11:53 2023 -- 1 IP address (1 host up) scanned in 6.18 seconds
 ```
 

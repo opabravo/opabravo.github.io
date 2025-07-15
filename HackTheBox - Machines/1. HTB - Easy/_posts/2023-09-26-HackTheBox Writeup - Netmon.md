@@ -54,7 +54,6 @@ SMB         10.129.229.100  445    NETMON           [-] netmon\guest: STATUS_ACC
 ## Nmap
 
 ```bash
-
 # Nmap 7.94 scan initiated Tue Sep 26 21:43:01 2023 as: nmap -sVC -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 21,80,135,139,445,5985,47001,49664,49665,49666,49667,49668,49669 netmon.htb
 Nmap scan report for netmon.htb (10.129.229.100)
 Host is up, received user-set (0.16s latency).
@@ -120,7 +119,6 @@ Host script results:
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Tue Sep 26 21:44:08 2023 -- 1 IP address (1 host up) scanned in 66.98 seconds
 ```
 

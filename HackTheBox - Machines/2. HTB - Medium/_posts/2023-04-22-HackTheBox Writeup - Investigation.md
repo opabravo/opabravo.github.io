@@ -20,7 +20,6 @@ Investigation is a Linux box rated as medium difficulty, which features a web ap
 ## Nmap
 
 ```bash
-
 # Nmap 7.93 scan initiated Sat Apr 22 05:04:27 2023 as: nmap -sVC -p- -T4 -Pn -vv -oA investigation 10.10.11.197
 Nmap scan report for 10.10.11.197
 Host is up, received user-set (0.093s latency).

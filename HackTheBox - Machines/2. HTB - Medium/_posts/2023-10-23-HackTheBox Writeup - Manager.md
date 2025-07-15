@@ -32,7 +32,6 @@ Manager is a medium difficulty Windows machine which hosts an Active Directory e
 ## Nmap
 
 ```bash
-
 # Nmap 7.94 scan initiated Mon Oct 23 00:07:36 2023 as: nmap -sVC -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 53,80,88,135,139,389,445,464,593,636,1433,3268,3269,5985,9389,49667,49677,49678,49679,49716,54256,63916 10.129.52.126
 Nmap scan report for 10.129.52.126
 Host is up, received user-set (0.12s latency).
@@ -190,7 +189,6 @@ Host script results:
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Mon Oct 23 00:09:16 2023 -- 1 IP address (1 host up) scanned in 99.69 seconds
 ```
 

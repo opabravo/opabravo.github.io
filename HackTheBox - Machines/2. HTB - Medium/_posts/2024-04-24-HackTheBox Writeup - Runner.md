@@ -35,7 +35,6 @@ Runner is a medium difficulty Linux box that contains a vulnerability ([CVE-2023
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Wed Apr 24 22:34:59 2024 as: nmap -sVC --version-all -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 22,80,8000, runner
 Nmap scan report for runner (10.10.11.13)
 Host is up, received user-set (0.19s latency).
@@ -59,7 +58,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Wed Apr 24 22:35:14 2024 -- 1 IP address (1 host up) scanned in 14.90 seconds
 ```
 
@@ -617,6 +615,7 @@ matthew:$2a$07$q.m8WQP8niXODv55lJVovOmxGtg6K/YPHbD48/JQsdGLulmeVo.Em:piper123
 ### Portainer - Privilege escalation
 
 > **What is Portainer?**
+> 
 > Portainer is a powerful, GUI-based Container-as-a-Service solution that helps organizations manage and deploy cloud-native applications easily and securely.
 {: .prompt-info }
 
@@ -640,21 +639,13 @@ Instead of entering the `mountpoint` directly, we need to specify `type` and `de
 
 ```bash
 john@runner:~$ cat /etc/fstab
-
 # /etc/fstab: static file system information.
-
 #
-
 # Use 'blkid' to print the universally unique identifier for a
-
 # device; this may be used with UUID= as a more robust way to name devices
-
 # that works even if disks are added and removed. See fstab(5).
-
 #
-
 # <file system> <mount point>   <type>  <options>       <dump>  <pass>
-
 # / was on /dev/sda2 during curtin installation
 /dev/sda2 / ext4 defaults 0 1
 /dev/sda3 none swap sw 0 0

@@ -20,7 +20,6 @@ Devel, while relatively simple, demonstrates the security risks associated with 
 ## Nmap
 
 ```bash
-
 # Nmap 7.94 scan initiated Fri Jul 21 20:47:38 2023 as: nmap -sVC -p- -T4 -Pn -vv -oA Devel 10.10.10.5
 Nmap scan report for 10.10.10.5
 Host is up, received user-set (0.059s latency).
@@ -44,7 +43,6 @@ Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Fri Jul 21 20:49:23 2023 -- 1 IP address (1 host up) scanned in 104.67 seconds
 ```
 
@@ -232,6 +230,7 @@ smbserver.py s . -smb2support
 Download to programdata and run
 
 > **Powershell Revshell With Juicy Potato**
+> 
 > > https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation/juicypotato#powershell-rev
 {: .prompt-tip }
 
@@ -469,15 +468,10 @@ Get compile instruction
 ```bash
 ┌──(kali㉿kali)-[~/htb/Devel]
 └─$ cat 40564.c|grep compil -E2
-
 #   Privileged shell execution:
-
 #     - the SYSTEM shell will spawn within the invoking shell/process
-
 #   Exploit compiling (Kali GNU/Linux Rolling 64-bit):
-
 #     - # i686-w64-mingw32-gcc MS11-046.c -o MS11-046.exe -lws2_32
-
 #   Exploit prerequisites:
 ```
 

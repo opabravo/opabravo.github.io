@@ -20,7 +20,6 @@ UpDown is a medium difficulty Linux machine with SSH and Apache servers exposed.
 ## Nmap
 
 ```bash
-
 # Nmap 7.93 scan initiated Sat Jan 21 03:02:04 2023 as: nmap -sVC -Pn -p- -oA updown -v 10.10.11.177
 Nmap scan report for 10.10.11.177
 Host is up (0.19s latency).
@@ -414,9 +413,7 @@ User developer may run the following commands on localhost:
 developer@updown:~$ file /usr/local/bin/easy_install
 /usr/local/bin/easy_install: Python script, ASCII text executable
 developer@updown:~$ cat /usr/local/bin/easy_install
-
 #!/usr/bin/python
-
 # -*- coding: utf-8 -*-
 import re
 import sys
@@ -437,15 +434,11 @@ WARNING: The easy_install command is deprecated and will be removed in a future 
 Processing tmp.4ZySzUF6Q6
 Writing /tmp/tmp.4ZySzUF6Q6/setup.cfg
 Running setup.py -q bdist_egg --dist-dir /tmp/tmp.4ZySzUF6Q6/egg-dist-tmp-FkFLy_
-
 # id
 uid=0(root) gid=0(root) groups=0(root)
-
 # ls
 egg-dist-tmp-FkFLy_  setup.cfg  setup.py  temp
-
 # cd ~
-
 # cat root.txt
 5763ffb00507f9bee7217d64d96d7542
 ```

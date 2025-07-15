@@ -19,7 +19,6 @@ Inject is an Easy Difficulty Linux machine featuring a website with file upload 
 ## Nmap
 
 ```bash
-
 # Nmap 7.93 scan initiated Sat Mar 25 11:16:28 2023 as: nmap -sVC -p- -Pn -T4 -oA inject -vv 10.10.11.204
 Increasing send delay for 10.10.11.204 from 0 to 5 due to 961 out of 2402 dropped probes since last increase.
 Increasing send delay for 10.10.11.204 from 5 to 10 due to 34 out of 84 dropped probes since last increase.
@@ -44,7 +43,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Sat Mar 25 11:38:20 2023 -- 1 IP address (1 host up) scanned in 1311.80 seconds
 ```
 

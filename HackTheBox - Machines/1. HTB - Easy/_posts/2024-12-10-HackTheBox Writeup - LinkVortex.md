@@ -32,7 +32,6 @@ LinkVortex is an easy-difficulty Linux machine with various ways to leverage sym
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Tue Dec 10 21:38:32 2024 as: /usr/lib/nmap/nmap -sVC --version-all -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 22,80, linkvortex.htb
 Nmap scan report for linkvortex.htb (10.129.155.178)
 Host is up, received user-set (0.28s latency).
@@ -57,7 +56,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Tue Dec 10 21:38:53 2024 -- 1 IP address (1 host up) scanned in 21.07 seconds
 ```
 
@@ -284,6 +282,7 @@ By viewing some posts on the website, they were all published by `admin`, assume
 > POC - https://github.com/0xyassine/CVE-2023-40028/blob/master/CVE-2023-40028.sh
 
 > **CVE-2023-40028**
+> 
 > Ghost is an open source content management system. Versions prior to 5.59.1 are subject to a vulnerability which allows authenticated users to upload files that are symlinks. This can be exploited to perform an arbitrary file read of any file on the host operating system. Site administrators can check for exploitation of this issue by looking for unknown symlinks within Ghost's `content/` folder. Version 5.59.1 contains a fix for this issue. All users are advised to upgrade. There are no known workarounds for this vulnerability.
 {: .prompt-info }
 
@@ -381,7 +380,6 @@ file> /root/.ssh/id_rsa
 
 ```bash
 file> /home/node/.profile
-
 # ~/.profile: executed by the command interpreter for login shells.
 [...]
 ```
@@ -428,14 +426,11 @@ file>
 └─$ cat Dockerfile.ghost
 FROM ghost:5.58.0
 
-
 # Copy the config
 COPY config.production.json /var/lib/ghost/config.production.json
 
-
 # Prevent installing packages
 RUN rm -rf /var/lib/apt/lists/* /etc/apt/sources.list* /usr/bin/apt-get /usr/bin/apt /usr/bin/dpkg /usr/sbin/dpkg /usr/bin/dpkg-deb /usr/sbin/dpkg-deb
-
 
 # Wait for the db to be ready first
 COPY wait-for-it.sh /var/lib/ghost/wait-for-it.sh
@@ -543,7 +538,6 @@ bob@linkvortex:~$ ls -la /opt/ghost/clean_symlink.sh
 
 ```bash
 bob@linkvortex:~$ cat /opt/ghost/clean_symlink.sh
-
 #!/bin/bash
 
 QUAR_DIR="/var/quarantined"

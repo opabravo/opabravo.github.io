@@ -31,7 +31,6 @@ StreamIO is a medium machine that covers subdomain enumeration leading to an SQL
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Mon Dec 25 13:02:03 2023 as: nmap -sVC -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 53,80,88,135,139,389,443,445,464,593,636,3268,3269,5985,9389,49667,49678,49705,59294 streamIO.htb
 Nmap scan report for streamIO.htb (10.129.58.72)
 Host is up, received user-set (0.41s latency).
@@ -130,7 +129,6 @@ Host script results:
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Mon Dec 25 13:05:23 2023 -- 1 IP address (1 host up) scanned in 199.98 seconds
 ```
 
@@ -1735,10 +1733,12 @@ Find shortest path from Owned Principals
 ![](/assets/obsidian/b61f4ee4e9bbf26944d71f0b6de44186.png)
 
 > **What is LAPS?**
+> 
 > **LAPS** (Local Administrator Password Solution) will mange local Administrator password for domain computers
 {: .prompt-tip }
 
 > **Info**
+> 
 > In order to use `dacledit.py`, use [shutdownrepo's impacket branch](https://github.com/ShutdownRepo/impacket/tree/dacledit)
 {: .prompt-tip }
 

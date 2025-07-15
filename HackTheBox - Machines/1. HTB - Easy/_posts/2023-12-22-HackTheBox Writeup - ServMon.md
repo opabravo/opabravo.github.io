@@ -30,7 +30,6 @@ ServMon is an easy Windows machine featuring an HTTP server that hosts an NVMS-1
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Fri Dec 22 19:55:37 2023 as: nmap -sVC -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 21,22,80,135,139,445,5666,6063,6699,8443,49664,49665,49666,49667,49668,49669,49670 10.129.227.77
 Nmap scan report for 10.129.227.77
 Host is up, received user-set (0.40s latency).
@@ -157,7 +156,6 @@ Host script results:
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Fri Dec 22 19:58:28 2023 -- 1 IP address (1 host up) scanned in 170.25 seconds
 ```
 
@@ -550,15 +548,10 @@ I can create a script, then setup a schedule task to run the script as **SYSTEM*
 
 ```powershell
 PS C:\Program Files\NSClient++> cat .\nsclient.ini
-
 # If you want to fill this file with all available options run the following command:
-
 #   nscp settings --generate --add-defaults --load-all
-
 # If you want to activate a module and bring in all its options use:
-
 #   nscp settings --activate-module <MODULE NAME> --add-defaults
-
 # For details run: nscp settings --help
 
 
@@ -609,11 +602,8 @@ rev.exe                                                               100% 2671K
 > `exploit.py`
 
 ```python
-
 #!/usr/bin/python3
-
 #automated way of exploiting vulnerabale NSClient++ 0.5.2.35 for privilege escalation.
-
 #original exploit: https://www.exploit-db.com/exploits/46802
 import requests
 import argparse

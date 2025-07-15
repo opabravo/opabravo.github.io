@@ -40,7 +40,6 @@ SMB         sauna.htb       445    SAUNA            [+] EGOTISTICAL-BANK.LOCAL\:
 ## Nmap
 
 ```bash
-
 # Nmap 7.94 scan initiated Thu Sep 21 23:25:00 2023 as: nmap -sVC -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 53,80,88,135,139,389,445,464,593,636,3268,3269,5985,9389,49667,49673,49674,49676,49685,49692 sauna.htb
 Nmap scan report for sauna.htb (10.129.95.180)
 Host is up, received user-set (0.11s latency).
@@ -92,7 +91,6 @@ Host script results:
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Thu Sep 21 23:28:26 2023 -- 1 IP address (1 host up) scanned in 205.64 seconds
 ```
 

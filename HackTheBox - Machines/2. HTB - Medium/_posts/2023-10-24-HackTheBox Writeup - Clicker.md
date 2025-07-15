@@ -18,7 +18,6 @@ image:
 ## Nmap
 
 ```bash
-
 # Nmap 7.94 scan initiated Tue Oct 24 09:46:26 2023 as: nmap -vv --reason -Pn -T4 -sV -sC --version-all -A --osscan-guess -p- -oN /home/kali/htb/Clicker/results/clicker.htb/scans/_full_tcp_nmap.txt -oX /home/kali/htb/Clicker/results/clicker.htb/scans/xml/_full_tcp_nmap.xml clicker.htb
 Nmap scan report for clicker.htb (10.129.52.192)
 Host is up, received user-set (0.093s latency).
@@ -97,7 +96,6 @@ HOP RTT       ADDRESS
 
 Read data files from: /usr/bin/../share/nmap
 OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Tue Oct 24 09:58:44 2023 -- 1 IP address (1 host up) scanned in 737.97 seconds
 ```
 
@@ -610,7 +608,6 @@ The script resets `PATH` so we can't do PATH injection, `/usr/bin/xml_pp` is the
 
 ```bash
 jack@clicker:~$ cat /opt/monitor.sh
-
 #!/bin/bash
 if [ "$EUID" -ne 0 ]
   then echo "Error, please run as root"

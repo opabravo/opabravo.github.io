@@ -20,7 +20,6 @@ Socket is a Medium Difficulty Linux machine that features reversing a Linux/Wind
 ## Nmap
 
 ```bash
-
 # Nmap 7.93 scan initiated Sat Apr  1 10:31:54 2023 as: nmap -sVC -p- -Pn -T4 -oA socket -vv 10.10.11.206
 Nmap scan report for 10.10.11.206
 Host is up, received user-set (0.085s latency).
@@ -61,7 +60,6 @@ Service Info: Host: qreader.htb; OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Sat Apr  1 10:34:40 2023 -- 1 IP address (1 host up) scanned in 165.25 seconds
 ```
 
@@ -240,11 +238,8 @@ You can now use a python decompiler on the pyc files within the extracted direct
 Decompile the bytecode using online service or `uncompyle6`
 
 ```python
-
 #!/usr/bin/env python
-
 # visit https://tool.lu/pyc/ for more information
-
 # Version: Python 3.9
 
 import cv2
@@ -265,7 +260,6 @@ icon_path = './icon.png'
 def setup_env():
     global tmp_file_name
     pass
-
 # WARNING: Decompyle incomplete
 
 
@@ -366,7 +360,6 @@ class MyGUI(QMainWindow):
 
 async def ws_connect(url, msg):
     pass
-
 # WARNING: Decompyle incomplete
 
 
@@ -672,7 +665,6 @@ Analyze the script
 tkeller@socket:~$ ls -la /usr/local/sbin/build-installer.sh
 -rwxr-xr-x 1 root root 1096 Feb 17 11:41 /usr/local/sbin/build-installer.sh
 tkeller@socket:~$ cat /usr/local/sbin/build-installer.sh
-
 #!/bin/bash
 if [ $# -ne 2 ] && [[ $1 != 'cleanup' ]]; then
   /usr/bin/echo "No enough arguments supplied"

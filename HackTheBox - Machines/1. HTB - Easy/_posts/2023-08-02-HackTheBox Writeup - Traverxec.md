@@ -19,7 +19,6 @@ Traverxec is an easy Linux machine that features a Nostromo Web Server, which is
 ## Nmap
 
 ```bash
-
 # Nmap 7.94 scan initiated Wed Aug  2 14:27:32 2023 as: nmap -sVC -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p- 10.10.10.165
 Increasing send delay for 10.10.10.165 from 0 to 5 due to 101 out of 252 dropped probes since last increase.
 Increasing send delay for 10.10.10.165 from 5 to 10 due to 11 out of 12 dropped probes since last increase.
@@ -46,7 +45,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Wed Aug  2 15:00:48 2023 -- 1 IP address (1 host up) scanned in 1996.43 seconds
 ```
 
@@ -204,7 +202,6 @@ www-data@traverxec:/var/nostromo$ cd conf
 www-data@traverxec:/var/nostromo/conf$ ls
 mimes  nhttpd.conf
 www-data@traverxec:/var/nostromo/conf$ cat nhttpd.conf
-
 # MAIN [MANDATORY]
 
 servername              traverxec.htb
@@ -215,27 +212,22 @@ servermimes             conf/mimes
 docroot                 /var/nostromo/htdocs
 docindex                index.html
 
-
 # LOGS [OPTIONAL]
 
 logpid                  logs/nhttpd.pid
 
-
 # SETUID [RECOMMENDED]
 
 user                    www-data
-
 
 # BASIC AUTHENTICATION [OPTIONAL]
 
 htaccess                .htaccess
 htpasswd                /var/nostromo/conf/.htpasswd
 
-
 # ALIASES [OPTIONAL]
 
 /icons                  /var/nostromo/icons
-
 
 # HOMEDIRS [OPTIONAL]
 
@@ -428,7 +420,6 @@ drwx--x--x 5 david david 4096 Oct 25  2019 ..
 -r-------- 1 david david  802 Oct 25  2019 server-stats.head
 -rwx------ 1 david david  363 Oct 25  2019 server-stats.sh
 david@traverxec:~/bin$ cat server-stats.sh
-
 #!/bin/bash
 
 cat /home/david/bin/server-stats.head

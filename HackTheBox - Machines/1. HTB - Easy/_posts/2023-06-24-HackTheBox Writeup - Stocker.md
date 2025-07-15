@@ -31,7 +31,6 @@ sudo $(which autorecon) -vv stocker.htb
 ```bash
 ┌──(kali㉿kali)-[~/htb/Stocker]
 └─$ cat stocker.nmap
-
 # Nmap 7.94 scan initiated Sat Jun 24 11:24:14 2023 as: nmap -sVC -p- -T4 -Pn -vv -oA stocker 10.10.11.196
 Nmap scan report for stocker.htb (10.10.11.196)
 Host is up, received user-set (0.062s latency).
@@ -57,7 +56,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Sat Jun 24 11:24:56 2023 -- 1 IP address (1 host up) scanned in 41.93 seconds
 ```
 
@@ -158,10 +156,8 @@ Dig deeper to `dev.stocker.htb`
 Try bruteforce
 
 ```bash
-
 # Common usernames and passwords
 ffuf -c -w /usr/share/seclists/Usernames/top-usernames-shortlist.txt:FUZZ1 -w /usr/share/seclists/Passwords/darkweb2017-top100.txt:FUZZ2 -request login.req -request-proto http -v -fs 92
-
 
 # User: Admin
 ffuf -c -w /opt/wordlists/rockyou.txt:FUZZ2 -request login.req -request-proto http -v -fs 92

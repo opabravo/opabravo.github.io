@@ -20,7 +20,6 @@ Bizness is an easy Linux machine showcasing an Apache OFBiz pre-authentication, 
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Tue Jan  9 00:57:55 2024 as: nmap -sVC --version-all -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 22,80,443 Bizness
 Nmap scan report for Bizness (10.10.11.252)
 Host is up, received user-set (0.20s latency).
@@ -84,7 +83,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Tue Jan  9 00:58:19 2024 -- 1 IP address (1 host up) scanned in 24.71 seconds
 ```
 

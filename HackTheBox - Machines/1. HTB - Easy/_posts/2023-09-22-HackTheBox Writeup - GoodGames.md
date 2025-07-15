@@ -40,7 +40,6 @@ http://goodgames.htb [200] [GoodGames | Community and Store] [Werkzeug/2.0.2 Pyt
 ## Nmap
 
 ```bash
-
 # Nmap 7.94 scan initiated Fri Sep 22 09:16:18 2023 as: nmap -sVC -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 80 goodgames.htb
 Nmap scan report for goodgames.htb (10.129.69.208)
 Host is up, received user-set (0.064s latency).
@@ -56,7 +55,6 @@ PORT   STATE SERVICE REASON         VERSION
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Fri Sep 22 09:16:27 2023 -- 1 IP address (1 host up) scanned in 8.66 seconds
 ```
 
@@ -220,6 +218,7 @@ Login to `http://nternal-administration.goodgames.htb`
 ![](/assets/obsidian/602d530cad76f94c6b4d9e8246919f4b.png)
 
 > **Foothold**
+> 
 > Note that this is a python application, and it might be using `Jinja/Flask` to render templates
 > 
 > Check some places where user input can be renderedContents

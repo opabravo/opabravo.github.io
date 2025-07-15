@@ -20,7 +20,6 @@ Busqueda is an Easy Difficulty Linux machine that involves exploiting a command 
 ## Nmap
 
 ```bash
-
 # Nmap 7.93 scan initiated Sun Apr 16 05:36:58 2023 as: nmap -sVC -p- -T4 -Pn -vv -oA busqueda 10.10.11.208
 Nmap scan report for 10.10.11.208
 Host is up, received user-set (0.094s latency).
@@ -42,7 +41,6 @@ Service Info: Host: searcher.htb; OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Sun Apr 16 05:39:26 2023 -- 1 IP address (1 host up) scanned in 147.89 seconds
 ```
 

@@ -32,7 +32,6 @@ Magic is an easy difficulty Linux machine that features a custom web application
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Thu Feb  8 17:47:25 2024 as: nmap -sVC --version-all -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 22,80, Magic
 Nmap scan report for Magic (10.129.207.97)
 Host is up, received user-set (0.084s latency).
@@ -56,7 +55,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Thu Feb  8 17:47:35 2024 -- 1 IP address (1 host up) scanned in 10.15 seconds
 ```
 

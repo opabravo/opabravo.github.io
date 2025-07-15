@@ -33,7 +33,6 @@ image:
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Mon Jun 17 12:14:57 2024 as: nmap -sVC --version-all -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 22,80, 10.129.64.241
 Nmap scan report for 10.129.64.241
 Host is up, received user-set (0.28s latency).
@@ -55,7 +54,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Mon Jun 17 12:15:13 2024 -- 1 IP address (1 host up) scanned in 16.35 seconds
 ```
 
@@ -419,7 +417,6 @@ User prod may run the following commands on editorial:
 prod@editorial:~$ ls -la /opt/internal_apps/clone_changes/clone_prod_change.py
 -rwxr-x--- 1 root prod 256 Jun  4 11:30 /opt/internal_apps/clone_changes/clone_prod_change.py
 prod@editorial:~$ cat /opt/internal_apps/clone_changes/clone_prod_change.py
-
 #!/usr/bin/python3
 
 import os

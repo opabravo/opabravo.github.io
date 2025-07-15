@@ -32,7 +32,6 @@ Alert is an easy-difficulty Linux machine with a website to upload, view, and sh
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Mon Dec  2 03:56:02 2024 as: /usr/lib/nmap/nmap -sVC --version-all -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 22,80, 10.10.11.44
 Nmap scan report for 10.10.11.44
 Host is up, received user-set (0.20s latency).
@@ -56,7 +55,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Mon Dec  2 03:56:16 2024 -- 1 IP address (1 host up) scanned in 13.82 seconds
 ```
 

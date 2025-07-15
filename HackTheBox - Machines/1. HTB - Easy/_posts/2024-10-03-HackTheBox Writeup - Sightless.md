@@ -33,7 +33,6 @@ image:
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Thu Oct  3 18:26:44 2024 as: /usr/lib/nmap/nmap -sVC --version-all -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 21,22,80, 10.10.11.32
 Nmap scan report for 10.10.11.32
 Host is up, received user-set (0.18s latency).
@@ -71,7 +70,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Thu Oct  3 18:36:24 2024 -- 1 IP address (1 host up) scanned in 580.83 seconds
 ```
 
@@ -177,7 +175,6 @@ OSError: [Errno 98] Address already in use
 listening on [any] 1111 ...
 connect to [10.10.14.75] from (UNKNOWN) [10.10.11.32] 54774
 /bin/sh: 0: can't access tty; job control turned off
-
 # /usr/bin/script -qc /bin/bash /dev/null
 root@c184118df0a6:/var/lib/sqlpad# ^Z
 zsh: suspended  nc -lvnp 1111
@@ -598,7 +595,6 @@ INFO[3278] Interface created!
 #### Nmap scan
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Fri Oct  4 07:39:40 2024 as: /usr/lib/nmap/nmap --unprivileged -sVC --version-all -T4 -Pn -vv -oA ./nmap/local_tcp_scan -p 53,3000,3306,8080,33060,44769,46415,53341, 240.0.0.1
 Nmap scan report for 240.0.0.1
 Host is up, received user-set (0.44s latency).
@@ -761,6 +757,7 @@ PORT      STATE  SERVICE REASON       VERSION
 - Port `8080` is running **froxlor**
 
 > **What is froxlor**
+> 
 > An open source lightweight server management software that have many vulnerabilities discovered in the past
 {: .prompt-info }
 
@@ -789,11 +786,8 @@ drwxr-xr-x 2 root root 4096 Sep  3 11:55 .
 
 ```bash
 michael@sightless:~$ cat /etc/apache2/sites-enabled/05_froxlor_dirfix_nofcgid.conf
-
 # 05_froxlor_dirfix_nofcgid.conf
-
 # Created 03.10.2024 19:25
-
 # Do NOT manually edit this file, all changes will be deleted after the next domain change at the panel.
 
   <Directory "/var/customers/webs/">
@@ -804,11 +798,8 @@ michael@sightless:~$ cat /etc/apache2/sites-enabled/05_froxlor_dirfix_nofcgid.co
 
 ```bash
 michael@sightless:~$ cat /etc/apache2/sites-enabled/10_froxlor_ipandport_192.168.1.118.80.conf
-
 # 10_froxlor_ipandport_192.168.1.118.80.conf
-
 # Created 03.09.2024 11:55
-
 # Do NOT manually edit this file, all changes will be deleted after the next domain change at the panel.
 
 <VirtualHost 192.168.1.118:80>
@@ -835,13 +826,9 @@ DocumentRoot "/var/www/html/froxlor"
 
 ```bash
 michael@sightless:~$ cat /etc/apache2/sites-enabled/34_froxlor_normal_vhost_web1.sightless.htb.conf
-
 # 34_froxlor_normal_vhost_web1.sightless.htb.conf
-
 # Created 03.09.2024 11:55
-
 # Do NOT manually edit this file, all changes will be deleted after the next domain change at the panel.
-
 
 # Domain ID: 1 - CustomerID: 1 - CustomerLogin: web1
 <VirtualHost 192.168.1.118:80>
@@ -868,11 +855,8 @@ michael@sightless:~$ cat /etc/apache2/sites-enabled/34_froxlor_normal_vhost_web1
 
 ```bash
 michael@sightless:~$ cat /etc/apache2/sites-enabled/40_froxlor_diroption_666d99c49b2986e75ed93e591b7eb6c8.conf
-
 # 40_froxlor_diroption_666d99c49b2986e75ed93e591b7eb6c8.conf
-
 # Created 03.09.2024 11:55
-
 # Do NOT manually edit this file, all changes will be deleted after the next domain change at the panel.
 
 <Directory "/var/customers/webs/web1/goaccess/">

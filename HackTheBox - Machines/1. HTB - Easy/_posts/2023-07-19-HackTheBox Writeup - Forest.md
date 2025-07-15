@@ -42,7 +42,6 @@ echo '10.10.10.161 htb.local FOREST.htb.local' | sudo tee -a /etc/hosts
 ## Nmap
 
 ```bash
-
 # Nmap 7.94 scan initiated Wed Jul 19 16:30:01 2023 as: nmap -sVC -p- -T4 -Pn -vv -oA Forest htb.local
 Nmap scan report for htb.local (10.10.10.161)
 Host is up, received user-set (0.071s latency).
@@ -110,7 +109,6 @@ Host script results:
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Wed Jul 19 16:32:07 2023 -- 1 IP address (1 host up) scanned in 126.10 seconds
 ```
 
@@ -471,7 +469,6 @@ Steps to install:
 ```bash
 git clone https://github.com/ShutdownRepo/impacket/tree/dacledit impacket-shutdownrepo
 
-
 # Checkout the dacledit branch
 git checkout dacledit
 
@@ -542,6 +539,7 @@ ticketer.py -aesKey 9bf3b92c73e03eb58f698484c38039ab818ed76b4b3a0e1863d27a631f89
 ## Pass The Ticket With Evil-Winrm
 
 > **Edit kerberos config file**
+> 
 > I created a script to auto configure the `/etc/krb5.conf` - [configure_krb5.py](https://gist.githubusercontent.com/opabravo/ff9091dac9cf4267cd10ead8303a4b8a/raw/40c54a26f362c3792334d7835ed2fa4d6bf34c88/configure_krb5.py)
 {: .prompt-info }
 
@@ -598,6 +596,7 @@ dc85b3f081269ddd7cc189eb98049a2a
 ### Check if target is vulnerable
 
 > **Notice**
+> 
 > Because the machine meets below conditions, worth a try to check if zero logon is possible
 > - Windows Server 2016
 > - Allows null authentication

@@ -29,7 +29,6 @@ Surveillance is a medium-difficulty Linux machine that showcases a vulnerability
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Wed Dec 13 22:52:36 2023 as: nmap -sVC -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 22,80 Surveillance.htb
 Nmap scan report for Surveillance.htb (10.129.56.156)
 Host is up, received user-set (0.24s latency).
@@ -52,7 +51,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Wed Dec 13 22:52:56 2023 -- 1 IP address (1 host up) scanned in 20.03 seconds
 ```
 
@@ -242,23 +240,17 @@ drwxr-xr-x  8 www-data www-data   4096 Oct 21 18:32 .
 drwxr-xr-x  8 www-data www-data   4096 Dec 16 11:50 web
 
 www-data@surveillance:~/html/craft$ cat .env
-
 # Read about configuration, here:
-
 # https://craftcms.com/docs/4.x/config/
-
 
 # The application ID used to to uniquely store session and cache data, mutex locks, and more
 CRAFT_APP_ID=CraftCMS--070c5b0b-ee27-4e50-acdf-0436a93ca4c7
 
-
 # The environment Craft is currently running in (dev, staging, production, etc.)
 CRAFT_ENVIRONMENT=production
 
-
 # The secure key Craft will use for hashing and encrypting data
 CRAFT_SECURITY_KEY=2HfILL3OAEe5X0jzYOVY5i7uUizKmB2_
-
 
 # Database connection settings
 CRAFT_DB_DRIVER=mysql
@@ -269,7 +261,6 @@ CRAFT_DB_USER=craftuser
 CRAFT_DB_PASSWORD=CraftCMSPassword2023!
 CRAFT_DB_SCHEMA=
 CRAFT_DB_TABLE_PREFIX=
-
 
 # General settings (see config/general.php)
 DEV_MODE=false

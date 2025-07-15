@@ -39,7 +39,6 @@ Vintage is a hard difficulty Windows machine designed around an assumed breach s
 ## Nmap
 
 ```bash
-
 # Nmap 7.95 scan initiated Wed Mar 19 06:32:14 2025 as: /usr/lib/nmap/nmap -sVC --version-all -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 53,88,135,139,389,445,464,593,636,3268,3269,5985,9389,49664,49668,49674,49685,60321, vintage.htb
 Nmap scan report for vintage.htb (10.10.11.45)
 Host is up, received user-set (0.081s latency).
@@ -86,7 +85,6 @@ Host script results:
 
 Read data files from: /usr/share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Wed Mar 19 06:34:03 2025 -- 1 IP address (1 host up) scanned in 108.68 seconds
 ```
 

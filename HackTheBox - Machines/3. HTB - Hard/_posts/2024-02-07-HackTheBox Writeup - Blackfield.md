@@ -32,7 +32,6 @@ Backfield is a hard difficulty Windows machine featuring Windows and Active Dire
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Wed Feb  7 15:35:54 2024 as: nmap -sVC --version-all -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 53,88,135,389,445,593,3268,5985, BLACKFIELD.local
 Nmap scan report for BLACKFIELD.local (10.129.213.195)
 Host is up, received user-set (0.089s latency).
@@ -69,7 +68,6 @@ Host script results:
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Wed Feb  7 15:37:34 2024 -- 1 IP address (1 host up) scanned in 99.89 seconds
 ```
 
@@ -207,21 +205,13 @@ No anonymous binding enabled
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Blackfield]
 └─$ ldapsearch -H "ldap://$(pt get rhost)" -x -s base namingcontexts
-
 # extended LDIF
-
 #
-
 # LDAPv3
-
 # base <> (default) with scope baseObject
-
 # filter: (objectclass=*)
-
 # requesting: namingcontexts
-
 #
-
 
 #
 dn:
@@ -231,42 +221,30 @@ namingcontexts: CN=Schema,CN=Configuration,DC=BLACKFIELD,DC=local
 namingcontexts: DC=DomainDnsZones,DC=BLACKFIELD,DC=local
 namingcontexts: DC=ForestDnsZones,DC=BLACKFIELD,DC=local
 
-
 # search result
 search: 2
 result: 0 Success
 
-
 # numResponses: 2
-
 # numEntries: 1
 ```
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Blackfield]
 └─$ ldapsearch -H "ldap://$(pt get rhost)" -x -b "DC=BLACKFIELD,DC=local" | tee enum/ldap_all.txt
-
 # extended LDIF
-
 #
-
 # LDAPv3
-
 # base <DC=BLACKFIELD,DC=local> with scope subtree
-
 # filter: (objectclass=*)
-
 # requesting: ALL
-
 #
-
 
 # search result
 search: 2
 result: 1 Operations error
 text: 000004DC: LdapErr: DSID-0C090A69, comment: In order to perform this opera
  tion a successful bind must be completed on the connection., data 0, v4563
-
 
 # numResponses: 1
 ```

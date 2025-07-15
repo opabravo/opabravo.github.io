@@ -33,7 +33,6 @@ Crafty is an easy-difficulty Windows machine featuring the exploitation of a `Mi
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Sun Feb 11 15:49:24 2024 as: nmap -sVC --version-all -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 80,25565, crafty.htb
 Nmap scan report for crafty.htb (10.10.11.249)
 Host is up, received user-set (0.087s latency).
@@ -51,7 +50,6 @@ Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Sun Feb 11 15:49:36 2024 -- 1 IP address (1 host up) scanned in 12.22 seconds
 ```
 

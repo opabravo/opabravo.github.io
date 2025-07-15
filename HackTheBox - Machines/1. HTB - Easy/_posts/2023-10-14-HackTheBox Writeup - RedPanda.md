@@ -20,7 +20,6 @@ RedPanda is an easy Linux machine that features a website with a search engine m
 ## Nmap
 
 ```bash
-
 # Nmap 7.94 scan initiated Sat Oct 14 19:45:43 2023 as: nmap -sVC -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 22,8080 10.129.227.207
 Nmap scan report for 10.129.227.207
 Host is up, received user-set (0.063s latency).
@@ -97,7 +96,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Sat Oct 14 19:46:13 2023 -- 1 IP address (1 host up) scanned in 29.79 seconds
 ```
 
@@ -304,7 +302,6 @@ drwxr-xr-x  6 root root 4096 Jun 14  2022 maven
 drwxrwxr-x  5 root root 4096 Jun 14  2022 panda_search
 
 woodenk@redpanda:/opt$ cat cleanup.sh
-
 #!/bin/bash
 /usr/bin/find /tmp -name "*.xml" -exec rm -rf {} \;
 /usr/bin/find /var/tmp -name "*.xml" -exec rm -rf {} \;

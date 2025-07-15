@@ -30,7 +30,6 @@ Jeeves is not overly complicated, however it focuses on some interesting techniq
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Fri Dec 22 12:21:18 2023 as: nmap -sVC -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 80,135,445,50000 Jeeves
 Nmap scan report for Jeeves (10.129.228.112)
 Host is up, received user-set (0.29s latency).
@@ -73,7 +72,6 @@ Host script results:
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Fri Dec 22 12:22:10 2023 -- 1 IP address (1 host up) scanned in 51.71 seconds
 ```
 

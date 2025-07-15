@@ -30,7 +30,6 @@ Codify is an easy Linux machine that features a web application that allows user
 ## Nmap
 
 ```bash
-
 # Nmap 7.94 scan initiated Sun Nov  5 03:09:40 2023 as: nmap -sVC -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 22,80,3000 10.129.48.58
 Nmap scan report for 10.129.48.58
 Host is up, received user-set (0.080s latency).
@@ -56,7 +55,6 @@ Service Info: Host: codify.htb; OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Sun Nov  5 03:09:55 2023 -- 1 IP address (1 host up) scanned in 14.83 seconds
 ```
 
@@ -372,7 +370,6 @@ User joshua may run the following commands on codify:
 
 ```bash
 joshua@codify:~$ cat /opt/scripts/mysql-backup.sh
-
 #!/bin/bash
 DB_USER="root"
 DB_PASS=$(/usr/bin/cat /root/.creds)
@@ -405,6 +402,7 @@ done
 ```
 
 > **Foothold**
+> 
 > The password was stored at `/root/.creds`, if user inputs the right password, the script will backup all databases from mysql as root
 > 
 > In order to get `$DB_PASS` that was passed to command line, we can bypass password check with asterisks/wild card (`*`)

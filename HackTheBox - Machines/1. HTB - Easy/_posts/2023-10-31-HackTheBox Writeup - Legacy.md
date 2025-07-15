@@ -33,7 +33,6 @@ Legacy is a fairly straightforward beginner-level machine which demonstrates the
 ### Standard
 
 ```bash
-
 # Nmap 7.94 scan initiated Tue Oct 31 11:13:07 2023 as: nmap -sVC -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 135,139,445 10.129.158.214
 Nmap scan report for 10.129.158.214
 Host is up, received user-set (0.081s latency).
@@ -78,14 +77,12 @@ Host script results:
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Tue Oct 31 11:13:25 2023 -- 1 IP address (1 host up) scanned in 17.86 seconds
 ```
 
 ### Vuln
 
 ```bash
-
 # Nmap 7.94 scan initiated Tue Oct 31 11:14:43 2023 as: nmap -T4 -Pn --script vuln -vv -oA ./nmap/vuln -p 135,139,445 10.129.158.214
 Nmap scan report for 10.129.158.214
 Host is up, received user-set (0.081s latency).
@@ -129,7 +126,6 @@ Host script results:
 |_smb-vuln-ms10-054: false
 
 Read data files from: /usr/bin/../share/nmap
-
 # Nmap done at Tue Oct 31 11:15:22 2023 -- 1 IP address (1 host up) scanned in 39.33 seconds
 ```
 
@@ -320,25 +316,15 @@ vi ms08-067.py
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Legacy]
 └─$ python ms08-067.py legacy 6 445
-
 #######################################################################
-
 #   MS08-067 Exploit
-
 #   This is a modified verion of Debasis Mohanty's code (https://www.exploit-db.com/exploits/7132/).
-
 #   The return addresses and the ROP parts are ported from metasploit module exploit/windows/smb/ms08_067_netapi
-
 #
-
 #   Mod in 2018 by Andy Acer
-
 #   - Added support for selecting a target port at the command line.
-
 #   - Changed library calls to allow for establishing a NetBIOS session for SMB transport
-
 #   - Changed shellcode handling to allow for variable length shellcode.
-
 #######################################################################
 
 
@@ -349,7 +335,6 @@ $
 $   git clone --branch impacket_0_9_17 --single-branch https://github.com/CoreSecurity/impacket/
 $   cd impacket
 $   pip install .
-
 
 
 #######################################################################

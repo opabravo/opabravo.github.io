@@ -32,7 +32,6 @@ Passage is a medium difficulty Linux machine that hosts a CuteNews web applicati
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Thu Feb  8 11:38:50 2024 as: nmap -sVC --version-all -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 22,80, passage.htb
 Nmap scan report for passage.htb (10.129.19.253)
 Host is up, received user-set (0.087s latency).
@@ -56,7 +55,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Thu Feb  8 11:39:00 2024 -- 1 IP address (1 host up) scanned in 9.87 seconds
 ```
 

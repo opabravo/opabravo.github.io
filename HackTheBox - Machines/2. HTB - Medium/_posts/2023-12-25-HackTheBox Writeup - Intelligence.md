@@ -20,7 +20,6 @@ Intelligence is a medium difficulty Windows machine that showcases a number of c
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Mon Dec 25 22:19:50 2023 as: nmap -sVC -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 53,80,88,135,139,389,445,464,593,636,3268,3269,5985,9389,49667,49691,49692,49711,49715,53021 10.129.208.58
 Nmap scan report for 10.129.208.58
 Host is up, received user-set (0.76s latency).
@@ -255,7 +254,6 @@ Host script results:
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Mon Dec 25 22:21:49 2023 -- 1 IP address (1 host up) scanned in 119.46 seconds
 ```
 
@@ -711,6 +709,7 @@ Extract usernames from kerbrute output
 ```
 
 > **Issue of **kerbrute** passwordspray**
+> 
 > **kerbrute** is faster than **smartbrute**, but :
 > 
 > Without syncing the time with DC, **kerbrute** won't show the success result without supplying `-v` (Verbose)
@@ -802,6 +801,7 @@ Shortest Paths -> Shortest Paths to High Value Targets
 ![](/assets/obsidian/d3c7e559978326e7e8878b56e3c75168.png)
 
 > **Bloodhound Shortest Path Tip**
+> 
 > Drag : 
 > - default / administrative objects to the left
 > - none default / unfactorized objects to the right
@@ -891,7 +891,6 @@ The powershell script `./IT/downdetector.ps1` is a site down / up monitor
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Intelligence/loot/smb]
 └─$ cat ./IT/downdetector.ps1
-
 # Check web server status. Scheduled to run every 5min
 Import-Module ActiveDirectory
 foreach($record in Get-ChildItem "AD:DC=intelligence.htb,CN=MicrosoftDNS,DC=DomainDnsZones,DC=intelligence,DC=htb" | Where-Object Name -like "web*")  {

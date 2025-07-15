@@ -19,7 +19,6 @@ Beep has a very large list of running services, which can make it a bit challeng
 ## Nmap
 
 ```bash
-
 # Nmap 7.94 scan initiated Tue Oct 31 12:14:16 2023 as: nmap -sVC -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 22,25,80,110,111,143,443,941,993,995,3306,4190,4445,4559,5038,10000 10.129.1.226
 Nmap scan report for 10.129.1.226
 Host is up, received user-set (0.16s latency).
@@ -91,7 +90,6 @@ Host script results:
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Tue Oct 31 12:24:06 2023 -- 1 IP address (1 host up) scanned in 590.08 seconds
 ```
 
@@ -185,6 +183,7 @@ Gave `Secure Connection Failed` because of unsupported TLS version
 ![](/assets/obsidian/a377777cebc16590e9fa23ccacceadc4.png)
 
 > **Methods to fix**
+> 
 > 1. Use **burpsuite** embedded browser
 > 2. Go to `about:config` in **firefox** and search for `security.tls.version.min` then set it to `1`
 {: .prompt-info }

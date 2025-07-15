@@ -33,7 +33,6 @@ image:
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Mon Nov 11 17:51:43 2024 as: /usr/lib/nmap/nmap -sVC --version-all -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 21,53,88,135,139,389,445,464,593,636,3268,3269,5985,9389,47001,49664,49665,49666,49667,49668,61892,62306,62311,62322,62336,62369, 10.129.51.42
 Nmap scan report for 10.129.51.42
 Host is up, received user-set (0.28s latency).
@@ -92,7 +91,6 @@ Host script results:
 
 Read data files from: /usr/share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Mon Nov 11 17:53:41 2024 -- 1 IP address (1 host up) scanned in 117.24 seconds
 ```
 

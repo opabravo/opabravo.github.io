@@ -31,7 +31,6 @@ Underpass is an Easy Linux machine starting with a default Apache Ubuntu page. T
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Sun Dec 22 07:55:11 2024 as: /usr/lib/nmap/nmap -sVC --version-all -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 22,80, 10.129.166.47
 Nmap scan report for 10.129.166.47
 Host is up, received user-set (0.29s latency).
@@ -53,7 +52,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Sun Dec 22 07:55:31 2024 -- 1 IP address (1 host up) scanned in 20.12 seconds
 ```
 
@@ -376,9 +374,7 @@ by Ben "epi" Risher 🤓                 ver: 2.11.0
 
 **daloRADIUS** is written using the [PHP programming language](https://www.php.net/) and uses a [database abstraction layer](https://en.wikipedia.org/wiki/Database_abstraction_layer) (DAL) for database access. Although DAL allows the use of different [database management systems](https://en.wikipedia.org/wiki/Database#Database_management_system) (DBMSs) (e.g., MariaDB, MySQL, PostgreSQL, SQLite, MsSQL, etc.), **it is important to note that daloRADIUS has been fully tested only on the [MariaDB](https://mariadb.org/) DBMS**. Therefore, **the use of other DBMSs is not recommended**.
 
-
 ## Installation
-
 ### quick installation
 ```
 
@@ -496,6 +492,7 @@ User svcMosh may run the following commands on localhost:
 ```
 
 > **What is mosh?**
+> 
 > **Mosh** (mobile shell) is a replacement of SSH to adapt bad environments where network is slow and unstable
 {: .prompt-info }
 

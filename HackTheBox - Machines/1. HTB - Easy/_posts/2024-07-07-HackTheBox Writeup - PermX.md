@@ -32,7 +32,6 @@ image:
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Sun Jul  7 08:47:13 2024 as: nmap -sVC --version-all -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 22,80, 10.129.147.24
 Nmap scan report for 10.129.147.24
 Host is up, received user-set (0.29s latency).
@@ -54,7 +53,6 @@ Service Info: Host: 127.0.1.1; OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Sun Jul  7 08:47:29 2024 -- 1 IP address (1 host up) scanned in 16.58 seconds
 ```
 
@@ -272,7 +270,6 @@ User mtz may run the following commands on permx:
 mtz@permx:~$ ls -la /opt/acl.sh
 -rwxr-xr-x 1 root root 419 Jun  5 11:58 /opt/acl.sh
 mtz@permx:~$ cat /opt/acl.sh
-
 #!/bin/bash
 
 if [ "$#" -ne 3 ]; then
@@ -288,7 +285,6 @@ if [[ "$target" != /home/mtz/* || "$target" == *..* ]]; then
     /usr/bin/echo "Access denied."
     exit 1
 fi
-
 
 # Check if the path is a file
 if [ ! -f "$target" ]; then

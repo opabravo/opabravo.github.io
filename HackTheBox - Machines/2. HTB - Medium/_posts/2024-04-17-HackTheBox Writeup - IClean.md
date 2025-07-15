@@ -33,7 +33,6 @@ IClean is a medium-difficulty Linux machine featuring a website for a cleaning s
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Wed Apr 17 22:19:16 2024 as: nmap -sVC --version-all -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p- IClean
 Increasing send delay for 10.10.11.12 from 5 to 10 due to 11 out of 12 dropped probes since last increase.
 Warning: 10.10.11.12 giving up on port because retransmission cap hit (6).
@@ -57,7 +56,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Wed Apr 17 22:39:29 2024 -- 1 IP address (1 host up) scanned in 1212.94 seconds
 ```
 
@@ -333,7 +331,6 @@ app.config['SESSION_COOKIE_HTTPONLY'] = False
 
 secret_key = ''.join(random.choice(string.ascii_lowercase) for i in range(64))
 app.secret_key = secret_key
-
 # Database Configuration
 db_config = {
     'host': '127.0.0.1',

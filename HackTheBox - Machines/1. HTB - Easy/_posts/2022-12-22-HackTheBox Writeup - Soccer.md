@@ -36,7 +36,6 @@ Soccer is an easy difficulty Linux machine that features a foothold based on def
 ```bash
 ┌──(root㉿kali)-[~]
 └─# nmap -sV -sC -Pn -T4 10.10.11.194 -p- -oA soccer
-
 # Nmap 7.93 scan initiated Thu Dec 22 12:25:43 2022 as: nmap -sV -sC -O -Pn -oA soccer 10.10.11.194
 Nmap scan report for 10.10.11.194
 Host is up (0.19s latency).
@@ -410,6 +409,7 @@ mysql  Ver 8.0.31-0ubuntu0.20.04.2 for Linux on x86_64 ((Ubuntu))
 **Sqlmap:**
 
 > **Sqlmap Websockets**
+> 
 > Sqlmap supports websockets, **no need to use below proxy method**
 > 
 > ```bash

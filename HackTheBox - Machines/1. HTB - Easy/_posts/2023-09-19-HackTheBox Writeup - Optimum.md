@@ -20,7 +20,6 @@ Optimum is a beginner-level machine which mainly focuses on enumeration of servi
 ## Nmap
 
 ```bash
-
 # Nmap 7.94 scan initiated Tue Sep 19 21:41:35 2023 as: nmap -sVC -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 80 10.129.69.103
 Nmap scan report for 10.129.69.103
 Host is up, received user-set (0.060s latency).
@@ -37,7 +36,6 @@ Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Tue Sep 19 21:41:47 2023 -- 1 IP address (1 host up) scanned in 11.86 seconds
 ```
 

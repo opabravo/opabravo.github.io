@@ -58,7 +58,6 @@ SMB         10.129.227.255  445    DC               SYSVOL                      
 ## Nmap
 
 ```bash
-
 # Nmap 7.94 scan initiated Wed Sep 27 10:46:18 2023 as: nmap -sVC -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 53,88,135,139,389,445,464,636,3268,3269,5985,9389,49664,49668,49676,49681,49705,54887 support.htb
 Nmap scan report for support.htb (10.129.227.255)
 Host is up, received user-set (0.16s latency).
@@ -105,7 +104,6 @@ Host script results:
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Wed Sep 27 10:48:01 2023 -- 1 IP address (1 host up) scanned in 102.40 seconds
 ```
 
@@ -324,6 +322,7 @@ SMB         10.129.227.255  445    DC               SYSVOL          READ        
 
 
 > **Bloodhound TIPs**
+> 
 > 1. Mark pwned users as **Owned** first
 > 2. Check some **shortest paths** to get insight
 > 3. Check **none-default** groups and users
@@ -502,6 +501,7 @@ MAQ         10.129.227.255  389    DC               MachineAccountQuota: 10
 ```
 
 > **MachineAccountQuota**
+> 
 > > MachineAccountQuota (MAQ) is a domain level attribute that by default permits unprivileged users to attach up to 10 computers to an Active Directory (AD) domain
 {: .prompt-tip }
 
@@ -539,6 +539,7 @@ Pick the computer `DC` to delegate to, since it have the `Trusted For Delegation
 |DC|DC$|dc.support.htb|error.NXDOMAIN|Windows Server 2022 Standard||10.0 (20348)|09/27/23 10:11:13|SERVER_TRUST_ACCOUNT, TRUSTED_FOR_DELEGATION|05/28/22 11:03:43|1000||
 
 > **Explaination**
+> 
 > Machine accounts can edit their own msDS-AllowedToActOnBehalfOfOtherIdentity attribute, hence allowing RBCD attacks on relayed machine accounts authentications. ([Refer](https://www.thehacker.recipes/a-d/movement/kerberos/delegations/rbcd))
 {: .prompt-tip }
 
@@ -920,11 +921,8 @@ Though it's not a good practice to use in real red team engagement, but it's sup
 > cme_automation.sh
 
 ```bash
-
 #!/bin/bash
-
 # cme_oneliner.sh
-
 # Usage: cme_oneliner.sh <rhost> <additional_args>
 
 if [[ -z $1 ]]; then
@@ -937,7 +935,6 @@ shift
 
 cme_protocols=$(cme | grep 'available protocols' -A2 | grep '{' | sed 's/,/ /g' | tr -d '{}' | xargs)
 echo "Choose one or more modules to run [Available Protocols : $cme_protocols]"
-
 # Read user input
 read -p "Protocols (Ex Format : ldap mssql smb) ~> " protocols
 

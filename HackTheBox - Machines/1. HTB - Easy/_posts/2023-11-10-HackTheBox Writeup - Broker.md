@@ -29,7 +29,6 @@ Broker is an easy difficulty `Linux` machine hosting a version of `Apache Active
 ## Nmap
 
 ```bash
-
 # Nmap 7.94 scan initiated Fri Nov 10 14:04:05 2023 as: nmap -sVC -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 22,80,1883,5672,8161,45213,61613,61614,61616 broker.htb
 Nmap scan report for broker.htb (10.129.41.115)
 Host is up, received user-set (0.13s latency).
@@ -190,6 +189,7 @@ The exploit utilize unsafe deserialization to create `java.lang.ProcessBuilder()
 ```
 
 > **Payload for windows**
+> 
 > 
 > ```xml
 > <value>cmd</value>

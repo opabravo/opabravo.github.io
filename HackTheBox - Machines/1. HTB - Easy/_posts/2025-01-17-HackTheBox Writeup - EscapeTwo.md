@@ -78,7 +78,6 @@ Done syncing time with NTP server: 10.10.11.51
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Fri Jan 17 04:04:51 2025 as: /usr/lib/nmap/nmap -sVC --version-all -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 53,88,135,139,389,445,464,593,636,1433,3268,3269,5985,9389,47001,49664,49665,49666,49667,49685,49686,49687,49702,49718,49727, sequel.htb
 Nmap scan report for sequel.htb (10.10.11.51)
 Host is up, received user-set (0.18s latency).
@@ -365,7 +364,6 @@ Host script results:
 
 Read data files from: /usr/share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Fri Jan 17 04:07:05 2025 -- 1 IP address (1 host up) scanned in 134.55 seconds
 ```
 

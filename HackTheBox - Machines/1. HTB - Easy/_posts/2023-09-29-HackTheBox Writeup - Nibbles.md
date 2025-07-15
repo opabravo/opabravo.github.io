@@ -20,7 +20,6 @@ Nibbles is a fairly simple machine, however with the inclusion of a login blackl
 ## Nmap
 
 ```bash
-
 # Nmap 7.94 scan initiated Fri Sep 29 20:21:40 2023 as: nmap -sVC -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 22,80 nibbles.htb
 Nmap scan report for nibbles.htb (10.129.68.41)
 Host is up, received user-set (0.063s latency).
@@ -44,7 +43,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Fri Sep 29 20:21:51 2023 -- 1 IP address (1 host up) scanned in 11.36 seconds
 ```
 
@@ -452,6 +450,7 @@ username=admin&password=FUZZ2
 #### Exploit
 
 > **After login**
+> 
 > I can see all those flailed login attempts, brute forcing should always be the last resort in real engagements
 {: .prompt-warning }
 

@@ -20,7 +20,6 @@ CronOS focuses mainly on different vectors for enumeration and also emphasises t
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Fri Jan 19 14:25:17 2024 as: nmap -sVC --version-all -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 22,53,80, Cronos
 Nmap scan report for Cronos (10.129.227.211)
 Host is up, received user-set (0.31s latency).
@@ -47,7 +46,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Fri Jan 19 14:25:34 2024 -- 1 IP address (1 host up) scanned in 17.53 seconds
 ```
 
@@ -525,6 +523,7 @@ drwxr-xr-x  8 www-data www-data    4096 May 10  2022 .git
 ```
 
 > **Get laravel's version**
+> 
 > ```bash
 > www-data@cronos:/var/www/laravel$ php artisan -V
 > Laravel Framework 5.4.17

@@ -35,7 +35,6 @@ PORT    STATE SERVICE REASON
 
 Main scan result:
 ```bash
-
 # Nmap 7.93 scan initiated Sun Apr  9 08:20:04 2023 as: nmap -sVC -p- -T4 -Pn -vv -oA broscience 10.10.11.195
 Nmap scan report for 10.10.11.195
 Host is up, received user-set (0.082s latency).
@@ -81,7 +80,6 @@ Service Info: Host: broscience.htb; OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Sun Apr  9 08:21:10 2023 -- 1 IP address (1 host up) scanned in 66.56 seconds
 ```
 
@@ -492,7 +490,6 @@ Write two scripts to generate activate codes
 >`user_activator.py`
 
 ```python
-
 #!/usr/bin/env python3
 """HTB : Broscience user activate script"""
 import requests
@@ -923,7 +920,6 @@ bill@broscience:/tmp$ cat /opt/renew_cert.sh
 ```
 
 ```bash
-
 #!/bin/bash
 
 if [ "$#" -ne 1 ] || [ $1 == "-h" ] || [ $1 == "--help" ] || [ $1 == "help" ]; then

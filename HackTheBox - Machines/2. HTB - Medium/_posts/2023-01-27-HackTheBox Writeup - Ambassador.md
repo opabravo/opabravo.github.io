@@ -20,7 +20,6 @@ Ambassador is a medium difficulty Linux machine addressing the issue of hard-cod
 ## Nmap
 
 ```bash
-
 # Nmap 7.93 scan initiated Fri Jan 27 03:10:08 2023 as: nmap -sVC -Pn -p- -oA ambassador -v -T4 10.10.11.183
 Nmap scan report for 10.10.11.183
 Host is up (0.19s latency).
@@ -99,7 +98,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Fri Jan 27 03:15:04 2023 -- 1 IP address (1 host up) scanned in 296.69 seconds
 ```
 
@@ -163,7 +161,6 @@ Use proxychains and burp to mitm the exploit request
 ```bash
 cat /etc/proxychains4.conf 
 ...
-
 # defaults set to "tor"
 socks4  127.0.0.1 9050
 ```
@@ -357,20 +354,13 @@ port forward with ssh + proxychains
 ```bash
 ┌──(root㉿kali)-[~/ambassador/consul-rce]
 └─# tail /etc/proxychains4.conf
-
 #       proxy types: http, socks4, socks5, raw
-
 #         * raw: The traffic is simply forwarded to the proxy without modification.
-
 #        ( auth types supported: "basic"-http  "user/pass"-socks )
-
 #
 [ProxyList]
-
 # add proxy here ...
-
 # meanwile
-
 # defaults set to "tor"
 socks4  127.0.0.1 9050
 

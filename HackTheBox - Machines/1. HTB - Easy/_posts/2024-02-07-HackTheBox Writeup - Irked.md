@@ -31,7 +31,6 @@ Irked is a pretty simple and straight-forward box which requires basic enumerati
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Wed Feb  7 11:22:20 2024 as: nmap -sVC --version-all -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 22,80,111,6697,8067,41884,65534, Irked
 Nmap scan report for Irked (10.129.45.88)
 Host is up, received user-set (0.089s latency).
@@ -72,7 +71,6 @@ Service Info: Host: irked.htb; OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Wed Feb  7 11:22:38 2024 -- 1 IP address (1 host up) scanned in 18.11 seconds
 ```
 

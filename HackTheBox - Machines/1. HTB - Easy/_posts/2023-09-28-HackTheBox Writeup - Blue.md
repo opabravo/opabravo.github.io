@@ -68,7 +68,6 @@ SMB         10.129.209.245  445    HARIS-PC         Users           READ
 {: .prompt-warning }
 
 ```ruby
-
 # Nmap 7.94 scan initiated Thu Sep 28 23:53:25 2023 as: nmap -sVC -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 135,139,445,49152,49153,49154,49155,49156,49157 blue.htb
 Nmap scan report for blue.htb (10.129.68.13)
 Host is up, received user-set (0.22s latency).
@@ -116,7 +115,6 @@ Host script results:
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Thu Sep 28 23:54:40 2023 -- 1 IP address (1 host up) scanned in 74.92 seconds
 ```
 
@@ -124,7 +122,6 @@ Service detection performed. Please report any incorrect results at https://nmap
 #### Vuln script scan
 
 ```ruby
-
 # Nmap 7.94 scan initiated Thu Sep 28 23:00:19 2023 as: nmap -T4 -Pn --script vuln -vv -oA ./nmap/vuln -p- blue.htb
 Increasing send delay for 10.129.220.237 from 0 to 5 due to 415 out of 1037 dropped probes since last increase.
 Increasing send delay for 10.129.220.237 from 5 to 10 due to 11 out of 12 dropped probes since last increase.
@@ -162,7 +159,6 @@ Host script results:
 |_smb-vuln-ms10-054: false
 
 Read data files from: /usr/bin/../share/nmap
-
 # Nmap done at Thu Sep 28 23:16:19 2023 -- 1 IP address (1 host up) scanned in 959.14 seconds
 ```
 
@@ -176,6 +172,7 @@ Read data files from: /usr/bin/../share/nmap
 ## Eternal Blue (One Liner)
 
 > **Target is vulnerable to eternal blue**
+> 
 > ![](/assets/obsidian/e3976ab77ddf327aab556fc0d81ec243.png)
 {: .prompt-tip }
 

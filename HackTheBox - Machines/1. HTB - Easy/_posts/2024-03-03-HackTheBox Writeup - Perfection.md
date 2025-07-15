@@ -32,7 +32,6 @@ Perfection is an easy Linux machine that features a web application with functio
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Sun Mar  3 16:19:28 2024 as: nmap -sVC --version-all -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 22,80, Perfection
 Nmap scan report for Perfection (10.129.122.132)
 Host is up, received user-set (0.21s latency).
@@ -53,7 +52,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Sun Mar  3 16:19:42 2024 -- 1 IP address (1 host up) scanned in 13.98 seconds
 ```
 

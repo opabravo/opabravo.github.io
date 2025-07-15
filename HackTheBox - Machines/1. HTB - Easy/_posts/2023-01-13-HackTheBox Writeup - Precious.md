@@ -22,7 +22,6 @@ Precious is an Easy Difficulty Linux machine, that focuses on the `Ruby` languag
 ```bash
 ┌──(root㉿kali)-[~/precious]
 └─# cat precious.nmap
-
 # Nmap 7.93 scan initiated Fri Jan 13 23:12:59 2023 as: nmap -sV -sC -Pn -T4 -oA precious -p- -v precious.htb
 Nmap scan report for precious.htb (10.10.11.189)
 Host is up (0.20s latency).
@@ -44,7 +43,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Fri Jan 13 23:15:20 2023 -- 1 IP address (1 host up) scanned in 141.67 seconds
 ```
 
@@ -184,11 +182,9 @@ Ruby Script
 
 ```bash
 (remote) henry@precious:/home/henry$ cat /opt/update_dependencies.rb
-
 # Compare installed dependencies with those specified in "dependencies.yml"
 require "yaml"
 require 'rubygems'
-
 
 # TODO: update versions automatically
 def update_gems()

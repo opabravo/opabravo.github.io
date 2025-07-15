@@ -34,7 +34,6 @@ Cicada is an easy-difficult Windows machine that focuses on beginner Active Dire
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Tue Oct  1 22:38:32 2024 as: /usr/lib/nmap/nmap -sVC --version-all -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 53,88,135,139,389,445,464,636,3268,3269,5985, 10.129.206.45
 Nmap scan report for 10.129.206.45
 Host is up, received user-set (0.28s latency).
@@ -254,7 +253,6 @@ Host script results:
 
 Read data files from: /usr/share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Tue Oct  1 22:40:55 2024 -- 1 IP address (1 host up) scanned in 143.06 seconds
 ```
 

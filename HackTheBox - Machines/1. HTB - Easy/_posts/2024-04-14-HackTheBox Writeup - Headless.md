@@ -31,7 +31,6 @@ Headless is an easy-difficulty Linux machine that features a `Python Werkzeug` s
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Sun Apr 14 10:37:22 2024 as: nmap -sVC --version-all -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 22,5000, Headless
 Nmap scan report for Headless (10.10.11.8)
 Host is up, received user-set (0.18s latency).
@@ -128,7 +127,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Sun Apr 14 10:42:19 2024 -- 1 IP address (1 host up) scanned in 296.76 seconds
 ```
 
@@ -284,7 +282,6 @@ The bash script executes `./initdb.sh` in current directory where I'm in when `i
 
 ```bash
 dvir@headless:~/app$ cat /usr/bin/syscheck
-
 #!/bin/bash
 
 if [ "$EUID" -ne 0 ]; then

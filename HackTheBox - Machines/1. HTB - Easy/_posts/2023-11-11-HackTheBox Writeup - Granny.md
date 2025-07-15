@@ -29,7 +29,6 @@ Granny, while similar to Grandpa, can be exploited using several different metho
 ## Nmap
 
 ```bash
-
 # Nmap 7.94 scan initiated Sat Nov 11 18:45:37 2023 as: nmap -sVC -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 80 granny.htb
 Nmap scan report for granny.htb (10.129.95.234)
 Host is up, received user-set (0.070s latency).
@@ -52,7 +51,6 @@ Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Sat Nov 11 18:45:50 2023 -- 1 IP address (1 host up) scanned in 12.49 seconds
 ```
 

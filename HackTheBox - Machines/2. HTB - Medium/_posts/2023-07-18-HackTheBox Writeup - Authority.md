@@ -71,7 +71,6 @@ sudo $(which autorecon) --dirbuster.wordlist="/usr/share/seclists/Discovery/Web-
 ## Nmap
 
 ```bash
-
 # Nmap 7.94 scan initiated Tue Jul 18 19:32:48 2023 as: nmap -vv --reason -Pn -T4 -sV -sC --version-all -A --osscan-guess -p- -oN /home/kali/htb/Authority/results/authority.htb/scans/_full_tcp_nmap.txt -oX /home/kali/htb/Authority/results/authority.htb/scans/xml/_full_tcp_nmap.xml authority.htb
 adjust_timeouts2: packet supposedly had rtt of -1407179 microseconds.  Ignoring time.
 adjust_timeouts2: packet supposedly had rtt of -1407179 microseconds.  Ignoring time.
@@ -273,7 +272,6 @@ HOP RTT       ADDRESS
 
 Read data files from: /usr/bin/../share/nmap
 OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Tue Jul 18 19:51:20 2023 -- 1 IP address (1 host up) scanned in 1111.34 seconds
 ```
 
@@ -806,6 +804,7 @@ Certificate Templates
 ## Abuse ESC1 - Template allows SAN
 
 > **addcomputer.py Explained**
+> 
 > > https://tools.thehacker.recipes/impacket/examples/addcomputer.py
 {: .prompt-info }
 
@@ -853,6 +852,7 @@ Certipy v4.7.0 - by Oliver Lyak (ly4k)
 ### Pass The Cert to DCSync
 
 > **Failed using **certipy****
+> 
 > > `KDC_ERR_PADATA_TYPE_NOSUPP(KDC has no support for padata type)`
 {: .prompt-danger }
 
@@ -867,6 +867,7 @@ Certipy v4.7.0 - by Oliver Lyak (ly4k)
 ````
 
 > **Fix The Error**
+> 
 > It means that the KDC is not set up for Kerberos authentication
 > 
 >  Did a quick search on **certipy**'s github repo and found a [solution](https://github.com/ly4k/Certipy/issues/64#issuecomment-1199012623) from [PassTheCert](https://github.com/AlmondOffSec/PassTheCert/)'s author'
@@ -1085,6 +1086,7 @@ Found it from this blog : https://cravaterouge.github.io/ad/privesc/2022/05/11/b
 Though it did not work on this machine, it's still an interesting tool
 
 > **Installation**
+> 
 > ```bash
 >apt-get install libkrb5-dev
 >pipx install bloodyAD

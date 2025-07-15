@@ -44,7 +44,6 @@ sudo $(which autorecon) -vv --dirbuster.wordlist="/usr/share/seclists/Discovery/
 ## Nmap
 
 ```bash
-
 # Nmap 7.94 scan initiated Thu Sep 21 16:58:37 2023 as: nmap -vv --reason -Pn -T4 -sV -sC --version-all -A --osscan-guess -p- -oN /home/kali/htb/Snoopy/results/snoopy.htb/scans/_full_tcp_nmap.txt -oX /home/kali/htb/Snoopy/results/snoopy.htb/scans/xml/_full_tcp_nmap.xml snoopy.htb
 adjust_timeouts2: packet supposedly had rtt of -699536 microseconds.  Ignoring time.
 adjust_timeouts2: packet supposedly had rtt of -699536 microseconds.  Ignoring time.
@@ -109,7 +108,6 @@ HOP RTT       ADDRESS
 
 Read data files from: /usr/bin/../share/nmap
 OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Thu Sep 21 16:59:42 2023 -- 1 IP address (1 host up) scanned in 64.74 seconds
 ```
 
@@ -151,28 +149,20 @@ Found: mm.snoopy.htb Status: 200 [Size: 3132]
 ## Usernames
 
 ```sql
-
 ## Contact
 info
 
-
 # Team
-
 ## Charles Schultz | Chief Executive Officer
 cschultz
-
 ## Sally Brown | Product Manager
 sbrown
-
 ## Harold Angel | CTO
 hangel
-
 ## Lucy Van Pelt | Accountant
 lpelt
 
-
 # Anouncement PDF
-
 ## Sally Brown | SnoopySec PR
 pr
 ```

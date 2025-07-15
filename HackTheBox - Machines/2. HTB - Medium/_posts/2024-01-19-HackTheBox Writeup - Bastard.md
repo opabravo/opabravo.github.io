@@ -30,7 +30,6 @@ Bastard is not overly challenging, however it requires some knowledge of PHP in 
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Fri Jan 19 20:28:34 2024 as: nmap -sVC --version-all -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 80,135,49154, Bastard
 Nmap scan report for Bastard (10.129.54.13)
 Host is up, received user-set (0.18s latency).
@@ -59,7 +58,6 @@ Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Fri Jan 19 20:29:52 2024 -- 1 IP address (1 host up) scanned in 77.69 seconds
 ```
 
@@ -381,6 +379,7 @@ Network Card(s):           1 NIC(s) Installed.
 ```
 
 > **Script to find CLSID**
+> 
 > Use [`GetCLSID.ps1`](https://ohpe.it/juicy-potato/CLSID/GetCLSID.ps1) to auto find CLSID if the environment allows it
 {: .prompt-tip }
 

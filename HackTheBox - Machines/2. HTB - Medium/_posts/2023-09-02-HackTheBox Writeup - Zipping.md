@@ -30,7 +30,6 @@ Zipping is a medium-difficulty Linux machine that features a variety of attack v
 ## Nmap
 
 ```bash
-
 # Nmap 7.94 scan initiated Sat Sep  2 23:45:20 2023 as: nmap -sVC -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 22,80 zipping.htb  
 Nmap scan report for zipping.htb (10.129.66.245)  
 Host is up, received user-set (0.12s latency).  
@@ -52,7 +51,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
   
 Read data files from: /usr/bin/../share/nmap  
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .  
-
 # Nmap done at Sat Sep  2 23:45:33 2023 -- 1 IP address (1 host up) scanned in 12.67 seconds
 ```
 
@@ -604,6 +602,7 @@ Try 'strace -h' for more information.
 ```
 
 > **Check SO injection with filters**
+> 
 > > Refer - https://book.hacktricks.xyz/linux-hardening/privilege-escalation#suid-binary-.so-injection
 {: .prompt-tip }
 
@@ -629,9 +628,7 @@ rektsu@zipping:/home/rektsu$ nano /home/rektsu/.config/libcounter.c
 > `/home/rektsu/.config/libcounter.c`
 
 ```c
-
 #include <stdio.h>
-
 #include <stdlib.h>
 
 static void inject() __attribute__((constructor));

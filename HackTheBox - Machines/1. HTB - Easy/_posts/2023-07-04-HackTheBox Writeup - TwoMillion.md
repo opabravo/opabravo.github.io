@@ -32,7 +32,6 @@ echo '10.10.11.221 2million.htb' | sudo tee -a /etc/hosts
 ## Nmap
 
 ```bash
-
 # Nmap 7.94 scan initiated Tue Jul  4 19:29:27 2023 as: nmap -sVC -p- -T4 -Pn -vv -oA 2million 2million.htb
 Nmap scan report for 2million.htb (10.10.11.221)
 Host is up, received user-set (0.056s latency).
@@ -59,7 +58,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Tue Jul  4 19:30:06 2023 -- 1 IP address (1 host up) scanned in 39.52 seconds
 ```
 

@@ -29,7 +29,6 @@ Grandpa is one of the simpler machines on Hack The Box, however it covers the wi
 ## Nmap
 
 ```bash
-
 # Nmap 7.94 scan initiated Sat Nov 11 14:53:35 2023 as: nmap -sVC -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 80 grandpa.htb
 Nmap scan report for grandpa.htb (10.129.95.233)
 Host is up, received user-set (0.057s latency).
@@ -52,7 +51,6 @@ Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Sat Nov 11 14:53:47 2023 -- 1 IP address (1 host up) scanned in 12.40 seconds
 ```
 
@@ -239,6 +237,7 @@ Google : `Churrasco exe`
 Host exploit
 
 > **Windows server 2003**
+> 
 > - Failed to use smb with password auth
 > - Doesn't support smb v2
 {: .prompt-tip }

@@ -30,7 +30,6 @@ Pandora is an easy rated Linux machine. The port scan reveals a SSH, web-server 
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Tue Dec 19 15:02:22 2023 as: nmap -sVC -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 22,80 10.129.57.183
 Nmap scan report for 10.129.57.183
 Host is up, received user-set (0.25s latency).
@@ -55,7 +54,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Tue Dec 19 15:02:43 2023 -- 1 IP address (1 host up) scanned in 21.36 seconds
 ```
 
@@ -247,7 +245,6 @@ From `Dockerfile`, I know it's using `Pandora FMS`
 ```bash
 daniel@pandora:/var/www/pandora/pandora_console$ cat Dockerfile
 [...]
-
 #Clone the repo
 RUN git clone -b develop https://github.com/pandorafms/pandorafms.git /tmp/pandorafms
 [...]
@@ -575,7 +572,6 @@ Saving to: ‘/dev/shm/pk’
 
 [+] Creating shared library for exploit code.
 [+] Calling execve()
-
 # id
 uid=0(root) gid=1000(matt) groups=1000(matt)
 ```

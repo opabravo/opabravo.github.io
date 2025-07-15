@@ -34,7 +34,6 @@ Usage is an easy Linux machine that features a blog site vulnerable to SQL injec
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Mon Apr 15 16:21:50 2024 as: nmap -sVC --version-all -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 22,80, Usage
 Nmap scan report for Usage (10.129.120.40)
 Host is up, received user-set (0.22s latency).
@@ -56,7 +55,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Mon Apr 15 16:22:04 2024 -- 1 IP address (1 host up) scanned in 13.85 seconds
 ```
 
@@ -462,21 +460,17 @@ There's a password `3nc0d3d_pa$$w0rd` in `.monitrc`
 
 ```bash
 dash@usage:~$ cat .monitrc
-
 #Monitoring Interval in Seconds
 set daemon  60
-
 
 #Enable Web Access
 set httpd port 2812
      use address 127.0.0.1
      allow admin:3nc0d3d_pa$$w0rd
 
-
 #Apache
 check process apache with pidfile "/var/run/apache2/apache2.pid"
     if cpu > 80% for 2 cycles then alert
-
 
 
 #System Monitoring

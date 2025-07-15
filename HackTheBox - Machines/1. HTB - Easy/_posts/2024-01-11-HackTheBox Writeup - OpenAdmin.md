@@ -31,7 +31,6 @@ OpenAdmin is an easy difficulty Linux machine that features an outdated OpenNetA
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Thu Jan 11 13:43:07 2024 as: nmap -sVC --version-all -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 22,80 OpenAdmin
 Nmap scan report for OpenAdmin (10.129.61.100)
 Host is up, received user-set (0.22s latency).
@@ -55,7 +54,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Thu Jan 11 13:43:21 2024 -- 1 IP address (1 host up) scanned in 14.15 seconds
 ```
 
@@ -161,7 +159,6 @@ There's command injection at web root in post parameter `xajaxargs`
 POC :
 
 ```bash
-
 #!/bin/bash
 
 URL="${1}"
@@ -442,7 +439,6 @@ www-data@openadmin:/opt/ona/www$ cat /etc/apache2/sites-enabled/openadmin.conf
         #Include conf-available/serve-cgi-bin.conf
 </VirtualHost>
 
-
 # vim: syntax=apache ts=4 sw=4 sts=4 sr noet
 ```
 
@@ -638,7 +634,6 @@ reset; sh 1>&0 2>&0
 ![](/assets/obsidian/a550914b8ead1f671e2fb20a80f82b5c.png)
 
 ```bash
-
 # cat /root/root.txt
 8303ec94f0725445273aaf91abd5cd6d
 ```

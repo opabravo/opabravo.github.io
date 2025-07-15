@@ -30,7 +30,6 @@ Visual is a Medium Windows machine featuring a web service that accepts user-sub
 ## Nmap
 
 ```bash
-
 # Nmap 7.94 scan initiated Sun Oct  1 20:37:48 2023 as: nmap -vv --reason -Pn -T4 -sV -sC --version-all -A --osscan-guess -p- -oN /home/kali/htb/Visual/results/10.129.72.48/scans/_full_tcp_nmap.txt -oX /home/kali/htb/Visual/results/10.129.72.48/scans/xml/_full_tcp_nmap.xml 10.129.72.48
 Nmap scan report for 10.129.72.48
 Host is up, received user-set (0.054s latency).
@@ -74,7 +73,6 @@ HOP RTT      ADDRESS
 
 Read data files from: /usr/bin/../share/nmap
 OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Sun Oct  1 20:39:37 2023 -- 1 IP address (1 host up) scanned in 108.29 seconds
 ```
 

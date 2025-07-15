@@ -20,7 +20,6 @@ MetaTwo is an easy Linux machine that features a website running Wordpress, whic
 ## Nmap
 
 ```bash
-
 # Nmap 7.93 scan initiated Sun Apr 30 00:53:30 2023 as: nmap -sVC -p- -T4 -Pn -oA metatwo -vv 10.10.11.186
 Nmap scan report for 10.10.11.186
 Host is up, received user-set (0.094s latency).
@@ -56,7 +55,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Sun Apr 30 00:57:53 2023 -- 1 IP address (1 host up) scanned in 263.29 seconds
 ```
 
@@ -919,7 +917,6 @@ Error: No hash was generated for .keys, ensure that the input file contains a si
 
 ┌──(kali㉿kali)-[~/metatwo]
 └─$ vi .keys
-
 # Press SHIFT+v select public block the press d to delete
 
 ┌──(kali㉿kali)-[~/metatwo]

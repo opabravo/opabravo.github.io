@@ -22,7 +22,6 @@ Squashed is an Easy Difficulty Linux machine that features a combination of both
 ```bash
 ┌──(root㉿kali)-[~/squashed]
 └─# nmap squashed.htb -sVC -p- -Pn -T4 -oA squashed
-
 # Nmap 7.93 scan initiated Mon Jan 16 08:39:57 2023 as: nmap -sVC -p- -Pn -T4 -oA squashed squashed.htb
 Nmap scan report for squashed.htb (10.10.11.191)
 Host is up (0.20s latency).

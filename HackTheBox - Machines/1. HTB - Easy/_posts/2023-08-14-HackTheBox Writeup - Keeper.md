@@ -20,7 +20,6 @@ Keeper is an easy-difficulty Linux machine that features a support ticketing sys
 ## Nmap
 
 ```bash
-
 # Nmap 7.94 scan initiated Mon Aug 14 18:21:31 2023 as: nmap -sVC -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p- 10.10.11.227
 Nmap scan report for 10.10.11.227
 Host is up, received user-set (0.20s latency).
@@ -42,7 +41,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Mon Aug 14 18:32:18 2023 -- 1 IP address (1 host up) scanned in 647.33 seconds
 ```
 
@@ -191,6 +189,7 @@ Google : `keepass memory dump extract password`
 > KeePass 2.X Master Password Dumper ([CVE-2023-32784](https://nvd.nist.gov/vuln/detail/CVE-2023-32784))
 
 > **POC**
+> 
 > > https://github.com/vdohney/keepass-password-dumper
 {: .prompt-info }
 

@@ -34,7 +34,6 @@ SolarLab is a medium Windows machine that starts with a webpage featuring a busi
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Sun May 12 13:57:00 2024 as: nmap -sVC --version-all -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 80,135,139,445,6791, SolarLab
 Nmap scan report for SolarLab (10.129.171.222)
 Host is up, received user-set (0.29s latency).
@@ -74,7 +73,6 @@ Host script results:
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Sun May 12 13:59:19 2024 -- 1 IP address (1 host up) scanned in 138.77 seconds
 ```
 
@@ -640,7 +638,6 @@ d-----         5/13/2024  11:25 AM                __pycache__
 -a----          5/2/2024   6:26 PM           3352 utils.py
 
 PS C:\Users\blake\Documents\app> cat .\app.py
-
 # app.py
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy

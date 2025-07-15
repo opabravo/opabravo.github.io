@@ -34,7 +34,6 @@ Monitored is a medium-difficulty Linux machine that features a Nagios instance. 
 ### TCP
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Sun Jan 14 16:27:36 2024 as: nmap -sVC --version-all -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 22,80,389,443,5667, Monitored
 Nmap scan report for Monitored (10.129.61.245)
 Host is up, received user-set (0.056s latency).
@@ -101,14 +100,12 @@ Service Info: Hosts: nagios.monitored.htb, 127.0.0.1; OS: Linux; CPE: cpe:/o:lin
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Sun Jan 14 16:27:56 2024 -- 1 IP address (1 host up) scanned in 19.88 seconds
 ```
 
 ### UDP
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Tue Jan 16 13:42:01 2024 as: nmap -vv --reason -Pn -T4 -sU -sVC --top-ports 100 -oA ./nmap/top_100_udp monitored.htb
 Warning: 10.129.62.97 giving up on port because retransmission cap hit (6).
 Increasing send delay for 10.129.62.97 from 100 to 200 due to 11 out of 12 dropped probes since last increase.
@@ -194,7 +191,6 @@ Host script results:
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Tue Jan 16 13:47:25 2024 -- 1 IP address (1 host up) scanned in 323.94 seconds
 ```
 
@@ -1033,7 +1029,6 @@ And we can also restart services by using `/usr/local/nagiosxi/scripts/manage_se
 
 ```bash
 nagios@monitored:~$ cat /usr/local/nagiosxi/scripts/manage_services.sh|grep '# Ubuntu / Debian' -A50
-
 # Ubuntu / Debian
 
 if [ "$distro" == "Debian" ] || [ "$distro" == "Ubuntu" ]; then
@@ -1050,7 +1045,6 @@ if [ "$distro" == "Debian" ] || [ "$distro" == "Ubuntu" ]; then
         return_code=$?
     fi
 fi
-
 
 # Others?
 
@@ -1090,7 +1084,6 @@ nagios_log_file=$(cat /usr/local/nagios/etc/nagios.cfg | sed -n -e 's/^log_file=
 tail -n500 "$nagios_log_file" &> "/usr/local/nagiosxi/var/components/profile/$folder/nagios-logs/nagios.txt"
 [...]
 echo "Zipping logs directory..."
-
 
 ## temporarily change to that directory, zip, then leave
 (

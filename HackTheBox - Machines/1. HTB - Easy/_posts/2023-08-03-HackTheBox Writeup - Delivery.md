@@ -19,7 +19,6 @@ Delivery is an easy difficulty Linux machine that features the support ticketing
 ## Nmap
 
 ```bash
-
 # Nmap 7.94 scan initiated Thu Aug  3 08:28:04 2023 as: nmap -sVC -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 22,80,8065 10.10.10.222
 Nmap scan report for 10.10.10.222
 Host is up, received user-set (0.18s latency).
@@ -71,7 +70,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Thu Aug  3 08:29:46 2023 -- 1 IP address (1 host up) scanned in 101.58 seconds
 ```
 
@@ -208,6 +206,7 @@ Generate wordlist with `best64.rule` (Others will be too large)
 ```
 
 > **Best rule : **OneRuleToRuleThemAll** (2023 Updated)**
+> 
 > > https://github.com/stealthsploit/OneRuleToRuleThemStill
 {: .prompt-tip }
 
@@ -336,6 +335,7 @@ MariaDB [mattermost]>
 ```
 
 > **Dump mysql database**
+> 
 > Since the table is large, dumping it and transfer back to attacker will be helpful in real engagements
 > ```bash
 > mysqldump -u mmuser -p'Crack_The_MM_Admin_PW' --opt --all-databases -r /dev/shm/.dump.sql
