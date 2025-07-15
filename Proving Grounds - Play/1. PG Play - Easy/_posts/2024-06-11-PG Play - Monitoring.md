@@ -1,13 +1,15 @@
 ---
 render_with_liquid: false
-title: PG Play  Monitoring
+title: PG Play - Monitoring
 date: 2024-06-11 16:36:18 +1400
 tags: [pg-play, nmap, linux, feroxbuster, nagios-xi, brute-force-attack, weak-credentials, ffuf, nagios-xi-2rce, sudo, service-binary-permission, cve-2024-24402]
 ---
 
 
 
-# Learnt / Summary
+In this lab, we exploit an authenticated remote code execution vulnerability in the Nagios XI monitoring software. The application is misconfigured to run with root privileges, allowing us to escalate immediately to root once the vulnerability is exploited.
+
+# Learnt
 
 - Default credentials doesn't work? Google the `default username` and brute force with `default-credentials.txt`
 
@@ -16,7 +18,6 @@ tags: [pg-play, nmap, linux, feroxbuster, nagios-xi, brute-force-attack, weak-cr
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Tue Jun 11 16:36:18 2024 as: nmap -sVC --version-all -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 22,25,80,389,443,5667, 192.168.239.136
 Nmap scan report for 192.168.239.136
 Host is up, received user-set (0.066s latency).
@@ -72,7 +73,6 @@ Service Info: Host:  ubuntu; OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Tue Jun 11 16:39:35 2024 -- 1 IP address (1 host up) scanned in 196.91 seconds
 ```
 
@@ -200,6 +200,7 @@ uid=1001(nagios) gid=1001(nagios) groups=1001(nagios),1002(nagcmd)
 > POC - https://github.com/MAWK0235/CVE-2024-24402
 
 > **Brief exploit info**
+> 
 > An issue in Nagios XI 2024R1.01 allows a remote attacker to escalate privileges via a crafted script to the /usr/local/nagios/bin/npcd component.
 {: .prompt-info }
 
@@ -241,48 +242,29 @@ User nagios may run the following commands on ubuntu:
 
 ```bash
 nagios@ubuntu:/var/spool/cron$ cat /etc/init.d/npcd|head -n25
-
 #!/bin/bash
-
 #
-
 ### BEGIN INIT INFO
-
 # Provides:          npcd
-
 # Required-Start:
-
 # Required-Stop:
-
 # Default-Start:     2 3 4 5
-
 # Default-Stop:      0 1 6
-
 # Short-Description: Nagios NPCD Initscript
-
 # Description:       Nagios Process Control Daemon
-
 ### END INIT INFO
 
-
 # chkconfig: 345 94 6
-
 #
-
 # Startup script for NPCD
-
 #
-
 # processname: npcd
-
 # pidfile: /usr/local/nagiosxi/var/subsys/npcd.pid
-
 # config: /usr/local/nagios/etc/pnp/npcd.cfg
 
 PREFIX=/usr/local/nagios
 BIN=$PREFIX/bin/npcd
 CONF=$PREFIX/etc/pnp/npcd.cfg
-
 #PID=/var/run/npcd.pid
 PID=/usr/local/nagiosxi/var/subsys/npcd.pid
 ```
@@ -354,6 +336,7 @@ Copied to: /home/kali/Offsec/pg/play/Monitoring/exploit/47299.php
 ```
 
 > **Errors during exploit run**
+> 
 > - `PHP Fatal error:  Uncaught Error: Call to undefined function curl_init()`
 > - `PHP Fatal error:  Uncaught Error: Class "DOMDocument" not found`
 {: .prompt-danger }

@@ -1,13 +1,15 @@
 ---
 render_with_liquid: false
-title: PG Play  InsanityHosting
+title: PG Play - InsanityHosting
 date: 2024-06-12 11:48:46 +1400
 tags: [pg-play, nmap, linux, httpx, feroxbuster, php, squirrelmail, email, user-enumeration, ffuf, brute-force-attack, weak-credentials, credentials-stuffing, mysql, sqli, sqli-union, sqli-second-order, sqli2rce, hashcat, discover-browser, hack-browser-data, password-spraying, password-reuse]
 ---
 
 
 
-# Learnt / Summary
+This lab requires you to exploit an SQL Injection vulnerability in a monitoring web application to leak hashed credentials, crack them, and gain system access via SSH. Privilege escalation is achieved by extracting and decrypting root credentials stored in Mozilla Firefox local files.
+
+# Learnt
 
 - Couldn't enumerate `usernames`? Check strings carefully on every web pages that could be a person
 - Identify database related functions, fuzz `SQLI` payloads
@@ -32,7 +34,6 @@ tags: [pg-play, nmap, linux, httpx, feroxbuster, php, squirrelmail, email, user-
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Wed Jun 12 11:48:46 2024 as: nmap -sVC --version-all -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 21,22,80, 192.168.222.124
 Nmap scan report for 192.168.222.124
 Host is up, received user-set (0.063s latency).
@@ -74,7 +75,6 @@ Service Info: OS: Unix
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Wed Jun 12 11:49:01 2024 -- 1 IP address (1 host up) scanned in 14.83 seconds
 ```
 
@@ -168,14 +168,11 @@ feroxbuster -w <(cat /usr/share/seclists/Discovery/Web-Content/raft-medium-words
 - Probe base URLs
 
 ```bash
-
 # Gather base URLs
 cat ferox_*.txt bulkdirb_*.txt | ferox-parse | grep '/$' | grep -vf <(cat ferox_*.txt bulkdirb_*.txt | ferox-parse | grep 'heuristics detected directory listing' | awk '{print $7}') | awk 'NF>1{print $NF}' | anew -q base_urls.txt
 
-
 # Probe base URLs
 cat base_urls.txt | chttpx -srd httpx_dirs -o httpx_dirs/webprobe.txt
-
 
 # Exclude result with same sha1 hash
 UNIQ_HASH=$(cat httpx_dirs/webprobe.txt | grep -Eo '[[:xdigit:]]{40}' | sort -u); for h in $(echo $UNIQ_HASH); do grep $h httpx_dirs/webprobe.txt | head -n 1; done

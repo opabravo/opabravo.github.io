@@ -1,13 +1,15 @@
 ---
 render_with_liquid: false
-title: PG Play  Blogger
+title: PG Play - Blogger
 date: 2024-06-15 16:16:18 +1400
 tags: [pg-play, nmap, linux, feroxbuster, wordpress, cms, wpscan, cve-2020-24186, wordpress-plugins, file-upload, php, discover-secrets, steganography, crypto, cyberchef, pspy, scheduled-job-abuse, tar-privesc, wildcards]
 ---
 
 
 
-# Learnt / Summary
+In this lab, we will exploit an arbitrary file upload vulnerability in the wpDiscuz version 7.0.4 plugin to achieve initial access to the system. We will then escalate privileges using weak credentials and a misconfigured sudo setting that grants unrestricted root access to a user.
+
+# Learnt
 
 - Instead of using plugin exploits recommended by `wpscan`, just get the plugin's version then **google** to find most-used exploits
 
@@ -29,7 +31,6 @@ tags: [pg-play, nmap, linux, feroxbuster, wordpress, cms, wpscan, cve-2020-24186
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Sat Jun 15 16:16:18 2024 as: nmap -sVC --version-all -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 22,80, 192.168.244.217
 Nmap scan report for 192.168.244.217
 Host is up, received user-set (0.062s latency).
@@ -53,7 +54,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Sat Jun 15 16:16:30 2024 -- 1 IP address (1 host up) scanned in 12.18 seconds
 ```
 
@@ -165,6 +165,7 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.html
 > POC - https://www.exploit-db.com/exploits/49967
 
 > **Brief exploit info**
+> 
 > It uploads a php file with `GIF689a;` magic header in content to bypass file check
 {: .prompt-info }
 
@@ -326,7 +327,6 @@ Run **pspy** to spy command lines
 james@ubuntu-xenial:~$ ls -la /usr/local/bin/backup.sh
 -rwx---r-- 1 root root 54 Jan 17  2021 /usr/local/bin/backup.sh
 james@ubuntu-xenial:~$ cat /usr/local/bin/backup.sh;echo
-
 #!/bin/sh
 cd /home/james/
 tar czf /tmp/backup.tar.gz *

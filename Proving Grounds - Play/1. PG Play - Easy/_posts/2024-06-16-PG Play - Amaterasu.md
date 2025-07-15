@@ -1,13 +1,15 @@
 ---
 render_with_liquid: false
-title: PG Play  Amaterasu
+title: PG Play - Amaterasu
 date: 2024-06-16 01:37:11 +1400
 tags: [pg-play, nmap, linux, feroxbuster, python-flask, api, directory-traversal, file-upload, pspy, scheduled-job-abuse, bash-script, tar-privesc, wildcards]
 ---
 
 
 
-# Learnt / Summary
+In this lab, you will exploit a file upload vulnerability in a custom REST API service to gain initial access as a low-privilege user. You will escalate privileges using Bash Gobbling combined with a vulnerable tar wildcard execution in a scheduled cron job to achieve root access.
+
+# Learnt
 
 - Always write something in a test file...
 
@@ -16,7 +18,6 @@ tags: [pg-play, nmap, linux, feroxbuster, python-flask, api, directory-traversal
 ## Nmap
 
 ```bash
-
 # Nmap 7.94SVN scan initiated Sun Jun 16 01:37:11 2024 as: nmap -sVC --version-all -T4 -Pn -vv -oA ./nmap/full_tcp_scan -p 21,25022,33414,40080, 192.168.244.249
 Nmap scan report for 192.168.244.249
 Host is up, received user-set (0.063s latency).
@@ -141,7 +142,6 @@ Service Info: OS: Unix
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-
 # Nmap done at Sun Jun 16 01:42:11 2024 -- 1 IP address (1 host up) scanned in 300.11 seconds
 ```
 
@@ -409,7 +409,6 @@ Run **pspy** to spy command lines
 [alfredo@fedora ~]$ ls -la /usr/local/bin/backup-flask.sh
 -rwxr-xr-x. 1 root root 106 Mar 28  2023 /usr/local/bin/backup-flask.sh
 [alfredo@fedora ~]$ cat /usr/local/bin/backup-flask.sh
-
 #!/bin/sh
 export PATH="/home/alfredo/restapi:$PATH"
 cd /home/alfredo/restapi
