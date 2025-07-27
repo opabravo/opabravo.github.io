@@ -2,9 +2,9 @@
 render_with_liquid: false
 title: HackTheBox Writeup - Busqueda
 date: 2023-04-16 05:36:58 +1400
-tags: [hackthebox, linux, nmap, python, python-flask, searchor, injection, code-injection, subdomain, docker, docker-inspect, gitea, git, clear-text-credentials, discover-secrets, sudo, python-script, mysql, password-reuse, oscp-like-2023]
+tags: [hackthebox, linux, nmap, python, python-flask, searchor, injection, code-injection, vhost, docker, docker-inspect, gitea, git, clear-text-credentials, discover-secrets, sudo, python-script, mysql, password-reuse, oscp-like-2023]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/a6942ab57b6a79f71240420442027334.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/a6942ab57b6a79f71240420442027334.png
     width: 640
     height: 480
 ---

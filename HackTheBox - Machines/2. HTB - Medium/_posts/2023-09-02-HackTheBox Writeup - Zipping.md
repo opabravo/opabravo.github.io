@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Zipping
 date: 2023-09-02 23:45:20 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, ffuf, php, file-upload, file-read, zip, symlinks, sqli, mysql, local-file-inclusion, sqli-bypass, sqli2rce, file-write, lfi2rce, webshell, sudo, shared-object-hijack, hex-editor, file-upload-bypass, regex-bypass]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/03e875ef2a39c9a2bd7538b3cfcd9b8a.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/03e875ef2a39c9a2bd7538b3cfcd9b8a.png
     width: 640
     height: 480
 ---
@@ -16,6 +16,8 @@ Zipping is a medium-difficulty Linux machine that features a variety of attack v
 
 # Recon
 ---
+
+## Hosts
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Zipping]

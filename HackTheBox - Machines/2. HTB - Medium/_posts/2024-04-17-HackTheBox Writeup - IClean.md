@@ -4,7 +4,7 @@ title: HackTheBox Writeup - IClean
 date: 2024-04-17 22:19:16 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, python-flask, xss, xss-stored, simplehttpserver, ssti, ssti-filter-bypass, discover-secrets, mysql, hashcat, password-reuse, sudo, qpdf, file-read]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/750ba886c8a87103c69cac0f13f2de70.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/750ba886c8a87103c69cac0f13f2de70.png
     width: 640
     height: 480
 ---
@@ -18,6 +18,9 @@ IClean is a medium-difficulty Linux machine featuring a website for a cleaning s
 ---
 
 ## Hosts
+
+> `pt` command is a **custom pentest framework** to manage hosts and variables, it is not required to reproduce the steps in this writeup
+{: .prompt-info }
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/IClean]

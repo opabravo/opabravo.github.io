@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Snoopy
 date: 2023-09-21 16:58:37 +1400
 tags: [hackthebox, nmap, linux, autorecon, feroxbuster, user-enumeration, dns, directory-traversal, discover-secrets, email, mattermost, dns-bind, misconfiguration, subdomain-takeover, password-reset-abuse, rogue-smtp, mattermost-integrations, rogue-ssh, honeypots, sudo, git, cve-2023-23946, file-write, clamav, cve-2023-20032, file-read]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/dad63a6e9acecb328beab54e35644220.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/dad63a6e9acecb328beab54e35644220.png
     width: 640
     height: 480
 ---
@@ -16,6 +16,11 @@ Snoopy is a Hard Difficulty Linux machine that involves the exploitation of an L
 
 # Recon
 ---
+
+## Hosts
+
+> `pt` command is a **custom pentest framework** to manage hosts and variables, it is not required to reproduce the steps in this writeup
+{: .prompt-info }
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Snoopy]

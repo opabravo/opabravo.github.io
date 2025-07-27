@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Tabby
 date: 2023-12-02 13:56:28 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, katana, directory-traversal, tomcat, tomcat2rce, tomcat-manager, tomcat-manager-bypass, msfvenom, webshell, jsp, discover-secrets, zip2john, hashcat, password-reuse, lxd, oscp-like, kernel-exploit, pwnkit, hydra, gf, nuclei]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/9b4c7b192eb00be8460364338e48f21f.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/9b4c7b192eb00be8460364338e48f21f.png
     width: 640
     height: 480
 ---
@@ -16,6 +16,11 @@ Tabby is a easy difficulty Linux machine. Enumeration of the website reveals a s
 
 # Recon
 ---
+
+## Hosts
+
+> `pt` command is a **custom pentest framework** to manage hosts and variables, it is not required to reproduce the steps in this writeup
+{: .prompt-info }
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Tabby]

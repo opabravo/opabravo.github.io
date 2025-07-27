@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Analytics
 date: 2023-10-08 08:48:33 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, katana, metabase, cve-2023-38646, java, sqli, remote-code-execution, docker, discover-secrets, password-reuse, docker-escape, kernel-exploit, cve-2023-2640, cve-2023-32629]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/f86fcf4c1cfcc690b43f43e100f89718.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/f86fcf4c1cfcc690b43f43e100f89718.png
     width: 640
     height: 480
 ---
@@ -16,6 +16,11 @@ Analytics is an easy difficulty Linux machine with exposed HTTP and SSH services
 
 # Recon
 ---
+
+## Hosts
+
+> `pt` command is a **custom pentest framework** to manage hosts and variables, it is not required to reproduce the steps in this writeup
+{: .prompt-info }
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Analytics]

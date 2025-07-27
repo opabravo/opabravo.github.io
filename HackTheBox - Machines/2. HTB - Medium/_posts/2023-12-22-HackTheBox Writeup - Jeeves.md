@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Jeeves
 date: 2023-12-22 12:21:19 +1400
 tags: [hackthebox, nmap, windows, netexec, feroxbuster, enum, jenkins, jenkins2rce, privilege-token, juicy-potato, powercat, alternative-data-stream, oscp-like-2023, discover-secrets, keepass2, keepass2john, kpcli, impacket, uac-bypass]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/709059a710d3d6ff1ba32bf0729ecbb8.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/709059a710d3d6ff1ba32bf0729ecbb8.png
     width: 640
     height: 480
 ---
@@ -16,6 +16,11 @@ Jeeves is not overly complicated, however it focuses on some interesting techniq
 
 # Recon
 ---
+
+## Hosts
+
+> `pt` command is a **custom pentest framework** to manage hosts and variables, it is not required to reproduce the steps in this writeup
+{: .prompt-info }
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Jeeves]

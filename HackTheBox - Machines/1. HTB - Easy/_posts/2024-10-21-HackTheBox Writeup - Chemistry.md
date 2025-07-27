@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Chemistry
 date: 2024-10-21 17:36:17 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, python, python-flask, cif, cif-parser, pymatgen, deserialization, cve-2024-23346, discover-secrets, sqlite, hashcat, password-spraying, netexec, port-forwarding, httpx, aiohttp, directory-traversal]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/b8f3d660af2d3ed0929eb119e33526cf.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/b8f3d660af2d3ed0929eb119e33526cf.png
     width: 640
     height: 480
 ---

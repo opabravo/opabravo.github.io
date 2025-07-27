@@ -2,9 +2,9 @@
 render_with_liquid: false
 title: HackTheBox Writeup - GoodGames
 date: 2023-09-22 09:16:19 +1400
-tags: [hackthebox, nmap, linux, httpx, feroxbuster, sqli, mysql, auth-bypass, burpsuite, burp-repeater, burp-intruder, subdomain, password-reuse, ssti, python, python-flask, docker, docker-escape, docker-mount, docker-abuse, deepce, sqlmap]
+tags: [hackthebox, nmap, linux, httpx, feroxbuster, sqli, mysql, auth-bypass, burpsuite, burp-repeater, burp-intruder, vhost, password-reuse, ssti, python, python-flask, docker, docker-escape, docker-mount, docker-abuse, deepce, sqlmap]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/f49b988a9f7df99dba3d7644f55021fd.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/f49b988a9f7df99dba3d7644f55021fd.png
     width: 640
     height: 480
 ---

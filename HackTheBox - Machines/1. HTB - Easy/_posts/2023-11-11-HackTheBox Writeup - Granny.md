@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Granny
 date: 2023-11-11 18:45:37 +1400
 tags: [hackthebox, nmap, windows, windows-2003, obsolete-system, iis, webdav, davtest, cadaver, aspx, webshell, smbserver, msfvenom, privilege-token, churrasco, oscp-like]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/e8a122e2d713a4fb4a180bb9ccd20248.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/e8a122e2d713a4fb4a180bb9ccd20248.png
     width: 640
     height: 480
 ---
@@ -16,6 +16,12 @@ Granny, while similar to Grandpa, can be exploited using several different metho
 
 # Recon
 ---
+
+## Hosts
+
+> `pt` command is a **custom pentest framework** to manage hosts and variables, it is not required to reproduce the steps in this writeup
+{: .prompt-info }
+
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Granny]
 └─$ pt init '10.129.95.234 granny.htb'

@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Jerry
 date: 2023-09-26 19:01:11 +1400
 tags: [hackthebox, nmap, windows, tomcat, tomcat-manager, msfvenom, revshell-war, jsp, oscp-like, reverse-ssh, hydra]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/59f03a24178dbb2bdc94968c201e21f8.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/59f03a24178dbb2bdc94968c201e21f8.png
     width: 640
     height: 480
 ---

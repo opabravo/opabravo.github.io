@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Sea
 date: 2024-10-02 14:51:06 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, osint, reconnaissance, wondercms, cms, php, open-redirect, xss, xss-reflected, cve-2023-41425, discover-secrets, haiti, hashcat, password-spraying, port-forwarding, credentials-stuffing, directory-traversal, command-injection]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/0011f6725aed869f8683589cb08c90d0.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/0011f6725aed869f8683589cb08c90d0.png
     width: 640
     height: 480
 ---
@@ -18,6 +18,9 @@ image:
 ---
 
 ## Hosts
+
+> `pt` command is a **custom pentest framework** to manage hosts and variables, it is not required to reproduce the steps in this writeup
+{: .prompt-info }
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Sea]

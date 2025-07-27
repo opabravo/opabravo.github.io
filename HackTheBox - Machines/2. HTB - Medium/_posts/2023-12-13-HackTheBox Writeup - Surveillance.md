@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Surveillance
 date: 2023-12-13 22:52:36 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, craft-cms, cve-2023-41892, zoneminder, cve-2023-26035, socat, discover-backup, mysql, hashcat, password-reuse, sudo, perl-script]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/d2ddffcb2eced6a4d5486dc99d440d1a.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/d2ddffcb2eced6a4d5486dc99d440d1a.png
     width: 640
     height: 480
 ---
@@ -16,6 +16,12 @@ Surveillance is a medium-difficulty Linux machine that showcases a vulnerability
 
 # Recon
 ---
+
+## Hosts
+
+> `pt` command is a **custom pentest framework** to manage hosts and variables, it is not required to reproduce the steps in this writeup
+{: .prompt-info }
+
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Surveillance]
 └─$ pt init '10.129.56.156 surveillance.htb'

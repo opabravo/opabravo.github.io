@@ -4,7 +4,7 @@ title: HackTheBox Writeup - ServMon
 date: 2023-12-22 19:55:38 +1400
 tags: [hackthebox, nmap, windows, netexec, ftp, lftp, discover-notes, nvms-1000, directory-traversal, cve-2019-20085, brute-force-attack, hydra, nsclient, nscp, port-forwarding, defense-evasion, av-bypass, revshell-go, oscp-like-2023, ffuf]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/2bc1a8dc04b09b8ac2db694f25ccf051.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/2bc1a8dc04b09b8ac2db694f25ccf051.png
     width: 640
     height: 480
 ---
@@ -16,6 +16,11 @@ ServMon is an easy Windows machine featuring an HTTP server that hosts an NVMS-1
 
 # Recon
 ---
+
+## Hosts
+
+> `pt` command is a **custom pentest framework** to manage hosts and variables, it is not required to reproduce the steps in this writeup
+{: .prompt-info }
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/ServMon]

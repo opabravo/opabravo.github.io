@@ -4,7 +4,7 @@ title: HackTheBox Writeup - TwoMillion
 date: 2023-07-04 19:29:27 +1400
 tags: [hackthebox, linux, nmap, api, broken-access-control, command-injection, cve-2023-0386, cyberchef, php, burpsuite]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/d7bc2758fb7589dfa046bee9ce4d75cb.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/d7bc2758fb7589dfa046bee9ce4d75cb.png
     width: 640
     height: 480
 ---

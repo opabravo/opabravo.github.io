@@ -2,9 +2,9 @@
 render_with_liquid: false
 title: HackTheBox Writeup - Flight
 date: 2023-12-23 03:34:23 +1400
-tags: [hackthebox, nmap, windows, ad, autorecon, netexec, gobuster, feroxbuster, subdomain, php, apache, directory-traversal, ssrf, coerce-authentication, unc, responder, hashcat, ldapdomaindump, ad-miner, bloodhound, enum, password-spraying, smartbrute, ntlm_theft, smb, file-write, webshell, reverse-ssh, port-forwarding, runas, runascs, aspx, privilege-token, potato-attacks, juicy-potato-ng, oscp-like-2023, godpotato, coercer, rubeus, ad-delegation, ad-s4u2self, machine-account, impacket, dcsync]
+tags: [hackthebox, nmap, windows, ad, autorecon, netexec, gobuster, feroxbuster, vhost, php, apache, directory-traversal, ssrf, coerce-authentication, unc, responder, hashcat, ldapdomaindump, ad-miner, bloodhound, enum, password-spraying, smartbrute, ntlm_theft, smb, file-write, webshell, reverse-ssh, port-forwarding, runas, runascs, aspx, privilege-token, potato-attacks, juicy-potato-ng, oscp-like-2023, godpotato, coercer, rubeus, ad-delegation, ad-s4u2self, machine-account, impacket, dcsync]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/a7af9035e5089332dfbfeb328d663f3e.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/a7af9035e5089332dfbfeb328d663f3e.png
     width: 640
     height: 480
 ---
@@ -16,6 +16,9 @@ Flight is a hard Windows machine that starts with a website with two different v
 
 # Recon
 ---
+
+> `pt` command is a **custom pentest framework** to manage hosts and variables, it is not required to reproduce the steps in this writeup
+{: .prompt-info }
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Flight]

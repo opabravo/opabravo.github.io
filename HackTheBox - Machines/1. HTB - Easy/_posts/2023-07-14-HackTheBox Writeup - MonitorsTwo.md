@@ -4,7 +4,7 @@ title: HackTheBox Writeup - MonitorsTwo
 date: 2023-07-14 13:04:33 +1400
 tags: [hackthebox, nmap, linux, php, feroxbuster, cacti, searchsploit, cve-2022-46169, docker, mysql, hashcat, weak-credentials, password-reuse, cve-2021-41091, docker-abuse, suid]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/b55987f8ef9a42df2ad4b4c096e3824d.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/b55987f8ef9a42df2ad4b4c096e3824d.png
     width: 640
     height: 480
 ---

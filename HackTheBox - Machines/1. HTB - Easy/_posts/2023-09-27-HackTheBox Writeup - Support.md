@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Support
 date: 2023-09-27 10:46:19 +1400
 tags: [hackthebox, nmap, windows, crackmapexec, smbclient, reversing, detect-it-easy, decompilation, dnspy, dotnet-framework, csharp, enum, ldap, ldapdomaindump, bloodhound, discover-secrets, jq, evil-winrm, ad-maq, impacket, dacl-abuse, ad-delegation, ad-s4u, dcsync, golden-ticket, oscp-like-2023, powershell-csharp, cyberchef, ldap-passback, honeypots, wireshark, nirsoft, responder, ldeep, coerce-authentication]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/833a3b1f7f96b5708d19b6de084c3201.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/833a3b1f7f96b5708d19b6de084c3201.png
     width: 640
     height: 480
 ---
@@ -16,6 +16,8 @@ Support is an Easy difficulty Windows machine that features an SMB share that al
 
 # Recon
 ---
+
+## Hosts
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Support]

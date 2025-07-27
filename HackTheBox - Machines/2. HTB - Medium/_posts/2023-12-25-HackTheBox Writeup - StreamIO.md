@@ -4,7 +4,7 @@ title: HackTheBox Writeup - StreamIO
 date: 2023-12-25 13:02:04 +1400
 tags: [hackthebox, nmap, windows, ad, netexec, feroxbuster, ffuf, php, sqli, sqli-union, mssql, hashcat, password-spraying, kerbrute, smartbrute, fuzz-param, local-file-inclusion, rfi, reverse-ssh, winpeas, port-forwarding, mssqlclient, discover-backup, ldapdomaindump, discover-browser, mozilla-password, hack-browser-data, bloodhound, bloodhound-python, ad-laps, dacledit, dacl-abuse, evil-winrm, oscp-like-2023, privilege-token, juicy-potato-ng, responder, coerce-authentication]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/21240942d301a96e80574353a96b9003.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/21240942d301a96e80574353a96b9003.png
     width: 640
     height: 480
 ---
@@ -16,6 +16,11 @@ StreamIO is a medium machine that covers subdomain enumeration leading to an SQL
 
 # Recon
 ---
+
+## Hosts
+
+> `pt` command is a **custom pentest framework** to manage hosts and variables, it is not required to reproduce the steps in this writeup
+{: .prompt-info }
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/StreamIO]

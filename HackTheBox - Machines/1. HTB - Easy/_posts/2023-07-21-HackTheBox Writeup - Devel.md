@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Devel
 date: 2023-07-21 20:47:38 +1400
 tags: [hackthebox, nmap, windows, ftp, crackmapexec, aspx, webshell, msfvenom, privilege-token, smbserver, juicy-potato, potato-attacks, oscp-like, defense-evasion, av-bypass, wesng, ms11-046, cve-2011-1249, metasploit]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/0fb6455a29eb4f2682f04a780ce26cb1.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/0fb6455a29eb4f2682f04a780ce26cb1.png
     width: 640
     height: 480
 ---

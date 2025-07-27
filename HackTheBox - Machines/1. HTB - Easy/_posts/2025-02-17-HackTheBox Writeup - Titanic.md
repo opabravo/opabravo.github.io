@@ -2,9 +2,9 @@
 render_with_liquid: false
 title: HackTheBox Writeup - Titanic
 date: 2025-02-17 13:32:11 +1400
-tags: [hackthebox, nmap, linux, feroxbuster, httpx, gobuster, subdomain, python-flask, python, gitea, information-disclosure, directory-traversal, gitea-postexp, discover-secrets, sqlite, hashcat, password-reuse, scheduled-job-abuse, bash-script, image-magick, shared-object-hijack]
+tags: [hackthebox, nmap, linux, feroxbuster, httpx, gobuster, vhost, python-flask, python, gitea, information-disclosure, directory-traversal, gitea-postexp, discover-secrets, sqlite, hashcat, password-reuse, scheduled-job-abuse, bash-script, image-magick, shared-object-hijack]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/eb5942ec56dd9b6feb06dcf8af8aefc6.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/eb5942ec56dd9b6feb06dcf8af8aefc6.png
     width: 640
     height: 480
 ---
@@ -17,6 +17,9 @@ Titanic is an easy difficulty Linux machine that features an Apache server liste
 ---
 
 ## Hosts
+
+> `pt` command is a **custom pentest framework** to manage hosts and variables, it is not required to reproduce the steps in this writeup
+{: .prompt-info }
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Titanic]

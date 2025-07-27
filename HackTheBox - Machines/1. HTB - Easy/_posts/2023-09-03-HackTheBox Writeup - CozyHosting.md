@@ -4,7 +4,7 @@ title: HackTheBox Writeup - CozyHosting
 date: 2023-09-03 19:38:53 +1400
 tags: [hackthebox, nmap, linux, discover-secrets, cookie-tamper, command-injection-bypass, java, discover-secrets, psql, hashcat, sudo, gtfobin, oscp-like-2023]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/eaed7cd01e84ef5c6ec7d949d1d61110.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/eaed7cd01e84ef5c6ec7d949d1d61110.png
     width: 640
     height: 480
 ---

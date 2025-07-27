@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Bastard
 date: 2024-01-19 20:28:34 +1400
 tags: [hackthebox, nmap, windows, feroxbuster, drupal, drupalgeddon2, powercat, privilege-token, juicy-potato, wesng, ms15-051, kernel-exploit]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/a8d2ae87fbe6d1ccfe93522d74defb3a.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/a8d2ae87fbe6d1ccfe93522d74defb3a.png
     width: 640
     height: 480
 ---
@@ -16,6 +16,11 @@ Bastard is not overly challenging, however it requires some knowledge of PHP in 
 
 # Recon
 ---
+
+## Hosts
+
+> `pt` command is a **custom pentest framework** to manage hosts and variables, it is not required to reproduce the steps in this writeup
+{: .prompt-info }
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Bastard]

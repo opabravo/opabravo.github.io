@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Perfection
 date: 2024-03-03 16:19:28 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, ffuf, ruby, ssti, regex-bypass, discover-notes, discover-backup, sqlite, name-the-hash, hashcat, hashcat-mask, sudo, misconfiguration]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/57fc0f58916cb3ed8e793db071769d70.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/57fc0f58916cb3ed8e793db071769d70.png
     width: 640
     height: 480
 ---
@@ -18,6 +18,9 @@ Perfection is an easy Linux machine that features a web application with functio
 ---
 
 ## Hosts
+
+> `pt` command is a **custom pentest framework** to manage hosts and variables, it is not required to reproduce the steps in this writeup
+{: .prompt-info }
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Perfection]

@@ -4,7 +4,7 @@ title: HackTheBox Writeup - OpenAdmin
 date: 2024-01-11 13:43:07 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, open-net-admin, php, command-injection, linpeas, discover-secrets, password-reuse, port-forwarding, webshell, sudo, gtfobin]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/5b00db157dbbd7099ff6c0ef10f910ea.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/5b00db157dbbd7099ff6c0ef10f910ea.png
     width: 640
     height: 480
 ---
@@ -16,6 +16,11 @@ OpenAdmin is an easy difficulty Linux machine that features an outdated OpenNetA
 
 # Recon
 ---
+
+## Hosts
+
+> `pt` command is a **custom pentest framework** to manage hosts and variables, it is not required to reproduce the steps in this writeup
+{: .prompt-info }
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/OpenAdmin]

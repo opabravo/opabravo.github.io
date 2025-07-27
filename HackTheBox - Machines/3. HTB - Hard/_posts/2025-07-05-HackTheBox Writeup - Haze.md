@@ -4,19 +4,22 @@ title: HackTheBox Writeup - Haze
 date: 2025-07-05 21:03:45 +1400
 tags: [hackthebox, nmap, windows, ad, adcs, netexec, splunk, feroxbuster, directory-traversal, cve-2024-36991, discover-secrets, splunksecrets, password-spraying, ffuf, username-anarchy, user-enumeration, kerbrute, bloodhound-ce, bloodhound-ce-python, bloodhound-cli, ldeep, rid-bruteforce, impacket, kerberos, evil-winrm, discover-backup, bloodyad, dacl-abuse, ad-gmsa, sddl, sddl-maker, shadow-credentials, splunk2rce, splunk-app, privilege-token, potato-attacks, sigma-potato, ntds]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/44e14228c6a208714eda356bda7624a8.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/44e14228c6a208714eda356bda7624a8.png
     width: 640
     height: 480
 ---
 
 
 
-Compromise begins with `paul.taylor` using **Splunk 9.2.1 Directory Traversal (CVE-2024-36991)** and **Splunk 7.2 secret decryption**, pivots through `mark.adams` using **Kerberos password spray** and **RID bruteforce**, escalates via `Haze-IT-Backup$` and `edward.martin` through **DACL abuse (Read GMSA, WriteOwner, ShadowCredentials)**, and gains SYSTEM via `alexander.green` using **Splunk RCE via custom app** and **privilege token abuse**.
+Haze is a hard difficulty Windows machine focused on web exploitation, domain abuse, and Windows privilege escalation. Initial access is gained by exploiting a `Splunk Arbitrary File Read (CVE-2024-36991)` to extract an LDAP bind password, which is then decrypted using `splunk.secret`. With valid credentials, a BloodHound scan reveals further accounts, and password spraying provides access to a user with `GMSA` management rights. This allows abuse of the `PrincipalsAllowedToRetrieveManagedPassword` property to dump hashes and pivot into a privileged service account. Using Shadow Credentials, access is escalated to another user. Backup files expose more credentials, eventually giving admin access to `Splunk`. Finally, a custom app upload enables a reverse shell, and `SeImpersonatePrivilege` is abused to impersonate SYSTEM, completing the escalation chain.
 
 # Recon
 ---
 
 ## Hosts
+
+> `pt` command is a **custom pentest framework** to manage hosts and variables, it is not required to reproduce the steps in this writeup
+{: .prompt-info }
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Haze]
@@ -824,7 +827,7 @@ Available sections:
 
 - Google : `splunk $7$ hash`
 
-There's a tool **splunksecrets** that can decrypt Splunk 7.2 **AES256-GCM** secrets (`$6$<base64 ciphertext>`) via the encryption key from `etc/auth/splunk.secret`
+There's a tool **splunksecrets** that can decrypt Splunk 7.2 **AES256-GCM** secrets (`$7$<base64 ciphertext>`) via the encryption key from `etc/auth/splunk.secret`
 
 ![](/assets/obsidian/cd56195f5af8007b549cb127fdb8093b.png)
 

@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Dog
 date: 2025-03-09 19:33:00 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, php, backdrop-cms, cms, git, git-dumper, discover-secrets, directory-listing, enum-version, user-enumeration, backdrop-cms2rce, webshell, password-spraying, sudo, backdrop-cms-bee, php-script]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/426830ea2ae4f05f7892ad89195f8276.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/426830ea2ae4f05f7892ad89195f8276.png
     width: 640
     height: 480
 ---
@@ -17,6 +17,9 @@ Dog is an easy-rated Linux machine that involves reading sensitive information t
 ---
 
 ## Hosts
+
+> `pt` command is a **custom pentest framework** to manage hosts and variables, it is not required to reproduce the steps in this writeup
+{: .prompt-info }
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Dog]

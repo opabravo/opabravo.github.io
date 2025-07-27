@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Irked
 date: 2024-02-07 11:57 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, rpcinfo, unrealircd, irc, discover-secrets, weak-permissions, steganography, stegseek, suid, hack-browser-data, oscp-like]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/5fb846e75cf0db0c4b27e2dc64a9bf82.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/5fb846e75cf0db0c4b27e2dc64a9bf82.png
     width: 640
     height: 480
 ---
@@ -16,6 +16,11 @@ Irked is a pretty simple and straight-forward box which requires basic enumerati
 
 # Recon
 ---
+
+## Hosts
+
+> `pt` command is a **custom pentest framework** to manage hosts and variables, it is not required to reproduce the steps in this writeup
+{: .prompt-info }
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Irked]

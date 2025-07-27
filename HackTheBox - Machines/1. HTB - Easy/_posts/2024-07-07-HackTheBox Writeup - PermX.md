@@ -2,9 +2,9 @@
 render_with_liquid: false
 title: HackTheBox Writeup - PermX
 date: 2024-07-07 08:47:13 +1400
-tags: [hackthebox, nmap, linux, feroxbuster, php, gobuster, subdomain, enum, chamilo-lms, cve-2023-4220, file-upload, discover-secrets, password-spraying, password-reuse, sudo, bash-script, gtfobin, symlinks, file-write]
+tags: [hackthebox, nmap, linux, feroxbuster, php, gobuster, vhost, enum, chamilo-lms, cve-2023-4220, file-upload, discover-secrets, password-spraying, password-reuse, sudo, bash-script, gtfobin, symlinks, file-write]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/3ec233f1bf70b096a66f8a452e7cd52f.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/3ec233f1bf70b096a66f8a452e7cd52f.png
     width: 640
     height: 480
 ---
@@ -18,6 +18,9 @@ image:
 ---
 
 ## Hosts
+
+> `pt` command is a **custom pentest framework** to manage hosts and variables, it is not required to reproduce the steps in this writeup
+{: .prompt-info }
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/PermX]

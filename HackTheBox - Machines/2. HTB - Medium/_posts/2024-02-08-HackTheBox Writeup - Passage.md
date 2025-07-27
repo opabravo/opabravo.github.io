@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Passage
 date: 2024-02-08 11:38:50 +1400
 tags: [hackthebox, nmap, linux, cutenews, cariddi, cve-2019-11447, php, file-upload, information-disclosure, hashcat, password-spraying, enum, misconfiguration, linpeas, usb-creator, oscp-like, pwnkit, xspy]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/ec88bbe570fd512ab370208e5139bb41.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/ec88bbe570fd512ab370208e5139bb41.png
     width: 640
     height: 480
 ---
@@ -18,6 +18,9 @@ Passage is a medium difficulty Linux machine that hosts a CuteNews web applicati
 ---
 
 ## Hosts
+
+> `pt` command is a **custom pentest framework** to manage hosts and variables, it is not required to reproduce the steps in this writeup
+{: .prompt-info }
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Passage]

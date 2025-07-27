@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Keeper
 date: 2023-08-14 18:21:31 +1400
 tags: [hackthebox, nmap, linux, enum, credentials-exposure, keepass2, cve-2023-32784, keepass2-memory-dump, kdbx, kpcli, osint, putty, putty-key, puttygen, keepass2john, hashcat, hashcat-mask, oscp-like-2023]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/b56a5742b99e2568fa167765b1323370.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/b56a5742b99e2568fa167765b1323370.png
     width: 640
     height: 480
 ---

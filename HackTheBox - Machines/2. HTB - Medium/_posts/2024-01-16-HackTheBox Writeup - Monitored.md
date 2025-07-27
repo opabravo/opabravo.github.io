@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Monitored
 date: 2024-01-16 13:56 +1400
 tags: [hackthebox, nmap, linux, snmp, feroxbuster, onesixtyone, snmp-check, nagios, nagios-xi, nagios-core, sqli, mysql, cve-2023-40931, php, api, sqlmap, nagios-xi-2rce, service-binary-permission, sudo, bash-script, file-read, oscp-like-2023]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/d4988810825d26acb2e84ca0ac9feaf4.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/d4988810825d26acb2e84ca0ac9feaf4.png
     width: 640
     height: 480
 ---
@@ -16,6 +16,11 @@ Monitored is a medium-difficulty Linux machine that features a Nagios instance. 
 
 # Recon
 ---
+
+## Hosts
+
+> `pt` command is a **custom pentest framework** to manage hosts and variables, it is not required to reproduce the steps in this writeup
+{: .prompt-info }
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Monitored]

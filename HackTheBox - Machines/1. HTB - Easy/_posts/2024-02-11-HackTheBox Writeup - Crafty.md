@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Crafty
 date: 2024-02-11 15:49:24 +1400
 tags: [hackthebox, nmap, windows, feroxbuster, gobuster, minecraft-server, minecraft, pycraft, log4shell, log4j, reverse-ssh, discover-secrets, java, jadx-gui, decompilation, reversing, port-forwarding, netexec, password-spraying, forensics, forensics-activities]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/c01c8813bfc7795ae0717bbee7b407d1.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/c01c8813bfc7795ae0717bbee7b407d1.png
     width: 640
     height: 480
 ---
@@ -18,6 +18,9 @@ Crafty is an easy-difficulty Windows machine featuring the exploitation of a `Mi
 ---
 
 ## Hosts
+
+> `pt` command is a **custom pentest framework** to manage hosts and variables, it is not required to reproduce the steps in this writeup
+{: .prompt-info }
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Crafty]

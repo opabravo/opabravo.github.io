@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Headless
 date: 2024-04-14 10:37:22 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, python-flask, xss, xss-stored, command-injection, sudo, bash-script, misconfiguration]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/26e076db204a74b99390e586d7ebcf8c.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/26e076db204a74b99390e586d7ebcf8c.png
     width: 640
     height: 480
 ---
@@ -17,6 +17,9 @@ Headless is an easy-difficulty Linux machine that features a `Python Werkzeug` s
 ---
 
 ## Hosts
+
+> `pt` command is a **custom pentest framework** to manage hosts and variables, it is not required to reproduce the steps in this writeup
+{: .prompt-info }
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Headless]

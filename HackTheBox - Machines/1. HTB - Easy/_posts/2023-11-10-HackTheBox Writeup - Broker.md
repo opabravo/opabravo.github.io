@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Broker
 date: 2023-11-10 14:04:05 +1400
 tags: [hackthebox, nmap, linux, activemq, cve-2023-46604, java, deserialization, cyberchef, sudo, nginx-privesc, nginx, oscp-like-2023, hydra]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/a725533911ba94a880899fbf900d988c.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/a725533911ba94a880899fbf900d988c.png
     width: 640
     height: 480
 ---
@@ -16,6 +16,12 @@ Broker is an easy difficulty `Linux` machine hosting a version of `Apache Active
 
 # Recon
 ---
+
+## Hosts
+
+> `pt` command is a **custom pentest framework** to manage hosts and variables, it is not required to reproduce the steps in this writeup
+{: .prompt-info }
+
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Broker]
 └─$ pt init '10.129.230.87 broker.htb'

@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Magic
 date: 2024-02-08 17:47:25 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, php, auth-bypass, sqli, mysql, file-upload, file-upload-bypass, webshell, htaccess, misconfiguration, discover-secrets, mysqldump, password-reuse, suid, path-injection, oscp-like]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/73eebbbdfbbfd46258ea2ae7e52d9479.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/73eebbbdfbbfd46258ea2ae7e52d9479.png
     width: 640
     height: 480
 ---
@@ -18,6 +18,9 @@ Magic is an easy difficulty Linux machine that features a custom web application
 ---
 
 ## Hosts
+
+> `pt` command is a **custom pentest framework** to manage hosts and variables, it is not required to reproduce the steps in this writeup
+{: .prompt-info }
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Magic]

@@ -4,7 +4,7 @@ title: HackTheBox Writeup - GreenHorn
 date: 2024-07-21 16:07:12 +1400
 tags: [hackthebox, nmap, linux, gitea, information-disclosure, discover-secrets, haiti, hashcat, pluck-cms, cms, php, file-upload, password-spraying, pdf, pdfimages, depixelization, depix]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/b7d9a9b075fd49c8509866fe24f58dbb.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/b7d9a9b075fd49c8509866fe24f58dbb.png
     width: 640
     height: 480
 ---
@@ -18,6 +18,9 @@ GreenHorn is an easy difficulty machine that takes advantage of an exploit in Pl
 ---
 
 ## Hosts
+
+> `pt` command is a **custom pentest framework** to manage hosts and variables, it is not required to reproduce the steps in this writeup
+{: .prompt-info }
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/GreenHorn]

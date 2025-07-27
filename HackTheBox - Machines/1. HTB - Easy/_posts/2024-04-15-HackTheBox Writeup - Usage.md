@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Usage
 date: 2024-04-15 16:21:50 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, gobuster, php, sqli, sqli-boolean-blind, sqlmap, hashcat, file-upload, file-upload-bypass, webshell, discover-secrets, password-reuse, sudo, reversing, ghidra, wildcards, 7zip, file-read, oscp-like-2023]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/23e804513a47e8f20bc865d0419946e1.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/23e804513a47e8f20bc865d0419946e1.png
     width: 640
     height: 480
 ---
@@ -18,6 +18,9 @@ Usage is an easy Linux machine that features a blog site vulnerable to SQL injec
 ---
 
 ## Hosts
+
+> `pt` command is a **custom pentest framework** to manage hosts and variables, it is not required to reproduce the steps in this writeup
+{: .prompt-info }
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Usage]

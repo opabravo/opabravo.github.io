@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Instant
 date: 2024-12-20 06:48:42 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, apk, java, apktool, jadx, reversing, gitleaks, discover-secrets, jwt, api, httpx, swagger-ui, python, python-flask, directory-traversal, solar-putty, solar-putty-session, sqlite, hashcat]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/8e9f11a3cceeb4f69e659ed31347cc77.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/8e9f11a3cceeb4f69e659ed31347cc77.png
     width: 640
     height: 480
 ---
@@ -17,6 +17,9 @@ Instant is a medium difficulty machine that includes reverse engineering a mobil
 ---
 
 ## Hosts
+
+> `pt` command is a **custom pentest framework** to manage hosts and variables, it is not required to reproduce the steps in this writeup
+{: .prompt-info }
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Instant]

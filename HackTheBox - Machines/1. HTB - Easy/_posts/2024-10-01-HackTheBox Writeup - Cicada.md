@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Cicada
 date: 2024-10-01 22:38:33 +1400
 tags: [hackthebox, nmap, windows, ad, netexec, discover-notes, credentials-exposure, password-spraying, smartbrute, ldeep, powershell-script, evil-winrm, ad-backup-operators, golden-ticket, backupoperatortoolkit, remoteregsave, oscp-like-2023]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/79616a32a057e5e672dadb51bb96dd04.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/79616a32a057e5e672dadb51bb96dd04.png
     width: 640
     height: 480
 ---
@@ -18,6 +18,9 @@ Cicada is an easy-difficult Windows machine that focuses on beginner Active Dire
 ---
 
 ## Hosts
+
+> `pt` command is a **custom pentest framework** to manage hosts and variables, it is not required to reproduce the steps in this writeup
+{: .prompt-info }
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Cicada]

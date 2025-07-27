@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Administrator
 date: 2024-11-11 17:51:44 +1400
 tags: [hackthebox, nmap, windows, ad, assumed-breach, ftp, netexec, password-spraying, brutespray, ldeep, bloodhound, bloodhound-python, lftp, password-safe-v3, hashcat, evil-winrm, targeted-kerberoast, dcsync, impacket, oscp-like-2023]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/9d232b1558b7543c7cb85f2774687363.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/9d232b1558b7543c7cb85f2774687363.png
     width: 640
     height: 480
 ---
@@ -17,6 +17,9 @@ image:
 ---
 
 ## Hosts
+
+> `pt` command is a **custom pentest framework** to manage hosts and variables, it is not required to reproduce the steps in this writeup
+{: .prompt-info }
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Administrator]

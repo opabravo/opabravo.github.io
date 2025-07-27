@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Forest
 date: 2023-07-19 16:30:01 +1400
 tags: [hackthebox, nmap, windows, ad, crackmapexec, enum4linux, asreproast, hashcat, evil-winrm, bloodhound, bloodhound-python, exchange-windows-permissions, dacl-abuse, dacledit, impacket, dcsync, golden-ticket, pass-the-ticket, oscp-like, oscp-like-2023, zero-logon]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/7dedecb452597150647e73c2dd6c24c7.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/7dedecb452597150647e73c2dd6c24c7.png
     width: 640
     height: 480
 ---

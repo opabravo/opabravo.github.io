@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Wifinetic
 date: 2023-09-18 14:11:47 +1400
 tags: [hackthebox, nmap, linux, wifi-hacking, ftp, weak-permissions, openwrt, clear-text-credentials, password-reuse, wps, wpa]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/4aaf2ad33bea830079d74497f8e7fefc.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/4aaf2ad33bea830079d74497f8e7fefc.png
     width: 640
     height: 480
 ---
@@ -15,6 +15,8 @@ Wifinetic is an easy difficulty Linux machine which presents an intriguing netwo
 
 # Recon
 ---
+
+## Hosts
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Wifinetic]

@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Pilgrimage
 date: 2023-06-28 23:11:38 +1400
 tags: [hackthebox, linux, nmap, feroxbuster, exiftool, git, git-dumper, githacker, php, image-magick, searchsploit, cve-2022-44268, file-read, xxd, sqlite, clear-text-credentials, pspy, bash-script, binwalk-cve, cve-2022-4510]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/33632db6c1f4323a58452d8fcfc7eee0.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/33632db6c1f4323a58452d8fcfc7eee0.png
     width: 640
     height: 480
 ---

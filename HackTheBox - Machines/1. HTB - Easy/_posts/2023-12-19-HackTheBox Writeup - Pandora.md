@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Pandora
 date: 2023-12-19 15:03 +1400
 tags: [hackthebox, nmap, linux, snmp, feroxbuster, onesixtyone, snmp-check, snmpbulkwalk, credentials-exposure, password-reuse, port-forwarding, pandorafms, cve-2021-32099, sqli, mysql, deserialization, cve-2020-5844, file-upload, suid, path-injection, oscp-like-2023]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/6ac0e76002774bbfac92b0dbc86cb6af.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/6ac0e76002774bbfac92b0dbc86cb6af.png
     width: 640
     height: 480
 ---
@@ -16,6 +16,11 @@ Pandora is an easy rated Linux machine. The port scan reveals a SSH, web-server 
 
 # Recon
 ---
+
+## Hosts
+
+> `pt` command is a **custom pentest framework** to manage hosts and variables, it is not required to reproduce the steps in this writeup
+{: .prompt-info }
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Pandora]

@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Sense
 date: 2023-09-30 21:36:13 +1400
 tags: [hackthebox, nmap, linux, nmap, autorecon, feroxbuster, pfsense, enum, discover-secrets, searchsploit, cve-2014-4688, oscp-like]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/a3d8bf97412b0b6247aac14695eff21c.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/a3d8bf97412b0b6247aac14695eff21c.png
     width: 640
     height: 480
 ---

@@ -2,9 +2,9 @@
 render_with_liquid: false
 title: HackTheBox Writeup - Runner
 date: 2024-04-24 22:34:59 +1400
-tags: [hackthebox, nmap, linux, feroxbuster, gobuster, subdomain, jetbrains-teamcity, searchsploit, jsp, msfvenom, docker, docker-escape, docker-mount, discover-secrets, gitleaks, ssh-key-spray, hashcat, portainer, portainer-privesc, metasploit]
+tags: [hackthebox, nmap, linux, feroxbuster, gobuster, vhost, jetbrains-teamcity, searchsploit, jsp, msfvenom, docker, docker-escape, docker-mount, discover-secrets, gitleaks, ssh-key-spray, hashcat, portainer, portainer-privesc, metasploit]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/029d258b4444bc4226b90b1f8f27d086.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/029d258b4444bc4226b90b1f8f27d086.png
     width: 640
     height: 480
 ---
@@ -18,6 +18,9 @@ Runner is a medium difficulty Linux box that contains a vulnerability ([CVE-2023
 ---
 
 ## Hosts
+
+> `pt` command is a **custom pentest framework** to manage hosts and variables, it is not required to reproduce the steps in this writeup
+{: .prompt-info }
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Runner]

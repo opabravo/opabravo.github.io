@@ -2,9 +2,9 @@
 render_with_liquid: false
 title: HackTheBox Writeup - Pov
 date: 2024-02-03 09:38:36 +1400
-tags: [hackthebox, nmap, windows, feroxbuster, gobuster, subdomain, aspx, directory-traversal, directory-traversal-bypass, unc, aspx-viewstate, ysoserial-dotnet, deserialization, reverse-ssh, discover-secrets, powershell-securestring, runascs, privilege-token]
+tags: [hackthebox, nmap, windows, feroxbuster, gobuster, vhost, aspx, directory-traversal, directory-traversal-bypass, unc, aspx-viewstate, ysoserial-dotnet, deserialization, reverse-ssh, discover-secrets, powershell-securestring, runascs, privilege-token]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/a36f80aa6bc43863512ec9537c4366c9.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/a36f80aa6bc43863512ec9537c4366c9.png
     width: 640
     height: 480
 ---
@@ -16,6 +16,11 @@ Pov is a medium Windows machine that starts with a webpage featuring a business 
 
 # Recon
 ---
+
+## Hosts
+
+> `pt` command is a **custom pentest framework** to manage hosts and variables, it is not required to reproduce the steps in this writeup
+{: .prompt-info }
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Pov]

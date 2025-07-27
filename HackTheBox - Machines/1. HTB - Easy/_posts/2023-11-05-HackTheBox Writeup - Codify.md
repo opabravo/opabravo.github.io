@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Codify
 date: 2023-11-05 03:09:41 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, nodejs, vm2, sandbox-escape, cve-2023-29199, discover-secrets, hashcat, password-reuse, sudo, bash-script, bash-condition-bypass, pspy]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/57b977ea744af01a5454c8643a850e59.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/57b977ea744af01a5454c8643a850e59.png
     width: 640
     height: 480
 ---
@@ -16,6 +16,11 @@ Codify is an easy Linux machine that features a web application that allows user
 
 # Recon
 ---
+
+## Hosts
+
+> `pt` command is a **custom pentest framework** to manage hosts and variables, it is not required to reproduce the steps in this writeup
+{: .prompt-info }
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Codify]

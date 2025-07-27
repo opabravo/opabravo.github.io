@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Office
 date: 2024-02-23 09:44:22 +1400
 tags: [hackthebox, nmap, windows, ad, feroxbuster, joomla, cms, information-disclosure, cve-2023-23752, user-enumeration, kerbrute, netexec, password-spraying, smartbrute, smb, ldeep, brute-force-attack, python, csrf-token-bypass, 4xx-bypass, asreqroast, pcap, wireshark, network-miner, hashcat, joomla-brute, joomla2rce, php, webshell, reverse-ssh, runascs, port-forwarding, libre-office, client-side-attack, odt, cve-2023-2255, windows-credential-vault, mimikatz, dpapi, ad-gpo, pygpoabuse, sharpgpoabuse]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/2cdef06b99725f3dcce38431a95b7b77.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/2cdef06b99725f3dcce38431a95b7b77.png
     width: 640
     height: 480
 ---
@@ -18,6 +18,9 @@ Office is a hard-difficulty Windows machine featuring various vulnerabilities in
 ---
 
 ## Hosts
+
+> `pt` command is a **custom pentest framework** to manage hosts and variables, it is not required to reproduce the steps in this writeup
+{: .prompt-info }
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Office]

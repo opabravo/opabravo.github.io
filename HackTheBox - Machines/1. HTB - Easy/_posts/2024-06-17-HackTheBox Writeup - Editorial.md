@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Editorial
 date: 2024-06-17 12:14:57 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, python-flask, ssrf, ffuf, discover-secrets, git, sudo, python-script, gitpython, cve-2022-24439, oscp-like-2023]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/a466db5ce4f7aaea98f588d1cb71a0aa.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/a466db5ce4f7aaea98f588d1cb71a0aa.png
     width: 640
     height: 480
 ---
@@ -18,6 +18,9 @@ image:
 ---
 
 ## Hosts
+
+> `pt` command is a **custom pentest framework** to manage hosts and variables, it is not required to reproduce the steps in this writeup
+{: .prompt-info }
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Editorial]

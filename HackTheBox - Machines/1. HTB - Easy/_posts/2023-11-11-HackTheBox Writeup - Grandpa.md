@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Grandpa
 date: 2023-11-11 14:53:35 +1400
 tags: [hackthebox, nmap, windows, windows-2003, iis, webdav, cve-2017-7269, privilege-token, churrasco, msfvenom, smbserver, oscp-like, metasploit]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/381683fd107da11f1dc916401ae8aee0.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/381683fd107da11f1dc916401ae8aee0.png
     width: 640
     height: 480
 ---
@@ -16,6 +16,12 @@ Grandpa is one of the simpler machines on Hack The Box, however it covers the wi
 
 # Recon
 ---
+
+## Hosts
+
+> `pt` command is a **custom pentest framework** to manage hosts and variables, it is not required to reproduce the steps in this writeup
+{: .prompt-info }
+
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Grandpa]
 └─$ pt init '10.129.241.161 grandpa.htb'

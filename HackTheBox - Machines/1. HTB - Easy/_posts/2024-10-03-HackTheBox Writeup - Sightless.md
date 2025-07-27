@@ -2,9 +2,9 @@
 render_with_liquid: false
 title: HackTheBox Writeup - Sightless
 date: 2024-10-03 18:26:44 +1400
-tags: [hackthebox, nmap, linux, feroxbuster, hakrlawler, subdomain, sqlpad, ssti, cve-2022-0944, docker, docker-escape, discover-secrets, hashcat, credentials-stuffing, netexec, froxlor, ligolo-ng, chrome, chrome-remote-debugging, froxlor2rce, php]
+tags: [hackthebox, nmap, linux, feroxbuster, hakrlawler, vhost, sqlpad, ssti, cve-2022-0944, docker, docker-escape, discover-secrets, hashcat, credentials-stuffing, netexec, froxlor, ligolo-ng, chrome, chrome-remote-debugging, froxlor2rce, php]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/f96160a20e9cf0138885238444b47404.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/f96160a20e9cf0138885238444b47404.png
     width: 640
     height: 480
 ---
@@ -18,6 +18,9 @@ image:
 ---
 
 ## Hosts
+
+> `pt` command is a **custom pentest framework** to manage hosts and variables, it is not required to reproduce the steps in this writeup
+{: .prompt-info }
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Sightless]

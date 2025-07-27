@@ -2,9 +2,9 @@
 render_with_liquid: false
 title: HackTheBox Writeup - BoardLight
 date: 2024-05-28 00:34:58 +1400
-tags: [hackthebox, nmap, linux, feroxbuster, subdomain, gobuster, enum, dolibarr, default-credentials, cve-2023-30253, code-injection, php, webshell, discover-secrets, password-reuse, password-spraying, suid, enlightenment, cve-2022-37706, oscp-like-2023]
+tags: [hackthebox, nmap, linux, feroxbuster, vhost, gobuster, enum, dolibarr, default-credentials, cve-2023-30253, code-injection, php, webshell, discover-secrets, password-reuse, password-spraying, suid, enlightenment, cve-2022-37706, oscp-like-2023]
 image:
-    path: https://labs.hackthebox.com/storage/avatars/7768afed979c9abe917b0c20df49ceb8.png
+    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/7768afed979c9abe917b0c20df49ceb8.png
     width: 640
     height: 480
 ---
@@ -18,6 +18,9 @@ BoardLight is an easy difficulty Linux machine that features a `Dolibarr` instan
 ---
 
 ## Hosts
+
+> `pt` command is a **custom pentest framework** to manage hosts and variables, it is not required to reproduce the steps in this writeup
+{: .prompt-info }
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/BoardLight]
