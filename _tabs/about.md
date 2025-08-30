@@ -7,10 +7,8 @@ order: 4
 ## Introduction
 
 - Interested in **Purple teaming**, **Digital Forensics**, **OSINT**, **Cyber Threat Intelligence**, **Social Engineering** and **Offender Profiling**
-- Majors in **Web**, **Forensics**, **OSINT** and **Misc** CTF challenges
+- Majors in **Web**, **Forensics**, **OSINT** and **Misc** CTF challenges, enjoy learning with others while solving challenges, looking forward to join a CTF team
 - A collaborative learner, likes to share knowledge and experiences, and learn from others
-- Looking forward to join a CTF team, enjoy learning with others while solving challenges
-- Loves cats, coffee, and music. Biggest dream is to have a cat and live in a quiet place
 
 ## Certifications
 
@@ -27,33 +25,28 @@ order: 4
 
 ## Skills
 
-### Web
+### Programming / Scripting
 
-![Nginx](https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white){: .normal }
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white){: .normal }
 ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white){: .normal }
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi){: .normal }
+![Nginx](https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white){: .normal }
+![Selenium](https://img.shields.io/badge/-selenium-%43B02A?style=for-the-badge&logo=selenium&logoColor=white)
 
-### Main Programming Languages
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white){: .normal }
+![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white){: .normal }
 
-![Python](https://img.shields.io/badge/python-3.12-%234B8BBE.svg?&logo=python&style=for-the-badge&logoColor=white){: .normal }
-![](https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white){: .normal }
-![](https://img.shields.io/badge/powershell-5391FE?style=for-the-badge&logo=powershell&logoColor=white){: .normal }
-![](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white){: .normal }
-![](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white){: .normal }
-![](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white){: .normal }
+### Tools
 
-### DBMS
+![Kali](https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kali-linux&logoColor=white){: .normal }
+![Tmux](https://img.shields.io/badge/tmux-1BB91F?style=for-the-badge&logo=tmux&logoColor=white){: .normal }
+![Shell Script](https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white){: .normal }
+![Powershell](https://img.shields.io/badge/powershell-5391FE?style=for-the-badge&logo=powershell&logoColor=white){: .normal }
 
-![](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white){: .normal }
-![](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white){: .normal }
-![](https://img.shields.io/badge/|-grey?style=for-the-badge){: .normal }
-![](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=black){: .normal }
-![MicrosoftSQLServer](https://img.shields.io/badge/Microsoft%20SQL%20Sever-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white){: .normal }
+![Proxmox](https://img.shields.io/badge/proxmox-proxmox?style=for-the-badge&logo=proxmox&logoColor=%23E57000&labelColor=%232b2a33&color=%232b2a33){: .normal }
+![Ludus](https://img.shields.io/badge/Ludus-000000?style=for-the-badge&logo=java&logoColor=white){: .normal }
+![Wazuh](https://img.shields.io/badge/Wazuh-005AF0?style=for-the-badge&logo=amp&logoColor=white){: .normal }
 
-## Tools
-
-![](https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kali-linux&logoColor=white){: .normal }
-![](https://img.shields.io/badge/tmux-1BB91F?style=for-the-badge&logo=tmux&logoColor=white){: .normal }
 ![Obsidian](https://img.shields.io/static/v1?style=for-the-badge&message=Obsidian&color=483699&logo=Obsidian&logoColor=FFFFFF&label=){: .normal }
 ![VSCode](https://img.shields.io/static/v1?style=for-the-badge&message=VSCode&color=007ACC&logo=Visual+Studio+Code&logoColor=FFFFFF&label=){: .normal }
 ![PyCharm](https://img.shields.io/badge/pycharm-143?style=for-the-badge&logo=pycharm&logoColor=black&color=black&labelColor=green){: .normal }
