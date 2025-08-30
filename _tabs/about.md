@@ -33,8 +33,8 @@ order: 4
 ![Powershell](https://img.shields.io/badge/powershell-5391FE?style=for-the-badge&logo=powershell&logoColor=white){: .normal }
 
 ![Proxmox](https://img.shields.io/badge/proxmox-proxmox?style=for-the-badge&logo=proxmox&logoColor=%23E57000&labelColor=%232b2a33&color=%232b2a33){: .normal }
-![Ludus](https://img.shields.io/badge/Ludus-000000?style=for-the-badge&logo=java&logoColor=white){: .normal }
-![Wazuh](https://img.shields.io/badge/Wazuh-005AF0?style=for-the-badge&logo=amp&logoColor=white){: .normal }
+![Ludus](https://img.shields.io/badge/Ludus-000000?style=for-the-badge&logoColor=white){: .normal }
+![Wazuh](https://img.shields.io/badge/Wazuh-005AF0?style=for-the-badge&logoColor=white){: .normal }
 
 ![Obsidian](https://img.shields.io/static/v1?style=for-the-badge&message=Obsidian&color=483699&logo=Obsidian&logoColor=FFFFFF&label=){: .normal }
 ![VSCode](https://img.shields.io/static/v1?style=for-the-badge&message=VSCode&color=007ACC&logo=Visual+Studio+Code&logoColor=FFFFFF&label=){: .normal }
