@@ -6,7 +6,7 @@
       whitelist = ['localhost', 'opabravo.github.io'] # Whitelisted prefixes
 
       content.gsub!(%r{<a\s+href="((?!#{whitelist.map { |d| Regexp.escape(d) }.join('|') })https?:\/\/[^"]+)"(?![^>]*rel=)}, 
-                    "<a href=\"\\1?ref=#{site_url.gsub('https://', '')}\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"")
+                    "<a href=\"\\1\" target=\"_blank\" rel=\"nofollow noopener noreferrer\"")
 
       # Update the item content
       item.output = content
