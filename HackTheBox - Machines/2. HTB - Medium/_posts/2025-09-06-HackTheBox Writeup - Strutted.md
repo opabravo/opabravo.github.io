@@ -2,7 +2,7 @@
 render_with_liquid: false
 title: HackTheBox Writeup - Strutted
 date: 2025-09-06 18:52:12 +1400
-tags: [hackthebox, nmap, linux, jsp, java, information-disclosure, file-upload, apache-struts, cve-2024-53677, file-upload-bypass, webshell, discover-secrets, password-spraying, hydra, sudo, gtfobin]
+tags: [hackthebox, nmap, linux, feroxbuster, jsp, java, information-disclosure, file-upload, apache-struts, cve-2024-53677, file-upload-bypass, webshell, discover-secrets, password-spraying, hydra, sudo, gtfobin]
 image:
     path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/cb2df0a9511e5634451e3fb6c8ddc509.png
     width: 640
@@ -117,7 +117,7 @@ http://strutted.htb [200] [Strutted™ - Instant Image Uploads] [nginx/1.18.0 (U
 
 #### Docker image
 
-The instruction below neer the footer indicates that we could download the APP's docker image
+The instruction below near the footer shows that we could download the APP's docker image
 
 ![](/assets/obsidian/587391324fced57c1de32ab841f61ca0.png)
 
