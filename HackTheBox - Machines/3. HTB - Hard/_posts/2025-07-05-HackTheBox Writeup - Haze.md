@@ -867,7 +867,7 @@ Ld@p_Auth_Sp1unk@2k24
 ```
 
 
-### 8000 - Spunk 9.2.1 : Password spray
+### (Failed) 8000 - Spunk 9.2.1 : Password spray
 
 > http://10.10.11.61:8000/en-US/account/login?return_to=%2Fen-US%2F
 
@@ -1535,7 +1535,7 @@ msDS-GroupMSAMembership: WRITE
 distinguishedName: CN=Haze-IT-Backup,CN=Managed Service Accounts,DC=haze,DC=htb
 ```
 
-Generate a **SDDL** (Windows Security Descriptor Definition Language) string of an **allowed Read Property (`RP`) DACL ACE** for `mark.adams`
+Generate a **SDDL** (Windows Security Descriptor Definition Language) string of an **allowed Read Property** (`RP`) **DACL ACE** for `mark.adams`
 
 1. Get **SID** of `mark.adams`
 
@@ -1655,7 +1655,7 @@ Add `Haze-IT-Backup$` to `Support_Services` group
 
 ### DACL Abuse - Shadow credentials
 
-`Support_Services` group has write access to `msDS-KeyCredentialLink` attributes on `CN=Edward Martin,CN=Users,DC=haze,DC=htb`, which means we can create shadow credentials
+`Support_Services` group has write access to the `msDS-KeyCredentialLink` attribute on `CN=Edward Martin,CN=Users,DC=haze,DC=htb`, which means we can create shadow credentials
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Haze]
@@ -1914,7 +1914,7 @@ Sp1unkadmin@2k24
 ```
 
 
-### (Failed) 88 - Password spray
+### (Failed) 88 - Kerberos : Password spray
 
 Spray password on users that we don't have credentials
 
