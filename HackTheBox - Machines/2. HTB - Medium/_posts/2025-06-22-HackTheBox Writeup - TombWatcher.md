@@ -11,7 +11,7 @@ image:
 
 
 
-`TombWatcher` is a medium difficulty machine, multiple **DACL abuse** chaining leads to shell as `john`, `john` is able to create shadow credential for `cert_admin` after restoring it from AD recycle bin, exploiting **ADCS** ESC15 gains us a WINRM access to domain controller as `Administrator`
+`TombWatcher` is a medium difficulty machine, multiple **DACL abuse** chaining leads to shell as `john`, `john` is able to create shadow credential for `cert_admin` after restoring it from AD recycle bin, exploiting **ADCS ESC15** gains us WINRM access to domain controller as `Administrator`.
 
 # Recon
 ---
