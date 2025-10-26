@@ -463,11 +463,11 @@ There's a user `backrest_root` and `passwordBcrypt` with a value that looks like
 ```
 
 > How to Install [chepy](https://github.com/securisec/chepy) (a python lib/cli equivalent of the awesome CyberChef tool)
+> 
 > ```bash
-{: .prompt-info }
-uv python install 3.11
-pipx install chepy[extras] --python $(uv python find 3.11)
+> uv tool install chepy[extras] --p 3.11
 > ```
+{: .prompt-info }
 
 Decode `passwordBcrypt` from baseXX and found base64 decoded string to be a **bcrypt** hash
 
