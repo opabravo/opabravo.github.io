@@ -336,11 +336,13 @@ Find a JSP webshell to upload
 /usr/share/webshells/jsp/jsp-reverse.jsp
 ```
 
+Edit the webshell to make it work for linux then upload it
+
 > `/usr/share/webshells/jsp/cmdjsp.jsp`
 
 ![](/assets/obsidian/65d9f239108dc4e29fe42e82ed0f73eb.png)
 
-Edit the webshell to make it work for linux then upload it
+Upload the webshell
 
 ```http
 POST /upload.action HTTP/1.1
