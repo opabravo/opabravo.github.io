@@ -15,7 +15,7 @@ order: 4
 - 2025/02 - [OSCP+](https://medium.com/@opabravo/%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%80%83%E8%A9%A6%E4%BB%A5100%E5%88%86%E6%8B%BF%E4%B8%8Boscp-19d689d4335d) : OffSec Certified Professional+ (100/100 points)
 - 2023/12 - CEHv12 : EC-Council Certified Ethical Hacker (122/125 points)
 
-## Profiles
+## Profile Links
 
 [![Hack The Box](https://www.hackthebox.com/badge/image/4167)](https://app.hackthebox.com/profile/4167){: .normal }
 [![Try Hack Me](https://i.imgur.com/m6jeDt1.png)](https://tryhackme.com/p/bravosec){: .normal }
@@ -35,6 +35,8 @@ order: 4
 ![Proxmox](https://img.shields.io/badge/proxmox-proxmox?style=for-the-badge&logo=proxmox&logoColor=%23E57000&labelColor=%232b2a33&color=%232b2a33){: .normal }
 ![Ludus](https://img.shields.io/badge/Ludus-000000?style=for-the-badge&logoColor=white){: .normal }
 ![Wazuh](https://img.shields.io/badge/Wazuh-005AF0?style=for-the-badge&logoColor=white){: .normal }
+![ElasticSearch](https://img.shields.io/badge/-ElasticSearch-005571?style=for-the-badge&logo=elasticsearch){: .normal }
+![Suricata](https://img.shields.io/badge/Suricata-%230db7ed.svg?style=for-the-badge&logo=Suricata&logoColor=white){: .normal }
 
 ![Obsidian](https://img.shields.io/static/v1?style=for-the-badge&message=Obsidian&color=483699&logo=Obsidian&logoColor=FFFFFF&label=){: .normal }
 ![VSCode](https://img.shields.io/static/v1?style=for-the-badge&message=VSCode&color=007ACC&logo=Visual+Studio+Code&logoColor=FFFFFF&label=){: .normal }
@@ -51,3 +53,13 @@ order: 4
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi){: .normal }
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white){: .normal }
 ![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white){: .normal }
+
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white){: .normal }
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E){: .normal }
+![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white){: .normal }
+![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white){: .normal }
+![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white){: .normal }
+![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white){: .normal }
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white){: .normal }
+![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white){: .normal }
+![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white){: .normal }
