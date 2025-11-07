@@ -183,7 +183,7 @@ strutted
 ### 80 - Apache Sruts 6.3.0.1 : Unrestricted File Upload (CVE-2024-53677)
 
 
-#### Identify exploits
+#### Identify exploit
 
 The web app is using **Apache Struts** version `6.3.0.1`, which is vulnerable to multiple RCE exploits ([CVE-2023-50164](https://www.cve.org/CVERecord?id=CVE-2023-50164), [CVE-2024-53677](https://www.cve.org/CVERecord?id=CVE-2024-53677))
 
@@ -220,14 +220,12 @@ The web app is using **Apache Struts** version `6.3.0.1`, which is vulnerable to
 
 > Snyk - https://security.snyk.io/package/maven/org.apache.struts%3Astruts2-core/6.3.0.1
 
-> Checker - https://github.com/0xPThree/struts_cve-2024-53677 -> POC - https://github.com/TAM-K592/CVE-2024-53677-S2-067/tree/ALOK
+> Scanner - https://github.com/0xPThree/struts_cve-2024-53677 -> POC - https://github.com/TAM-K592/CVE-2024-53677-S2-067/tree/ALOK
 
 > **CVE-2024-53677**
 > 
 > 
-> File upload logic in Apache Struts is flawed. An attacker can manipulate file upload params to enable paths traversal and under some circumstances this can lead to uploading a malicious file which can be used to perform Remote Code Execution. 
-> 
-> This issue affects Apache Struts: from 2.0.0 before 6.4.0. Users are recommended to upgrade to version 6.4.0 at least and migrate to the new file upload mechanism https://struts.apache.org/core-developers/file-upload . If you are not using an old file upload logic based on FileuploadInterceptor your application is safe. You can find more details in  https://cwiki.apache.org/confluence/display/WW/S2-067
+> File upload logic in Apache Struts **from 2.0.0 before 6.4.0** is flawed. An attacker can manipulate file upload params to enable paths traversal and under some circumstances this can lead to uploading a malicious file which can be used to perform Remote Code Execution.
 {: .prompt-info }
 
 
@@ -261,7 +259,9 @@ http 127.0.0.1 8080
 
 ![](/assets/obsidian/8003a3990bf058c76bcb36b6db2dc96a.png)
 
-After reviewing the source code from `trutted/src/main/java/org/strutted/htb/Upload.java`, we can modify the request to meet the web app's need
+After reviewing the source code, we can modify the request to meet the web app's need
+
+> `trutted/src/main/java/org/strutted/htb/Upload.java`
 
 - Add `Content-Type: image/png` to the headers
 
@@ -271,15 +271,13 @@ After reviewing the source code from `trutted/src/main/java/org/strutted/htb/Upl
 
 ![](/assets/obsidian/7850ac0d248412bf61086d3532155463.png)
 
-- Change file extension to `png`
-
 > `strutted/src/main/resources/struts.xml`
+
+- Change file extension to `png`
 
 ![](/assets/obsidian/f7ee981e4efb3251a8bdd143e3fdf096.png)
 
-The upload was successful, but uploaded path should contain `vuln_test.txt` according to the exploit POC
-
-![](/assets/obsidian/684f4df082f61f170e23b7c8ec4ec126.png)
+Final Request:
 
 ```http
 POST /upload.action HTTP/1.1
@@ -312,9 +310,15 @@ Content-Disposition: form-data; name="top.uploadFileName"
 -----------------------------418319249314572457372052652738--
 ```
 
+The upload was successful, but uploaded path should contain `vuln_test.txt` according to the exploit POC
+
 ![](/assets/obsidian/5e9038b37b9c4ba6c784eb9a22ad120c.png)
 
-In order to make it pass through apache strut's OGNL intercpetor, we need to change the **name** parameter `upload` in the post data to `Upload`
+> `Check-CVE-2024-53677.py`
+
+![](/assets/obsidian/4bff31b8b5754253c762bc6af12f983e.png)
+
+In order to make it pass through **apache strut**'s OGNL interceptor, we need to change the **name** parameter's value in post data from `upload` -> `Upload`
 
 ![](/assets/obsidian/67447ed8d6ab0807d040ab6c3a66663a.png)
 
@@ -447,18 +451,6 @@ uid=998(tomcat) gid=998(tomcat) groups=998(tomcat)
 ---
 
 ## Shell as james
-
-
-### (Failed) Password spray
-
-Spray the `admin`'s password from `tomcat-user.xml` in the docker image
-
-```bash
-tomcat@strutted:~$ PASS='skqKY6360z!Y'; for USER in $(cat /etc/passwd|grep -viE 'false$|nologin$|sync$'|awk -F: '{print $1}'); do (x=$(echo $PASS | su "$USER" -c whoami); if [ "$x" ]; then echo "[+] $USER"; fi) & done
-[1] 3092
-[2] 3093
-tomcat@strutted:~$ Password: Password:
-```
 
 
 ### Enumeration
