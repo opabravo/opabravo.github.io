@@ -107,9 +107,6 @@ Service detection performed. Please report any incorrect results at https://nmap
 
 Get **Domain** name and **Domain Controller** name -> Add to `/etc/hosts` -> Generate kerberos config
 
-> `pt` command is a custom pentest framework to manage hosts and variables, it is not required to reproduce the steps in this writeup
-{: .prompt-info }
-
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/RustyKey]
 └─$ nxc smb $(pt get ip) --smb-timeout 10 --generate-hosts-file .pt/hosts && cat .pt/hosts | sudo tee -a /etc/hosts && sudo ~/scripts/ad/sync_ntp.sh $(pt get ip) && pt set rhost `cat .pt/hosts | awk '{print $2}' | tail -n1` && pt set domain `cat .pt/hosts | awk '{print $3}' | tail -n1` && nxc smb -k $(pt get rhost) --smb-timeout 10 --generate-krb5-file .pt/krb5.conf && sudo cp .pt/krb5.conf /etc/krb5.conf && cat /etc/krb5.conf
