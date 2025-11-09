@@ -11,6 +11,8 @@ image:
 
 
 
+`RustyKey` is a hard difficulty Windows Machine which showcases a Timeroasting Attack, Active Directory ACL abuse following Windows Group Policy Enumeration to abuse the 7-Zip Shell Extension. For Privilege escalation, Active Directory Delegations are abused using a SPN-less Resource-Based Constrained Delegation attack.
+
 
 # Recon
 ---
