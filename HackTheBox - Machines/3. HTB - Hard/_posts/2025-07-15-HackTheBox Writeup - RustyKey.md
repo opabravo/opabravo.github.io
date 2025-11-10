@@ -651,8 +651,8 @@ Impacket v0.13.0.dev0+20251016.112753.23a36c62 - Copyright Fortra, LLC and its a
 Kerberos SessionError: KDC_ERR_ETYPE_NOSUPP(KDC has no support for encryption type)
 ```
 
-> **Setup the tool to generate **aes** key**
 > 
+> Setup the tool to generate **aes** key
 > 
 > ```bash
 > cd /opt/sectools/ad/
