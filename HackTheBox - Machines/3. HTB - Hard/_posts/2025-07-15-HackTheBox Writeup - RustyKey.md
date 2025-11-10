@@ -953,7 +953,7 @@ rustykey\mm.turner
 
 ### Resource-based constrained delegation
 
-Configure **Resource-Based constrained delegation** for `IT-Computer$` on `IT-COMPUTER3$` (Populate the `msDS-AllowedToActOnBehalfOfOtherIdentity` attribute)
+Configure **Resource-Based constrained delegation** for `IT-COMPUTER3` on `DC$` (Populate the `msDS-AllowedToActOnBehalfOfOtherIdentity` attribute)
 
 ```bash
 PS C:\Windows> Set-ADComputer "DC$" -PrincipalsAllowedToDelegateToAccount 'CN=IT-COMPUTER3,OU=COMPUTERS,OU=IT,DC=RUSTYKEY,DC=HTB'
