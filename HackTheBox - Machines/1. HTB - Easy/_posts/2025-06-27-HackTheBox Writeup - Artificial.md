@@ -658,6 +658,9 @@ SSH as `root` via ssh private key
 
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Artificial]
+└─$ chmod 600 loot/root.id_rsa
+
+┌──(bravosec㉿fsociety)-[~/htb/Artificial]
 └─$ ssh -i loot/root.id_rsa root@artificial.htb
 Warning: Permanently added 'artificial.htb' (ED25519) to the list of known hosts.
 Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.4.0-216-generic x86_64)

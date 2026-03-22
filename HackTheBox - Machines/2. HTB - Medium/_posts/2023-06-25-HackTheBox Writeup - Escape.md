@@ -2,7 +2,7 @@
 render_with_liquid: false
 title: HackTheBox Writeup - Escape
 date: 2023-06-25 03:01:40 +1400
-tags: [hackthebox, windows, autorecon, nmap, ad, crackmapexec, smb, smbclient, impacket, mssqlclient, xp-dirtree, coerce-authentication, responder, hashcat, evil-winrm, event-logs, clear-text-credentials, adcs, ntpdate, faketime, certipy, certify, powersharppack, adcs-esc1, rubeus, pass-the-cert, oscp-like-2023, rdp, pass-the-hash, pass-the-ticket, xp-cmdshell, silver-ticket, golden-ticket]
+tags: [hackthebox, windows, autorecon, nmap, ad, crackmapexec, smb, smbclient, impacket, mssqlclient, mssql-xp-dirtree, coerce-authentication, responder, hashcat, evil-winrm, event-logs, clear-text-credentials, adcs, ntpdate, faketime, certipy, certify, powersharppack, adcs-esc1, rubeus, pass-the-cert, oscp-like-2023, rdp, pass-the-hash, pass-the-ticket, mssql-xp-cmdshell, silver-ticket, golden-ticket]
 image:
     path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/80936664b3da83a92b28602e79e47d79.png
     width: 640

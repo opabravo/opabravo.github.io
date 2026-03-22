@@ -1405,7 +1405,9 @@ Disable-LocalUser -Name $username
 
 > This idea came up after watching [Beyond Root section from Ippsec's video](https://youtu.be/QZQ-IjsI5Qk?t=2565&si=zNT_QFRaOlFrTonl) for this machine.
 > 
-> Since AD has no built-in function to revert users' password to previous ones, and I know an AD security solution product called **Semperis DSP** that can make it happen, I started to wonder how it works.
+> Since AD has no built-in function to revert users' password to previous ones, and I know an AD security solution called **Semperis DSP** that can make it happen, I started to wonder how it works.
+> 
+> ![](/assets/obsidian/8c5dd9f6e0164634b881990b7c4e034b.png)
 {: .prompt-info }
 
 1. Change `adam.silver`'s password

@@ -2,7 +2,7 @@
 render_with_liquid: false
 title: HackTheBox Writeup - Nocturnal
 date: 2025-04-03 06:12:18 +1400
-tags: [hackthebox, nmap, linux, php, feroxbuster, idor, ffuf, file-download, sqlite, hashcat, credentials-stuffing, port-forwarding, ispconfig, cve-2023-46818, code-injection, command-injection, command-injection-bypass]
+tags: [hackthebox, nmap, linux, php, feroxbuster, idor, ffuf, backup-solution, file-download, sqlite, hashcat, credentials-stuffing, port-forwarding, ispconfig, cve-2023-46818, code-injection, command-injection, command-injection-bypass]
 image:
     path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/f6a56cec6e9826b4ed124fb4155abc66.png
     width: 640
