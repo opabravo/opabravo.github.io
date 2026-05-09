@@ -11,6 +11,7 @@ image:
 
 
 
+`Editor` is an easy-difficulty Linux machine that focuses on web application exploitation followed by local privilege escalation. Initial enumeration reveals a web application exposing an `XWiki` instance, which is identified as vulnerable to `[CVE-2025-24893](https://nvd.nist.gov/vuln/detail/CVE-2025-24893)`, a remote code execution flaw in the `SolrSearch` endpoint. By adapting a public proof-of-concept, Groovy code injection is achieved, allowing arbitrary command execution and providing a shell as the xwiki user. Post-exploitation enumeration of the system reveals additional local users and misconfigurations that allow lateral movement to the user oliver. Further analysis of the system uncovers a privilege escalation vector involving a misconfigured `SUID binary` that relies on environment-controlled execution. By abusing `PATH` manipulation, a malicious binary is executed in place of a trusted system binary, resulting in execution with elevated privileges and ultimately granting root access.
 
 # Recon
 ---

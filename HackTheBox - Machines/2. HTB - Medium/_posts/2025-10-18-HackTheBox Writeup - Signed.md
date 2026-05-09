@@ -11,6 +11,7 @@ image:
 
 
 
+`Signed` is a medium-difficulty Windows machine that demonstrates the exploitation of an MSSQL server by extracting the NTLMv2 hash of the service account running the instance and cracking the hash to obtain its password. This enables the issuance of silver tickets for user impersonation and service access. The domain is then enumerated via the MSSQL instance to gather the necessary information to impersonate the Administrator account and grant command execution through the MSSQL service. For privilege escalation, the recently discovered [CVE-2025-33073](https://nvd.nist.gov/vuln/detail/CVE-2025-33073), an NTLM reflection attack, is leveraged to perform self-relaying even with signing enforced, providing access to the `WinRMS` interface.
 
 # Recon
 ---

@@ -11,6 +11,7 @@ image:
 
 
 
+`Imagery` is a medium-difficulty Linux machine that involves gaining admin access via exploiting a blind XSS. With admin privileges, the attacker exploits arbitrary file read to read sensitive files and source code. By reading the web app’s source code, the attacker discovers a feature that allows them to modify/transform an image, thereby making it vulnerable to remote code execution. After gaining an initial foothold, the attacker finds a backup file encrypted with `pyAesCrypt`, which leaks credentials for the `mark` user account. The `mark` user account is allowed to execute a custom Python-written `Charcol` app as root. The attacker manages to reset the master password, create a cron job via the `Charcol` app, and obtain command execution as the `root` user.
 
 # Recon
 ---

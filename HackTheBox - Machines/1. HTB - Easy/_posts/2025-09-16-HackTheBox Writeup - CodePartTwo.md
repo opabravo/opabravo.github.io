@@ -11,6 +11,7 @@ image:
 
 
 
+`CodePartTwo` is an Easy Linux machine that features a vulnerable Flask-based web application. Initial web enumeration reveals a JavaScript code editor powered by a vulnerable version of `js2py`, which allows for remote code execution via sandbox escape. Exploiting this flaw grants access to the system as an unprivileged user. Further enumeration reveals an `SQLite` database containing password hashes, which are cracked to gain SSH access. Finally, a backup utility, `npbackup-cli,` that runs with root privileges, is leveraged to obtain root privileges.
 
 # Recon
 ---

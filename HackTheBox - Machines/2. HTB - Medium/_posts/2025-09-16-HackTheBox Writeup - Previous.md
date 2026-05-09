@@ -11,6 +11,7 @@ image:
 
 
 
+`Previous` is a medium-difficulty Linux machine that features a web application vulnerable to [CVE-2025-29927](https://nvd.nist.gov/vuln/detail/CVE-2025-29927), an authorization bypass vulnerability in the `Next.js` authentication middleware, allowing access to restricted documentation pages. Further enumeration uncovers a Local File Inclusion (LFI) vulnerability, which is leveraged to extract the compiled `Next.js` server files and retrieve user credentials. With SSH access as a standard user, privilege escalation is achieved through `Terraform` by exploiting the ability to run the `apply` command with root privileges.
 
 # Recon
 ---

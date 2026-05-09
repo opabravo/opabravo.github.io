@@ -11,6 +11,7 @@ image:
 
 
 
+`Conversor` is an easy-difficulty Linux machine featuring a web application that converts XML documents into visually formatted HTML documents using XSLT stylesheets. By registering an account and reviewing the downloadable source code, we discover that the application processes user-supplied XSLT files without proper sanitisation, leading to an XSLT injection vulnerability. This allows us to write a malicious Python script to a server-side directory that is periodically executed by a cron job, granting an initial shell as `www-data`. Enumerating the application directory reveals a SQLite database file containing user credentials, from which we extract and crack an MD5 password hash to obtain valid SSH access as the user `fismathack`. For privilege escalation, the machine highlights a misconfigured sudo rule allowing execution of `needrestart`, which is vulnerable to [CVE-2024-48990](https://nvd.nist.gov/vuln/detail/CVE-2024-48990), enabling code execution via a controlled `PYTHONPATH` and ultimately allowing us to gain root privileges.
 
 # Recon
 ---

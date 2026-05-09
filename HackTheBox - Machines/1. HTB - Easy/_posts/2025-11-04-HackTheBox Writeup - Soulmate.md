@@ -11,6 +11,7 @@ image:
 
 
 
+`Soulmate` is an easy difficulty Linux machine that showcases exploitation of [CVE-2025-31161](https://nvd.nist.gov/vuln/detail/CVE-2025-31161), an authentication bypass vulnerability in CrushFTP, allowing players to access an admin user account. By uploading a malicious PHP file to the application's web root, remote command execution is achieved. For privilege escalation, [CVE-2025-32433](https://nvd.nist.gov/vuln/detail/CVE-2025-32433), another remote command execution vulnerability in the Erlang/OTP SSH server is being exploited to gain `root` access.
 
 # Recon
 ---
