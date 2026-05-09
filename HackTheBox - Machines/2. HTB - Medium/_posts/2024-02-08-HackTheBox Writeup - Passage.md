@@ -150,11 +150,12 @@ There's an exploit : `CuteNews 2.1.2 - Remote Code Execution ` released around t
 
 ![](/assets/obsidian/d5801e4aab98306e4c17c06517edd64d.png)
 
-The exploit will dump credentials through `{ip}/CuteNews/cdata/users/lines`
-
-Then register an user in order to upload a php webshell with magic bytes as an avatar
+The exploit will:
+1. Dump credentials through `{ip}/CuteNews/cdata/users/lines`
+2. register a user in order to upload a php webshell with magic bytes as an avatar
 
 ![](/assets/obsidian/21fae296e45fc144d12368eb72dfa6b6.png)
+
 
 #### Validate exploit
 
