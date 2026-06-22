@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Beep
 date: 2023-10-31 12:14:16 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, elastix, local-file-inclusion, credentials-exposure, password-reuse, oscp-like, svwar, pbx, voip, telecom, smtp]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/995f465295b99869fce21ecadea4604c.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90d7-9551-4a99-8df6-e48b2c403aca.png
     width: 640
     height: 480
 ---

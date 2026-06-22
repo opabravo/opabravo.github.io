@@ -4,7 +4,7 @@ title: HackTheBox Writeup - CodePartTwo
 date: 2025-09-16 12:03:50 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, python, python-flask, sqlite, js2py, code-injection, cve-2024-28397, discover-secrets, hashcat, password-spraying, sudo, npbackup-cli, backup-solution, file-read]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/ea23d7bc12459ef0c3db19067f02352a.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9f7fc279-ccc7-4d3a-a99b-02aeab299881.png
     width: 640
     height: 480
 ---

@@ -4,7 +4,7 @@ title: HackTheBox Writeup - PermX
 date: 2024-07-07 08:47:13 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, php, gobuster, vhost, enum, chamilo-lms, cve-2023-4220, file-upload, discover-secrets, password-spraying, password-reuse, sudo, bash-script, gtfobin, symlinks, file-write]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/3ec233f1bf70b096a66f8a452e7cd52f.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90cc-d0d5-4d03-a772-ee0ef65ef8bc.png
     width: 640
     height: 480
 ---

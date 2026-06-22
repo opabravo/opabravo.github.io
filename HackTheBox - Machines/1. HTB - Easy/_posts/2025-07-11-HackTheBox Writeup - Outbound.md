@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Outbound
 date: 2025-07-11 17:19:10 +1400
 tags: [hackthebox, nmap, linux, assumed-breach, feroxbuster, roundcube-webmail, cve-2025-49113, php, deserialization, password-spraying, mysql, roundcube-decrypt, crypto, sudo, below, cve-2025-27591, file-write, symlinks]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/b1096fc86df3fb6035baad7f599094be.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9f3b3364-199d-486b-8c7a-a4c473c5b730.png
     width: 640
     height: 480
 ---

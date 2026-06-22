@@ -4,7 +4,7 @@ title: HackTheBox Writeup - IClean
 date: 2024-04-17 22:19:16 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, python-flask, xss, xss-stored, simplehttpserver, ssti, ssti-filter-bypass, discover-secrets, mysql, hashcat, password-reuse, sudo, qpdf, file-read]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/750ba886c8a87103c69cac0f13f2de70.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90cd-1299-44c0-9e05-4a2d3b2ff0fd.png
     width: 640
     height: 480
 ---

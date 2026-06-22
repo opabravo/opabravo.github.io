@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Squashed
 date: 2023-01-16 08:39:57 +1400
 tags: [hackthebox, linux, nmap, network, vulnerability-assessment, common-services, authentication, apache, x11, nfs, penetration-tester-level-1, reconnaissance, user-enumeration, impersonation, arbitrary-file-upload, gobuster]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/2b64823934eb46f2c531a0b650a03d60.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90cf-d02f-466c-b333-8c65c26214a7.png
     width: 640
     height: 480
 ---

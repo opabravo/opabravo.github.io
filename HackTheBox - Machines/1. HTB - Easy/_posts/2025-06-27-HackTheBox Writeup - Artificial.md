@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Artificial
 date: 2025-06-27 03:31:36 +1400
 tags: [hackthebox, nmap, linux, katana, python, tensorflow, ai, ai-model, h5, cve-2024-3660, deserialization, keras, discover-secrets, sqlite, hashcat, password-spraying, backrest, backup-solution, chepy, port-forwarding, file-read]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/e6633d6c2b1d824c3756eb21aeed7590.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9f2d4814-df9d-4360-a10d-252532a053a7.png
     width: 640
     height: 480
 ---

@@ -4,7 +4,7 @@ title: HackTheBox Writeup - DarkZero
 date: 2025-10-06 18:38:20 +1400
 tags: [hackthebox, nmap, windows, ad, assumed-breach, impacket, bloodhound-ce, bloodhound-cli, ldeep, ad-trusts, mssql, mssqlclient, mssql-links, mssql-xp-cmdshell, cvedetails, kernel-exploit, cve-2024-30088, mimikatz, netexec, nltest, rubeus, coerce-authentication, mssql-xp-dirtree, ad-delegation, dcsync, evil-winrm]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/78acdd0d87ed629f6cd2dc378bdcddac.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9ff4ba31-6429-4ec3-bab5-6e77f0824285.png
     width: 640
     height: 480
 ---

@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Runner
 date: 2024-04-24 22:34:59 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, gobuster, vhost, jetbrains-teamcity, searchsploit, jsp, msfvenom, docker, docker-escape, docker-mount, discover-secrets, gitleaks, ssh-key-spray, hashcat, portainer, portainer-privesc, metasploit]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/029d258b4444bc4226b90b1f8f27d086.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90cd-07cd-43a6-b173-ca66583dccee.png
     width: 640
     height: 480
 ---

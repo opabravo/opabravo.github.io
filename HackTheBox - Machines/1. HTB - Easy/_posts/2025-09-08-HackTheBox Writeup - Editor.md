@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Editor
 date: 2025-09-08 01:06:20 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, xwiki, java, cve-2025-24893, code-injection, enum, netdata, tunnel, chisel, discover-secrets, credentials-stuffing, cve-2024-32019, path-injection, suid, assembly]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/ba9dec0d022d3c3b6a96aa5dba4772c7.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9f5d66d4-6fd5-4de0-808b-fd1568184c8e.png
     width: 640
     height: 480
 ---

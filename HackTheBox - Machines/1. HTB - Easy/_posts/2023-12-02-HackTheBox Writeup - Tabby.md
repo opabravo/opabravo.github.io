@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Tabby
 date: 2023-12-02 13:56:28 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, katana, directory-traversal, tomcat, tomcat2rce, tomcat-manager, tomcat-manager-bypass, msfvenom, webshell, jsp, discover-secrets, zip2john, hashcat, password-reuse, lxd, oscp-like, kernel-exploit, pwnkit, hydra, gf, nuclei]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/9b4c7b192eb00be8460364338e48f21f.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90d3-6535-4a48-b036-9331ec8704ee.png
     width: 640
     height: 480
 ---

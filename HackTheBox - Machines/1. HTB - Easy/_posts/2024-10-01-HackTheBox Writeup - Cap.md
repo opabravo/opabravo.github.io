@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Cap
 date: 2024-10-01 21:23:07 +1400
 tags: [hackthebox, nmap, linux, python-flask, pcap, pycredz, discover-secrets, password-reuse, capabilities, gtfobin]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/70ea3357a2d090af11a0953ec8717e90.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90d2-73c7-4da0-a15f-662bbc048868.png
     width: 640
     height: 480
 ---

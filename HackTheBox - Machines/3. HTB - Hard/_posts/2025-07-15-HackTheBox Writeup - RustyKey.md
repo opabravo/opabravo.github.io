@@ -4,7 +4,7 @@ title: HackTheBox Writeup - RustyKey
 date: 2025-07-15 08:35:19 +1400
 tags: [hackthebox, nmap, windows, ad, assumed-breach, bloodhound-ce, bloodhound-ce-python, bloodhound-cli, ldeep, netexec, timeroasting, hashcat, dacl-abuse, ad-protected-users, evil-winrm, winrm-access-spray, reverse-ssh, runascs, privesccheck, dll-hijack, win-dll, ad-rbcd, impacket]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/c458b48070ca6f3073128d085c9ee247.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9f2d4b44-2361-411e-8373-529cf8235f4d.png
     width: 640
     height: 480
 ---

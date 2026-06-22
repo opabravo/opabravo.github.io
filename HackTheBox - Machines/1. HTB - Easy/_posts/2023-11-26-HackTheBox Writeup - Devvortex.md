@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Devvortex
 date: 2023-11-26 20:17:55 +1400
 tags: [hackthebox, nmap, linux, gobuster, vhost, feroxbuster, joomla, information-disclosure, cve-2023-23752, joomla2rce, discover-secrets, mysql, hashcat, password-reuse, sudo, apport-cli]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/2565d292772abc4a2d774117cf4d36ff.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90cd-6843-439c-b3bf-0ac807dbd768.png
     width: 640
     height: 480
 ---

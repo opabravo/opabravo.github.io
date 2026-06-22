@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Usage
 date: 2024-04-15 16:21:50 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, gobuster, php, sqli, sqli-boolean-blind, sqlmap, hashcat, file-upload, file-upload-bypass, webshell, discover-secrets, password-reuse, sudo, reversing, ghidra, wildcards, 7zip, file-read, oscp-like-2023]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/23e804513a47e8f20bc865d0419946e1.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90cd-0daa-4015-a550-ef68224d1eeb.png
     width: 640
     height: 480
 ---

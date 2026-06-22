@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Alert
 date: 2024-12-02 03:56:03 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, php, gobuster, vhost, simplehttpserver, xss, xss-stored, client-side-attack, xss-proxy, directory-traversal, htpasswd, hashcat, credentials-stuffing, pspy, scheduled-job-abuse]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/6f4647030d6aadc676b8d8a459de344f.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90cc-6718-47ad-8d7a-563e3d5d9a1f.png
     width: 640
     height: 480
 ---

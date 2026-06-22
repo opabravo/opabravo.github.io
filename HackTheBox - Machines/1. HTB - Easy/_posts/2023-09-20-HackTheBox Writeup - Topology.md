@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Topology
 date: 2023-09-20 19:35:52 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, latex-injection, vhost, gobuster, file-read, htpasswd, ocr-tesseract, pspy, scheduled-job-abuse, latex-filter-bypass, file-write, php, webshell]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/cbfa26b4a4044677e93779a44bbd458f.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90cd-cd28-4dfa-9ce6-f64bac2f0b98.png
     width: 640
     height: 480
 ---

@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Sea
 date: 2024-10-02 14:51:06 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, osint, reconnaissance, wondercms, cms, php, open-redirect, xss, xss-reflected, cve-2023-41425, discover-secrets, haiti, hashcat, password-spraying, port-forwarding, credentials-stuffing, directory-traversal, command-injection]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/0011f6725aed869f8683589cb08c90d0.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90cc-b7e0-4f99-a36a-b9d0480b294e.png
     width: 640
     height: 480
 ---

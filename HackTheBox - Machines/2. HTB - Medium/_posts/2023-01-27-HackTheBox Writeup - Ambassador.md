@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Ambassador
 date: 2023-01-27 03:15:04 +1400
 tags: [hackthebox, nmap, linux, grafana, mysql, cve-2021-43798, file-read, directory-traversal, sqlite, consul, tunnel]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/c45df8beebb6291da1c4cd8de04dd7a5.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90d0-0006-46d1-829d-2763947b7f2f.png
     width: 640
     height: 480
 ---

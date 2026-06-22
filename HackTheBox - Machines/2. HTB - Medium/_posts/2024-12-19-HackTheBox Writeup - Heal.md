@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Heal
 date: 2024-12-19 18:53:34 +1400
 tags: [hackthebox, nmap, linux, cariddi, gobuster, vhost, nodejs, api, broken-access-control, directory-traversal, ruby-on-rails, discover-secrets, sqlite, hashcat, credentials-stuffing, limesurvey, limesurvey2rce, password-spraying, consul]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/dcd5ef09ab764228c64385374ac744c1.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90cc-4ba1-4555-bdca-529a1e6b7a7e.png
     width: 640
     height: 480
 ---

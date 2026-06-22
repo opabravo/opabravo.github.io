@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Shoppy
 date: 2023-01-12 05:25:32 +1400
 tags: [hackthebox, nmap, linux, web, vulnerability-assessment, injection, common-applications, custom-applications, reversing, nginx, docker, c, penetration-tester-level-1, reconnaissance, web-site-structure-discovery, fuzzing, password-reuse, password-cracking, brute-force-attack, docker-abuse, decompilation, sqli, weak-credentials, clear-text-credentials, information-disclosure, nosql, radare, gobuster, hashcat, sudo]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/a30c60e20eb764fd28e72c60be5fa693.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90d0-09aa-46ce-97ad-578b311f478c.png
     width: 640
     height: 480
 ---

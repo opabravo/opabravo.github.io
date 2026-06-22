@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Strutted
 date: 2025-09-06 18:52:12 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, jsp, java, information-disclosure, file-upload, apache-struts, cve-2024-53677, file-upload-bypass, webshell, discover-secrets, password-spraying, hydra, sudo, gtfobin]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/cb2df0a9511e5634451e3fb6c8ddc509.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90cc-30fb-4247-9e35-73e0d55dbf95.png
     width: 640
     height: 480
 ---

@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Haze
 date: 2025-07-05 21:03:45 +1400
 tags: [hackthebox, nmap, windows, ad, adcs, netexec, splunk, feroxbuster, directory-traversal, cve-2024-36991, discover-secrets, splunksecrets, password-spraying, ffuf, username-anarchy, user-enumeration, kerbrute, bloodhound-ce, bloodhound-ce-python, bloodhound-cli, ldeep, rid-bruteforce, impacket, kerberos, evil-winrm, discover-backup, bloodyad, dacl-abuse, ad-gmsa, sddl, sddl-maker, shadow-credentials, splunk2rce, splunk-app, privilege-token, potato-attacks, sigma-potato, ntds]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/44e14228c6a208714eda356bda7624a8.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e8282ac-4fa6-4090-9fb8-9dd15806008e.png
     width: 640
     height: 480
 ---

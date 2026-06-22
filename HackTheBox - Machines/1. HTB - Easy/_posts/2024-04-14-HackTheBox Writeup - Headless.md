@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Headless
 date: 2024-04-14 10:37:22 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, python-flask, xss, xss-stored, command-injection, sudo, bash-script, misconfiguration]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/26e076db204a74b99390e586d7ebcf8c.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90cd-1c70-4711-81a8-ee3377585bbc.png
     width: 640
     height: 480
 ---

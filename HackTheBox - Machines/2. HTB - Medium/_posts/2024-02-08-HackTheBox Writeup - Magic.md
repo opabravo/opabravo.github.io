@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Magic
 date: 2024-02-08 17:47:25 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, php, auth-bypass, sqli, mysql, file-upload, file-upload-bypass, webshell, htaccess, misconfiguration, discover-secrets, mysqldump, password-reuse, suid, path-injection, oscp-like]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/73eebbbdfbbfd46258ea2ae7e52d9479.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90d4-4495-4121-a223-01e64faa51e2.png
     width: 640
     height: 480
 ---

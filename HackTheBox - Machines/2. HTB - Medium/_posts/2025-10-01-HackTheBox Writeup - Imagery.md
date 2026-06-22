@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Imagery
 date: 2025-10-01 02:22:18 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, python, python-flask, enum, xss, xss-stored, cookie-tamper, directory-traversal, file-read, discover-secrets, source-code-analysis, command-injection, linpeas, discover-backup, pyaescrypt, crypto, brute-force-attack, hashcat, sudo, backup-solution, custom-applications, scheduled-job-abuse]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/662ccbe3935d62aee031d620014adac4.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9ff4b8af-7914-462e-9b52-c5874d1a675a.png
     width: 640
     height: 480
 ---

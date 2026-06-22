@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Code
 date: 2025-03-26 14:11:37 +1400
 tags: [hackthebox, nmap, linux, python, python-flask, python-jail-escape, python-sqlalchemy, crackstation, credentials-stuffing, sudo, bash-script, backy, logic-flaw, directory-traversal, file-read]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/55cc3528cd7ad96f67c4f0c715efe286.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e6bceba-3c04-4c0a-805f-bdb7902bd974.png
     width: 640
     height: 480
 ---

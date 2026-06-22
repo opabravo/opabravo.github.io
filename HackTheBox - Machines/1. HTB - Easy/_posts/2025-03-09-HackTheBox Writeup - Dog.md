@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Dog
 date: 2025-03-09 19:33:00 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, php, backdrop-cms, cms, git, git-dumper, discover-secrets, directory-listing, enum-version, user-enumeration, backdrop-cms2rce, webshell, password-spraying, sudo, backdrop-cms-bee, php-script]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/426830ea2ae4f05f7892ad89195f8276.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90cc-00ed-4b15-b364-4d377c7b9dfb.png
     width: 640
     height: 480
 ---

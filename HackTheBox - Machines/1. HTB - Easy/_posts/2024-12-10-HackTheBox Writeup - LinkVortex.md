@@ -4,7 +4,7 @@ title: HackTheBox Writeup - LinkVortex
 date: 2024-12-10 21:38:32 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, gobuster, vhost, ghost-cms, git, git-dumper, discover-secrets, gitleaks, user-enumeration, cve-2023-40028, file-read, docker, credentials-stuffing, sudo, bash-script, symlinks, oscp-like-2023]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/97f12db8fafed028448e29e30be7efac.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90cc-5cbd-43cc-a270-af04ebecdf67.png
     width: 640
     height: 480
 ---

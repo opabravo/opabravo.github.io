@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Soulmate
 date: 2025-11-04 23:49:55 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, gobuster, vhost, httpx, crushftp, php, vulnerability-assessment, nuclei, auth-bypass, cve-2025-31161, vfs, crackstation, file-upload, webshell, fuzzing, erlang, sqlite, hashcat, erlang-escript, discover-secrets, erlang-eshell, erlang-otp]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/2c47fcf9c85c7fbdda73a9c1b54fd60e.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9fc816a0-cb01-44bf-a506-fb86f93bf8bd.png
     width: 640
     height: 480
 ---
@@ -220,10 +220,10 @@ Found a critical severity vulnerability **CVE-2025-31161**
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Soulmate]
 └─$ cat nuclei/index.md
-| Hostname/IP                                                                                 | Finding        | Severity |
-| ------------------------------------------------------------------------------------------- | -------------- | -------- |
-| [ftp.soulmate.htb](crushftp-login-ftp.soulmate.htb-041e9d52-c87d-460f-a341-a7f9107223ca.md) | crushftp-login | info     |
-| [ftp.soulmate.htb](CVE-2025-31161-ftp.soulmate.htb-0ae4cdb5-beac-40c7-a397-4e33eaa9bba4.md) | CVE-2025-31161 | critical |
+| Hostname/IP | Finding | Severity |
+| --- | --- | --- |
+| [ftp.soulmate.htb](crushftp-login-ftp.soulmate.htb-041e9d52-c87d-460f-a341-a7f9107223ca.md) | crushftp-login  | info |
+| [ftp.soulmate.htb](CVE-2025-31161-ftp.soulmate.htb-0ae4cdb5-beac-40c7-a397-4e33eaa9bba4.md) | CVE-2025-31161  | critical |
 ```
 
 > `nuclei/CVE-2025-31161-ftp.soulmate.htb-0ae4cdb5-beac-40c7-a397-4e33eaa9bba4.md`
@@ -241,7 +241,6 @@ Found a critical severity vulnerability **CVE-2025-31161**
 | CVSS-Score   | 9.80                                                                                                                                                                                                                                                   |
 | vendor       | crushftp                                                                                                                                                                                                                                               |
 | product      | crushftp                                                                                                                                                                                                                                               |
-
 
 **Request**
 

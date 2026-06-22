@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Wifinetic
 date: 2023-09-18 14:11:47 +1400
 tags: [hackthebox, nmap, linux, wifi-hacking, ftp, weak-permissions, openwrt, clear-text-credentials, password-reuse, wps, wpa]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/4aaf2ad33bea830079d74497f8e7fefc.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90cd-90e9-4398-8166-7c30c37f6cd4.png
     width: 640
     height: 480
 ---

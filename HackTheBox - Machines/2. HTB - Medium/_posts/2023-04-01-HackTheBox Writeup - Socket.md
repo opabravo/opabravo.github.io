@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Socket
 date: 2023-04-01 10:31:55 +1400
 tags: [hackthebox, nmap, linux, gobuster, forensics, detect-it-easy, decompilation, pyinstxtractor, pyinstaller-extractor, web-socket, sqlite, sqli, sqlmap, crackstation, username-anarchy, hydra, python, sudo, bash-script, pyinstaller-spec]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/9a73cabc03399aaac0640a0148e3a371.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90cf-836c-4acc-83e7-c7affcd7d9d5.png
     width: 640
     height: 480
 ---

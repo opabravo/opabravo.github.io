@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Analytics
 date: 2023-10-08 08:48:33 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, katana, metabase, cve-2023-38646, java, sqli, remote-code-execution, docker, discover-secrets, password-reuse, docker-escape, kernel-exploit, cve-2023-2640, cve-2023-32629]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/f86fcf4c1cfcc690b43f43e100f89718.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90cd-8621-4fe0-8f67-d82cd669e6d4.png
     width: 640
     height: 480
 ---

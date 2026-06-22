@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Perfection
 date: 2024-03-03 16:19:28 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, ffuf, ruby, ssti, regex-bypass, discover-notes, discover-backup, sqlite, name-the-hash, hashcat, hashcat-mask, sudo, misconfiguration]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/57fc0f58916cb3ed8e793db071769d70.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90cd-2ee8-4997-a528-50a69f7f9c8e.png
     width: 640
     height: 480
 ---

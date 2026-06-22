@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Inject
 date: 2023-03-25 11:16:29 +1400
 tags: [hackthebox, linux, nmap, gobuster, burpsuite, ffuf, directory-traversal, file-read, tomcat, information-disclosure, java, maven, spring-cloud, spring-boot, cve-2022-22963, command-injection, pspy, ansible, ansible-playbook]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/285ba8819710b6ae1f67bc0e5914ffd9.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90cf-8bf2-4310-bb79-c40e0f4e9a51.png
     width: 640
     height: 480
 ---

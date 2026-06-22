@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Clicker
 date: 2023-10-24 09:46:26 +1400
 tags: [hackthebox, nmap, linux]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/5a89d213ede5af4b4f94035fd059f976.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90cd-8d46-459d-b58f-27e9ca6b384c.png
     width: 640
     height: 480
 ---

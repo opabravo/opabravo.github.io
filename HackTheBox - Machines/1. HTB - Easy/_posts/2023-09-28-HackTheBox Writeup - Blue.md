@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Blue
 date: 2023-09-28 23:53:26 +1400
 tags: [hackthebox, nmap, windows, crackmapexec, eternal-blue, ms17-010, cve-2017-0143, oscp-like]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/52e077ae40899ab8b024afd51cb29b1c.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90d7-430a-45af-8f66-de5eab941ad9.png
     width: 640
     height: 480
 ---

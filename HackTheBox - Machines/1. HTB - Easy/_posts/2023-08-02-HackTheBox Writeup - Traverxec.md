@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Traverxec
 date: 2023-08-02 14:27:32 +1400
 tags: [hackthebox, nmap, linux, nostromo, cve-2019-16278, outdated-software, remote-code-execution, htpasswd, hashcat, ssh2john, bash-script, sudo, shell-tty, journalctrl, gtfobin, oscp-like]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/6ce5fcdd63f07a5ce91d0b8e4579b163.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90d4-9e3d-4c96-a466-f35da13b64a9.png
     width: 640
     height: 480
 ---

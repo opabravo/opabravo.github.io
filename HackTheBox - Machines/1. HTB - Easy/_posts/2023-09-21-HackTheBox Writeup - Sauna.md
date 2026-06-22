@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Sauna
 date: 2023-09-21 23:25:01 +1400
 tags: [hackthebox, nmap, windows, ad, crackmapexec, user-enumeration, username-anarchy, kerbrute, asreproast, hashcat, evil-winrm, privesccheck, autologon, invoke-adenum, dcsync, impacket, nopac, oscp-like-2023]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/f31d5d0264fadc267e7f38a9d7729d14.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90d4-6f9b-4c4a-961e-46747d27abab.png
     width: 640
     height: 480
 ---

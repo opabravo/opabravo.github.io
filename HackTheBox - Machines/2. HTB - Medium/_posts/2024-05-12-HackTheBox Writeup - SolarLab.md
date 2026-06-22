@@ -4,7 +4,7 @@ title: HackTheBox Writeup - SolarLab
 date: 2024-05-12 13:57:00 +1400
 tags: [hackthebox, nmap, windows, netexec, rid-bruteforce, smb, discover-secrets, password-spraying, python-flask, user-enumeration, ffuf, password-reuse, exiftool, reportlab, cve-2023-33733, python, code-injection, reverse-ssh, enum, sqlite, runascs, openfire, openfire-password-decrypt, embedded-db, hsql]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/a2c2bd7b4e98ff8b782ed590896305a1.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90cc-f1e5-44dc-9244-4ed6f4d7b477.png
     width: 640
     height: 480
 ---

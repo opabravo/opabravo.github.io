@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Cascade
 date: 2024-02-06 12:01:22 +1400
 tags: [hackthebox, nmap, windows, ad, ldap, ldap-anonymous-bind, netexec, ldapsearch, discover-secrets, discover-secrets-ldap, ldapdomaindump, discover-notes, tight-vnc, vncpasswd, evil-winrm, enum, sqlite, reversing, dnspy, dotnet-framework, ad-recyclebin, oscp-like-2023]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/64fef851357b8de1c4834093bf3426f2.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90d4-5491-4de9-a577-b0df64c09939.png
     width: 640
     height: 480
 ---

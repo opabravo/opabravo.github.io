@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Soccer
 date: 2022-12-22 12:25:43 +1400
 tags: [hackthebox, linux, nmap, gobuster, vhost, whatweb, nuclei, default-credentials, tiny-file-manager, nodejs, express, file-upload, php, webshell, web-socket, sqli, boolean-based-sqli, sqlmap, linpeas, suid, doas, dstat, oscp-like-2023]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/ca7f69a02eebf53deb3cd1611dd3f55e.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90cf-bf27-467a-9ce1-75957e61d148.png
     width: 640
     height: 480
 ---

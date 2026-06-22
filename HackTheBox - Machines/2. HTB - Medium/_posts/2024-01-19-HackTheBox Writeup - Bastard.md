@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Bastard
 date: 2024-01-19 20:28:34 +1400
 tags: [hackthebox, nmap, windows, feroxbuster, drupal, drupalgeddon2, powercat, privilege-token, juicy-potato, wesng, ms15-051, kernel-exploit]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/a8d2ae87fbe6d1ccfe93522d74defb3a.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90d7-8ee7-407c-af36-2bc35724f00d.png
     width: 640
     height: 480
 ---

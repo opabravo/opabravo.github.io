@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Editorial
 date: 2024-06-17 12:14:57 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, python-flask, ssrf, ffuf, discover-secrets, git, sudo, python-script, gitpython, cve-2022-24439, oscp-like-2023]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/a466db5ce4f7aaea98f588d1cb71a0aa.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90cc-d90c-4269-b8a6-dcafb3f2ea7c.png
     width: 640
     height: 480
 ---

@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Conversor
 date: 2025-10-28 14:10:18 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, xslt, information-disclosure, source-code-analysis, python, python-flask, xslt-injection, libxslt, file-upload, directory-traversal, scheduled-job-abuse, discover-secrets, sqlite, hashcat, password-spraying, sudo, needrestart]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/0b659c391f2803c247e79c77a3284f96.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/a02c6f24-5b8e-4e41-919e-40464d7c1a18.png
     width: 640
     height: 480
 ---

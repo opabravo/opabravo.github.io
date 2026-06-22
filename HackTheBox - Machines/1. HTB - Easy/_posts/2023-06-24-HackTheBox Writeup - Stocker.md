@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Stocker
 date: 2023-06-24 11:24:15 +1400
 tags: [hackthebox, linux, autorecon, nmap, ffuf, vhost, feroxbuster, whatweb, express, nodejs, nosql, sqli, nosql-login-bypass, auth-bypass, exiftool, pdf, file-read, directory-traversal, gtfobin, burpsuite, burp-repeater, mongodump, mongodb]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/da052d0b0efd6dad222ba4a73d987c16.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90cf-af47-4ac5-968c-5abb064fd963.png
     width: 640
     height: 480
 ---

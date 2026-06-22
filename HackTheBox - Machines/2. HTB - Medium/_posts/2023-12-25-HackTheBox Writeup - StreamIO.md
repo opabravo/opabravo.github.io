@@ -4,7 +4,7 @@ title: HackTheBox Writeup - StreamIO
 date: 2023-12-25 13:02:04 +1400
 tags: [hackthebox, nmap, windows, ad, netexec, feroxbuster, ffuf, php, sqli, sqli-union, mssql, hashcat, password-spraying, kerbrute, smartbrute, fuzz-param, local-file-inclusion, rfi, reverse-ssh, winpeas, port-forwarding, mssqlclient, discover-backup, ldapdomaindump, discover-browser, mozilla-password, hack-browser-data, bloodhound, bloodhound-python, ad-laps, dacledit, dacl-abuse, evil-winrm, oscp-like-2023, privilege-token, juicy-potato-ng, responder, coerce-authentication]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/21240942d301a96e80574353a96b9003.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90d0-560c-47c7-9704-e8d336539e3e.png
     width: 640
     height: 480
 ---

@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Broker
 date: 2023-11-10 14:04:05 +1400
 tags: [hackthebox, nmap, linux, activemq, cve-2023-46604, java, deserialization, cyberchef, sudo, nginx-privesc, nginx, oscp-like-2023, hydra]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/a725533911ba94a880899fbf900d988c.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90cd-6469-4140-8d2d-55ac9a674055.png
     width: 640
     height: 480
 ---

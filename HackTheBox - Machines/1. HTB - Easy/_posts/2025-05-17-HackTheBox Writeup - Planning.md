@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Planning
 date: 2025-05-17 00:07 +1400
 tags: [hackthebox, nmap, linux, assumed-breach, katana, gobuster, vhost, hakrlawler, grafana, cve-2024-9264, duckdb, sqli, file-read, command-injection, credentials-stuffing, discover-secrets, tunnel, ligolo-ng, httpx, crontab-ui, nodejs, scheduled-job-abuse]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/c9efb253e7d1d9b407113e11afdaa905.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9ebe5c8d-6e00-4302-98b4-163d67362571.png
     width: 640
     height: 480
 ---

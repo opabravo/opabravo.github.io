@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Surveillance
 date: 2023-12-13 22:52:36 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, craft-cms, cve-2023-41892, zoneminder, cve-2023-26035, socat, discover-backup, mysql, hashcat, password-reuse, sudo, perl-script]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/d2ddffcb2eced6a4d5486dc99d440d1a.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90cd-577b-4ed4-8500-40fc7133e398.png
     width: 640
     height: 480
 ---

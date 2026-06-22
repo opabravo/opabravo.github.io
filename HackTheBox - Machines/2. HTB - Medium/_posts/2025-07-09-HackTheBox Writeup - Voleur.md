@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Voleur
 date: 2025-07-09 08:10:19 +1400
 tags: [hackthebox, nmap, windows, ad, netexec, assumed-breach, impacket, bloodhound-ce, bloodhound-ce-python, bloodhound-cli, ldeep, bloodyad, smb, discover-notes, xlsx, office2john, hashcat, credentials-exposure, password-spraying, dacl-abuse, targeted-kerberoast, evil-winrm, ad-recyclebin, runascs, discover-backup, dpapi, simplehttpserver, exfiltration, dpapi-py, wsl, wsl-mount, ssh, sudoers, ntds]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/635619778e50cc8f69df91cc6ae149c4.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9f2d4e31-904e-4756-90fe-3d6872323ca1.png
     width: 640
     height: 480
 ---

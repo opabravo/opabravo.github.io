@@ -4,7 +4,7 @@ title: HackTheBox Writeup - GreenHorn
 date: 2024-07-21 16:07:12 +1400
 tags: [hackthebox, nmap, linux, gitea, information-disclosure, discover-secrets, haiti, hashcat, pluck-cms, cms, php, file-upload, password-spraying, pdf, pdfimages, depixelization, depix]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/b7d9a9b075fd49c8509866fe24f58dbb.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90cc-c46c-4d98-a7b8-27b6fd07aeac.png
     width: 640
     height: 480
 ---

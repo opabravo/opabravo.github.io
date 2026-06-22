@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Irked
 date: 2024-02-07 11:57 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, rpcinfo, unrealircd, irc, discover-secrets, weak-permissions, steganography, stegseek, suid, hack-browser-data, oscp-like]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/5fb846e75cf0db0c4b27e2dc64a9bf82.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90d5-9701-4807-a6bd-99932cb7498a.png
     width: 640
     height: 480
 ---

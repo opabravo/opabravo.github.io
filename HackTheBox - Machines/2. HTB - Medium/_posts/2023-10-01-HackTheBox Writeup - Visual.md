@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Visual
 date: 2023-10-01 20:37:49 +1400
 tags: [hackthebox, nmap, windows, feroxbuster, git, git-server, misconfiguration, visual-studio, dotnet-framework, csharp, villian, reverse-ssh, php, apache, webshell, privilege-token, fullpowers, potato-attacks, godpotato]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/a75ac8ed04e6e728547538bfa41cfc68.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90cd-89a9-4a1e-ba58-435a08f48c48.png
     width: 640
     height: 480
 ---

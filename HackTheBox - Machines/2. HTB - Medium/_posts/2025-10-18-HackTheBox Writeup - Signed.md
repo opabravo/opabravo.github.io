@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Signed
 date: 2025-10-18 00:16:44 +1400
 tags: [hackthebox, nmap, windows, ad, assumed-breach, mssql, mssqlclient, impacket, rid-bruteforce, mssql-xp-dirtree, coerce-authentication, responder, hashcat, silver-ticket, aeskrbkeygen, opsec-safe, opsec-safe-siem, mssql-xp-cmdshell, mssql-file-read, file-read, discover-secrets, runascs]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/7aaaac3fafe5bc8737560ba0264c4577.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/a00e8c83-0b2c-42d6-a0d0-56732621739e.png
     width: 640
     height: 480
 ---

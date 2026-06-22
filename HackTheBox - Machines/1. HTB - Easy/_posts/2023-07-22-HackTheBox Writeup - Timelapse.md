@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Timelapse
 date: 2023-07-22 12:43:35 +1400
 tags: [hackthebox, nmap, ad, windows, crackmapexec, smbclient, winrm-keys, zip2john, john, zip2pfx, extract-pfx, invoke-winpeas, powershell-history, ad-laps, hashcat, oscp-like-2023]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/bae443f73a706fc8eebc6fb740128295.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90d0-996e-49e0-bb5d-ccd58a3c5743.png
     width: 640
     height: 480
 ---

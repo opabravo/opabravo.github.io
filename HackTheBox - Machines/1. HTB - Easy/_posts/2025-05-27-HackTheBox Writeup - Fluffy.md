@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Fluffy
 date: 2025-05-27 01:10:58 +1400
 tags: [hackthebox, nmap, windows, ad, assumed-breach, netexec, bloodhound-ce, bloodhound-python, bloodhound-cli, ldeep, adcs, bloodyad, client-side-attack, coerce-authentication, cve-2025-24054, responder, smbclient, hashcat, dacl-abuse, shadow-credentials, certipy, pass-the-cert, pass-the-ticket, evil-winrm, adcs-esc16, impacket, dcsync]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/ef8fc92ac7cccd8afa4412241432f064.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9ef7ca21-a028-4a8d-9419-723364595db8.png
     width: 640
     height: 480
 ---

@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Legacy
 date: 2023-10-31 11:13:08 +1400
 tags: [hackthebox, nmap, windows, crackmapexec, eternal-blue, ms17-010, win-xp, oscp-like, cve-2008-4250, ms08-067, msfvenom]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/60dc190c4c015cfe3a3aef9b5afca254.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90d7-a094-4d19-acb4-e24b7ae44f57.png
     width: 640
     height: 480
 ---

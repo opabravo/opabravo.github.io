@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Instant
 date: 2024-12-20 06:48:42 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, apk, java, apktool, jadx, reversing, gitleaks, discover-secrets, jwt, api, httpx, swagger-ui, python, python-flask, directory-traversal, solar-putty, solar-putty-session, sqlite, hashcat]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/8e9f11a3cceeb4f69e659ed31347cc77.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90cc-8648-4785-87d8-1670b5366c04.png
     width: 640
     height: 480
 ---

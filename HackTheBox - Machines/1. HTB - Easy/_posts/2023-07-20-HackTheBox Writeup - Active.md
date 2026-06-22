@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Active
 date: 2023-07-20 22:38:55 +1400
 tags: [hackthebox, nmap, windows, ad, crackmapexec, enum4linux, smbclient, gpp-credential, gpp-decrypt, kerberoast, hashcat, impacket, oscp-like, oscp-like-2023, zero-logon, cve-2020-1472, dcsync, golden-ticket, pass-the-ticket]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/5837ac5e28291146a9f2a8a015540c28.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90d5-dc8f-4276-afba-e99d3da016d3.png
     width: 640
     height: 480
 ---

@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Cypher
 date: 2025-03-06 18:38:24 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, neo4j, neo4j-apoc, apk, jadx, decompilation, java, python, cypher-injection, graph-db, cypher-injection-error-based, cypher-injection-oob, auth-bypass, command-injection, discover-history, password-spraying, sudo, bbot, bbot-module]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/765cd4be6f3a366ca83c7ea60bbcaaa8.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90cc-1059-4bb1-b5cb-cd48c12b40b6.png
     width: 640
     height: 480
 ---

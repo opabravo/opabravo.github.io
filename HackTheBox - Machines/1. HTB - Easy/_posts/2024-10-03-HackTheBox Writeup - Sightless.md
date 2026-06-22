@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Sightless
 date: 2024-10-03 18:26:44 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, hakrlawler, vhost, sqlpad, ssti, cve-2022-0944, docker, docker-escape, discover-secrets, hashcat, credentials-stuffing, netexec, froxlor, ligolo-ng, chrome, chrome-remote-debugging, froxlor2rce, php]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/f96160a20e9cf0138885238444b47404.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90cc-a52c-49d2-9dc8-406653180427.png
     width: 640
     height: 480
 ---

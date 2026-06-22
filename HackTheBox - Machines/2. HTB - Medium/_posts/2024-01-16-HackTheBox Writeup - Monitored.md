@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Monitored
 date: 2024-01-16 13:56 +1400
 tags: [hackthebox, nmap, linux, snmp, feroxbuster, onesixtyone, snmp-check, nagios, nagios-xi, nagios-core, sqli, mysql, cve-2023-40931, php, api, sqlmap, nagios-xi-2rce, service-binary-permission, sudo, bash-script, file-read, oscp-like-2023]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/d4988810825d26acb2e84ca0ac9feaf4.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90cd-4aa7-48bc-9394-c9f51e46b2b9.png
     width: 640
     height: 480
 ---

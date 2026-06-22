@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Grandpa
 date: 2023-11-11 14:53:35 +1400
 tags: [hackthebox, nmap, windows, windows-2003, iis, webdav, cve-2017-7269, privilege-token, churrasco, msfvenom, smbserver, oscp-like, metasploit]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/381683fd107da11f1dc916401ae8aee0.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90d7-7dfb-467b-b584-1621695619c1.png
     width: 640
     height: 480
 ---

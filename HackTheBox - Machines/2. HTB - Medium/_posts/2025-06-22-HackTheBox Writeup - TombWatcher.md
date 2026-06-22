@@ -4,7 +4,7 @@ title: HackTheBox Writeup - TombWatcher
 date: 2025-06-22 23:13:42 +1400
 tags: [hackthebox, nmap, windows, ad, assumed-breach, netexec, bloodhound-python, bloodhound, bloodhound-cli, ldeep, adcs, bloodyad, targeted-kerberoast, hashcat, impacket, pass-the-ticket, dacl-abuse, shadow-credentials, pass-the-cert, certipy, evil-winrm, ad-recyclebin, adcs-esc15]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/59c74a969b4fec16cd8072d253ca9917.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9f02ffc4-bf3e-4a15-9350-e0772596b1a7.png
     width: 640
     height: 480
 ---

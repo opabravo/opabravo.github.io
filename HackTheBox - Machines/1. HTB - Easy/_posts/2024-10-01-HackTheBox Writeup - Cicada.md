@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Cicada
 date: 2024-10-01 22:38:33 +1400
 tags: [hackthebox, nmap, windows, ad, netexec, discover-notes, credentials-exposure, password-spraying, smartbrute, ldeep, powershell-script, evil-winrm, ad-backup-operators, golden-ticket, backupoperatortoolkit, remoteregsave, oscp-like-2023]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/79616a32a057e5e672dadb51bb96dd04.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90cc-93da-4402-a4f0-b252cbc9c7e2.png
     width: 640
     height: 480
 ---

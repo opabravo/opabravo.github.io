@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Previous
 date: 2025-09-16 17:18:39 +1400
 tags: [hackthebox, nmap, linux, feroxbuster, nodejs, next-js, wappalyzer, middleware, auth-bypass, cve-2025-29927, burpsuite, directory-traversal, next-auth, discover-secrets, credentials-stuffing, sudo, terraform, security-policy-bypass]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/f34c6756e7c75b48ec112831eb27940a.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9fabc9ef-181f-43c7-8ada-59e920a4a2a0.png
     width: 640
     height: 480
 ---

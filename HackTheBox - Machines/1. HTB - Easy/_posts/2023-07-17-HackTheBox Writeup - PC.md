@@ -4,7 +4,7 @@ title: HackTheBox Writeup - PC
 date: 2023-07-17 09:18 +1400
 tags: [hackthebox, nmap, linux, api, grpc, grpcurl, grpcui, burpsuite, sqlmap, sqli, sqlite, clear-text-credentials, password-reuse, tunnel, pyload, cve-2023-0297]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/6d08e5f1919c77c0497213377f635e08.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90cd-d870-40a4-9d34-4c6c3feeaa20.png
     width: 640
     height: 480
 ---

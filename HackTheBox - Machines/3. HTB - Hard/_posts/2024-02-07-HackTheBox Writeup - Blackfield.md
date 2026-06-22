@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Blackfield
 date: 2024-02-07 16:33 +1400
 tags: [hackthebox, nmap, windows, ad, dnsrecon, gobuster, ldapsearch, netexec, rid-bruteforce, asreproast, hashcat, ldapdomaindump, bloodhound, bloodhound-python, ad-miner, lsass, pypykatz, evil-winrm, ad-backup-operators, backupoperatortoda, commando, mimikatz, impacket, vss-shadow, unix2dos, ntds, print-nightmare, win-dll, revshell-dll-nim, defense-evasion, av-bypass, nopac, faketime, coercer, oscp-like-2023]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/7c69c876f496cd729a077277757d219d.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90d3-6fa8-498d-b7a5-880f2563098d.png
     width: 640
     height: 480
 ---

@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Lame
 date: 2023-09-25 21:09:10 +1400
 tags: [hackthebox, nmap, linux, crackmapexec, smbclient, distccd, searchsploit, cve-2004-2687, suid, gtfobin, weak-ssh-key, oscp-like]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/fb2d9f98400e3c802a0d7145e125c4ff.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90d7-a3c6-4bf5-944f-b6d62ba830bb.png
     width: 640
     height: 480
 ---

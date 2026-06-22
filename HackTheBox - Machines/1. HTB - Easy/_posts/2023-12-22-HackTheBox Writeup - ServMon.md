@@ -4,7 +4,7 @@ title: HackTheBox Writeup - ServMon
 date: 2023-12-22 19:55:38 +1400
 tags: [hackthebox, nmap, windows, netexec, ftp, lftp, discover-notes, nvms-1000, directory-traversal, cve-2019-20085, brute-force-attack, hydra, nsclient, nscp, port-forwarding, defense-evasion, av-bypass, revshell-go, oscp-like-2023, ffuf]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/2bc1a8dc04b09b8ac2db694f25ccf051.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90d4-4ad8-4089-8c95-fa975e2f1e11.png
     width: 640
     height: 480
 ---

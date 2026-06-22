@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Pov
 date: 2024-02-03 09:38:36 +1400
 tags: [hackthebox, nmap, windows, feroxbuster, gobuster, vhost, aspx, directory-traversal, directory-traversal-bypass, unc, aspx-viewstate, ysoserial-dotnet, deserialization, reverse-ssh, discover-secrets, powershell-securestring, runascs, privilege-token]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/a36f80aa6bc43863512ec9537c4366c9.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90cd-42b9-4f59-8309-61ee15a8dc4c.png
     width: 640
     height: 480
 ---

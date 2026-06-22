@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Expressway
 date: 2025-09-17 06:14 +1400
 tags: [hackthebox, nmap, linux, ipsec, vpn, ike-scan, psk, hashcat, credentials-stuffing, discover-logs, sudo, sudoers, misconfiguration]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/75c168f01f04e5f256838733b77f13ec.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9fe456df-b95f-4a33-9a4c-9cdeecc6c08d.png
     width: 640
     height: 480
 ---

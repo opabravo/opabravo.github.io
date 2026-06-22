@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Certified
 date: 2025-02-19 17:01:25 +1400
 tags: [hackthebox, nmap, windows, ad, assumed-breach, netexec, bloodhound-python, bloodhound, ldeep, adcs, dacl-abuse, impacket, shadow-credentials, pywhisker, certipy, pass-the-ticket, evil-winrm, adcs-esc9, dcsync]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/28b71ec11bb839b5b58bdfc555006816.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90cc-73f2-4924-8e26-50c24ae0618e.png
     width: 640
     height: 480
 ---

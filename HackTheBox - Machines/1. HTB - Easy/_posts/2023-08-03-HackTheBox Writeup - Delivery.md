@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Delivery
 date: 2023-08-03 08:28:04 +1400
 tags: [hackthebox, nmap, linux, mattermost, vhost, osticket, abuse-tickets, email, misconfiguration, information-disclosure, password-reuse, hashcat, custom-wordlist, hashcat-rules, su-bruteforce, oscp-like, mysql, password-reuse, mysqldump]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/c55af6eadd5b60bac831d73c1a951327.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90d2-d7b1-4402-b7d7-363d8650c5b5.png
     width: 640
     height: 480
 ---

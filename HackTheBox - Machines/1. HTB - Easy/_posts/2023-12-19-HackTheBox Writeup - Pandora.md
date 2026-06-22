@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Pandora
 date: 2023-12-19 15:03 +1400
 tags: [hackthebox, nmap, linux, snmp, feroxbuster, onesixtyone, snmp-check, snmpbulkwalk, credentials-exposure, password-reuse, port-forwarding, pandorafms, cve-2021-32099, sqli, mysql, deserialization, cve-2020-5844, file-upload, suid, path-injection, oscp-like-2023]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/6ac0e76002774bbfac92b0dbc86cb6af.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90d0-fa01-4eb3-b5b7-e6f3aa47836a.png
     width: 640
     height: 480
 ---

@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Puppy
 date: 2025-05-19 23:40:08 +1400
 tags: [hackthebox, nmap, windows, ad, netexec, bloodhound-ce, bloodhound-python, bloodhound-cli, ldeep, bloodyad, smb, dacl-abuse, keepass4, keepass2john, john, keepass2json, password-spraying, pass-the-ticket, evil-winrm, reverse-ssh, runascs, discover-backup, dpapi, dpapi-py, dcsync, impacket, ntds]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/6a127b39657062e42c1a8dfdcd23475d.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9ee8abd7-3161-462f-acb5-1cd9b72e9946.png
     width: 640
     height: 480
 ---

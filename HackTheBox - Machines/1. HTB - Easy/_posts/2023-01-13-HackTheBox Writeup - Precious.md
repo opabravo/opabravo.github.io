@@ -4,7 +4,7 @@ title: HackTheBox Writeup - Precious
 date: 2023-01-13 23:15:20 +1400
 tags: [hackthebox, linux, nmap, gobuster, pdf, exiftool, pdfkit, cve-2022-25765, command-injection, clear-text-credentials, sudo, ruby-script, deserialization, yaml, yaml_load]
 image:
-    path: https://htb-mp-prod-public-storage.s3.eu-central-1.amazonaws.com/avatars/3adcfd6093f8ddb4dffe8422da6377c8.png
+    path: https://cdn.services-k8s.prod.aws.htb.systems/content/machines/avatar/9e4d90cf-d47b-4dd7-a54b-b967342a30f9.png
     width: 640
     height: 480
 ---
