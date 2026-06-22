@@ -873,7 +873,7 @@ After sorting the result by **EPSS** Score, the first LPE [CVE-2024-30088](https
 > Microsoft Windows Kernel contains a time-of-check to time-of-use (TOCTOU) race condition vulnerability that could allow for privilege escalation.
 {: .prompt-info }
 
-> Google : `CVE-2024-30088 poc`
+Google : `CVE-2024-30088 poc`
 
 > Ref - https://soc.cyber.wa.gov.au/advisories/20240627001-Win-Kernel-Priv-Esc-POC/
 
@@ -934,7 +934,7 @@ rlwrap -cAr nc -lvnp 1111
 
 Download and run the exploit on target machine
 
-> We'll have to press `ENTER` key a couple times to continue next exploit stages
+> We'll have to press `ENTER` key a couple times during those sections to continue next exploit stages
 > 
 > ![](/assets/obsidian/b6559614a43aeeb34da3ddf5d20ccc3d.png)
 > 
