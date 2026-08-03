@@ -220,10 +220,10 @@ Found a critical severity vulnerability **CVE-2025-31161**
 ```bash
 ┌──(bravosec㉿fsociety)-[~/htb/Soulmate]
 └─$ cat nuclei/index.md
-| Hostname/IP | Finding | Severity |
-| --- | --- | --- |
-| [ftp.soulmate.htb](crushftp-login-ftp.soulmate.htb-041e9d52-c87d-460f-a341-a7f9107223ca.md) | crushftp-login  | info |
-| [ftp.soulmate.htb](CVE-2025-31161-ftp.soulmate.htb-0ae4cdb5-beac-40c7-a397-4e33eaa9bba4.md) | CVE-2025-31161  | critical |
+| Hostname/IP                                                                                 | Finding        | Severity |
+| ------------------------------------------------------------------------------------------- | -------------- | -------- |
+| [ftp.soulmate.htb](crushftp-login-ftp.soulmate.htb-041e9d52-c87d-460f-a341-a7f9107223ca.md) | crushftp-login | info     |
+| [ftp.soulmate.htb](CVE-2025-31161-ftp.soulmate.htb-0ae4cdb5-beac-40c7-a397-4e33eaa9bba4.md) | CVE-2025-31161 | critical |
 ```
 
 > `nuclei/CVE-2025-31161-ftp.soulmate.htb-0ae4cdb5-beac-40c7-a397-4e33eaa9bba4.md`
@@ -733,7 +733,7 @@ e506929f54434cc98786f3db8bb4e501
 
 ### Eshell V15.2.5 - Command execution
 
-The `erlang_login` app seems  use OTP apps and do some loggings
+The `erlang_login` app seems to use OTP apps and do some loggings
 
 ```bash
 ben@soulmate:~$ cat /usr/local/lib/erlang_login/login.escript
